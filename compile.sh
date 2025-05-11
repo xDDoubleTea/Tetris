@@ -1,1 +1,1 @@
-gcc hello.c -o hello  -lallegro_font -lallegro
+clang hello.c -o hello $(cat compile_flags.txt)
