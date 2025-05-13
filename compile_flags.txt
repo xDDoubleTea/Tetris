@@ -1,1 +1,0 @@
--lallegro_font -lallegro -lallegro_ttf -lm
