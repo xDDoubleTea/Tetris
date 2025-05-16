@@ -3,6 +3,7 @@
 
 tests/CMakeFiles/test_driver.dir/test_driver.c.o
  /home/susamogus/programming/Final_project/allegro/tests/test_driver.c
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -37,7 +38,6 @@ tests/CMakeFiles/test_driver.dir/test_driver.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h

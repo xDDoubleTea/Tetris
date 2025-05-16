@@ -3,6 +3,7 @@
 
 examples/CMakeFiles/ex_haptic2.dir/ex_haptic2.cpp.o
  /home/susamogus/programming/Final_project/allegro/examples/ex_haptic2.cpp
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/allegro_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
@@ -43,7 +44,6 @@ examples/CMakeFiles/ex_haptic2.dir/ex_haptic2.cpp.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -251,6 +251,7 @@ examples/CMakeFiles/ex_haptic2.dir/ex_haptic2.cpp.o
 
 examples/CMakeFiles/ex_haptic2.dir/nihgui.cpp.o
  /home/susamogus/programming/Final_project/allegro/examples/nihgui.cpp
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
  /home/susamogus/programming/Final_project/allegro/examples/nihgui.hpp
@@ -288,7 +289,6 @@ examples/CMakeFiles/ex_haptic2.dir/nihgui.cpp.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h

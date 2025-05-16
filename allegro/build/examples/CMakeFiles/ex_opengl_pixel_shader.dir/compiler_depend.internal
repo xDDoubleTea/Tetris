@@ -3,6 +3,7 @@
 
 examples/CMakeFiles/ex_opengl_pixel_shader.dir/ex_opengl_pixel_shader.c.o
  /home/susamogus/programming/Final_project/allegro/examples/ex_opengl_pixel_shader.c
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/allegro_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/examples/common.c
@@ -50,7 +51,6 @@ examples/CMakeFiles/ex_opengl_pixel_shader.dir/ex_opengl_pixel_shader.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/GLext/glx_ext_list.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/gl_ext.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h

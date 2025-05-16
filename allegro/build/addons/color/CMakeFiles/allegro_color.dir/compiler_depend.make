@@ -3,6 +3,7 @@
 
 addons/color/CMakeFiles/allegro_color.dir/color.c.o: /home/susamogus/programming/Final_project/allegro/addons/color/color.c \
   /home/susamogus/programming/Final_project/allegro/addons/color/allegro5/allegro_color.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -38,7 +39,6 @@ addons/color/CMakeFiles/allegro_color.dir/color.c.o: /home/susamogus/programming
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -312,10 +312,6 @@ addons/color/CMakeFiles/allegro_color.dir/color.c.o:
 
 /usr/include/bits/floatn-common.h:
 
-/usr/lib/libXcursor.so:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h:
-
 /home/susamogus/programming/Final_project/allegro/include/allegro5/threads.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/clipboard.h:
@@ -350,13 +346,21 @@ addons/color/CMakeFiles/allegro_color.dir/color.c.o:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/error.h:
 
+/usr/lib/libXcursor.so:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h:
+
 /usr/lib/libgcc_s.so.1:
 
 /usr/include/bits/confname.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/base.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h:
+include/allegro5/platform/alplatf.h:
+
+/usr/include/bits/getopt_posix.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/transformations.h:
 
@@ -438,9 +442,9 @@ addons/color/CMakeFiles/allegro_color.dir/color.c.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h:
 
-/usr/include/bits/floatn.h:
-
 /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h:
+
+/usr/include/bits/floatn.h:
 
 /usr/include/features.h:
 
@@ -467,8 +471,6 @@ addons/color/CMakeFiles/allegro_color.dir/color.c.o:
 /usr/include/bits/getopt_core.h:
 
 /usr/include/bits/types.h:
-
-/usr/include/bits/getopt_posix.h:
 
 /usr/include/bits/iscanonical.h:
 
@@ -497,8 +499,6 @@ addons/color/CMakeFiles/allegro_color.dir/color.c.o:
 /usr/include/bits/mathcalls-narrow.h:
 
 /usr/include/bits/types/timer_t.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 

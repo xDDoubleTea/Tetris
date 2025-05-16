@@ -1,1 +1,0 @@
-/usr/bin/cc  -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -O2 -g -DNDEBUG -Wl,--dependency-file=CMakeFiles/make_index.dir/link.d CMakeFiles/make_index.dir/scripts/make_index.c.o CMakeFiles/make_index.dir/scripts/aatree.c.o CMakeFiles/make_index.dir/scripts/dawk.c.o CMakeFiles/make_index.dir/scripts/trex.c.o -o make_index

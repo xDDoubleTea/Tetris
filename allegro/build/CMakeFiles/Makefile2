@@ -117,7 +117,6 @@ addons/all: addons/acodec/all
 addons/all: addons/ttf/all
 addons/all: addons/color/all
 addons/all: addons/memfile/all
-addons/all: addons/physfs/all
 addons/all: addons/native_dialog/all
 addons/all: addons/video/all
 addons/all: addons/main/all
@@ -132,7 +131,6 @@ addons/codegen: addons/acodec/codegen
 addons/codegen: addons/ttf/codegen
 addons/codegen: addons/color/codegen
 addons/codegen: addons/memfile/codegen
-addons/codegen: addons/physfs/codegen
 addons/codegen: addons/native_dialog/codegen
 addons/codegen: addons/video/codegen
 addons/codegen: addons/main/codegen
@@ -147,7 +145,6 @@ addons/preinstall: addons/acodec/preinstall
 addons/preinstall: addons/ttf/preinstall
 addons/preinstall: addons/color/preinstall
 addons/preinstall: addons/memfile/preinstall
-addons/preinstall: addons/physfs/preinstall
 addons/preinstall: addons/native_dialog/preinstall
 addons/preinstall: addons/video/preinstall
 addons/preinstall: addons/main/preinstall
@@ -162,7 +159,6 @@ addons/clean: addons/acodec/clean
 addons/clean: addons/ttf/clean
 addons/clean: addons/color/clean
 addons/clean: addons/memfile/clean
-addons/clean: addons/physfs/clean
 addons/clean: addons/native_dialog/clean
 addons/clean: addons/video/clean
 addons/clean: addons/main/clean
@@ -319,25 +315,6 @@ addons/native_dialog/preinstall:
 # Recursive "clean" directory target.
 addons/native_dialog/clean: addons/native_dialog/CMakeFiles/allegro_dialog.dir/clean
 .PHONY : addons/native_dialog/clean
-
-#=============================================================================
-# Directory level rules for directory addons/physfs
-
-# Recursive "all" directory target.
-addons/physfs/all: addons/physfs/CMakeFiles/allegro_physfs.dir/all
-.PHONY : addons/physfs/all
-
-# Recursive "codegen" directory target.
-addons/physfs/codegen: addons/physfs/CMakeFiles/allegro_physfs.dir/codegen
-.PHONY : addons/physfs/codegen
-
-# Recursive "preinstall" directory target.
-addons/physfs/preinstall:
-.PHONY : addons/physfs/preinstall
-
-# Recursive "clean" directory target.
-addons/physfs/clean: addons/physfs/CMakeFiles/allegro_physfs.dir/clean
-.PHONY : addons/physfs/clean
 
 #=============================================================================
 # Directory level rules for directory addons/primitives
@@ -574,7 +551,6 @@ examples/all: examples/CMakeFiles/ex_multisample_target.dir/all
 examples/all: examples/CMakeFiles/ex_multiwin.dir/all
 examples/all: examples/CMakeFiles/ex_nodisplay.dir/all
 examples/all: examples/CMakeFiles/ex_noframe.dir/all
-examples/all: examples/CMakeFiles/ex_physfs.dir/all
 examples/all: examples/CMakeFiles/ex_pixelformat.dir/all
 examples/all: examples/CMakeFiles/ex_polygon.dir/all
 examples/all: examples/CMakeFiles/ex_premulalpha.dir/all
@@ -703,7 +679,6 @@ examples/codegen: examples/CMakeFiles/ex_multisample_target.dir/codegen
 examples/codegen: examples/CMakeFiles/ex_multiwin.dir/codegen
 examples/codegen: examples/CMakeFiles/ex_nodisplay.dir/codegen
 examples/codegen: examples/CMakeFiles/ex_noframe.dir/codegen
-examples/codegen: examples/CMakeFiles/ex_physfs.dir/codegen
 examples/codegen: examples/CMakeFiles/ex_pixelformat.dir/codegen
 examples/codegen: examples/CMakeFiles/ex_polygon.dir/codegen
 examples/codegen: examples/CMakeFiles/ex_premulalpha.dir/codegen
@@ -836,7 +811,6 @@ examples/clean: examples/CMakeFiles/ex_multisample_target.dir/clean
 examples/clean: examples/CMakeFiles/ex_multiwin.dir/clean
 examples/clean: examples/CMakeFiles/ex_nodisplay.dir/clean
 examples/clean: examples/CMakeFiles/ex_noframe.dir/clean
-examples/clean: examples/CMakeFiles/ex_physfs.dir/clean
 examples/clean: examples/CMakeFiles/ex_pixelformat.dir/clean
 examples/clean: examples/CMakeFiles/ex_polygon.dir/clean
 examples/clean: examples/CMakeFiles/ex_premulalpha.dir/clean
@@ -967,12 +941,12 @@ CMakeFiles/allegro.dir/clean:
 addons/primitives/CMakeFiles/allegro_primitives.dir/all: CMakeFiles/allegro.dir/all
 	$(MAKE) $(MAKESILENT) -f addons/primitives/CMakeFiles/allegro_primitives.dir/build.make addons/primitives/CMakeFiles/allegro_primitives.dir/depend
 	$(MAKE) $(MAKESILENT) -f addons/primitives/CMakeFiles/allegro_primitives.dir/build.make addons/primitives/CMakeFiles/allegro_primitives.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=19 "Built target allegro_primitives"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=18,19 "Built target allegro_primitives"
 .PHONY : addons/primitives/CMakeFiles/allegro_primitives.dir/all
 
 # Build rule for subdir invocation for target.
 addons/primitives/CMakeFiles/allegro_primitives.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 addons/primitives/CMakeFiles/allegro_primitives.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : addons/primitives/CMakeFiles/allegro_primitives.dir/rule
@@ -984,7 +958,7 @@ allegro_primitives: addons/primitives/CMakeFiles/allegro_primitives.dir/rule
 # codegen rule for target.
 addons/primitives/CMakeFiles/allegro_primitives.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f addons/primitives/CMakeFiles/allegro_primitives.dir/build.make addons/primitives/CMakeFiles/allegro_primitives.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=19 "Finished codegen for target allegro_primitives"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=18,19 "Finished codegen for target allegro_primitives"
 .PHONY : addons/primitives/CMakeFiles/allegro_primitives.dir/codegen
 
 # clean rule for target.
@@ -999,12 +973,12 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/clean:
 addons/image/CMakeFiles/allegro_image.dir/all: CMakeFiles/allegro.dir/all
 	$(MAKE) $(MAKESILENT) -f addons/image/CMakeFiles/allegro_image.dir/build.make addons/image/CMakeFiles/allegro_image.dir/depend
 	$(MAKE) $(MAKESILENT) -f addons/image/CMakeFiles/allegro_image.dir/build.make addons/image/CMakeFiles/allegro_image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=16,17 "Built target allegro_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=17 "Built target allegro_image"
 .PHONY : addons/image/CMakeFiles/allegro_image.dir/all
 
 # Build rule for subdir invocation for target.
 addons/image/CMakeFiles/allegro_image.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 addons/image/CMakeFiles/allegro_image.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : addons/image/CMakeFiles/allegro_image.dir/rule
@@ -1016,7 +990,7 @@ allegro_image: addons/image/CMakeFiles/allegro_image.dir/rule
 # codegen rule for target.
 addons/image/CMakeFiles/allegro_image.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f addons/image/CMakeFiles/allegro_image.dir/build.make addons/image/CMakeFiles/allegro_image.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=16,17 "Finished codegen for target allegro_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=17 "Finished codegen for target allegro_image"
 .PHONY : addons/image/CMakeFiles/allegro_image.dir/codegen
 
 # clean rule for target.
@@ -1031,12 +1005,12 @@ addons/image/CMakeFiles/allegro_image.dir/clean:
 addons/font/CMakeFiles/allegro_font.dir/all: CMakeFiles/allegro.dir/all
 	$(MAKE) $(MAKESILENT) -f addons/font/CMakeFiles/allegro_font.dir/build.make addons/font/CMakeFiles/allegro_font.dir/depend
 	$(MAKE) $(MAKESILENT) -f addons/font/CMakeFiles/allegro_font.dir/build.make addons/font/CMakeFiles/allegro_font.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target allegro_font"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=16 "Built target allegro_font"
 .PHONY : addons/font/CMakeFiles/allegro_font.dir/all
 
 # Build rule for subdir invocation for target.
 addons/font/CMakeFiles/allegro_font.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 addons/font/CMakeFiles/allegro_font.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : addons/font/CMakeFiles/allegro_font.dir/rule
@@ -1048,7 +1022,7 @@ allegro_font: addons/font/CMakeFiles/allegro_font.dir/rule
 # codegen rule for target.
 addons/font/CMakeFiles/allegro_font.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f addons/font/CMakeFiles/allegro_font.dir/build.make addons/font/CMakeFiles/allegro_font.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target allegro_font"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=16 "Finished codegen for target allegro_font"
 .PHONY : addons/font/CMakeFiles/allegro_font.dir/codegen
 
 # clean rule for target.
@@ -1134,7 +1108,7 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/all: addons/font/CMakeFiles/allegro_font.d
 
 # Build rule for subdir invocation for target.
 addons/ttf/CMakeFiles/allegro_ttf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 addons/ttf/CMakeFiles/allegro_ttf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : addons/ttf/CMakeFiles/allegro_ttf.dir/rule
@@ -1217,38 +1191,6 @@ addons/memfile/CMakeFiles/allegro_memfile.dir/codegen:
 addons/memfile/CMakeFiles/allegro_memfile.dir/clean:
 	$(MAKE) $(MAKESILENT) -f addons/memfile/CMakeFiles/allegro_memfile.dir/build.make addons/memfile/CMakeFiles/allegro_memfile.dir/clean
 .PHONY : addons/memfile/CMakeFiles/allegro_memfile.dir/clean
-
-#=============================================================================
-# Target rules for target addons/physfs/CMakeFiles/allegro_physfs.dir
-
-# All Build rule for target.
-addons/physfs/CMakeFiles/allegro_physfs.dir/all: CMakeFiles/allegro.dir/all
-	$(MAKE) $(MAKESILENT) -f addons/physfs/CMakeFiles/allegro_physfs.dir/build.make addons/physfs/CMakeFiles/allegro_physfs.dir/depend
-	$(MAKE) $(MAKESILENT) -f addons/physfs/CMakeFiles/allegro_physfs.dir/build.make addons/physfs/CMakeFiles/allegro_physfs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=18 "Built target allegro_physfs"
-.PHONY : addons/physfs/CMakeFiles/allegro_physfs.dir/all
-
-# Build rule for subdir invocation for target.
-addons/physfs/CMakeFiles/allegro_physfs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 11
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 addons/physfs/CMakeFiles/allegro_physfs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
-.PHONY : addons/physfs/CMakeFiles/allegro_physfs.dir/rule
-
-# Convenience name for target.
-allegro_physfs: addons/physfs/CMakeFiles/allegro_physfs.dir/rule
-.PHONY : allegro_physfs
-
-# codegen rule for target.
-addons/physfs/CMakeFiles/allegro_physfs.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f addons/physfs/CMakeFiles/allegro_physfs.dir/build.make addons/physfs/CMakeFiles/allegro_physfs.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=18 "Finished codegen for target allegro_physfs"
-.PHONY : addons/physfs/CMakeFiles/allegro_physfs.dir/codegen
-
-# clean rule for target.
-addons/physfs/CMakeFiles/allegro_physfs.dir/clean:
-	$(MAKE) $(MAKESILENT) -f addons/physfs/CMakeFiles/allegro_physfs.dir/build.make addons/physfs/CMakeFiles/allegro_physfs.dir/clean
-.PHONY : addons/physfs/CMakeFiles/allegro_physfs.dir/clean
 
 #=============================================================================
 # Target rules for target addons/native_dialog/CMakeFiles/allegro_dialog.dir
@@ -1393,12 +1335,12 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/clean:
 demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/all:
 	$(MAKE) $(MAKESILENT) -f demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/build.make demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/depend
 	$(MAKE) $(MAKESILENT) -f demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/build.make demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=21,22,23,24,25 "Built target copy_demo_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=21,22,23,24 "Built target copy_demo_data"
 .PHONY : demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/all
 
 # Build rule for subdir invocation for target.
 demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/rule
@@ -1410,7 +1352,7 @@ copy_demo_data: demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/rule
 # codegen rule for target.
 demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/build.make demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=21,22,23,24,25 "Finished codegen for target copy_demo_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=21,22,23,24 "Finished codegen for target copy_demo_data"
 .PHONY : demos/cosmic_protector/CMakeFiles/copy_demo_data.dir/codegen
 
 # clean rule for target.
@@ -1434,7 +1376,7 @@ demos/speed/CMakeFiles/speed.dir/all: addons/main/CMakeFiles/allegro_main.dir/al
 
 # Build rule for subdir invocation for target.
 demos/speed/CMakeFiles/speed.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demos/speed/CMakeFiles/speed.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : demos/speed/CMakeFiles/speed.dir/rule
@@ -1474,7 +1416,7 @@ demos/skater/CMakeFiles/skater.dir/all: examples/CMakeFiles/copy_example_data.di
 
 # Build rule for subdir invocation for target.
 demos/skater/CMakeFiles/skater.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demos/skater/CMakeFiles/skater.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : demos/skater/CMakeFiles/skater.dir/rule
@@ -1951,7 +1893,7 @@ examples/CMakeFiles/ex_bitmap.dir/all: addons/main/CMakeFiles/allegro_main.dir/a
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_bitmap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_bitmap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_bitmap.dir/rule
@@ -1986,7 +1928,7 @@ examples/CMakeFiles/ex_bitmap_file.dir/all: addons/main/CMakeFiles/allegro_main.
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_bitmap_file.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_bitmap_file.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_bitmap_file.dir/rule
@@ -2059,7 +2001,7 @@ examples/CMakeFiles/ex_blend.dir/all: addons/main/CMakeFiles/allegro_main.dir/al
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_blend.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_blend.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_blend.dir/rule
@@ -2091,7 +2033,7 @@ examples/CMakeFiles/ex_blend2.dir/all: addons/native_dialog/CMakeFiles/allegro_d
 examples/CMakeFiles/ex_blend2.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_blend2.dir/build.make examples/CMakeFiles/ex_blend2.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_blend2.dir/build.make examples/CMakeFiles/ex_blend2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=49 "Built target ex_blend2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_blend2"
 .PHONY : examples/CMakeFiles/ex_blend2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2108,7 +2050,7 @@ ex_blend2: examples/CMakeFiles/ex_blend2.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_blend2.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_blend2.dir/build.make examples/CMakeFiles/ex_blend2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=49 "Finished codegen for target ex_blend2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_blend2"
 .PHONY : examples/CMakeFiles/ex_blend2.dir/codegen
 
 # clean rule for target.
@@ -2127,12 +2069,12 @@ examples/CMakeFiles/ex_blend_bench.dir/all: addons/native_dialog/CMakeFiles/alle
 examples/CMakeFiles/ex_blend_bench.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_blend_bench.dir/build.make examples/CMakeFiles/ex_blend_bench.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_blend_bench.dir/build.make examples/CMakeFiles/ex_blend_bench.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_blend_bench"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=49 "Built target ex_blend_bench"
 .PHONY : examples/CMakeFiles/ex_blend_bench.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_blend_bench.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_blend_bench.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_blend_bench.dir/rule
@@ -2144,7 +2086,7 @@ ex_blend_bench: examples/CMakeFiles/ex_blend_bench.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_blend_bench.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_blend_bench.dir/build.make examples/CMakeFiles/ex_blend_bench.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_blend_bench"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=49 "Finished codegen for target ex_blend_bench"
 .PHONY : examples/CMakeFiles/ex_blend_bench.dir/codegen
 
 # clean rule for target.
@@ -2167,7 +2109,7 @@ examples/CMakeFiles/ex_blend_test.dir/all: addons/main/CMakeFiles/allegro_main.d
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_blend_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_blend_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_blend_test.dir/rule
@@ -2202,7 +2144,7 @@ examples/CMakeFiles/ex_blend_target.dir/all: addons/main/CMakeFiles/allegro_main
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_blend_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_blend_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_blend_target.dir/rule
@@ -2234,12 +2176,12 @@ examples/CMakeFiles/ex_blit.dir/all: addons/native_dialog/CMakeFiles/allegro_dia
 examples/CMakeFiles/ex_blit.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_blit.dir/build.make examples/CMakeFiles/ex_blit.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_blit.dir/build.make examples/CMakeFiles/ex_blit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=50 "Built target ex_blit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_blit"
 .PHONY : examples/CMakeFiles/ex_blit.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_blit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_blit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_blit.dir/rule
@@ -2251,7 +2193,7 @@ ex_blit: examples/CMakeFiles/ex_blit.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_blit.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_blit.dir/build.make examples/CMakeFiles/ex_blit.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=50 "Finished codegen for target ex_blit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_blit"
 .PHONY : examples/CMakeFiles/ex_blit.dir/codegen
 
 # clean rule for target.
@@ -2275,7 +2217,7 @@ examples/CMakeFiles/ex_clip.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_clip.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_clip.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_clip.dir/rule
@@ -2349,7 +2291,7 @@ examples/CMakeFiles/ex_color.dir/all: addons/main/CMakeFiles/allegro_main.dir/al
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_color.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_color.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_color.dir/rule
@@ -2386,7 +2328,7 @@ examples/CMakeFiles/ex_color2.dir/all: addons/main/CMakeFiles/allegro_main.dir/a
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_color2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_color2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_color2.dir/rule
@@ -2457,7 +2399,7 @@ examples/CMakeFiles/ex_convert.dir/all: addons/main/CMakeFiles/allegro_main.dir/
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_convert.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_convert.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_convert.dir/rule
@@ -2492,7 +2434,7 @@ examples/CMakeFiles/ex_cpu.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_cpu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_cpu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_cpu.dir/rule
@@ -2567,7 +2509,7 @@ examples/CMakeFiles/ex_depth_target.dir/all: addons/main/CMakeFiles/allegro_main
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_depth_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_depth_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_depth_target.dir/rule
@@ -2602,7 +2544,7 @@ examples/CMakeFiles/ex_disable_screensaver.dir/all: addons/main/CMakeFiles/alleg
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_disable_screensaver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_disable_screensaver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_disable_screensaver.dir/rule
@@ -2638,7 +2580,7 @@ examples/CMakeFiles/ex_display_events.dir/all: addons/main/CMakeFiles/allegro_ma
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_display_events.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_display_events.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_display_events.dir/rule
@@ -2674,7 +2616,7 @@ examples/CMakeFiles/ex_display_options.dir/all: addons/main/CMakeFiles/allegro_m
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_display_options.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_display_options.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_display_options.dir/rule
@@ -2712,7 +2654,7 @@ examples/CMakeFiles/ex_draw.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_draw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_draw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_draw.dir/rule
@@ -2817,7 +2759,7 @@ examples/CMakeFiles/ex_dualies.dir/all: addons/main/CMakeFiles/allegro_main.dir/
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_dualies.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_dualies.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_dualies.dir/rule
@@ -2921,12 +2863,12 @@ examples/CMakeFiles/ex_fs_resize.dir/all: addons/native_dialog/CMakeFiles/allegr
 examples/CMakeFiles/ex_fs_resize.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_fs_resize.dir/build.make examples/CMakeFiles/ex_fs_resize.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_fs_resize.dir/build.make examples/CMakeFiles/ex_fs_resize.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=57 "Built target ex_fs_resize"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_fs_resize"
 .PHONY : examples/CMakeFiles/ex_fs_resize.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_fs_resize.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_fs_resize.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_fs_resize.dir/rule
@@ -2938,7 +2880,7 @@ ex_fs_resize: examples/CMakeFiles/ex_fs_resize.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_fs_resize.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_fs_resize.dir/build.make examples/CMakeFiles/ex_fs_resize.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=57 "Finished codegen for target ex_fs_resize"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_fs_resize"
 .PHONY : examples/CMakeFiles/ex_fs_resize.dir/codegen
 
 # clean rule for target.
@@ -2958,12 +2900,12 @@ examples/CMakeFiles/ex_fs_window.dir/all: addons/native_dialog/CMakeFiles/allegr
 examples/CMakeFiles/ex_fs_window.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_fs_window.dir/build.make examples/CMakeFiles/ex_fs_window.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_fs_window.dir/build.make examples/CMakeFiles/ex_fs_window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_fs_window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=57 "Built target ex_fs_window"
 .PHONY : examples/CMakeFiles/ex_fs_window.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_fs_window.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_fs_window.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_fs_window.dir/rule
@@ -2975,7 +2917,7 @@ ex_fs_window: examples/CMakeFiles/ex_fs_window.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_fs_window.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_fs_window.dir/build.make examples/CMakeFiles/ex_fs_window.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_fs_window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=57 "Finished codegen for target ex_fs_window"
 .PHONY : examples/CMakeFiles/ex_fs_window.dir/codegen
 
 # clean rule for target.
@@ -2998,7 +2940,7 @@ examples/CMakeFiles/ex_icon.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_icon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_icon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_icon.dir/rule
@@ -3033,7 +2975,7 @@ examples/CMakeFiles/ex_icon2.dir/all: addons/main/CMakeFiles/allegro_main.dir/al
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_icon2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_icon2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_icon2.dir/rule
@@ -3068,7 +3010,7 @@ examples/CMakeFiles/ex_haptic.dir/all: addons/main/CMakeFiles/allegro_main.dir/a
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_haptic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_haptic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_haptic.dir/rule
@@ -3105,7 +3047,7 @@ examples/CMakeFiles/ex_haptic2.dir/all: addons/main/CMakeFiles/allegro_main.dir/
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_haptic2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_haptic2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_haptic2.dir/rule
@@ -3141,7 +3083,7 @@ examples/CMakeFiles/ex_joystick_events.dir/all: addons/main/CMakeFiles/allegro_m
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_joystick_events.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_joystick_events.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_joystick_events.dir/rule
@@ -3176,7 +3118,7 @@ examples/CMakeFiles/ex_joystick_hotplugging.dir/all: addons/main/CMakeFiles/alle
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_joystick_hotplugging.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_joystick_hotplugging.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_joystick_hotplugging.dir/rule
@@ -3279,7 +3221,7 @@ examples/CMakeFiles/ex_lines.dir/all: addons/main/CMakeFiles/allegro_main.dir/al
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_lines.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_lines.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_lines.dir/rule
@@ -3316,7 +3258,7 @@ examples/CMakeFiles/ex_loading_thread.dir/all: addons/main/CMakeFiles/allegro_ma
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_loading_thread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_loading_thread.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_loading_thread.dir/rule
@@ -3495,7 +3437,7 @@ examples/CMakeFiles/ex_mouse_events.dir/all: addons/main/CMakeFiles/allegro_main
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_mouse_events.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_mouse_events.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_mouse_events.dir/rule
@@ -3565,7 +3507,7 @@ examples/CMakeFiles/ex_mouse_warp.dir/all: addons/main/CMakeFiles/allegro_main.d
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_mouse_warp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_mouse_warp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_mouse_warp.dir/rule
@@ -3602,7 +3544,7 @@ examples/CMakeFiles/ex_multisample.dir/all: addons/main/CMakeFiles/allegro_main.
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_multisample.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_multisample.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_multisample.dir/rule
@@ -3635,12 +3577,12 @@ examples/CMakeFiles/ex_multisample_target.dir/all: addons/native_dialog/CMakeFil
 examples/CMakeFiles/ex_multisample_target.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_multisample_target.dir/build.make examples/CMakeFiles/ex_multisample_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_multisample_target.dir/build.make examples/CMakeFiles/ex_multisample_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_multisample_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=65 "Built target ex_multisample_target"
 .PHONY : examples/CMakeFiles/ex_multisample_target.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_multisample_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_multisample_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_multisample_target.dir/rule
@@ -3652,7 +3594,7 @@ ex_multisample_target: examples/CMakeFiles/ex_multisample_target.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_multisample_target.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_multisample_target.dir/build.make examples/CMakeFiles/ex_multisample_target.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_multisample_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=65 "Finished codegen for target ex_multisample_target"
 .PHONY : examples/CMakeFiles/ex_multisample_target.dir/codegen
 
 # clean rule for target.
@@ -3670,12 +3612,12 @@ examples/CMakeFiles/ex_multiwin.dir/all: addons/native_dialog/CMakeFiles/allegro
 examples/CMakeFiles/ex_multiwin.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_multiwin.dir/build.make examples/CMakeFiles/ex_multiwin.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_multiwin.dir/build.make examples/CMakeFiles/ex_multiwin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=65 "Built target ex_multiwin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_multiwin"
 .PHONY : examples/CMakeFiles/ex_multiwin.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_multiwin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_multiwin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_multiwin.dir/rule
@@ -3687,7 +3629,7 @@ ex_multiwin: examples/CMakeFiles/ex_multiwin.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_multiwin.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_multiwin.dir/build.make examples/CMakeFiles/ex_multiwin.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=65 "Finished codegen for target ex_multiwin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_multiwin"
 .PHONY : examples/CMakeFiles/ex_multiwin.dir/codegen
 
 # clean rule for target.
@@ -3710,7 +3652,7 @@ examples/CMakeFiles/ex_nodisplay.dir/all: addons/main/CMakeFiles/allegro_main.di
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_nodisplay.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_nodisplay.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_nodisplay.dir/rule
@@ -3740,7 +3682,7 @@ examples/CMakeFiles/ex_noframe.dir/all: addons/native_dialog/CMakeFiles/allegro_
 examples/CMakeFiles/ex_noframe.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_noframe.dir/build.make examples/CMakeFiles/ex_noframe.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_noframe.dir/build.make examples/CMakeFiles/ex_noframe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_noframe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=66 "Built target ex_noframe"
 .PHONY : examples/CMakeFiles/ex_noframe.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3757,49 +3699,13 @@ ex_noframe: examples/CMakeFiles/ex_noframe.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_noframe.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_noframe.dir/build.make examples/CMakeFiles/ex_noframe.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_noframe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=66 "Finished codegen for target ex_noframe"
 .PHONY : examples/CMakeFiles/ex_noframe.dir/codegen
 
 # clean rule for target.
 examples/CMakeFiles/ex_noframe.dir/clean:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_noframe.dir/build.make examples/CMakeFiles/ex_noframe.dir/clean
 .PHONY : examples/CMakeFiles/ex_noframe.dir/clean
-
-#=============================================================================
-# Target rules for target examples/CMakeFiles/ex_physfs.dir
-
-# All Build rule for target.
-examples/CMakeFiles/ex_physfs.dir/all: CMakeFiles/allegro.dir/all
-examples/CMakeFiles/ex_physfs.dir/all: addons/image/CMakeFiles/allegro_image.dir/all
-examples/CMakeFiles/ex_physfs.dir/all: addons/physfs/CMakeFiles/allegro_physfs.dir/all
-examples/CMakeFiles/ex_physfs.dir/all: addons/native_dialog/CMakeFiles/allegro_dialog.dir/all
-examples/CMakeFiles/ex_physfs.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_physfs.dir/build.make examples/CMakeFiles/ex_physfs.dir/depend
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_physfs.dir/build.make examples/CMakeFiles/ex_physfs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_physfs"
-.PHONY : examples/CMakeFiles/ex_physfs.dir/all
-
-# Build rule for subdir invocation for target.
-examples/CMakeFiles/ex_physfs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_physfs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/ex_physfs.dir/rule
-
-# Convenience name for target.
-ex_physfs: examples/CMakeFiles/ex_physfs.dir/rule
-.PHONY : ex_physfs
-
-# codegen rule for target.
-examples/CMakeFiles/ex_physfs.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_physfs.dir/build.make examples/CMakeFiles/ex_physfs.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_physfs"
-.PHONY : examples/CMakeFiles/ex_physfs.dir/codegen
-
-# clean rule for target.
-examples/CMakeFiles/ex_physfs.dir/clean:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_physfs.dir/build.make examples/CMakeFiles/ex_physfs.dir/clean
-.PHONY : examples/CMakeFiles/ex_physfs.dir/clean
 
 #=============================================================================
 # Target rules for target examples/CMakeFiles/ex_pixelformat.dir
@@ -3818,7 +3724,7 @@ examples/CMakeFiles/ex_pixelformat.dir/all: addons/main/CMakeFiles/allegro_main.
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_pixelformat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_pixelformat.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_pixelformat.dir/rule
@@ -3849,12 +3755,12 @@ examples/CMakeFiles/ex_polygon.dir/all: addons/native_dialog/CMakeFiles/allegro_
 examples/CMakeFiles/ex_polygon.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_polygon.dir/build.make examples/CMakeFiles/ex_polygon.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_polygon.dir/build.make examples/CMakeFiles/ex_polygon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=68 "Built target ex_polygon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_polygon"
 .PHONY : examples/CMakeFiles/ex_polygon.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_polygon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_polygon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_polygon.dir/rule
@@ -3866,7 +3772,7 @@ ex_polygon: examples/CMakeFiles/ex_polygon.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_polygon.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_polygon.dir/build.make examples/CMakeFiles/ex_polygon.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=68 "Finished codegen for target ex_polygon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_polygon"
 .PHONY : examples/CMakeFiles/ex_polygon.dir/codegen
 
 # clean rule for target.
@@ -3884,12 +3790,12 @@ examples/CMakeFiles/ex_premulalpha.dir/all: addons/native_dialog/CMakeFiles/alle
 examples/CMakeFiles/ex_premulalpha.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_premulalpha.dir/build.make examples/CMakeFiles/ex_premulalpha.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_premulalpha.dir/build.make examples/CMakeFiles/ex_premulalpha.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_premulalpha"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=68 "Built target ex_premulalpha"
 .PHONY : examples/CMakeFiles/ex_premulalpha.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_premulalpha.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_premulalpha.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_premulalpha.dir/rule
@@ -3901,7 +3807,7 @@ ex_premulalpha: examples/CMakeFiles/ex_premulalpha.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_premulalpha.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_premulalpha.dir/build.make examples/CMakeFiles/ex_premulalpha.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_premulalpha"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=68 "Finished codegen for target ex_premulalpha"
 .PHONY : examples/CMakeFiles/ex_premulalpha.dir/codegen
 
 # clean rule for target.
@@ -3926,7 +3832,7 @@ examples/CMakeFiles/ex_prim.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_prim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_prim.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_prim.dir/rule
@@ -3961,7 +3867,7 @@ examples/CMakeFiles/ex_prim_shader.dir/all: addons/main/CMakeFiles/allegro_main.
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_prim_shader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_prim_shader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_prim_shader.dir/rule
@@ -3992,12 +3898,12 @@ examples/CMakeFiles/ex_reparent.dir/all: addons/native_dialog/CMakeFiles/allegro
 examples/CMakeFiles/ex_reparent.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_reparent.dir/build.make examples/CMakeFiles/ex_reparent.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_reparent.dir/build.make examples/CMakeFiles/ex_reparent.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=70 "Built target ex_reparent"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_reparent"
 .PHONY : examples/CMakeFiles/ex_reparent.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_reparent.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_reparent.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_reparent.dir/rule
@@ -4009,7 +3915,7 @@ ex_reparent: examples/CMakeFiles/ex_reparent.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_reparent.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_reparent.dir/build.make examples/CMakeFiles/ex_reparent.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=70 "Finished codegen for target ex_reparent"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_reparent"
 .PHONY : examples/CMakeFiles/ex_reparent.dir/codegen
 
 # clean rule for target.
@@ -4032,7 +3938,7 @@ examples/CMakeFiles/ex_resize.dir/all: addons/main/CMakeFiles/allegro_main.dir/a
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_resize.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_resize.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_resize.dir/rule
@@ -4098,12 +4004,12 @@ examples/CMakeFiles/ex_rotate.dir/all: addons/native_dialog/CMakeFiles/allegro_d
 examples/CMakeFiles/ex_rotate.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_rotate.dir/build.make examples/CMakeFiles/ex_rotate.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_rotate.dir/build.make examples/CMakeFiles/ex_rotate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=71 "Built target ex_rotate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_rotate"
 .PHONY : examples/CMakeFiles/ex_rotate.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_rotate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_rotate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_rotate.dir/rule
@@ -4115,7 +4021,7 @@ ex_rotate: examples/CMakeFiles/ex_rotate.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_rotate.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_rotate.dir/build.make examples/CMakeFiles/ex_rotate.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=71 "Finished codegen for target ex_rotate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_rotate"
 .PHONY : examples/CMakeFiles/ex_rotate.dir/codegen
 
 # clean rule for target.
@@ -4138,7 +4044,7 @@ examples/CMakeFiles/ex_scale.dir/all: addons/main/CMakeFiles/allegro_main.dir/al
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_scale.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_scale.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_scale.dir/rule
@@ -4173,7 +4079,7 @@ examples/CMakeFiles/ex_shader.dir/all: addons/main/CMakeFiles/allegro_main.dir/a
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_shader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_shader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_shader.dir/rule
@@ -4208,7 +4114,7 @@ examples/CMakeFiles/ex_shader_multitex.dir/all: addons/main/CMakeFiles/allegro_m
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_shader_multitex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_shader_multitex.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_shader_multitex.dir/rule
@@ -4243,7 +4149,7 @@ examples/CMakeFiles/ex_shader_target.dir/all: addons/main/CMakeFiles/allegro_mai
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_shader_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_shader_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_shader_target.dir/rule
@@ -4314,7 +4220,7 @@ examples/CMakeFiles/ex_threads.dir/all: addons/main/CMakeFiles/allegro_main.dir/
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_threads.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_threads.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_threads.dir/rule
@@ -4377,12 +4283,12 @@ examples/CMakeFiles/ex_timedwait.dir/all: addons/native_dialog/CMakeFiles/allegr
 examples/CMakeFiles/ex_timedwait.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_timedwait.dir/build.make examples/CMakeFiles/ex_timedwait.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_timedwait.dir/build.make examples/CMakeFiles/ex_timedwait.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=74 "Built target ex_timedwait"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_timedwait"
 .PHONY : examples/CMakeFiles/ex_timedwait.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_timedwait.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_timedwait.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_timedwait.dir/rule
@@ -4394,7 +4300,7 @@ ex_timedwait: examples/CMakeFiles/ex_timedwait.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_timedwait.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_timedwait.dir/build.make examples/CMakeFiles/ex_timedwait.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=74 "Finished codegen for target ex_timedwait"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_timedwait"
 .PHONY : examples/CMakeFiles/ex_timedwait.dir/codegen
 
 # clean rule for target.
@@ -4413,12 +4319,12 @@ examples/CMakeFiles/ex_timer.dir/all: addons/native_dialog/CMakeFiles/allegro_di
 examples/CMakeFiles/ex_timer.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_timer.dir/build.make examples/CMakeFiles/ex_timer.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_timer.dir/build.make examples/CMakeFiles/ex_timer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_timer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=74 "Built target ex_timer"
 .PHONY : examples/CMakeFiles/ex_timer.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_timer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_timer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_timer.dir/rule
@@ -4430,7 +4336,7 @@ ex_timer: examples/CMakeFiles/ex_timer.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_timer.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_timer.dir/build.make examples/CMakeFiles/ex_timer.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_timer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=74 "Finished codegen for target ex_timer"
 .PHONY : examples/CMakeFiles/ex_timer.dir/codegen
 
 # clean rule for target.
@@ -4487,7 +4393,7 @@ examples/CMakeFiles/ex_touch_input.dir/all: addons/main/CMakeFiles/allegro_main.
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_touch_input.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_touch_input.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_touch_input.dir/rule
@@ -4519,7 +4425,7 @@ examples/CMakeFiles/ex_transform.dir/all: addons/native_dialog/CMakeFiles/allegr
 examples/CMakeFiles/ex_transform.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_transform.dir/build.make examples/CMakeFiles/ex_transform.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_transform.dir/build.make examples/CMakeFiles/ex_transform.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=75 "Built target ex_transform"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_transform"
 .PHONY : examples/CMakeFiles/ex_transform.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4536,7 +4442,7 @@ ex_transform: examples/CMakeFiles/ex_transform.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_transform.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_transform.dir/build.make examples/CMakeFiles/ex_transform.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=75 "Finished codegen for target ex_transform"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_transform"
 .PHONY : examples/CMakeFiles/ex_transform.dir/codegen
 
 # clean rule for target.
@@ -4555,12 +4461,12 @@ examples/CMakeFiles/ex_vertex_buffer.dir/all: addons/native_dialog/CMakeFiles/al
 examples/CMakeFiles/ex_vertex_buffer.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_vertex_buffer.dir/build.make examples/CMakeFiles/ex_vertex_buffer.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_vertex_buffer.dir/build.make examples/CMakeFiles/ex_vertex_buffer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=76 "Built target ex_vertex_buffer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_vertex_buffer"
 .PHONY : examples/CMakeFiles/ex_vertex_buffer.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_vertex_buffer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_vertex_buffer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_vertex_buffer.dir/rule
@@ -4572,7 +4478,7 @@ ex_vertex_buffer: examples/CMakeFiles/ex_vertex_buffer.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_vertex_buffer.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_vertex_buffer.dir/build.make examples/CMakeFiles/ex_vertex_buffer.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=76 "Finished codegen for target ex_vertex_buffer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_vertex_buffer"
 .PHONY : examples/CMakeFiles/ex_vertex_buffer.dir/codegen
 
 # clean rule for target.
@@ -4597,7 +4503,7 @@ examples/CMakeFiles/ex_vsync.dir/all: addons/main/CMakeFiles/allegro_main.dir/al
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_vsync.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_vsync.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_vsync.dir/rule
@@ -4701,7 +4607,7 @@ examples/CMakeFiles/ex_window_maximized.dir/all: addons/native_dialog/CMakeFiles
 examples/CMakeFiles/ex_window_maximized.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_window_maximized.dir/build.make examples/CMakeFiles/ex_window_maximized.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_window_maximized.dir/build.make examples/CMakeFiles/ex_window_maximized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=77 "Built target ex_window_maximized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_window_maximized"
 .PHONY : examples/CMakeFiles/ex_window_maximized.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4718,7 +4624,7 @@ ex_window_maximized: examples/CMakeFiles/ex_window_maximized.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_window_maximized.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_window_maximized.dir/build.make examples/CMakeFiles/ex_window_maximized.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=77 "Finished codegen for target ex_window_maximized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_window_maximized"
 .PHONY : examples/CMakeFiles/ex_window_maximized.dir/codegen
 
 # clean rule for target.
@@ -4737,12 +4643,12 @@ examples/CMakeFiles/ex_window_title.dir/all: addons/native_dialog/CMakeFiles/all
 examples/CMakeFiles/ex_window_title.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_window_title.dir/build.make examples/CMakeFiles/ex_window_title.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_window_title.dir/build.make examples/CMakeFiles/ex_window_title.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_window_title"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=77 "Built target ex_window_title"
 .PHONY : examples/CMakeFiles/ex_window_title.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_window_title.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_window_title.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_window_title.dir/rule
@@ -4754,7 +4660,7 @@ ex_window_title: examples/CMakeFiles/ex_window_title.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_window_title.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_window_title.dir/build.make examples/CMakeFiles/ex_window_title.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_window_title"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=77 "Finished codegen for target ex_window_title"
 .PHONY : examples/CMakeFiles/ex_window_title.dir/codegen
 
 # clean rule for target.
@@ -4809,12 +4715,12 @@ examples/CMakeFiles/ex_video.dir/all: addons/video/CMakeFiles/allegro_video.dir/
 examples/CMakeFiles/ex_video.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_video.dir/build.make examples/CMakeFiles/ex_video.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_video.dir/build.make examples/CMakeFiles/ex_video.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_video"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=76 "Built target ex_video"
 .PHONY : examples/CMakeFiles/ex_video.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_video.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_video.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_video.dir/rule
@@ -4826,7 +4732,7 @@ ex_video: examples/CMakeFiles/ex_video.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_video.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_video.dir/build.make examples/CMakeFiles/ex_video.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_video"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=76 "Finished codegen for target ex_video"
 .PHONY : examples/CMakeFiles/ex_video.dir/codegen
 
 # clean rule for target.
@@ -4913,12 +4819,12 @@ examples/CMakeFiles/ex_opengl.dir/all: addons/native_dialog/CMakeFiles/allegro_d
 examples/CMakeFiles/ex_opengl.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_opengl.dir/build.make examples/CMakeFiles/ex_opengl.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_opengl.dir/build.make examples/CMakeFiles/ex_opengl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=66 "Built target ex_opengl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_opengl"
 .PHONY : examples/CMakeFiles/ex_opengl.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_opengl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_opengl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_opengl.dir/rule
@@ -4930,7 +4836,7 @@ ex_opengl: examples/CMakeFiles/ex_opengl.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_opengl.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_opengl.dir/build.make examples/CMakeFiles/ex_opengl.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=66 "Finished codegen for target ex_opengl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_opengl"
 .PHONY : examples/CMakeFiles/ex_opengl.dir/codegen
 
 # clean rule for target.
@@ -4953,7 +4859,7 @@ examples/CMakeFiles/ex_opengl_pixel_shader.dir/all: addons/main/CMakeFiles/alleg
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_opengl_pixel_shader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_opengl_pixel_shader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_opengl_pixel_shader.dir/rule
@@ -4989,7 +4895,7 @@ examples/CMakeFiles/ex_palette.dir/all: addons/main/CMakeFiles/allegro_main.dir/
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_palette.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_palette.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_palette.dir/rule
@@ -5020,12 +4926,12 @@ examples/CMakeFiles/ex_font.dir/all: addons/native_dialog/CMakeFiles/allegro_dia
 examples/CMakeFiles/ex_font.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_font.dir/build.make examples/CMakeFiles/ex_font.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_font.dir/build.make examples/CMakeFiles/ex_font.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=56 "Built target ex_font"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_font"
 .PHONY : examples/CMakeFiles/ex_font.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_font.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_font.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_font.dir/rule
@@ -5037,7 +4943,7 @@ ex_font: examples/CMakeFiles/ex_font.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_font.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_font.dir/build.make examples/CMakeFiles/ex_font.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=56 "Finished codegen for target ex_font"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_font"
 .PHONY : examples/CMakeFiles/ex_font.dir/codegen
 
 # clean rule for target.
@@ -5058,12 +4964,12 @@ examples/CMakeFiles/ex_font_justify.dir/all: addons/native_dialog/CMakeFiles/all
 examples/CMakeFiles/ex_font_justify.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_font_justify.dir/build.make examples/CMakeFiles/ex_font_justify.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_font_justify.dir/build.make examples/CMakeFiles/ex_font_justify.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_font_justify"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=56 "Built target ex_font_justify"
 .PHONY : examples/CMakeFiles/ex_font_justify.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_font_justify.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_font_justify.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_font_justify.dir/rule
@@ -5075,7 +4981,7 @@ ex_font_justify: examples/CMakeFiles/ex_font_justify.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_font_justify.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_font_justify.dir/build.make examples/CMakeFiles/ex_font_justify.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_font_justify"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=56 "Finished codegen for target ex_font_justify"
 .PHONY : examples/CMakeFiles/ex_font_justify.dir/codegen
 
 # clean rule for target.
@@ -5102,7 +5008,7 @@ examples/CMakeFiles/ex_font_multiline.dir/all: addons/main/CMakeFiles/allegro_ma
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_font_multiline.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_font_multiline.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_font_multiline.dir/rule
@@ -5140,7 +5046,7 @@ examples/CMakeFiles/ex_logo.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_logo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_logo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_logo.dir/rule
@@ -5172,12 +5078,12 @@ examples/CMakeFiles/ex_projection.dir/all: addons/native_dialog/CMakeFiles/alleg
 examples/CMakeFiles/ex_projection.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_projection.dir/build.make examples/CMakeFiles/ex_projection.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_projection.dir/build.make examples/CMakeFiles/ex_projection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=69 "Built target ex_projection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_projection"
 .PHONY : examples/CMakeFiles/ex_projection.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_projection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_projection.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_projection.dir/rule
@@ -5189,7 +5095,7 @@ ex_projection: examples/CMakeFiles/ex_projection.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_projection.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_projection.dir/build.make examples/CMakeFiles/ex_projection.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=69 "Finished codegen for target ex_projection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_projection"
 .PHONY : examples/CMakeFiles/ex_projection.dir/codegen
 
 # clean rule for target.
@@ -5209,12 +5115,12 @@ examples/CMakeFiles/ex_projection2.dir/all: addons/native_dialog/CMakeFiles/alle
 examples/CMakeFiles/ex_projection2.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_projection2.dir/build.make examples/CMakeFiles/ex_projection2.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_projection2.dir/build.make examples/CMakeFiles/ex_projection2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_projection2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=69 "Built target ex_projection2"
 .PHONY : examples/CMakeFiles/ex_projection2.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_projection2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_projection2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_projection2.dir/rule
@@ -5226,7 +5132,7 @@ ex_projection2: examples/CMakeFiles/ex_projection2.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_projection2.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_projection2.dir/build.make examples/CMakeFiles/ex_projection2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_projection2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=69 "Finished codegen for target ex_projection2"
 .PHONY : examples/CMakeFiles/ex_projection2.dir/codegen
 
 # clean rule for target.
@@ -5247,12 +5153,12 @@ examples/CMakeFiles/ex_camera.dir/all: addons/native_dialog/CMakeFiles/allegro_d
 examples/CMakeFiles/ex_camera.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_camera.dir/build.make examples/CMakeFiles/ex_camera.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_camera.dir/build.make examples/CMakeFiles/ex_camera.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_camera"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=50 "Built target ex_camera"
 .PHONY : examples/CMakeFiles/ex_camera.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_camera.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_camera.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_camera.dir/rule
@@ -5264,7 +5170,7 @@ ex_camera: examples/CMakeFiles/ex_camera.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_camera.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_camera.dir/build.make examples/CMakeFiles/ex_camera.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_camera"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=50 "Finished codegen for target ex_camera"
 .PHONY : examples/CMakeFiles/ex_camera.dir/codegen
 
 # clean rule for target.
@@ -5285,12 +5191,12 @@ examples/CMakeFiles/ex_ttf.dir/all: addons/native_dialog/CMakeFiles/allegro_dial
 examples/CMakeFiles/ex_ttf.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_ttf.dir/build.make examples/CMakeFiles/ex_ttf.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_ttf.dir/build.make examples/CMakeFiles/ex_ttf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_ttf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=75 "Built target ex_ttf"
 .PHONY : examples/CMakeFiles/ex_ttf.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_ttf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_ttf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_ttf.dir/rule
@@ -5302,7 +5208,7 @@ ex_ttf: examples/CMakeFiles/ex_ttf.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_ttf.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_ttf.dir/build.make examples/CMakeFiles/ex_ttf.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_ttf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=75 "Finished codegen for target ex_ttf"
 .PHONY : examples/CMakeFiles/ex_ttf.dir/codegen
 
 # clean rule for target.
@@ -5321,12 +5227,12 @@ examples/CMakeFiles/ex_acodec.dir/all: addons/native_dialog/CMakeFiles/allegro_d
 examples/CMakeFiles/ex_acodec.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_acodec.dir/build.make examples/CMakeFiles/ex_acodec.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_acodec.dir/build.make examples/CMakeFiles/ex_acodec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_acodec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=46 "Built target ex_acodec"
 .PHONY : examples/CMakeFiles/ex_acodec.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_acodec.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_acodec.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_acodec.dir/rule
@@ -5338,7 +5244,7 @@ ex_acodec: examples/CMakeFiles/ex_acodec.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_acodec.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_acodec.dir/build.make examples/CMakeFiles/ex_acodec.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_acodec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=46 "Finished codegen for target ex_acodec"
 .PHONY : examples/CMakeFiles/ex_acodec.dir/codegen
 
 # clean rule for target.
@@ -5401,7 +5307,7 @@ examples/CMakeFiles/ex_audio_chain.dir/all: addons/main/CMakeFiles/allegro_main.
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_audio_chain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_audio_chain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_audio_chain.dir/rule
@@ -5439,7 +5345,7 @@ examples/CMakeFiles/ex_audio_props.dir/all: addons/main/CMakeFiles/allegro_main.
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_audio_props.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_audio_props.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_audio_props.dir/rule
@@ -5476,7 +5382,7 @@ examples/CMakeFiles/ex_audio_simple.dir/all: addons/main/CMakeFiles/allegro_main
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_audio_simple.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_audio_simple.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_audio_simple.dir/rule
@@ -5512,7 +5418,7 @@ examples/CMakeFiles/ex_audio_timer.dir/all: addons/main/CMakeFiles/allegro_main.
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_audio_timer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_audio_timer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_audio_timer.dir/rule
@@ -5549,7 +5455,7 @@ examples/CMakeFiles/ex_haiku.dir/all: addons/main/CMakeFiles/allegro_main.dir/al
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_haiku.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_haiku.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_haiku.dir/rule
@@ -5696,7 +5602,7 @@ examples/CMakeFiles/ex_record.dir/all: addons/main/CMakeFiles/allegro_main.dir/a
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_record.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_record.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_record.dir/rule
@@ -5735,7 +5641,7 @@ examples/CMakeFiles/ex_record_name.dir/all: addons/main/CMakeFiles/allegro_main.
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_record_name.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_record_name.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_record_name.dir/rule
@@ -5765,12 +5671,12 @@ examples/CMakeFiles/ex_resample_test.dir/all: addons/native_dialog/CMakeFiles/al
 examples/CMakeFiles/ex_resample_test.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_resample_test.dir/build.make examples/CMakeFiles/ex_resample_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_resample_test.dir/build.make examples/CMakeFiles/ex_resample_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_resample_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=70 "Built target ex_resample_test"
 .PHONY : examples/CMakeFiles/ex_resample_test.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_resample_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_resample_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_resample_test.dir/rule
@@ -5782,7 +5688,7 @@ ex_resample_test: examples/CMakeFiles/ex_resample_test.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_resample_test.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_resample_test.dir/build.make examples/CMakeFiles/ex_resample_test.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_resample_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=70 "Finished codegen for target ex_resample_test"
 .PHONY : examples/CMakeFiles/ex_resample_test.dir/codegen
 
 # clean rule for target.
@@ -5800,12 +5706,12 @@ examples/CMakeFiles/ex_saw.dir/all: addons/native_dialog/CMakeFiles/allegro_dial
 examples/CMakeFiles/ex_saw.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_saw.dir/build.make examples/CMakeFiles/ex_saw.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_saw.dir/build.make examples/CMakeFiles/ex_saw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Built target ex_saw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=71 "Built target ex_saw"
 .PHONY : examples/CMakeFiles/ex_saw.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_saw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_saw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_saw.dir/rule
@@ -5817,7 +5723,7 @@ ex_saw: examples/CMakeFiles/ex_saw.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/ex_saw.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_saw.dir/build.make examples/CMakeFiles/ex_saw.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num= "Finished codegen for target ex_saw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=71 "Finished codegen for target ex_saw"
 .PHONY : examples/CMakeFiles/ex_saw.dir/codegen
 
 # clean rule for target.
@@ -5880,7 +5786,7 @@ examples/CMakeFiles/ex_stream_seek.dir/all: addons/main/CMakeFiles/allegro_main.
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_stream_seek.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_stream_seek.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_stream_seek.dir/rule
@@ -5918,7 +5824,7 @@ examples/CMakeFiles/ex_synth.dir/all: addons/main/CMakeFiles/allegro_main.dir/al
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_synth.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_synth.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_synth.dir/rule
@@ -5990,7 +5896,7 @@ examples/CMakeFiles/ex_menu.dir/all: addons/main/CMakeFiles/allegro_main.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/ex_menu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_menu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/ex_menu.dir/rule
@@ -6017,12 +5923,12 @@ examples/CMakeFiles/ex_menu.dir/clean:
 examples/CMakeFiles/copy_example_data.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/copy_example_data.dir/build.make examples/CMakeFiles/copy_example_data.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/copy_example_data.dir/build.make examples/CMakeFiles/copy_example_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36 "Built target copy_example_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36 "Built target copy_example_data"
 .PHONY : examples/CMakeFiles/copy_example_data.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/copy_example_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/copy_example_data.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/copy_example_data.dir/rule
@@ -6034,7 +5940,7 @@ copy_example_data: examples/CMakeFiles/copy_example_data.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/copy_example_data.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/copy_example_data.dir/build.make examples/CMakeFiles/copy_example_data.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36 "Finished codegen for target copy_example_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36 "Finished codegen for target copy_example_data"
 .PHONY : examples/CMakeFiles/copy_example_data.dir/codegen
 
 # clean rule for target.
@@ -6061,7 +5967,7 @@ tests/CMakeFiles/test_driver.dir/all: examples/CMakeFiles/copy_example_data.dir/
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_driver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_driver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_driver.dir/rule
@@ -6093,7 +5999,7 @@ tests/CMakeFiles/run_tests.dir/all: tests/CMakeFiles/test_driver.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/run_tests.dir/rule
@@ -6125,7 +6031,7 @@ tests/CMakeFiles/run_tests_gl.dir/all: tests/CMakeFiles/test_driver.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/run_tests_gl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_tests_gl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/run_tests_gl.dir/rule
@@ -6157,7 +6063,7 @@ tests/CMakeFiles/run_tests_gl12.dir/all: tests/CMakeFiles/test_driver.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/run_tests_gl12.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_tests_gl12.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/run_tests_gl12.dir/rule
@@ -6189,7 +6095,7 @@ tests/CMakeFiles/run_tests_gl20.dir/all: tests/CMakeFiles/test_driver.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/run_tests_gl20.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_tests_gl20.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/run_tests_gl20.dir/rule
@@ -6221,7 +6127,7 @@ tests/CMakeFiles/run_tests_d3d.dir/all: tests/CMakeFiles/test_driver.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/run_tests_d3d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_tests_d3d.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/run_tests_d3d.dir/rule
@@ -6253,7 +6159,7 @@ tests/CMakeFiles/run_tests_wine.dir/all: tests/CMakeFiles/test_driver.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/run_tests_wine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_tests_wine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/run_tests_wine.dir/rule
@@ -6285,7 +6191,7 @@ tests/CMakeFiles/run_tests_wine_gl.dir/all: tests/CMakeFiles/test_driver.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/run_tests_wine_gl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_tests_wine_gl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/run_tests_wine_gl.dir/rule
@@ -6317,7 +6223,7 @@ tests/CMakeFiles/run_tests_shaders.dir/all: tests/CMakeFiles/test_driver.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/run_tests_shaders.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_tests_shaders.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/run_tests_shaders.dir/rule
@@ -6344,12 +6250,12 @@ tests/CMakeFiles/run_tests_shaders.dir/clean:
 docs/CMakeFiles/docs.dir/all:
 	$(MAKE) $(MAKESILENT) -f docs/CMakeFiles/docs.dir/build.make docs/CMakeFiles/docs.dir/depend
 	$(MAKE) $(MAKESILENT) -f docs/CMakeFiles/docs.dir/build.make docs/CMakeFiles/docs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=45,46 "Built target docs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=45 "Built target docs"
 .PHONY : docs/CMakeFiles/docs.dir/all
 
 # Build rule for subdir invocation for target.
 docs/CMakeFiles/docs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/docs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/susamogus/programming/Final_project/allegro/build/CMakeFiles 0
 .PHONY : docs/CMakeFiles/docs.dir/rule
@@ -6361,7 +6267,7 @@ docs: docs/CMakeFiles/docs.dir/rule
 # codegen rule for target.
 docs/CMakeFiles/docs.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f docs/CMakeFiles/docs.dir/build.make docs/CMakeFiles/docs.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=45,46 "Finished codegen for target docs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/susamogus/programming/Final_project/allegro/build/CMakeFiles --progress-num=45 "Finished codegen for target docs"
 .PHONY : docs/CMakeFiles/docs.dir/codegen
 
 # clean rule for target.

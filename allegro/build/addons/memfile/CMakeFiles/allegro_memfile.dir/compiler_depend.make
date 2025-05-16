@@ -3,6 +3,7 @@
 
 addons/memfile/CMakeFiles/allegro_memfile.dir/memfile.c.o: /home/susamogus/programming/Final_project/allegro/addons/memfile/memfile.c \
   /home/susamogus/programming/Final_project/allegro/addons/memfile/allegro5/allegro_memfile.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -37,7 +38,6 @@ addons/memfile/CMakeFiles/allegro_memfile.dir/memfile.c.o: /home/susamogus/progr
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -252,17 +252,19 @@ lib/liballegro.so.5.2.7:
 
 /usr/include/bits/posix2_lim.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/color.h:
-
-/usr/lib/libXcursor.so:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h:
-
-/usr/include/string.h:
-
 /home/susamogus/programming/Final_project/allegro/include/allegro5/threads.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/clipboard.h:
+
+/usr/include/bits/byteswap.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/asm/errno.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_lock.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/transformations.h:
 
@@ -308,23 +310,25 @@ lib/liballegro.so.5.2.7:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/error.h:
 
+/usr/lib/libXcursor.so:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/color.h:
+
+/usr/include/string.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h:
+
 /usr/lib/libgcc_s.so.1:
 
 /usr/include/bits/confname.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/base.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h:
+include/allegro5/platform/alplatf.h:
 
-/usr/include/bits/byteswap.h:
-
-/usr/include/asm/errno.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_lock.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
-
-/usr/include/gnu/stubs-64.h:
+/usr/include/bits/getopt_posix.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_io.h:
 
@@ -402,8 +406,6 @@ lib/liballegro.so.5.2.7:
 
 /usr/include/bits/types.h:
 
-/usr/include/bits/getopt_posix.h:
-
 /usr/include/bits/libc-header-start.h:
 
 /usr/include/bits/local_lim.h:
@@ -411,8 +413,6 @@ lib/liballegro.so.5.2.7:
 /usr/include/bits/long-double.h:
 
 /usr/include/bits/posix1_lim.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 

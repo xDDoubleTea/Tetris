@@ -3,6 +3,7 @@
 
 examples/CMakeFiles/ex_palette.dir/ex_palette.c.o
  /home/susamogus/programming/Final_project/allegro/examples/ex_palette.c
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/addons/color/allegro5/allegro_color.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/allegro_native_dialog.h
@@ -43,7 +44,6 @@ examples/CMakeFiles/ex_palette.dir/ex_palette.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/gl_ext.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h

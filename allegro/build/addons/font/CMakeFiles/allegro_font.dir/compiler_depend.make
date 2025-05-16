@@ -6,6 +6,7 @@ addons/font/CMakeFiles/allegro_font.dir/bmfont.c.o: /home/susamogus/programming/
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/internal/aintern_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/font/font.h \
   /home/susamogus/programming/Final_project/allegro/addons/font/xml.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -41,7 +42,6 @@ addons/font/CMakeFiles/allegro_font.dir/bmfont.c.o: /home/susamogus/programming/
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -159,6 +159,7 @@ addons/font/CMakeFiles/allegro_font.dir/font.c.o: /home/susamogus/programming/Fi
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/internal/aintern_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/font/font.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -202,7 +203,6 @@ addons/font/CMakeFiles/allegro_font.dir/font.c.o: /home/susamogus/programming/Fi
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -318,6 +318,7 @@ addons/font/CMakeFiles/allegro_font.dir/fontbmp.c.o: /home/susamogus/programming
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/internal/aintern_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/font/font.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -366,7 +367,6 @@ addons/font/CMakeFiles/allegro_font.dir/fontbmp.c.o: /home/susamogus/programming
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -479,6 +479,7 @@ addons/font/CMakeFiles/allegro_font.dir/fontbmp.c.o: /home/susamogus/programming
 
 addons/font/CMakeFiles/allegro_font.dir/stdfont.c.o: /home/susamogus/programming/Final_project/allegro/addons/font/stdfont.c \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -513,7 +514,6 @@ addons/font/CMakeFiles/allegro_font.dir/stdfont.c.o: /home/susamogus/programming
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -620,6 +620,7 @@ addons/font/CMakeFiles/allegro_font.dir/stdfont.c.o: /home/susamogus/programming
 addons/font/CMakeFiles/allegro_font.dir/text.c.o: /home/susamogus/programming/Final_project/allegro/addons/font/text.c \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/internal/aintern_font.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -668,7 +669,6 @@ addons/font/CMakeFiles/allegro_font.dir/text.c.o: /home/susamogus/programming/Fi
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -793,6 +793,7 @@ addons/font/CMakeFiles/allegro_font.dir/text.c.o: /home/susamogus/programming/Fi
 
 addons/font/CMakeFiles/allegro_font.dir/xml.c.o: /home/susamogus/programming/Final_project/allegro/addons/font/xml.c \
   /home/susamogus/programming/Final_project/allegro/addons/font/xml.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -827,7 +828,6 @@ addons/font/CMakeFiles/allegro_font.dir/xml.c.o: /home/susamogus/programming/Fin
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1132,12 +1132,6 @@ lib/liballegro.so.5.2.7:
 
 /usr/include/bits/struct_mutex.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
-
-/usr/include/asm/errno.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_lock.h:
-
 /home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_draw.h:
 
 /usr/include/bits/fp-logb.h:
@@ -1178,6 +1172,14 @@ addons/font/CMakeFiles/allegro_font.dir/font.c.o:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/error.h:
 
+/usr/lib/libmvec.so.1:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h:
+
+/usr/include/bits/fcntl.h:
+
 /home/susamogus/programming/Final_project/allegro/include/allegro5/base.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/system.h:
@@ -1213,6 +1215,16 @@ addons/font/CMakeFiles/allegro_font.dir/bmfont.c.o:
 /usr/include/bits/typesizes.h:
 
 /usr/include/bits/uintn-identity.h:
+
+include/allegro5/platform/alplatf.h:
+
+/usr/include/bits/getopt_posix.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
+
+/usr/include/asm/errno.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_lock.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/transformations.h:
 
@@ -1274,14 +1286,6 @@ addons/font/CMakeFiles/allegro_font.dir/text.c.o:
 
 /usr/include/bits/floatn.h:
 
-/usr/lib/libmvec.so.1:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h:
-
-/usr/include/bits/fcntl.h:
-
 /usr/include/bits/byteswap.h:
 
 /usr/lib/libgcc_s.so.1:
@@ -1308,8 +1312,6 @@ addons/font/CMakeFiles/allegro_font.dir/text.c.o:
 
 /usr/include/bits/types.h:
 
-/usr/include/bits/getopt_posix.h:
-
 /usr/include/bits/libc-header-start.h:
 
 /usr/include/bits/local_lim.h:
@@ -1325,8 +1327,6 @@ addons/font/CMakeFiles/allegro_font.dir/text.c.o:
 /usr/include/bits/long-double.h:
 
 /usr/include/bits/posix1_lim.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 

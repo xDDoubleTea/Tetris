@@ -4,6 +4,7 @@
 addons/audio/CMakeFiles/allegro_audio.dir/alsa.c.o: /home/susamogus/programming/Final_project/allegro/addons/audio/alsa.c \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -40,7 +41,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/alsa.c.o: /home/susamogus/programming/
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -181,6 +181,8 @@ addons/audio/CMakeFiles/allegro_audio.dir/audio.c.o: /home/susamogus/programming
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/internal/aintern_audio_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -207,7 +209,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/audio.c.o: /home/susamogus/programming
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_audio_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_exitfunc.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h \
@@ -220,7 +221,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/audio.c.o: /home/susamogus/programming
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -349,6 +349,7 @@ addons/audio/CMakeFiles/allegro_audio.dir/audio_io.c.o: /home/susamogus/programm
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -387,7 +388,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/audio_io.c.o: /home/susamogus/programm
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -495,6 +495,7 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_dtor.c.o: /home/susamogus/programm
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -534,7 +535,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_dtor.c.o: /home/susamogus/programm
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -649,6 +649,8 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_instance.c.o: /home/susamogus/prog
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/internal/aintern_audio_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -674,7 +676,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_instance.c.o: /home/susamogus/prog
   /home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_audio_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
@@ -686,7 +687,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_instance.c.o: /home/susamogus/prog
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -816,6 +816,8 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_mixer.c.o: /home/susamogus/program
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/kcm_mixer_helpers.inc \
+  include/allegro5/internal/aintern_audio_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -842,7 +844,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_mixer.c.o: /home/susamogus/program
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_audio_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
@@ -854,7 +855,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_mixer.c.o: /home/susamogus/program
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -983,6 +983,7 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_sample.c.o: /home/susamogus/progra
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -1020,7 +1021,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_sample.c.o: /home/susamogus/progra
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1128,6 +1128,8 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_stream.c.o: /home/susamogus/progra
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/internal/aintern_audio_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -1153,7 +1155,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_stream.c.o: /home/susamogus/progra
   /home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_audio_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
@@ -1165,7 +1166,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_stream.c.o: /home/susamogus/progra
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1283,6 +1283,8 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_voice.c.o: /home/susamogus/program
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/internal/aintern_audio_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -1308,7 +1310,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_voice.c.o: /home/susamogus/program
   /home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_audio_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
@@ -1320,7 +1321,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_voice.c.o: /home/susamogus/program
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1437,6 +1437,7 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_voice.c.o: /home/susamogus/program
 addons/audio/CMakeFiles/allegro_audio.dir/openal.c.o: /home/susamogus/programming/Final_project/allegro/addons/audio/openal.c \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -1473,7 +1474,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/openal.c.o: /home/susamogus/programmin
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1592,6 +1592,7 @@ addons/audio/CMakeFiles/allegro_audio.dir/openal.c.o: /home/susamogus/programmin
 addons/audio/CMakeFiles/allegro_audio.dir/oss.c.o: /home/susamogus/programming/Final_project/allegro/addons/audio/oss.c \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -1628,7 +1629,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/oss.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1760,6 +1760,7 @@ addons/audio/CMakeFiles/allegro_audio.dir/oss.c.o: /home/susamogus/programming/F
 addons/audio/CMakeFiles/allegro_audio.dir/pulseaudio.c.o: /home/susamogus/programming/Final_project/allegro/addons/audio/pulseaudio.c \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -1796,7 +1797,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/pulseaudio.c.o: /home/susamogus/progra
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1947,6 +1947,8 @@ addons/audio/CMakeFiles/allegro_audio.dir/recorder.c.o: /home/susamogus/programm
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/internal/aintern_audio.h \
+  include/allegro5/internal/aintern_audio_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -1973,7 +1975,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/recorder.c.o: /home/susamogus/programm
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_audio_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
@@ -1985,7 +1986,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/recorder.c.o: /home/susamogus/programm
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -2236,8 +2236,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/pulseaudio.c.o:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h:
-
 /usr/include/bits/posix1_lim.h:
 
 /usr/include/bits/poll.h:
@@ -2253,10 +2251,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/alsa.c.o:
 /usr/include/bits/libc-header-start.h:
 
 /home/susamogus/programming/Final_project/allegro/addons/audio/audio_io.c:
-
-addons/audio/CMakeFiles/allegro_audio.dir/kcm_voice.c.o:
-
-/usr/include/sys/soundcard.h:
 
 /usr/include/bits/types.h:
 
@@ -2277,8 +2271,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_voice.c.o:
 /usr/include/bits/posix_opt.h:
 
 /usr/include/assert.h:
-
-/usr/include/bits/stat.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -2332,6 +2324,8 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_voice.c.o:
 
 /usr/include/alsa/seq_event.h:
 
+/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
+
 /home/susamogus/programming/Final_project/allegro/include/allegro5/file.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/drawing.h:
@@ -2376,9 +2370,11 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_voice.c.o:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h:
 
-/usr/include/bits/endian.h:
+addons/audio/CMakeFiles/allegro_audio.dir/kcm_voice.c.o:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h:
+/usr/include/sys/soundcard.h:
+
+include/allegro5/platform/alplatf.h:
 
 /usr/lib/libGLU.so:
 
@@ -2394,13 +2390,17 @@ addons/audio/CMakeFiles/allegro_audio.dir/recorder.c.o:
 
 /usr/include/pulse/mainloop-api.h:
 
-/usr/include/bits/stdint-uintn.h:
+/usr/include/bits/ioctl-types.h:
 
-/usr/include/asm/errno.h:
+/usr/include/bits/endian.h:
+
+/usr/include/bits/stdint-uintn.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h:
 
-/usr/include/bits/ioctl-types.h:
+/usr/include/asm/errno.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/base.h:
 
@@ -2417,6 +2417,10 @@ addons/audio/CMakeFiles/allegro_audio.dir/recorder.c.o:
 /home/susamogus/programming/Final_project/allegro/include/allegro5/events.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h:
+
+/usr/include/pulse/error.h:
+
+/usr/include/math.h:
 
 /usr/lib/libasound.so:
 
@@ -2620,11 +2624,23 @@ addons/audio/CMakeFiles/allegro_audio.dir/kcm_stream.c.o:
 
 /home/susamogus/programming/Final_project/allegro/addons/audio/audio.c:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
+/usr/include/bits/stat.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_audio_cfg.h:
+include/allegro5/internal/aintern_audio_cfg.h:
 
-/usr/include/linux/soundcard.h:
+/home/susamogus/programming/Final_project/allegro/addons/audio/openal.c:
+
+/usr/lib/libc.so:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/home/susamogus/programming/Final_project/allegro/addons/audio/oss.c:
+
+lib/liballegro.so.5.2.7:
+
+/usr/include/pulse/cdecl.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/fmaths.h:
 
@@ -2688,20 +2704,6 @@ addons/audio/CMakeFiles/allegro_audio.dir/openal.c.o:
 
 /home/susamogus/programming/Final_project/allegro/addons/audio/kcm_voice.c:
 
-/home/susamogus/programming/Final_project/allegro/addons/audio/openal.c:
-
-/usr/lib/libc.so:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap.h:
-
-/usr/include/bits/pthreadtypes.h:
-
-/home/susamogus/programming/Final_project/allegro/addons/audio/oss.c:
-
-lib/liballegro.so.5.2.7:
-
-/usr/include/pulse/cdecl.h:
-
 /usr/lib/libXss.so:
 
 /usr/include/asm-generic/ioctls.h:
@@ -2719,6 +2721,8 @@ lib/liballegro.so.5.2.7:
 /usr/include/bits/fp-logb.h:
 
 /usr/include/linux/ioctl.h:
+
+/usr/include/linux/soundcard.h:
 
 /usr/lib/libOpenGL.so:
 
@@ -2755,10 +2759,6 @@ lib/liballegro.so.5.2.7:
 /usr/include/bits/errno.h:
 
 /usr/include/pulse/channelmap.h:
-
-/usr/include/math.h:
-
-/usr/include/pulse/error.h:
 
 /usr/include/pulse/gccmacro.h:
 

@@ -5,6 +5,8 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o: /home/susamogus/programming/Final
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/internal/aintern_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/ttf/allegro5/allegro_ttf.h \
+  include/allegro5/internal/aintern_ttf_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro_opengl.h \
@@ -45,7 +47,6 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o: /home/susamogus/programming/Final
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_system.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_thread.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_touch_input.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_ttf_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
@@ -66,7 +67,6 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o: /home/susamogus/programming/Final
   /home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/gl_ext.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -263,8 +263,6 @@ lib/liballegro_ttf.so: lib/liballegro.so.5.2.7 \
 
 /usr/lib/libGLX.so:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a:
-
 /usr/lib/libc.so:
 
 /usr/lib/libm.so:
@@ -409,8 +407,6 @@ lib/liballegro.so.5.2.7:
 
 /usr/include/bits/posix2_lim.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_ttf_cfg.h:
-
 /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h:
@@ -459,7 +455,29 @@ lib/liballegro.so.5.2.7:
 
 /usr/include/bits/endian.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
+/usr/lib/libmvec.so.1:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h:
+
+/usr/include/X11/keysymdef.h:
+
+/usr/include/bits/fcntl.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_display.h:
+
+/usr/include/stdint.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/X11/Xlib.h:
+
+/usr/include/freetype2/freetype/fttypes.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h:
 
 addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o:
 
@@ -481,6 +499,10 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o:
 
 /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/internal/aintern_font.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a:
+
+include/allegro5/internal/aintern_ttf_cfg.h:
+
 /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
@@ -495,11 +517,35 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_thread.h:
 
+include/allegro5/platform/alplatf.h:
+
+/usr/include/bits/getopt_posix.h:
+
 /home/susamogus/programming/Final_project/allegro/include/allegro5/color.h:
 
 /usr/lib/libXcursor.so:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h:
+
+/home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h:
+
+/usr/include/bits/cpu-set.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/allegro_opengl.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/keyboard.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/GLext/glx_ext_api.h:
+
+/home/susamogus/programming/Final_project/allegro/addons/ttf/allegro5/allegro_ttf.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/file.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/GLext/glx_ext_defs.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h:
+
+/usr/include/X11/Xutil.h:
 
 /usr/include/bits/wchar.h:
 
@@ -508,6 +554,14 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o:
 /home/susamogus/programming/Final_project/allegro/include/allegro5/monitor.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/GLext/glx_ext_alias.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/GL/glxext.h:
 
 /usr/lib/libXinerama.so:
 
@@ -523,17 +577,7 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o:
 
 /usr/include/bits/posix_opt.h:
 
-/home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h:
-
-/usr/include/bits/cpu-set.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/allegro_opengl.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/GLext/glx_ext_defs.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h:
-
-/usr/include/X11/Xutil.h:
+/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_keyboard.h:
 
@@ -574,46 +618,6 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o:
 /home/susamogus/programming/Final_project/allegro/include/allegro5/fshook.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/drawing.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_display.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/keyboard.h:
-
-/home/susamogus/programming/Final_project/allegro/addons/ttf/allegro5/allegro_ttf.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/file.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/GLext/glx_ext_api.h:
-
-/usr/include/stdint.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/X11/Xlib.h:
-
-/usr/include/freetype2/freetype/fttypes.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h:
-
-/usr/include/GL/glxext.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/lib/libmvec.so.1:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h:
-
-/usr/include/X11/keysymdef.h:
-
-/usr/include/bits/fcntl.h:
 
 /usr/lib/libXext.so:
 
@@ -705,13 +709,9 @@ lib/liballegro_font.so.5.2.7:
 
 /usr/include/bits/getopt_core.h:
 
-/usr/include/bits/getopt_posix.h:
-
 /usr/include/bits/local_lim.h:
 
 /usr/include/bits/posix1_lim.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 

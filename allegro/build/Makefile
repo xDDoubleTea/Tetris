@@ -279,19 +279,6 @@ allegro_memfile/fast:
 .PHONY : allegro_memfile/fast
 
 #=============================================================================
-# Target rules for targets named allegro_physfs
-
-# Build rule for target.
-allegro_physfs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 allegro_physfs
-.PHONY : allegro_physfs
-
-# fast build rule for target.
-allegro_physfs/fast:
-	$(MAKE) $(MAKESILENT) -f addons/physfs/CMakeFiles/allegro_physfs.dir/build.make addons/physfs/CMakeFiles/allegro_physfs.dir/build
-.PHONY : allegro_physfs/fast
-
-#=============================================================================
 # Target rules for targets named allegro_dialog
 
 # Build rule for target.
@@ -1213,19 +1200,6 @@ ex_noframe: cmake_check_build_system
 ex_noframe/fast:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_noframe.dir/build.make examples/CMakeFiles/ex_noframe.dir/build
 .PHONY : ex_noframe/fast
-
-#=============================================================================
-# Target rules for targets named ex_physfs
-
-# Build rule for target.
-ex_physfs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex_physfs
-.PHONY : ex_physfs
-
-# fast build rule for target.
-ex_physfs/fast:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_physfs.dir/build.make examples/CMakeFiles/ex_physfs.dir/build
-.PHONY : ex_physfs/fast
 
 #=============================================================================
 # Target rules for targets named ex_pixelformat
@@ -4407,7 +4381,6 @@ help:
 	@echo "... allegro_image"
 	@echo "... allegro_main"
 	@echo "... allegro_memfile"
-	@echo "... allegro_physfs"
 	@echo "... allegro_primitives"
 	@echo "... allegro_ttf"
 	@echo "... allegro_video"
@@ -4495,7 +4468,6 @@ help:
 	@echo "... ex_palette"
 	@echo "... ex_path"
 	@echo "... ex_path_test"
-	@echo "... ex_physfs"
 	@echo "... ex_pixelformat"
 	@echo "... ex_polygon"
 	@echo "... ex_premulalpha"

@@ -5,6 +5,8 @@ addons/image/CMakeFiles/allegro_image.dir/bmp.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/internal/aintern_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/iio.h \
+  include/allegro5/internal/aintern_image_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -32,7 +34,6 @@ addons/image/CMakeFiles/allegro_image.dir/bmp.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_convert.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_float.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_image_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_pixels.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
@@ -43,7 +44,6 @@ addons/image/CMakeFiles/allegro_image.dir/bmp.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -151,6 +151,8 @@ addons/image/CMakeFiles/allegro_image.dir/dds.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/internal/aintern_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/iio.h \
+  include/allegro5/internal/aintern_image_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -176,7 +178,6 @@ addons/image/CMakeFiles/allegro_image.dir/dds.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_image_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/keyboard.h \
@@ -186,7 +187,6 @@ addons/image/CMakeFiles/allegro_image.dir/dds.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -294,6 +294,8 @@ addons/image/CMakeFiles/allegro_image.dir/freeimage.c.o: /home/susamogus/program
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/internal/aintern_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/iio.h \
+  include/allegro5/internal/aintern_image_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -320,7 +322,6 @@ addons/image/CMakeFiles/allegro_image.dir/freeimage.c.o: /home/susamogus/program
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_exitfunc.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_image_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/keyboard.h \
@@ -330,7 +331,6 @@ addons/image/CMakeFiles/allegro_image.dir/freeimage.c.o: /home/susamogus/program
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -444,6 +444,8 @@ addons/image/CMakeFiles/allegro_image.dir/freeimage.c.o: /home/susamogus/program
 addons/image/CMakeFiles/allegro_image.dir/identify.c.o: /home/susamogus/programming/Final_project/allegro/addons/image/identify.c \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/internal/aintern_image.h \
+  include/allegro5/internal/aintern_image_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -469,7 +471,6 @@ addons/image/CMakeFiles/allegro_image.dir/identify.c.o: /home/susamogus/programm
   /home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_image_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/keyboard.h \
@@ -479,7 +480,6 @@ addons/image/CMakeFiles/allegro_image.dir/identify.c.o: /home/susamogus/programm
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -586,6 +586,8 @@ addons/image/CMakeFiles/allegro_image.dir/identify.c.o: /home/susamogus/programm
 addons/image/CMakeFiles/allegro_image.dir/iio.c.o: /home/susamogus/programming/Final_project/allegro/addons/image/iio.c \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/internal/aintern_image.h \
+  include/allegro5/internal/aintern_image_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -612,7 +614,6 @@ addons/image/CMakeFiles/allegro_image.dir/iio.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_exitfunc.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_image_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/keyboard.h \
@@ -622,7 +623,6 @@ addons/image/CMakeFiles/allegro_image.dir/iio.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -730,6 +730,8 @@ addons/image/CMakeFiles/allegro_image.dir/jpg.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/internal/aintern_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/iio.h \
+  include/allegro5/internal/aintern_image_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -755,7 +757,6 @@ addons/image/CMakeFiles/allegro_image.dir/jpg.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_image_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/keyboard.h \
@@ -765,7 +766,6 @@ addons/image/CMakeFiles/allegro_image.dir/jpg.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -890,6 +890,8 @@ addons/image/CMakeFiles/allegro_image.dir/pcx.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/internal/aintern_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/iio.h \
+  include/allegro5/internal/aintern_image_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -915,7 +917,6 @@ addons/image/CMakeFiles/allegro_image.dir/pcx.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_image_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/keyboard.h \
@@ -925,7 +926,6 @@ addons/image/CMakeFiles/allegro_image.dir/pcx.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1033,6 +1033,8 @@ addons/image/CMakeFiles/allegro_image.dir/png.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/internal/aintern_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/iio.h \
+  include/allegro5/internal/aintern_image_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -1058,7 +1060,6 @@ addons/image/CMakeFiles/allegro_image.dir/png.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_image_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/keyboard.h \
@@ -1068,7 +1069,6 @@ addons/image/CMakeFiles/allegro_image.dir/png.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1194,6 +1194,8 @@ addons/image/CMakeFiles/allegro_image.dir/tga.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/internal/aintern_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/iio.h \
+  include/allegro5/internal/aintern_image_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -1220,7 +1222,6 @@ addons/image/CMakeFiles/allegro_image.dir/tga.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_float.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_image_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_pixels.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
@@ -1231,7 +1232,6 @@ addons/image/CMakeFiles/allegro_image.dir/tga.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1339,6 +1339,8 @@ addons/image/CMakeFiles/allegro_image.dir/webp.c.o: /home/susamogus/programming/
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/internal/aintern_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/iio.h \
+  include/allegro5/internal/aintern_image_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h \
@@ -1364,7 +1366,6 @@ addons/image/CMakeFiles/allegro_image.dir/webp.c.o: /home/susamogus/programming/
   /home/susamogus/programming/Final_project/allegro/include/allegro5/fullscreen_mode.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_image_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/keyboard.h \
@@ -1374,7 +1375,6 @@ addons/image/CMakeFiles/allegro_image.dir/webp.c.o: /home/susamogus/programming/
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1680,6 +1680,8 @@ lib/liballegro.so.5.2.7:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/timer.h:
 
+include/allegro5/internal/aintern_image_cfg.h:
+
 /usr/include/stdc-predef.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h:
@@ -1700,25 +1702,11 @@ lib/liballegro.so.5.2.7:
 
 /usr/include/errno.h:
 
-/usr/include/gnu/stubs-64.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/transformations.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/blender.h:
-
-/home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h:
-
-/home/susamogus/programming/Final_project/allegro/addons/image/identify.c:
-
-/usr/include/asm-generic/errno-base.h:
-
-addons/image/CMakeFiles/allegro_image.dir/dds.c.o:
-
-/usr/include/bits/struct_mutex.h:
+/usr/include/bits/fcntl.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/system.h:
+
+/home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_draw.h:
 
@@ -1746,10 +1734,6 @@ addons/image/CMakeFiles/allegro_image.dir/png.c.o:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/events.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_convert.h:
-
 /home/susamogus/programming/Final_project/allegro/include/allegro5/cpu.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
@@ -1766,13 +1750,43 @@ addons/image/CMakeFiles/allegro_image.dir/png.c.o:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/keycodes.h:
 
+/home/susamogus/programming/Final_project/allegro/include/allegro5/transformations.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/blender.h:
+
 /usr/include/zconf.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/base.h:
 
+include/allegro5/platform/alplatf.h:
+
+/usr/include/bits/getopt_posix.h:
+
+/home/susamogus/programming/Final_project/allegro/addons/image/identify.c:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/lib/libmvec.so.1:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
+
+addons/image/CMakeFiles/allegro_image.dir/dds.c.o:
+
+/usr/include/bits/struct_mutex.h:
+
 /home/susamogus/programming/Final_project/allegro/addons/image/bmp.c:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/fshook.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_convert.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
+
+/usr/include/gnu/stubs-64.h:
 
 /usr/include/pngconf.h:
 
@@ -1815,14 +1829,6 @@ addons/image/CMakeFiles/allegro_image.dir/png.c.o:
 /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h:
 
 /usr/include/bits/floatn.h:
-
-/usr/lib/libmvec.so.1:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h:
-
-/usr/include/bits/fcntl.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_lock.h:
 
@@ -1868,8 +1874,6 @@ addons/image/CMakeFiles/allegro_image.dir/png.c.o:
 
 /usr/include/bits/types.h:
 
-/usr/include/bits/getopt_posix.h:
-
 /home/susamogus/programming/Final_project/allegro/addons/image/png.c:
 
 /usr/include/bits/libc-header-start.h:
@@ -1881,8 +1885,6 @@ addons/image/CMakeFiles/allegro_image.dir/png.c.o:
 /usr/include/bits/long-double.h:
 
 /usr/include/bits/posix1_lim.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
@@ -1899,8 +1901,6 @@ addons/image/CMakeFiles/allegro_image.dir/png.c.o:
 /usr/include/bits/stdint-uintn.h:
 
 /usr/include/endian.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_image_cfg.h:
 
 /usr/include/bits/time64.h:
 

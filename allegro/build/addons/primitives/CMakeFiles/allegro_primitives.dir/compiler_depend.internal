@@ -4,6 +4,7 @@
 addons/primitives/CMakeFiles/allegro_primitives.dir/high_primitives.c.o
  /home/susamogus/programming/Final_project/allegro/addons/primitives/high_primitives.c
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro_opengl.h
@@ -47,7 +48,6 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/high_primitives.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/gl_ext.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -176,6 +176,7 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/line_soft.c.o
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim_soft.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -221,7 +222,6 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/line_soft.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -348,6 +348,7 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/point_soft.c.o
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim_soft.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -384,7 +385,6 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/point_soft.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -503,6 +503,7 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/polygon.c.o
  /home/susamogus/programming/Final_project/allegro/addons/primitives/polygon.c
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -537,7 +538,6 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/polygon.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -656,6 +656,7 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/polyline.c.o
  /home/susamogus/programming/Final_project/allegro/addons/primitives/polyline.c
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -691,7 +692,6 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/polyline.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -813,6 +813,7 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/prim_directx.cpp.o
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim_directx.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim_soft.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -854,7 +855,6 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/prim_directx.cpp.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -995,6 +995,7 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/prim_opengl.c.o
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim_opengl.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim_soft.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro_opengl.h
@@ -1047,7 +1048,6 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/prim_opengl.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/gl_ext.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1174,6 +1174,7 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/prim_soft.c.o
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim_soft.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -1217,7 +1218,6 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/prim_soft.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1332,6 +1332,7 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/prim_util.c.o
  /home/susamogus/programming/Final_project/allegro/addons/primitives/prim_util.c
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -1367,7 +1368,6 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/prim_util.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1490,6 +1490,7 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/primitives.c.o
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim_directx.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim_opengl.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim_soft.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro_opengl.h
@@ -1537,7 +1538,6 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/primitives.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/gl_ext.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1665,6 +1665,7 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/triangulator.c.o
  /home/susamogus/programming/Final_project/allegro/addons/primitives/triangulator.c
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/internal/aintern_prim.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -1700,7 +1701,6 @@ addons/primitives/CMakeFiles/allegro_primitives.dir/triangulator.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h

@@ -3,6 +3,7 @@
 
 examples/CMakeFiles/ex_stream_file.dir/ex_stream_file.c.o
  /home/susamogus/programming/Final_project/allegro/examples/ex_stream_file.c
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/addons/acodec/allegro5/allegro_acodec.h
  /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/allegro_native_dialog.h
@@ -41,7 +42,6 @@ examples/CMakeFiles/ex_stream_file.dir/ex_stream_file.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h

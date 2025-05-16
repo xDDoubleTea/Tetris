@@ -445,10 +445,10 @@ PDFLATEX_COMPILER:FILEPATH=/usr/bin/pdflatex
 PDFTOPS_CONVERTER:FILEPATH=/usr/bin/pdftops
 
 //Path to a file.
-PHYSFS_INCLUDE_DIR:PATH=/usr/include
+PHYSFS_INCLUDE_DIR:PATH=PHYSFS_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
-PHYSFS_LIBRARY:FILEPATH=/usr/lib/libphysfs.so
+PHYSFS_LIBRARY:FILEPATH=PHYSFS_LIBRARY-NOTFOUND
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -1161,9 +1161,6 @@ allegro_main_LIB_DEPENDS:STATIC=general;allegro;
 allegro_memfile_LIB_DEPENDS:STATIC=general;allegro;
 
 //Dependencies for the target
-allegro_physfs_LIB_DEPENDS:STATIC=general;allegro;general;/usr/lib/libphysfs.so;
-
-//Dependencies for the target
 allegro_primitives_LIB_DEPENDS:STATIC=general;allegro;
 
 //Dependencies for the target
@@ -1476,7 +1473,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1561,12 +1558,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_OSS:INTERNAL=[1][v()]
 FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[/usr/lib/libopenal.so][/usr/include/AL][v()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/libOpenGL.so][/usr/lib/libGLX.so][/usr/include][ ][v()]
-//Details about finding PHYSFS
-FIND_PACKAGE_MESSAGE_DETAILS_PHYSFS:INTERNAL=[/usr/lib/libphysfs.so][/usr/include][v()]
 //Details about finding PNG
 FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[/usr/lib/libpng.so][/usr/include][v1.6.48()]
-//Details about finding PhysFS
-FIND_PACKAGE_MESSAGE_DETAILS_PhysFS:INTERNAL=[/usr/lib/libphysfs.so][/usr/include][v()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v2.4.3()]
 //Details about finding THEORA
@@ -1806,8 +1799,6 @@ PC_WEBP_libwebp_VERSION:INTERNAL=
 PDFLATEX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PDFTOPS_CONVERTER
 PDFTOPS_CONVERTER-ADVANCED:INTERNAL=1
-//Test PHYSFS_IMPLICIT_ZLIB
-PHYSFS_IMPLICIT_ZLIB:INTERNAL=1
 //ADVANCED property for variable: PHYSFS_INCLUDE_DIR
 PHYSFS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PHYSFS_LIBRARY

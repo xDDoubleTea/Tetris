@@ -1044,20 +1044,6 @@ ex_noframe/fast:
 .PHONY : ex_noframe/fast
 
 # Convenience name for target.
-examples/CMakeFiles/ex_physfs.dir/rule:
-	cd /home/susamogus/programming/Final_project/allegro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_physfs.dir/rule
-.PHONY : examples/CMakeFiles/ex_physfs.dir/rule
-
-# Convenience name for target.
-ex_physfs: examples/CMakeFiles/ex_physfs.dir/rule
-.PHONY : ex_physfs
-
-# fast build rule for target.
-ex_physfs/fast:
-	cd /home/susamogus/programming/Final_project/allegro/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_physfs.dir/build.make examples/CMakeFiles/ex_physfs.dir/build
-.PHONY : ex_physfs/fast
-
-# Convenience name for target.
 examples/CMakeFiles/ex_pixelformat.dir/rule:
 	cd /home/susamogus/programming/Final_project/allegro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/ex_pixelformat.dir/rule
 .PHONY : examples/CMakeFiles/ex_pixelformat.dir/rule
@@ -3917,30 +3903,6 @@ ex_path_test.c.s:
 	cd /home/susamogus/programming/Final_project/allegro/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_path_test.dir/build.make examples/CMakeFiles/ex_path_test.dir/ex_path_test.c.s
 .PHONY : ex_path_test.c.s
 
-ex_physfs.o: ex_physfs.c.o
-.PHONY : ex_physfs.o
-
-# target to build an object file
-ex_physfs.c.o:
-	cd /home/susamogus/programming/Final_project/allegro/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_physfs.dir/build.make examples/CMakeFiles/ex_physfs.dir/ex_physfs.c.o
-.PHONY : ex_physfs.c.o
-
-ex_physfs.i: ex_physfs.c.i
-.PHONY : ex_physfs.i
-
-# target to preprocess a source file
-ex_physfs.c.i:
-	cd /home/susamogus/programming/Final_project/allegro/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_physfs.dir/build.make examples/CMakeFiles/ex_physfs.dir/ex_physfs.c.i
-.PHONY : ex_physfs.c.i
-
-ex_physfs.s: ex_physfs.c.s
-.PHONY : ex_physfs.s
-
-# target to generate assembly for a file
-ex_physfs.c.s:
-	cd /home/susamogus/programming/Final_project/allegro/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/ex_physfs.dir/build.make examples/CMakeFiles/ex_physfs.dir/ex_physfs.c.s
-.PHONY : ex_physfs.c.s
-
 ex_pixelformat.o: ex_pixelformat.cpp.o
 .PHONY : ex_pixelformat.o
 
@@ -5066,7 +5028,6 @@ help:
 	@echo "... ex_palette"
 	@echo "... ex_path"
 	@echo "... ex_path_test"
-	@echo "... ex_physfs"
 	@echo "... ex_pixelformat"
 	@echo "... ex_polygon"
 	@echo "... ex_premulalpha"
@@ -5357,9 +5318,6 @@ help:
 	@echo "... ex_path_test.o"
 	@echo "... ex_path_test.i"
 	@echo "... ex_path_test.s"
-	@echo "... ex_physfs.o"
-	@echo "... ex_physfs.i"
-	@echo "... ex_physfs.s"
 	@echo "... ex_pixelformat.o"
 	@echo "... ex_pixelformat.i"
 	@echo "... ex_pixelformat.s"

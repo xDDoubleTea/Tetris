@@ -198,7 +198,7 @@ id="toc-al_set_memory_interface">al_set_memory_interface</a></li>
 <div class="sourceCode" id="cb2"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#define al_malloc</span><span class="op">(</span><span class="pp">n</span><span class="op">)</span><span class="pp"> </span><span class="op">\</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="pp">   </span><span class="op">(</span><span class="pp">al_malloc_with_context</span><span class="op">((</span><span class="pp">n</span><span class="op">),</span><span class="pp"> __LINE__</span><span class="op">,</span><span class="pp"> __FILE__</span><span class="op">,</span><span class="pp"> __func__</span><span class="op">))</span></span></code></pre></div>
 <p><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/include/allegro5/memory.h#L42">Source
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/include/allegro5/memory.h#L42">Source
 Code</a></p>
 <p>Like malloc() in the C standard library, but the implementation may
 be overridden.</p>
@@ -211,15 +211,15 @@ href="memory.html#al_set_memory_interface">al_set_memory_interface</a></p>
 <p>Examples:</p>
 <ul>
 <li><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/examples/ex_audio_timer.c#L27">ex_audio_timer.c</a></li>
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/examples/ex_audio_timer.c#L27">ex_audio_timer.c</a></li>
 <li><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/examples/ex_vertex_buffer.c#L134">ex_vertex_buffer.c</a></li>
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/examples/ex_vertex_buffer.c#L134">ex_vertex_buffer.c</a></li>
 </ul>
 <h1 id="al_free">al_free</h1>
 <div class="sourceCode" id="cb3"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#define al_free</span><span class="op">(</span><span class="pp">p</span><span class="op">)</span><span class="pp"> </span><span class="op">\</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="pp">   </span><span class="op">(</span><span class="pp">al_free_with_context</span><span class="op">((</span><span class="pp">p</span><span class="op">),</span><span class="pp"> __LINE__</span><span class="op">,</span><span class="pp"> __FILE__</span><span class="op">,</span><span class="pp"> __func__</span><span class="op">))</span></span></code></pre></div>
 <p><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/include/allegro5/memory.h#L47">Source
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/include/allegro5/memory.h#L47">Source
 Code</a></p>
 <p>Like free() in the C standard library, but the implementation may be
 overridden.</p>
@@ -233,17 +233,17 @@ href="memory.html#al_free_with_context">al_free_with_context</a></p>
 <p>Examples:</p>
 <ul>
 <li><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/examples/ex_clipboard.c#L67">ex_clipboard.c</a></li>
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/examples/ex_clipboard.c#L67">ex_clipboard.c</a></li>
 <li><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/examples/ex_record_name.c#L254">ex_record_name.c</a></li>
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/examples/ex_record_name.c#L254">ex_record_name.c</a></li>
 <li><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/examples/ex_vertex_buffer.c#L214">ex_vertex_buffer.c</a></li>
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/examples/ex_vertex_buffer.c#L214">ex_vertex_buffer.c</a></li>
 </ul>
 <h1 id="al_realloc">al_realloc</h1>
 <div class="sourceCode" id="cb4"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#define al_realloc</span><span class="op">(</span><span class="pp">p</span><span class="op">,</span><span class="pp"> n</span><span class="op">)</span><span class="pp"> </span><span class="op">\</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="pp">   </span><span class="op">(</span><span class="pp">al_realloc_with_context</span><span class="op">((</span><span class="pp">p</span><span class="op">),</span><span class="pp"> </span><span class="op">(</span><span class="pp">n</span><span class="op">),</span><span class="pp"> __LINE__</span><span class="op">,</span><span class="pp"> __FILE__</span><span class="op">,</span><span class="pp"> __func__</span><span class="op">))</span></span></code></pre></div>
 <p><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/include/allegro5/memory.h#L52">Source
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/include/allegro5/memory.h#L52">Source
 Code</a></p>
 <p>Like realloc() in the C standard library, but the implementation may
 be overridden.</p>
@@ -254,7 +254,7 @@ href="memory.html#al_realloc_with_context">al_realloc_with_context</a></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#define al_calloc</span><span class="op">(</span><span class="pp">c</span><span class="op">,</span><span class="pp"> n</span><span class="op">)</span><span class="pp"> </span><span class="op">\</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="pp">   </span><span class="op">(</span><span class="pp">al_calloc_with_context</span><span class="op">((</span><span class="pp">c</span><span class="op">),</span><span class="pp"> </span><span class="op">(</span><span class="pp">n</span><span class="op">),</span><span class="pp"> __LINE__</span><span class="op">,</span><span class="pp"> __FILE__</span><span class="op">,</span><span class="pp"> __func__</span><span class="op">))</span></span></code></pre></div>
 <p><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/include/allegro5/memory.h#L57">Source
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/include/allegro5/memory.h#L57">Source
 Code</a></p>
 <p>Like calloc() in the C standard library, but the implementation may
 be overridden.</p>
@@ -264,13 +264,13 @@ href="memory.html#al_calloc_with_context">al_calloc_with_context</a></p>
 <p>Examples:</p>
 <ul>
 <li><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/examples/ex_record_name.c#L123">ex_record_name.c</a></li>
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/examples/ex_record_name.c#L123">ex_record_name.c</a></li>
 </ul>
 <h1 id="al_malloc_with_context">al_malloc_with_context</h1>
 <div class="sourceCode" id="cb6"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> <span class="op">*</span>al_malloc_with_context<span class="op">(</span><span class="dt">size_t</span> n<span class="op">,</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>   <span class="dt">int</span> line<span class="op">,</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>file<span class="op">,</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>func<span class="op">)</span></span></code></pre></div>
 <p><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/src/memory.c#L38">Source
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/src/memory.c#L38">Source
 Code</a></p>
 <p>This calls malloc() from the Allegro library (this matters on
 Windows), unless overridden with <a
@@ -281,7 +281,7 @@ href="memory.html#al_malloc">al_malloc</a> macro.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> al_free_with_context<span class="op">(</span><span class="dt">void</span> <span class="op">*</span>ptr<span class="op">,</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>   <span class="dt">int</span> line<span class="op">,</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>file<span class="op">,</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>func<span class="op">)</span></span></code></pre></div>
 <p><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/src/memory.c#L51">Source
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/src/memory.c#L51">Source
 Code</a></p>
 <p>This calls free() from the Allegro library (this matters on Windows),
 unless overridden with <a
@@ -292,7 +292,7 @@ href="memory.html#al_free">al_free</a> macro.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> <span class="op">*</span>al_realloc_with_context<span class="op">(</span><span class="dt">void</span> <span class="op">*</span>ptr<span class="op">,</span> <span class="dt">size_t</span> n<span class="op">,</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>   <span class="dt">int</span> line<span class="op">,</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>file<span class="op">,</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>func<span class="op">)</span></span></code></pre></div>
 <p><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/src/memory.c#L64">Source
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/src/memory.c#L64">Source
 Code</a></p>
 <p>This calls realloc() from the Allegro library (this matters on
 Windows), unless overridden with <a
@@ -303,7 +303,7 @@ href="memory.html#al_realloc">al_realloc</a> macro.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> <span class="op">*</span>al_calloc_with_context<span class="op">(</span><span class="dt">size_t</span> count<span class="op">,</span> <span class="dt">size_t</span> n<span class="op">,</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>   <span class="dt">int</span> line<span class="op">,</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>file<span class="op">,</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>func<span class="op">)</span></span></code></pre></div>
 <p><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/src/memory.c#L77">Source
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/src/memory.c#L77">Source
 Code</a></p>
 <p>This calls calloc() from the Allegro library (this matters on
 Windows), unless overridden with <a
@@ -313,7 +313,7 @@ href="memory.html#al_calloc">al_calloc</a> macro.</p>
 <h1 id="allegro_memory_interface">ALLEGRO_MEMORY_INTERFACE</h1>
 <div class="sourceCode" id="cb10"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">typedef</span> <span class="kw">struct</span> ALLEGRO_MEMORY_INTERFACE ALLEGRO_MEMORY_INTERFACE<span class="op">;</span></span></code></pre></div>
 <p><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/include/allegro5/memory.h#L28">Source
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/include/allegro5/memory.h#L28">Source
 Code</a></p>
 <p>This structure has the following fields.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> <span class="op">*(*</span>mi_malloc<span class="op">)(</span><span class="dt">size_t</span> n<span class="op">,</span> <span class="dt">int</span> line<span class="op">,</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>file<span class="op">,</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>func<span class="op">);</span></span>
@@ -327,7 +327,7 @@ href="memory.html#al_set_memory_interface">al_set_memory_interface</a></p>
 <h1 id="al_set_memory_interface">al_set_memory_interface</h1>
 <div class="sourceCode" id="cb12"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> al_set_memory_interface<span class="op">(</span>ALLEGRO_MEMORY_INTERFACE <span class="op">*</span>memory_interface<span class="op">)</span></span></code></pre></div>
 <p><a
-href="https://github.com/liballeg/allegro5/blob/148c121fcffd2da7ba72f55b0df58d674a5c5e78/src/memory.c#L29">Source
+href="https://github.com/liballeg/allegro5/blob/1d89888d303618217e6b9bf0f927ac8fe415c349/src/memory.c#L29">Source
 Code</a></p>
 <p>Override the memory management functions with implementations of <a
 href="memory.html#al_malloc_with_context">al_malloc_with_context</a>, <a
@@ -342,7 +342,7 @@ should be thread safe.</p>
 href="memory.html#allegro_memory_interface">ALLEGRO_MEMORY_INTERFACE</a></p>
 <p class="timestamp">
 Allegro version 5.2.7
- - Last updated: 2025-05-15 06:49:26 UTC
+ - Last updated: 2025-05-15 08:11:03 UTC
 </p>
 </div>
 </body>

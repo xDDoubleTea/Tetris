@@ -89,7 +89,6 @@
 /usr/local/lib/pkgconfig/allegro_ttf-5.pc
 /usr/local/lib/pkgconfig/allegro_color-5.pc
 /usr/local/lib/pkgconfig/allegro_memfile-5.pc
-/usr/local/lib/pkgconfig/allegro_physfs-5.pc
 /usr/local/lib/pkgconfig/allegro_dialog-5.pc
 /usr/local/lib/pkgconfig/allegro_video-5.pc
 /usr/local/lib/pkgconfig/allegro_main-5.pc
@@ -125,10 +124,6 @@
 /usr/local/lib/liballegro_memfile.so.5.2
 /usr/local/lib/liballegro_memfile.so
 /usr/local/include/allegro5/allegro_memfile.h
-/usr/local/lib/liballegro_physfs.so.5.2.7
-/usr/local/lib/liballegro_physfs.so.5.2
-/usr/local/lib/liballegro_physfs.so
-/usr/local/include/allegro5/allegro_physfs.h
 /usr/local/lib/liballegro_dialog.so.5.2.7
 /usr/local/lib/liballegro_dialog.so.5.2
 /usr/local/lib/liballegro_dialog.so

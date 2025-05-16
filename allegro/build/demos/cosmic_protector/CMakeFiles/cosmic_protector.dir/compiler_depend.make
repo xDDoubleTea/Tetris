@@ -7,6 +7,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Asteroid.cpp.o: /home
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -74,7 +75,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Asteroid.cpp.o: /home
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -372,6 +372,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/BitmapResource.cpp.o:
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -439,7 +440,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/BitmapResource.cpp.o:
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -737,6 +737,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Bullet.cpp.o: /home/s
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -804,7 +805,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Bullet.cpp.o: /home/s
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1102,6 +1102,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/ButtonWidget.cpp.o: /
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -1169,7 +1170,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/ButtonWidget.cpp.o: /
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1467,6 +1467,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Debug.cpp.o: /home/su
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -1534,7 +1535,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Debug.cpp.o: /home/su
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1832,6 +1832,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/DisplayResource.cpp.o
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -1899,7 +1900,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/DisplayResource.cpp.o
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -2197,6 +2197,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Entity.cpp.o: /home/s
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -2264,7 +2265,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Entity.cpp.o: /home/s
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -2562,6 +2562,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Explosion.cpp.o: /hom
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -2629,7 +2630,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Explosion.cpp.o: /hom
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -2927,6 +2927,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/FontResource.cpp.o: /
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -2994,7 +2995,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/FontResource.cpp.o: /
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -3292,6 +3292,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/GUI.cpp.o: /home/susa
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -3360,7 +3361,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/GUI.cpp.o: /home/susa
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -3665,6 +3665,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Game.cpp.o: /home/sus
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -3733,7 +3734,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Game.cpp.o: /home/sus
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -4031,6 +4031,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Input.cpp.o: /home/su
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -4099,7 +4100,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Input.cpp.o: /home/su
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -4397,6 +4397,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/LargeAsteroid.cpp.o: 
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -4464,7 +4465,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/LargeAsteroid.cpp.o: 
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -4762,6 +4762,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/LargeBullet.cpp.o: /h
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -4829,7 +4830,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/LargeBullet.cpp.o: /h
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -5127,6 +5127,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/LargeSlowBullet.cpp.o
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -5194,7 +5195,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/LargeSlowBullet.cpp.o
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -5492,6 +5492,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/MediumAsteroid.cpp.o:
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -5559,7 +5560,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/MediumAsteroid.cpp.o:
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -5857,6 +5857,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Player.cpp.o: /home/s
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -5924,7 +5925,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Player.cpp.o: /home/s
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -6222,6 +6222,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/PowerUp.cpp.o: /home/
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -6289,7 +6290,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/PowerUp.cpp.o: /home/
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -6587,6 +6587,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Resource.cpp.o: /home
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -6654,7 +6655,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Resource.cpp.o: /home
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -6952,6 +6952,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/ResourceManager.cpp.o
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -7019,7 +7020,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/ResourceManager.cpp.o
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -7317,6 +7317,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/SampleResource.cpp.o:
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -7384,7 +7385,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/SampleResource.cpp.o:
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -7682,6 +7682,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/SmallAsteroid.cpp.o: 
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -7749,7 +7750,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/SmallAsteroid.cpp.o: 
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -8047,6 +8047,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/SmallBullet.cpp.o: /h
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -8114,7 +8115,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/SmallBullet.cpp.o: /h
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -8412,6 +8412,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/StreamResource.cpp.o:
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -8479,7 +8480,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/StreamResource.cpp.o:
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -8777,6 +8777,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/UFO.cpp.o: /home/susa
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -8844,7 +8845,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/UFO.cpp.o: /home/susa
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -9142,6 +9142,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/collision.cpp.o: /hom
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -9209,7 +9210,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/collision.cpp.o: /hom
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -9507,6 +9507,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/cosmic_protector.cpp.
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -9575,7 +9576,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/cosmic_protector.cpp.
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -9877,6 +9877,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/logic.cpp.o: /home/su
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -9944,7 +9945,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/logic.cpp.o: /home/su
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -10242,6 +10242,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/render.cpp.o: /home/s
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -10309,7 +10310,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/render.cpp.o: /home/s
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -10608,6 +10608,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/sound.cpp.o: /home/su
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -10675,7 +10676,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/sound.cpp.o: /home/su
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -10973,6 +10973,7 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/wave.cpp.o: /home/sus
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Asteroid.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/BitmapResource.hpp \
   /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Bullet.hpp \
@@ -11040,7 +11041,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/wave.cpp.o: /home/sus
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -11811,12 +11811,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/MediumAsteroid.cpp.o:
 
 /usr/include/bits/libc-header-start.h:
 
-demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Bullet.cpp.o:
-
-/usr/include/errno.h:
-
-/usr/include/bits/getopt_posix.h:
-
 /usr/include/bits/getopt_core.h:
 
 /usr/include/bits/fp-logb.h:
@@ -11892,10 +11886,6 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/LargeBullet.cpp.o:
 /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdint.h:
 
 /usr/include/bits/types/mbstate_t.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h:
-
-/home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/LargeBullet.hpp:
 
 demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Asteroid.cpp.o:
 
@@ -12017,6 +12007,10 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Debug.cpp.o:
 
 /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Game.hpp:
 
+/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_io.h:
+
+/usr/include/bits/types/wint_t.h:
+
 /usr/include/bits/cpu-set.h:
 
 /usr/include/c++/15.1.1/bits/stl_bvector.h:
@@ -12059,23 +12053,19 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Debug.cpp.o:
 
 /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/Player.hpp:
 
-/usr/include/bits/types/wint_t.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_io.h:
-
 /usr/lib/libwebp.so:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h:
 
-demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/SmallBullet.cpp.o:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/debug.h:
-
 /usr/include/bits/thread-shared-types.h:
 
 /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h:
+
+demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/Bullet.cpp.o:
+
+/usr/include/errno.h:
+
+/usr/include/bits/getopt_posix.h:
 
 /usr/include/strings.h:
 
@@ -12084,6 +12074,14 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/SmallBullet.cpp.o:
 /usr/include/bits/wctype-wchar.h:
 
 /home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/LargeSlowBullet.hpp:
+
+/home/susamogus/programming/Final_project/allegro/demos/cosmic_protector/include/LargeBullet.hpp:
+
+demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/SmallBullet.cpp.o:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/debug.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/lib/libFLAC.so:
 
@@ -12373,9 +12371,9 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/joypad_dummy.cpp.o:
 
 /usr/lib/libjpeg.so:
 
-/home/susamogus/programming/Final_project/allegro/addons/acodec/allegro5/allegro_acodec.h:
-
 /home/susamogus/programming/Final_project/allegro/include/allegro5/fixed.h:
+
+/home/susamogus/programming/Final_project/allegro/addons/acodec/allegro5/allegro_acodec.h:
 
 /usr/include/bits/waitflags.h:
 
@@ -12484,6 +12482,8 @@ demos/cosmic_protector/CMakeFiles/cosmic_protector.dir/src/UFO.cpp.o:
 /usr/include/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/15.1.1/bits/stl_pair.h:
+
+include/allegro5/platform/alplatf.h:
 
 /usr/include/c++/15.1.1/bits/stl_uninitialized.h:
 

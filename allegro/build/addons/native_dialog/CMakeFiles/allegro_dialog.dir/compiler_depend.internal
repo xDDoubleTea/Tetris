@@ -5,6 +5,8 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/dialog.c.o
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/dialog.c
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/allegro_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/internal/aintern_native_dialog.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/internal/aintern_native_dialog_cfg.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -40,7 +42,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/dialog.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_keyboard.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_mouse.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_native_dialog_cfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_system.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_thread.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_touch_input.h
@@ -55,7 +56,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/dialog.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -172,6 +172,8 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_dialog.c.o
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/internal/aintern_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_xgtk.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/internal/aintern_native_dialog_cfg.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -200,7 +202,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_dialog.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_display.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_events.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_native_dialog_cfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_thread.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_x.h
@@ -215,7 +216,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_dialog.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1061,6 +1061,8 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_filesel.c.o
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/internal/aintern_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_xgtk.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/internal/aintern_native_dialog_cfg.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -1087,7 +1089,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_filesel.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_native_dialog_cfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h
@@ -1098,7 +1099,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_filesel.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1910,6 +1910,8 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_menu.c.o
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/internal/aintern_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_xgtk.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/internal/aintern_native_dialog_cfg.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -1936,7 +1938,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_menu.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_native_dialog_cfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h
@@ -1947,7 +1948,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_menu.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -2759,6 +2759,8 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_msgbox.c.o
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/internal/aintern_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_xgtk.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/internal/aintern_native_dialog_cfg.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -2785,7 +2787,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_msgbox.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_native_dialog_cfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h
@@ -2796,7 +2797,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_msgbox.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -3608,6 +3608,8 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_textlog.c.o
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/internal/aintern_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_xgtk.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/internal/aintern_native_dialog_cfg.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -3634,7 +3636,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_textlog.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_native_dialog_cfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h
@@ -3645,7 +3646,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_textlog.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -4456,6 +4456,8 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_thread.c.o
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/allegro_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/internal/aintern_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_dialog.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/internal/aintern_native_dialog_cfg.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -4482,7 +4484,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_thread.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_native_dialog_cfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h
@@ -4493,7 +4494,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_thread.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -5305,6 +5305,8 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_xgtk.c.o
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/internal/aintern_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/gtk_xgtk.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/internal/aintern_native_dialog_cfg.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -5341,7 +5343,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_xgtk.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_keyboard.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_mouse.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_native_dialog_cfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_system.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_thread.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_touch_input.h
@@ -5360,7 +5361,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/gtk_xgtk.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -6216,6 +6216,8 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/menu.c.o
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/menu.c
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/allegro_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/internal/aintern_native_dialog.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/internal/aintern_native_dialog_cfg.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -6250,7 +6252,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/menu.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_keyboard.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_mouse.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_native_dialog_cfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_system.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_thread.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_touch_input.h
@@ -6265,7 +6266,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/menu.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -6380,6 +6380,8 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/textlog.c.o
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/textlog.c
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/allegro_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/internal/aintern_native_dialog.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/internal/aintern_native_dialog_cfg.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/altime.h
@@ -6414,7 +6416,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/textlog.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_keyboard.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_list.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_mouse.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_native_dialog_cfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_system.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_thread.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_touch_input.h
@@ -6429,7 +6430,6 @@ addons/native_dialog/CMakeFiles/allegro_dialog.dir/textlog.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h

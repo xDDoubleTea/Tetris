@@ -5,6 +5,7 @@ demos/speed/CMakeFiles/speed.dir/a4_aux.c.o: /home/susamogus/programming/Final_p
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
@@ -40,7 +41,6 @@ demos/speed/CMakeFiles/speed.dir/a4_aux.c.o: /home/susamogus/programming/Final_p
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -166,6 +166,7 @@ demos/speed/CMakeFiles/speed.dir/a4_aux.c.o: /home/susamogus/programming/Final_p
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h
 
 demos/speed/CMakeFiles/speed.dir/badguys.c.o: /home/susamogus/programming/Final_project/allegro/demos/speed/badguys.c \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/speed.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
@@ -202,7 +203,6 @@ demos/speed/CMakeFiles/speed.dir/badguys.c.o: /home/susamogus/programming/Final_
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -319,6 +319,7 @@ demos/speed/CMakeFiles/speed.dir/badguys.c.o: /home/susamogus/programming/Final_
 
 demos/speed/CMakeFiles/speed.dir/bullets.c.o: /home/susamogus/programming/Final_project/allegro/demos/speed/bullets.c \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/speed.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
@@ -355,7 +356,6 @@ demos/speed/CMakeFiles/speed.dir/bullets.c.o: /home/susamogus/programming/Final_
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -472,6 +472,7 @@ demos/speed/CMakeFiles/speed.dir/bullets.c.o: /home/susamogus/programming/Final_
 
 demos/speed/CMakeFiles/speed.dir/explode.c.o: /home/susamogus/programming/Final_project/allegro/demos/speed/explode.c \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/speed.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
@@ -508,7 +509,6 @@ demos/speed/CMakeFiles/speed.dir/explode.c.o: /home/susamogus/programming/Final_
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -615,6 +615,7 @@ demos/speed/CMakeFiles/speed.dir/explode.c.o: /home/susamogus/programming/Final_
 demos/speed/CMakeFiles/speed.dir/hiscore.c.o: /home/susamogus/programming/Final_project/allegro/demos/speed/hiscore.c \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/speed.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
@@ -651,7 +652,6 @@ demos/speed/CMakeFiles/speed.dir/hiscore.c.o: /home/susamogus/programming/Final_
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -769,6 +769,7 @@ demos/speed/CMakeFiles/speed.dir/main.c.o: /home/susamogus/programming/Final_pro
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/speed.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
@@ -805,7 +806,6 @@ demos/speed/CMakeFiles/speed.dir/main.c.o: /home/susamogus/programming/Final_pro
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -921,6 +921,7 @@ demos/speed/CMakeFiles/speed.dir/main.c.o: /home/susamogus/programming/Final_pro
 
 demos/speed/CMakeFiles/speed.dir/message.c.o: /home/susamogus/programming/Final_project/allegro/demos/speed/message.c \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/speed.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
@@ -957,7 +958,6 @@ demos/speed/CMakeFiles/speed.dir/message.c.o: /home/susamogus/programming/Final_
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1063,6 +1063,7 @@ demos/speed/CMakeFiles/speed.dir/message.c.o: /home/susamogus/programming/Final_
 
 demos/speed/CMakeFiles/speed.dir/player.c.o: /home/susamogus/programming/Final_project/allegro/demos/speed/player.c \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/speed.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
@@ -1099,7 +1100,6 @@ demos/speed/CMakeFiles/speed.dir/player.c.o: /home/susamogus/programming/Final_p
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1215,6 +1215,7 @@ demos/speed/CMakeFiles/speed.dir/player.c.o: /home/susamogus/programming/Final_p
 
 demos/speed/CMakeFiles/speed.dir/sound.c.o: /home/susamogus/programming/Final_project/allegro/demos/speed/sound.c \
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/speed.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
@@ -1251,7 +1252,6 @@ demos/speed/CMakeFiles/speed.dir/sound.c.o: /home/susamogus/programming/Final_pr
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1370,6 +1370,7 @@ demos/speed/CMakeFiles/speed.dir/title.c.o: /home/susamogus/programming/Final_pr
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/speed.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
@@ -1406,7 +1407,6 @@ demos/speed/CMakeFiles/speed.dir/title.c.o: /home/susamogus/programming/Final_pr
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1534,6 +1534,7 @@ demos/speed/CMakeFiles/speed.dir/title.c.o: /home/susamogus/programming/Final_pr
 demos/speed/CMakeFiles/speed.dir/view.c.o: /home/susamogus/programming/Final_project/allegro/demos/speed/view.c \
   /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h \
   /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h \
   /home/susamogus/programming/Final_project/allegro/demos/speed/speed.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
@@ -1570,7 +1571,6 @@ demos/speed/CMakeFiles/speed.dir/view.c.o: /home/susamogus/programming/Final_pro
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -1958,11 +1958,13 @@ lib/liballegro_audio.so.5.2.7:
 
 /usr/include/bits/struct_mutex.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
+/usr/lib/libmvec.so.1:
 
-/usr/include/asm/errno.h:
+/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_lock.h:
+/home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h:
+
+/usr/include/bits/fcntl.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_draw.h:
 
@@ -1994,15 +1996,23 @@ lib/liballegro_audio.so.5.2.7:
 
 /usr/include/bits/floatn.h:
 
+include/allegro5/platform/alplatf.h:
+
+/usr/lib/libstdc++.so.6:
+
+/usr/lib/libasound.so:
+
+/usr/include/bits/getopt_posix.h:
+
 /usr/include/math.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/events.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/base.h:
-
 /home/susamogus/programming/Final_project/allegro/demos/speed/a4_aux.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/base.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
 
@@ -2029,6 +2039,12 @@ lib/liballegro.so.5.2.7:
 /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h:
 
 /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
+
+/usr/include/asm/errno.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_lock.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/transformations.h:
 
@@ -2082,14 +2098,6 @@ lib/liballegro_font.so.5.2.7:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/file.h:
 
-/usr/lib/libmvec.so.1:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h:
-
-/usr/include/bits/fcntl.h:
-
 /usr/include/bits/byteswap.h:
 
 /usr/lib/libgcc_s.so.1:
@@ -2126,12 +2134,6 @@ lib/liballegro_primitives.so.5.2.7:
 
 /usr/include/bits/types.h:
 
-/usr/lib/libstdc++.so.6:
-
-/usr/lib/libasound.so:
-
-/usr/include/bits/getopt_posix.h:
-
 /usr/include/bits/iscanonical.h:
 
 demos/speed/CMakeFiles/speed.dir/hiscore.c.o:
@@ -2165,8 +2167,6 @@ demos/speed/CMakeFiles/speed.dir/hiscore.c.o:
 /usr/lib/Scrt1.o:
 
 /usr/include/bits/types/timer_t.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 

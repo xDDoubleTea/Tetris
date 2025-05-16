@@ -5,6 +5,7 @@ addons/video/CMakeFiles/allegro_video.dir/ogv.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/video/allegro5/allegro_video.h \
   /home/susamogus/programming/Final_project/allegro/addons/video/allegro5/internal/aintern_video.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro5.h \
@@ -41,7 +42,6 @@ addons/video/CMakeFiles/allegro_video.dir/ogv.c.o: /home/susamogus/programming/F
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -166,6 +166,8 @@ addons/video/CMakeFiles/allegro_video.dir/video.c.o: /home/susamogus/programming
   /home/susamogus/programming/Final_project/allegro/addons/audio/allegro5/allegro_audio.h \
   /home/susamogus/programming/Final_project/allegro/addons/video/allegro5/allegro_video.h \
   /home/susamogus/programming/Final_project/allegro/addons/video/allegro5/internal/aintern_video.h \
+  include/allegro5/internal/aintern_video_cfg.h \
+  include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro5.h \
@@ -193,7 +195,6 @@ addons/video/CMakeFiles/allegro_video.dir/video.c.o: /home/susamogus/programming
   /home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_exitfunc.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_video_cfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/keyboard.h \
@@ -203,7 +204,6 @@ addons/video/CMakeFiles/allegro_video.dir/video.c.o: /home/susamogus/programming
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h \
-  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h \
   /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h \
@@ -384,15 +384,15 @@ addons/video/CMakeFiles/allegro_video.dir/ogv.c.o:
 
 /usr/lib/libgcc_s.so:
 
-/usr/lib/libc.so:
-
 /usr/lib/libm.so:
 
 /usr/lib/libXi.so:
 
 /usr/lib/crtn.o:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_video_cfg.h:
+/usr/lib/libc.so:
+
+include/allegro5/internal/aintern_video_cfg.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdint.h:
 
@@ -472,13 +472,13 @@ lib/liballegro_audio.so.5.2.7:
 
 /usr/include/bits/struct_mutex.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
+/usr/lib/libmvec.so.1:
 
-addons/video/CMakeFiles/allegro_video.dir/video.c.o:
+/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
 
-/usr/include/asm/errno.h:
+/home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h:
 
-/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_lock.h:
+/usr/include/bits/fcntl.h:
 
 /usr/lib/libXinerama.so:
 
@@ -515,6 +515,12 @@ addons/video/CMakeFiles/allegro_video.dir/video.c.o:
 /home/susamogus/programming/Final_project/allegro/include/allegro5/display.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/base.h:
+
+include/allegro5/platform/alplatf.h:
+
+/usr/lib/libasound.so:
+
+/usr/include/bits/getopt_posix.h:
 
 /usr/lib/libXcursor.so:
 
@@ -555,6 +561,14 @@ lib/liballegro.so.5.2.7:
 /home/susamogus/programming/Final_project/allegro/include/allegro5/drawing.h:
 
 /usr/include/bits/types/__fpos64_t.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h:
+
+addons/video/CMakeFiles/allegro_video.dir/video.c.o:
+
+/usr/include/asm/errno.h:
+
+/home/susamogus/programming/Final_project/allegro/include/allegro5/bitmap_lock.h:
 
 /home/susamogus/programming/Final_project/allegro/include/allegro5/transformations.h:
 
@@ -614,14 +628,6 @@ lib/liballegro.so.5.2.7:
 
 /usr/include/bits/floatn.h:
 
-/usr/lib/libmvec.so.1:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/inline/fmaths.inl:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/haptic.h:
-
-/usr/include/bits/fcntl.h:
-
 /usr/include/bits/posix_opt.h:
 
 /usr/include/bits/atomic_wide_counter.h:
@@ -656,10 +662,6 @@ lib/liballegro.so.5.2.7:
 
 /usr/include/bits/types.h:
 
-/usr/lib/libasound.so:
-
-/usr/include/bits/getopt_posix.h:
-
 /usr/include/bits/libc-header-start.h:
 
 /usr/lib/libpulse.so:
@@ -667,8 +669,6 @@ lib/liballegro.so.5.2.7:
 /usr/include/bits/long-double.h:
 
 /usr/include/bits/posix1_lim.h:
-
-/home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 

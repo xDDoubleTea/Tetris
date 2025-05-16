@@ -8,6 +8,7 @@ demos/skater/CMakeFiles/skater.dir/src/anim.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/anim.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
@@ -52,7 +53,6 @@ demos/skater/CMakeFiles/skater.dir/src/anim.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -184,6 +184,7 @@ demos/skater/CMakeFiles/skater.dir/src/background_scroller.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/background_scroller.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
@@ -224,7 +225,6 @@ demos/skater/CMakeFiles/skater.dir/src/background_scroller.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -356,6 +356,7 @@ demos/skater/CMakeFiles/skater.dir/src/credits.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/credits.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
@@ -396,7 +397,6 @@ demos/skater/CMakeFiles/skater.dir/src/credits.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -529,6 +529,7 @@ demos/skater/CMakeFiles/skater.dir/src/fps.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/fps.h
@@ -569,7 +570,6 @@ demos/skater/CMakeFiles/skater.dir/src/fps.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -701,6 +701,7 @@ demos/skater/CMakeFiles/skater.dir/src/framework.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/credits.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
@@ -750,7 +751,6 @@ demos/skater/CMakeFiles/skater.dir/src/framework.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -882,6 +882,7 @@ demos/skater/CMakeFiles/skater.dir/src/game.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/anim.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
@@ -929,7 +930,6 @@ demos/skater/CMakeFiles/skater.dir/src/game.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1061,6 +1061,7 @@ demos/skater/CMakeFiles/skater.dir/src/gamepad.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/gamepad.h
@@ -1101,7 +1102,6 @@ demos/skater/CMakeFiles/skater.dir/src/gamepad.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1233,6 +1233,7 @@ demos/skater/CMakeFiles/skater.dir/src/global.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/background_scroller.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
@@ -1277,7 +1278,6 @@ demos/skater/CMakeFiles/skater.dir/src/global.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1410,6 +1410,7 @@ demos/skater/CMakeFiles/skater.dir/src/intro.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/gamestate.h
@@ -1453,7 +1454,6 @@ demos/skater/CMakeFiles/skater.dir/src/intro.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1585,6 +1585,7 @@ demos/skater/CMakeFiles/skater.dir/src/keyboard.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/global.h
@@ -1624,7 +1625,6 @@ demos/skater/CMakeFiles/skater.dir/src/keyboard.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1756,6 +1756,7 @@ demos/skater/CMakeFiles/skater.dir/src/level.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/game.h
@@ -1802,7 +1803,6 @@ demos/skater/CMakeFiles/skater.dir/src/level.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -1934,6 +1934,7 @@ demos/skater/CMakeFiles/skater.dir/src/level_alloc.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/global.h
@@ -1976,7 +1977,6 @@ demos/skater/CMakeFiles/skater.dir/src/level_alloc.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -2108,6 +2108,7 @@ demos/skater/CMakeFiles/skater.dir/src/level_file.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/global.h
@@ -2152,7 +2153,6 @@ demos/skater/CMakeFiles/skater.dir/src/level_file.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -2284,6 +2284,7 @@ demos/skater/CMakeFiles/skater.dir/src/level_state.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/global.h
@@ -2325,7 +2326,6 @@ demos/skater/CMakeFiles/skater.dir/src/level_state.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -2457,6 +2457,7 @@ demos/skater/CMakeFiles/skater.dir/src/menu.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/background_scroller.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/credits.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
@@ -2502,7 +2503,6 @@ demos/skater/CMakeFiles/skater.dir/src/menu.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -2634,6 +2634,7 @@ demos/skater/CMakeFiles/skater.dir/src/menu_about.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/gamestate.h
@@ -2676,7 +2677,6 @@ demos/skater/CMakeFiles/skater.dir/src/menu_about.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -2808,6 +2808,7 @@ demos/skater/CMakeFiles/skater.dir/src/menu_controls.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/gamestate.h
@@ -2850,7 +2851,6 @@ demos/skater/CMakeFiles/skater.dir/src/menu_controls.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -2982,6 +2982,7 @@ demos/skater/CMakeFiles/skater.dir/src/menu_graphics.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/gamestate.h
@@ -3024,7 +3025,6 @@ demos/skater/CMakeFiles/skater.dir/src/menu_graphics.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -3156,6 +3156,7 @@ demos/skater/CMakeFiles/skater.dir/src/menu_main.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/gamestate.h
@@ -3199,7 +3200,6 @@ demos/skater/CMakeFiles/skater.dir/src/menu_main.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -3331,6 +3331,7 @@ demos/skater/CMakeFiles/skater.dir/src/menu_misc.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/gamestate.h
@@ -3373,7 +3374,6 @@ demos/skater/CMakeFiles/skater.dir/src/menu_misc.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -3505,6 +3505,7 @@ demos/skater/CMakeFiles/skater.dir/src/menu_options.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/gamestate.h
@@ -3547,7 +3548,6 @@ demos/skater/CMakeFiles/skater.dir/src/menu_options.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -3679,6 +3679,7 @@ demos/skater/CMakeFiles/skater.dir/src/menu_sound.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/gamestate.h
@@ -3722,7 +3723,6 @@ demos/skater/CMakeFiles/skater.dir/src/menu_sound.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -3854,6 +3854,7 @@ demos/skater/CMakeFiles/skater.dir/src/menu_success.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/gamestate.h
@@ -3897,7 +3898,6 @@ demos/skater/CMakeFiles/skater.dir/src/menu_success.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -4029,6 +4029,7 @@ demos/skater/CMakeFiles/skater.dir/src/mouse.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/global.h
@@ -4069,7 +4070,6 @@ demos/skater/CMakeFiles/skater.dir/src/mouse.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -4201,6 +4201,7 @@ demos/skater/CMakeFiles/skater.dir/src/music.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/global.h
@@ -4241,7 +4242,6 @@ demos/skater/CMakeFiles/skater.dir/src/music.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -4373,6 +4373,7 @@ demos/skater/CMakeFiles/skater.dir/src/physics.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/anim.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
@@ -4418,7 +4419,6 @@ demos/skater/CMakeFiles/skater.dir/src/physics.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -4550,6 +4550,7 @@ demos/skater/CMakeFiles/skater.dir/src/quadtree.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/global.h
@@ -4591,7 +4592,6 @@ demos/skater/CMakeFiles/skater.dir/src/quadtree.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -4723,6 +4723,7 @@ demos/skater/CMakeFiles/skater.dir/src/screenshot.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/global.h
@@ -4763,7 +4764,6 @@ demos/skater/CMakeFiles/skater.dir/src/screenshot.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -4890,6 +4890,7 @@ demos/skater/CMakeFiles/skater.dir/src/screenshot.c.o
 
 demos/skater/CMakeFiles/skater.dir/src/skater.c.o
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/skater.c
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/framework.h
@@ -4927,7 +4928,6 @@ demos/skater/CMakeFiles/skater.dir/src/skater.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -5033,6 +5033,7 @@ demos/skater/CMakeFiles/skater.dir/src/skater.c.o
 
 demos/skater/CMakeFiles/skater.dir/src/token.c.o
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/token.c
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/token.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
@@ -5068,7 +5069,6 @@ demos/skater/CMakeFiles/skater.dir/src/token.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -5189,6 +5189,7 @@ demos/skater/CMakeFiles/skater.dir/src/transition.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/image/allegro5/allegro_image.h
  /home/susamogus/programming/Final_project/allegro/addons/primitives/allegro5/allegro_primitives.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/defines.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/demodata.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/gamestate.h
@@ -5230,7 +5231,6 @@ demos/skater/CMakeFiles/skater.dir/src/transition.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h
@@ -5357,6 +5357,7 @@ demos/skater/CMakeFiles/skater.dir/src/transition.c.o
 
 demos/skater/CMakeFiles/skater.dir/src/vcontroller.c.o
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/vcontroller.c
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/demos/skater/src/vcontroller.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
@@ -5392,7 +5393,6 @@ demos/skater/CMakeFiles/skater.dir/src/vcontroller.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h

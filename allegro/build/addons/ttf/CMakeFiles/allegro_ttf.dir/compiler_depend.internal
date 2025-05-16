@@ -6,6 +6,8 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/allegro_font.h
  /home/susamogus/programming/Final_project/allegro/addons/font/allegro5/internal/aintern_font.h
  /home/susamogus/programming/Final_project/allegro/addons/ttf/allegro5/allegro_ttf.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/internal/aintern_ttf_cfg.h
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/allegro_opengl.h
@@ -46,7 +48,6 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_system.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_thread.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_touch_input.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_ttf_cfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/aintern_vector.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/internal/alconfig.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/joystick.h
@@ -67,7 +68,6 @@ addons/ttf/CMakeFiles/allegro_ttf.dir/ttf.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/opengl/gl_ext.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/aintuthr.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h

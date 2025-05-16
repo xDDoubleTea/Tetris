@@ -3,6 +3,7 @@
 
 examples/CMakeFiles/ex_timer_pause.dir/ex_timer_pause.c.o
  /home/susamogus/programming/Final_project/allegro/examples/ex_timer_pause.c
+ /home/susamogus/programming/Final_project/allegro/build/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/addons/native_dialog/allegro5/allegro_native_dialog.h
  /home/susamogus/programming/Final_project/allegro/examples/common.c
  /home/susamogus/programming/Final_project/allegro/include/allegro5/alcompat.h
@@ -39,7 +40,6 @@ examples/CMakeFiles/ex_timer_pause.dir/ex_timer_pause.c.o
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/mouse_cursor.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/path.h
- /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alplatf.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alucfg.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/alunix.h
  /home/susamogus/programming/Final_project/allegro/include/allegro5/platform/astdbool.h

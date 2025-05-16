@@ -67,13 +67,6 @@
 /home/susamogus/programming/Final_project/allegro/build/addons/memfile/CMakeFiles/install.dir
 /home/susamogus/programming/Final_project/allegro/build/addons/memfile/CMakeFiles/install/local.dir
 /home/susamogus/programming/Final_project/allegro/build/addons/memfile/CMakeFiles/install/strip.dir
-/home/susamogus/programming/Final_project/allegro/build/addons/physfs/CMakeFiles/allegro_physfs.dir
-/home/susamogus/programming/Final_project/allegro/build/addons/physfs/CMakeFiles/edit_cache.dir
-/home/susamogus/programming/Final_project/allegro/build/addons/physfs/CMakeFiles/rebuild_cache.dir
-/home/susamogus/programming/Final_project/allegro/build/addons/physfs/CMakeFiles/list_install_components.dir
-/home/susamogus/programming/Final_project/allegro/build/addons/physfs/CMakeFiles/install.dir
-/home/susamogus/programming/Final_project/allegro/build/addons/physfs/CMakeFiles/install/local.dir
-/home/susamogus/programming/Final_project/allegro/build/addons/physfs/CMakeFiles/install/strip.dir
 /home/susamogus/programming/Final_project/allegro/build/addons/native_dialog/CMakeFiles/allegro_dialog.dir
 /home/susamogus/programming/Final_project/allegro/build/addons/native_dialog/CMakeFiles/edit_cache.dir
 /home/susamogus/programming/Final_project/allegro/build/addons/native_dialog/CMakeFiles/rebuild_cache.dir
@@ -181,7 +174,6 @@
 /home/susamogus/programming/Final_project/allegro/build/examples/CMakeFiles/ex_multiwin.dir
 /home/susamogus/programming/Final_project/allegro/build/examples/CMakeFiles/ex_nodisplay.dir
 /home/susamogus/programming/Final_project/allegro/build/examples/CMakeFiles/ex_noframe.dir
-/home/susamogus/programming/Final_project/allegro/build/examples/CMakeFiles/ex_physfs.dir
 /home/susamogus/programming/Final_project/allegro/build/examples/CMakeFiles/ex_pixelformat.dir
 /home/susamogus/programming/Final_project/allegro/build/examples/CMakeFiles/ex_polygon.dir
 /home/susamogus/programming/Final_project/allegro/build/examples/CMakeFiles/ex_premulalpha.dir
