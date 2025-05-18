@@ -1,4 +1,4 @@
-OUT := main
+OUT := game
 CC := gcc
 
 CXXFLAGS := -Wall -std=c11 -O2

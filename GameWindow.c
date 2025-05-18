@@ -36,7 +36,9 @@ void execute(Game* self) {
         switch (event.type) {
             case ALLEGRO_EVENT_TIMER: {
                 run &= self->game_update(self);
-                if (!run) break;
+                if (!run) {
+                    break;
+                }
                 self->game_draw(self);
                 break;
             }
@@ -114,12 +116,13 @@ void game_init(Game* self) {
 bool game_update(Game* self) {
     scene->Update(scene);
     if (scene->scene_end) {
-        scene->Destroy(scene);
         switch (window) {
             case 0:
+                scene->Destroy(scene);
                 create_scene(Menu_L);
                 break;
             case 1:
+                scene->Destroy(scene);
                 create_scene(GameScene_L);
                 break;
             case -1:
@@ -140,6 +143,6 @@ void game_destroy(Game* self) {
     // Make sure you destroy all things
     al_destroy_event_queue(event_queue);
     al_destroy_display(self->display);
-    /* scene->Destroy(scene); */
-    /* free(self); */
+    scene->Destroy(scene);
+    free(self);
 }
