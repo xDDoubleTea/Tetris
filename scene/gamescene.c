@@ -14,7 +14,6 @@ Scene* New_GameScene(int label) {
     pObj->pDerivedObj = pDerivedObj;
     pDerivedObj->background = al_load_bitmap("assests/pictures/chomusuke.png");
     // register element
-    _Register_elements(pObj, New_Ball(Ball_L));
     // setting derived object function
     pObj->Update = game_scene_update;
     pObj->Draw = game_scene_draw;
