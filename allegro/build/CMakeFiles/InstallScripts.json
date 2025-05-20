@@ -1,0 +1,25 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/susamogus/programming/Final_project/allegro/build/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/primitives/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/image/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/font/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/audio/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/acodec/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/ttf/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/color/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/memfile/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/native_dialog/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/video/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/addons/main/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/demos/cosmic_protector/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/demos/speed/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/demos/skater/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/examples/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/tests/cmake_install.cmake",
+		"/home/susamogus/programming/Final_project/allegro/build/docs/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,1296 @@
+al_get_allegro_version: uint32_t al_get_allegro_version(void):src/allegro.c:27
+al_run_main: int al_run_main(int argc, char **argv, int (*user_main)(int, char **)):src/allegro.c:36
+al_android_set_apk_file_interface: void al_android_set_apk_file_interface(void):src/android/android_apk_file.c:306
+al_android_set_apk_fs_interface: void al_android_set_apk_fs_interface(void):src/android/android_apk_fs.c:302
+al_android_get_os_version: const char *al_android_get_os_version(void):src/android/android_system.c:599
+al_android_get_jni_env: JNIEnv *al_android_get_jni_env(void):src/android/android_system.c:647
+al_android_get_activity: jobject al_android_get_activity(void):src/android/android_system.c:654
+al_create_bitmap: ALLEGRO_BITMAP *al_create_bitmap(int w, int h):src/bitmap.c:187
+al_destroy_bitmap: void al_destroy_bitmap(ALLEGRO_BITMAP *bitmap):src/bitmap.c:205
+al_convert_mask_to_alpha: void al_convert_mask_to_alpha(ALLEGRO_BITMAP *bitmap, ALLEGRO_COLOR mask_color):src/bitmap.c:254
+al_get_bitmap_width: int al_get_bitmap_width(ALLEGRO_BITMAP *bitmap):src/bitmap.c:290
+al_get_bitmap_height: int al_get_bitmap_height(ALLEGRO_BITMAP *bitmap):src/bitmap.c:299
+al_get_bitmap_format: int al_get_bitmap_format(ALLEGRO_BITMAP *bitmap):src/bitmap.c:308
+al_get_bitmap_flags: int al_get_bitmap_flags(ALLEGRO_BITMAP *bitmap):src/bitmap.c:329
+al_get_bitmap_depth: int al_get_bitmap_depth(ALLEGRO_BITMAP *bitmap):src/bitmap.c:349
+al_get_bitmap_samples: int al_get_bitmap_samples(ALLEGRO_BITMAP *bitmap):src/bitmap.c:360
+al_get_bitmap_blend_color: ALLEGRO_COLOR al_get_bitmap_blend_color(void):src/bitmap.c:370
+al_get_bitmap_blender: void al_get_bitmap_blender(int *op, int *src, int *dst):src/bitmap.c:388
+al_get_separate_bitmap_blender: void al_get_separate_bitmap_blender(int *op, int *src, int *dst, int *alpha_op, int *alpha_src, int *alpha_dst):src/bitmap.c:395
+al_set_bitmap_blend_color: void al_set_bitmap_blend_color(ALLEGRO_COLOR col):src/bitmap.c:431
+al_set_bitmap_blender: void al_set_bitmap_blender(int op, int src, int dest):src/bitmap.c:444
+al_set_separate_bitmap_blender: void al_set_separate_bitmap_blender(int op, int src, int dst, int alpha_op, int alpha_src, int alpha_dst):src/bitmap.c:455
+al_reset_bitmap_blender: void al_reset_bitmap_blender(void):src/bitmap.c:474
+al_set_clipping_rectangle: void al_set_clipping_rectangle(int x, int y, int width, int height):src/bitmap.c:486
+al_reset_clipping_rectangle: void al_reset_clipping_rectangle(void):src/bitmap.c:527
+al_get_clipping_rectangle: void al_get_clipping_rectangle(int *x, int *y, int *w, int *h):src/bitmap.c:542
+al_create_sub_bitmap: ALLEGRO_BITMAP *al_create_sub_bitmap(ALLEGRO_BITMAP *parent,:src/bitmap.c:558
+al_create_sub_bitmap:    int x, int y, int w, int h):src/bitmap.c:559
+al_reparent_bitmap: void al_reparent_bitmap(ALLEGRO_BITMAP *bitmap, ALLEGRO_BITMAP *parent,:src/bitmap.c:605
+al_reparent_bitmap:    int x, int y, int w, int h):src/bitmap.c:606
+al_is_sub_bitmap: bool al_is_sub_bitmap(ALLEGRO_BITMAP *bitmap):src/bitmap.c:630
+al_get_parent_bitmap: ALLEGRO_BITMAP *al_get_parent_bitmap(ALLEGRO_BITMAP *bitmap):src/bitmap.c:638
+al_get_bitmap_x: int al_get_bitmap_x(ALLEGRO_BITMAP *bitmap):src/bitmap.c:647
+al_get_bitmap_y: int al_get_bitmap_y(ALLEGRO_BITMAP *bitmap):src/bitmap.c:656
+al_clone_bitmap: ALLEGRO_BITMAP *al_clone_bitmap(ALLEGRO_BITMAP *bitmap):src/bitmap.c:790
+al_backup_dirty_bitmap: void al_backup_dirty_bitmap(ALLEGRO_BITMAP *bitmap):src/bitmap.c:807
+al_draw_tinted_bitmap_region: void al_draw_tinted_bitmap_region(ALLEGRO_BITMAP *bitmap,:src/bitmap_draw.c:125
+al_draw_tinted_bitmap_region:    ALLEGRO_COLOR tint,:src/bitmap_draw.c:126
+al_draw_tinted_bitmap_region:    float sx, float sy, float sw, float sh, float dx, float dy,:src/bitmap_draw.c:127
+al_draw_tinted_bitmap_region:    int flags):src/bitmap_draw.c:128
+al_draw_tinted_bitmap: void al_draw_tinted_bitmap(ALLEGRO_BITMAP *bitmap, ALLEGRO_COLOR tint,:src/bitmap_draw.c:137
+al_draw_tinted_bitmap:    float dx, float dy, int flags):src/bitmap_draw.c:138
+al_draw_bitmap: void al_draw_bitmap(ALLEGRO_BITMAP *bitmap, float dx, float dy, int flags):src/bitmap_draw.c:148
+al_draw_bitmap_region: void al_draw_bitmap_region(ALLEGRO_BITMAP *bitmap,:src/bitmap_draw.c:156
+al_draw_bitmap_region:    float sx, float sy, float sw, float sh, float dx, float dy, int flags):src/bitmap_draw.c:157
+al_draw_tinted_scaled_bitmap: void al_draw_tinted_scaled_bitmap(ALLEGRO_BITMAP *bitmap,:src/bitmap_draw.c:166
+al_draw_tinted_scaled_bitmap:    ALLEGRO_COLOR tint,:src/bitmap_draw.c:167
+al_draw_tinted_scaled_bitmap:    float sx, float sy, float sw, float sh,:src/bitmap_draw.c:168
+al_draw_tinted_scaled_bitmap:    float dx, float dy, float dw, float dh, int flags):src/bitmap_draw.c:169
+al_draw_scaled_bitmap: void al_draw_scaled_bitmap(ALLEGRO_BITMAP *bitmap,:src/bitmap_draw.c:180
+al_draw_scaled_bitmap:    float sx, float sy, float sw, float sh,:src/bitmap_draw.c:181
+al_draw_scaled_bitmap:    float dx, float dy, float dw, float dh, int flags):src/bitmap_draw.c:182
+al_draw_tinted_rotated_bitmap: void al_draw_tinted_rotated_bitmap(ALLEGRO_BITMAP *bitmap,:src/bitmap_draw.c:194
+al_draw_tinted_rotated_bitmap:    ALLEGRO_COLOR tint,:src/bitmap_draw.c:195
+al_draw_tinted_rotated_bitmap:    float cx, float cy, float dx, float dy, float angle, int flags):src/bitmap_draw.c:196
+al_draw_rotated_bitmap: void al_draw_rotated_bitmap(ALLEGRO_BITMAP *bitmap,:src/bitmap_draw.c:205
+al_draw_rotated_bitmap:    float cx, float cy, float dx, float dy, float angle, int flags):src/bitmap_draw.c:206
+al_draw_tinted_scaled_rotated_bitmap: void al_draw_tinted_scaled_rotated_bitmap(ALLEGRO_BITMAP *bitmap,:src/bitmap_draw.c:215
+al_draw_tinted_scaled_rotated_bitmap:    ALLEGRO_COLOR tint,:src/bitmap_draw.c:216
+al_draw_tinted_scaled_rotated_bitmap:    float cx, float cy, float dx, float dy, float xscale, float yscale,:src/bitmap_draw.c:217
+al_draw_tinted_scaled_rotated_bitmap:    float angle, int flags):src/bitmap_draw.c:218
+al_draw_tinted_scaled_rotated_bitmap_region: void al_draw_tinted_scaled_rotated_bitmap_region(ALLEGRO_BITMAP *bitmap,:src/bitmap_draw.c:229
+al_draw_tinted_scaled_rotated_bitmap_region:    float sx, float sy, float sw, float sh,:src/bitmap_draw.c:230
+al_draw_tinted_scaled_rotated_bitmap_region:    ALLEGRO_COLOR tint,:src/bitmap_draw.c:231
+al_draw_tinted_scaled_rotated_bitmap_region:    float cx, float cy, float dx, float dy, float xscale, float yscale,:src/bitmap_draw.c:232
+al_draw_tinted_scaled_rotated_bitmap_region:    float angle, int flags):src/bitmap_draw.c:233
+al_draw_scaled_rotated_bitmap: void al_draw_scaled_rotated_bitmap(ALLEGRO_BITMAP *bitmap,:src/bitmap_draw.c:244
+al_draw_scaled_rotated_bitmap:    float cx, float cy, float dx, float dy, float xscale, float yscale,:src/bitmap_draw.c:245
+al_draw_scaled_rotated_bitmap:    float angle, int flags):src/bitmap_draw.c:246
+al_register_bitmap_loader: bool al_register_bitmap_loader(const char *extension,:src/bitmap_io.c:128
+al_register_bitmap_loader:    ALLEGRO_BITMAP *(*loader)(const char *filename, int flags)):src/bitmap_io.c:129
+al_register_bitmap_saver: bool al_register_bitmap_saver(const char *extension,:src/bitmap_io.c:137
+al_register_bitmap_saver:    bool (*saver)(const char *filename, ALLEGRO_BITMAP *bmp)):src/bitmap_io.c:138
+al_register_bitmap_loader_f: bool al_register_bitmap_loader_f(const char *extension,:src/bitmap_io.c:146
+al_register_bitmap_loader_f:    ALLEGRO_BITMAP *(*fs_loader)(ALLEGRO_FILE *fp, int flags)):src/bitmap_io.c:147
+al_register_bitmap_saver_f: bool al_register_bitmap_saver_f(const char *extension,:src/bitmap_io.c:155
+al_register_bitmap_saver_f:    bool (*fs_saver)(ALLEGRO_FILE *fp, ALLEGRO_BITMAP *bmp)):src/bitmap_io.c:156
+al_register_bitmap_identifier: bool al_register_bitmap_identifier(const char *extension,:src/bitmap_io.c:164
+al_register_bitmap_identifier:    bool (*identifier)(ALLEGRO_FILE *f)):src/bitmap_io.c:165
+al_load_bitmap: ALLEGRO_BITMAP *al_load_bitmap(const char *filename):src/bitmap_io.c:173
+al_load_bitmap_flags: ALLEGRO_BITMAP *al_load_bitmap_flags(const char *filename, int flags):src/bitmap_io.c:190
+al_save_bitmap: bool al_save_bitmap(const char *filename, ALLEGRO_BITMAP *bitmap):src/bitmap_io.c:223
+al_load_bitmap_f: ALLEGRO_BITMAP *al_load_bitmap_f(ALLEGRO_FILE *fp, const char *ident):src/bitmap_io.c:246
+al_load_bitmap_flags_f: ALLEGRO_BITMAP *al_load_bitmap_flags_f(ALLEGRO_FILE *fp,:src/bitmap_io.c:263
+al_load_bitmap_flags_f:    const char *ident, int flags):src/bitmap_io.c:264
+al_save_bitmap_f: bool al_save_bitmap_f(ALLEGRO_FILE *fp, const char *ident,:src/bitmap_io.c:280
+al_save_bitmap_f:    ALLEGRO_BITMAP *bitmap):src/bitmap_io.c:281
+al_identify_bitmap_f: char const *al_identify_bitmap_f(ALLEGRO_FILE *fp):src/bitmap_io.c:295
+al_identify_bitmap: char const *al_identify_bitmap(char const *filename):src/bitmap_io.c:306
+al_lock_bitmap_region: ALLEGRO_LOCKED_REGION *al_lock_bitmap_region(ALLEGRO_BITMAP *bitmap,:src/bitmap_lock.c:25
+al_lock_bitmap_region:    int x, int y, int width, int height, int format, int flags):src/bitmap_lock.c:26
+al_lock_bitmap: ALLEGRO_LOCKED_REGION *al_lock_bitmap(ALLEGRO_BITMAP *bitmap,:src/bitmap_lock.c:126
+al_lock_bitmap:    int format, int flags):src/bitmap_lock.c:127
+al_unlock_bitmap: void al_unlock_bitmap(ALLEGRO_BITMAP *bitmap):src/bitmap_lock.c:135
+al_is_bitmap_locked: bool al_is_bitmap_locked(ALLEGRO_BITMAP *bitmap):src/bitmap_lock.c:167
+al_lock_bitmap_blocked: ALLEGRO_LOCKED_REGION *al_lock_bitmap_blocked(ALLEGRO_BITMAP *bitmap,:src/bitmap_lock.c:174
+al_lock_bitmap_blocked:    int flags):src/bitmap_lock.c:175
+al_lock_bitmap_region_blocked: ALLEGRO_LOCKED_REGION *al_lock_bitmap_region_blocked(ALLEGRO_BITMAP *bitmap,:src/bitmap_lock.c:189
+al_lock_bitmap_region_blocked:    int x_block, int y_block, int width_block, int height_block, int flags):src/bitmap_lock.c:190
+al_get_pixel: ALLEGRO_COLOR al_get_pixel(ALLEGRO_BITMAP *bitmap, int x, int y):src/bitmap_pixel.c:27
+al_put_pixel: void al_put_pixel(int x, int y, ALLEGRO_COLOR color):src/bitmap_pixel.c:131
+al_put_blended_pixel: void al_put_blended_pixel(int x, int y, ALLEGRO_COLOR color):src/bitmap_pixel.c:139
+al_convert_bitmap: void al_convert_bitmap(ALLEGRO_BITMAP *bitmap):src/bitmap_type.c:154
+al_convert_memory_bitmaps: void al_convert_memory_bitmaps(void):src/bitmap_type.c:231
+al_get_clipboard_text: char *al_get_clipboard_text(ALLEGRO_DISPLAY *display):src/clipboard.c:29
+al_set_clipboard_text: bool al_set_clipboard_text(ALLEGRO_DISPLAY *display, const char *text):src/clipboard.c:46
+al_clipboard_has_text: bool al_clipboard_has_text(ALLEGRO_DISPLAY *display):src/clipboard.c:64
+al_create_config: ALLEGRO_CONFIG *al_create_config(void):src/config.c:37
+al_add_config_section: void al_add_config_section(ALLEGRO_CONFIG *config, const char *name):src/config.c:110
+al_set_config_value: void al_set_config_value(ALLEGRO_CONFIG *config,:src/config.c:164
+al_set_config_value:    const char *section, const char *key, const char *value):src/config.c:165
+al_add_config_comment: void al_add_config_comment(ALLEGRO_CONFIG *config,:src/config.c:225
+al_add_config_comment:    const char *section, const char *comment):src/config.c:226
+al_get_config_value: const char *al_get_config_value(const ALLEGRO_CONFIG *config,:src/config.c:268
+al_get_config_value:    const char *section, const char *key):src/config.c:269
+al_load_config_file: ALLEGRO_CONFIG *al_load_config_file(const char *filename):src/config.c:311
+al_load_config_file_f: ALLEGRO_CONFIG *al_load_config_file_f(ALLEGRO_FILE *file):src/config.c:328
+al_save_config_file: bool al_save_config_file(const char *filename, const ALLEGRO_CONFIG *config):src/config.c:432
+al_save_config_file_f: bool al_save_config_file_f(ALLEGRO_FILE *file, const ALLEGRO_CONFIG *config):src/config.c:449
+al_merge_config_into: void al_merge_config_into(ALLEGRO_CONFIG *master, const ALLEGRO_CONFIG *add):src/config.c:515
+al_merge_config: ALLEGRO_CONFIG *al_merge_config(const ALLEGRO_CONFIG *cfg1,:src/config.c:523
+al_merge_config:     const ALLEGRO_CONFIG *cfg2):src/config.c:524
+al_destroy_config: void al_destroy_config(ALLEGRO_CONFIG *config):src/config.c:559
+al_get_first_config_section: char const *al_get_first_config_section(ALLEGRO_CONFIG const *config,:src/config.c:581
+al_get_first_config_section:    ALLEGRO_CONFIG_SECTION **iterator):src/config.c:582
+al_get_next_config_section: char const *al_get_next_config_section(ALLEGRO_CONFIG_SECTION **iterator):src/config.c:596
+al_get_first_config_entry: char const *al_get_first_config_entry(ALLEGRO_CONFIG const *config,:src/config.c:612
+al_get_first_config_entry:    char const *section, ALLEGRO_CONFIG_ENTRY **iterator):src/config.c:613
+al_get_next_config_entry: char const *al_get_next_config_entry(ALLEGRO_CONFIG_ENTRY **iterator):src/config.c:640
+al_remove_config_section: bool al_remove_config_section(ALLEGRO_CONFIG *config, char const *section):src/config.c:658
+al_remove_config_key: bool al_remove_config_key(ALLEGRO_CONFIG *config, char const *section,:src/config.c:700
+al_remove_config_key:    char const *key):src/config.c:701
+al_get_cpu_count: int al_get_cpu_count(void):src/cpu.c:50
+al_get_ram_size: int al_get_ram_size(void):src/cpu.c:77
+al_register_assert_handler: void al_register_assert_handler(void (*handler)(char const *expr,:src/debug.c:358
+al_register_assert_handler:    char const *file, int line, char const *func)):src/debug.c:359
+al_register_trace_handler: void al_register_trace_handler(void (*handler)(char const *)):src/debug.c:367
+al_create_display: ALLEGRO_DISPLAY *al_create_display(int w, int h):src/display.c:38
+al_destroy_display: void al_destroy_display(ALLEGRO_DISPLAY *display):src/display.c:141
+al_get_backbuffer: ALLEGRO_BITMAP *al_get_backbuffer(ALLEGRO_DISPLAY *display):src/display.c:175
+al_flip_display: void al_flip_display(void):src/display.c:188
+al_update_display_region: void al_update_display_region(int x, int y, int width, int height):src/display.c:202
+al_acknowledge_resize: bool al_acknowledge_resize(ALLEGRO_DISPLAY *display):src/display.c:216
+al_resize_display: bool al_resize_display(ALLEGRO_DISPLAY *display, int width, int height):src/display.c:233
+al_is_compatible_bitmap: bool al_is_compatible_bitmap(ALLEGRO_BITMAP *bitmap):src/display.c:250
+al_get_display_width: int al_get_display_width(ALLEGRO_DISPLAY *display):src/display.c:267
+al_get_display_height: int al_get_display_height(ALLEGRO_DISPLAY *display):src/display.c:278
+al_get_display_format: int al_get_display_format(ALLEGRO_DISPLAY *display):src/display.c:288
+al_get_display_refresh_rate: int al_get_display_refresh_rate(ALLEGRO_DISPLAY *display):src/display.c:298
+al_get_display_flags: int al_get_display_flags(ALLEGRO_DISPLAY *display):src/display.c:309
+al_get_display_orientation: int al_get_display_orientation(ALLEGRO_DISPLAY* display):src/display.c:319
+al_wait_for_vsync: bool al_wait_for_vsync(void):src/display.c:330
+al_set_display_icon: void al_set_display_icon(ALLEGRO_DISPLAY *display, ALLEGRO_BITMAP *icon):src/display.c:345
+al_set_display_icons: void al_set_display_icons(ALLEGRO_DISPLAY *display,:src/display.c:356
+al_set_display_icons:    int num_icons, ALLEGRO_BITMAP *icons[]):src/display.c:357
+al_set_window_position: void al_set_window_position(ALLEGRO_DISPLAY *display, int x, int y):src/display.c:375
+al_get_window_position: void al_get_window_position(ALLEGRO_DISPLAY *display, int *x, int *y):src/display.c:391
+al_set_window_constraints: bool al_set_window_constraints(ALLEGRO_DISPLAY *display,:src/display.c:407
+al_set_window_constraints:    int min_w, int min_h, int max_w, int max_h):src/display.c:408
+al_get_window_constraints: bool al_get_window_constraints(ALLEGRO_DISPLAY *display,:src/display.c:445
+al_get_window_constraints:    int *min_w, int *min_h, int *max_w, int *max_h):src/display.c:446
+al_set_display_flag: bool al_set_display_flag(ALLEGRO_DISPLAY *display, int flag, bool onoff):src/display.c:466
+al_set_window_title: void al_set_window_title(ALLEGRO_DISPLAY *display, const char *title):src/display.c:479
+al_get_display_event_source: ALLEGRO_EVENT_SOURCE *al_get_display_event_source(ALLEGRO_DISPLAY *display):src/display.c:488
+al_hold_bitmap_drawing: void al_hold_bitmap_drawing(bool hold):src/display.c:495
+al_is_bitmap_drawing_held: bool al_is_bitmap_drawing_held(void):src/display.c:531
+al_acknowledge_drawing_halt: void al_acknowledge_drawing_halt(ALLEGRO_DISPLAY *display):src/display.c:575
+al_acknowledge_drawing_resume: void al_acknowledge_drawing_resume(ALLEGRO_DISPLAY *display):src/display.c:584
+al_set_render_state: void al_set_render_state(ALLEGRO_RENDER_STATE state, int value):src/display.c:593
+al_backup_dirty_bitmaps: void al_backup_dirty_bitmaps(ALLEGRO_DISPLAY *display):src/display.c:631
+al_apply_window_constraints: void al_apply_window_constraints(ALLEGRO_DISPLAY *display, bool onoff):src/display.c:648
+al_set_new_display_option: void al_set_new_display_option(int option, int value, int importance):src/display_settings.c:29
+al_get_new_display_option: int al_get_new_display_option(int option, int *importance):src/display_settings.c:64
+al_set_display_option: void al_set_display_option(ALLEGRO_DISPLAY *display, int option, int value):src/display_settings.c:82
+al_get_display_option: int al_get_display_option(ALLEGRO_DISPLAY *display, int option):src/display_settings.c:94
+al_reset_new_display_options: void al_reset_new_display_options(void):src/display_settings.c:104
+al_clear_to_color: void al_clear_to_color(ALLEGRO_COLOR color):src/drawing.c:26
+al_clear_depth_buffer: void al_clear_depth_buffer(float z):src/drawing.c:46
+al_draw_pixel: void al_draw_pixel(float x, float y, ALLEGRO_COLOR color):src/drawing.c:64
+al_create_event_queue: ALLEGRO_EVENT_QUEUE *al_create_event_queue(void):src/events.c:90
+al_destroy_event_queue: void al_destroy_event_queue(ALLEGRO_EVENT_QUEUE *queue):src/events.c:120
+al_is_event_source_registered: bool al_is_event_source_registered(ALLEGRO_EVENT_QUEUE *queue, :src/events.c:147
+al_is_event_source_registered:       ALLEGRO_EVENT_SOURCE *source):src/events.c:148
+al_register_event_source: void al_register_event_source(ALLEGRO_EVENT_QUEUE *queue,:src/events.c:161
+al_register_event_source:    ALLEGRO_EVENT_SOURCE *source):src/events.c:162
+al_unregister_event_source: void al_unregister_event_source(ALLEGRO_EVENT_QUEUE *queue,:src/events.c:181
+al_unregister_event_source:    ALLEGRO_EVENT_SOURCE *source):src/events.c:182
+al_pause_event_queue: void al_pause_event_queue(ALLEGRO_EVENT_QUEUE *queue, bool pause):src/events.c:208
+al_is_event_queue_paused: bool al_is_event_queue_paused(const ALLEGRO_EVENT_QUEUE *queue):src/events.c:221
+al_is_event_queue_empty: bool al_is_event_queue_empty(ALLEGRO_EVENT_QUEUE *queue):src/events.c:248
+al_get_next_event: bool al_get_next_event(ALLEGRO_EVENT_QUEUE *queue, ALLEGRO_EVENT *ret_event):src/events.c:296
+al_peek_next_event: bool al_peek_next_event(ALLEGRO_EVENT_QUEUE *queue, ALLEGRO_EVENT *ret_event):src/events.c:321
+al_drop_next_event: bool al_drop_next_event(ALLEGRO_EVENT_QUEUE *queue):src/events.c:346
+al_flush_event_queue: void al_flush_event_queue(ALLEGRO_EVENT_QUEUE *queue):src/events.c:369
+al_wait_for_event: void al_wait_for_event(ALLEGRO_EVENT_QUEUE *queue, ALLEGRO_EVENT *ret_event):src/events.c:395
+al_wait_for_event_timed: bool al_wait_for_event_timed(ALLEGRO_EVENT_QUEUE *queue,:src/events.c:427
+al_wait_for_event_timed:    ALLEGRO_EVENT *ret_event, float secs):src/events.c:428
+al_wait_for_event_until: bool al_wait_for_event_until(ALLEGRO_EVENT_QUEUE *queue,:src/events.c:449
+al_wait_for_event_until:    ALLEGRO_EVENT *ret_event, ALLEGRO_TIMEOUT *timeout):src/events.c:450
+al_unref_user_event: void al_unref_user_event(ALLEGRO_USER_EVENT *event):src/events.c:708
+al_init_user_event_source: void al_init_user_event_source(ALLEGRO_EVENT_SOURCE *src):src/evtsrc.c:195
+al_destroy_user_event_source: void al_destroy_user_event_source(ALLEGRO_EVENT_SOURCE *src):src/evtsrc.c:206
+al_emit_user_event: bool al_emit_user_event(ALLEGRO_EVENT_SOURCE *src,:src/evtsrc.c:217
+al_emit_user_event:    ALLEGRO_EVENT *event, void (*dtor)(ALLEGRO_USER_EVENT *)):src/evtsrc.c:218
+al_set_event_source_data: void al_set_event_source_data(ALLEGRO_EVENT_SOURCE *source, intptr_t data):src/evtsrc.c:264
+al_get_event_source_data: intptr_t al_get_event_source_data(const ALLEGRO_EVENT_SOURCE *source):src/evtsrc.c:274
+al_fopen: ALLEGRO_FILE *al_fopen(const char *path, const char *mode):src/file.c:24
+al_fopen_interface: ALLEGRO_FILE *al_fopen_interface(const ALLEGRO_FILE_INTERFACE *drv,:src/file.c:32
+al_fopen_interface:    const char *path, const char *mode):src/file.c:33
+al_create_file_handle: ALLEGRO_FILE *al_create_file_handle(const ALLEGRO_FILE_INTERFACE *drv,:src/file.c:63
+al_create_file_handle:    void *userdata):src/file.c:64
+al_fclose: bool al_fclose(ALLEGRO_FILE *f):src/file.c:86
+al_fread: size_t al_fread(ALLEGRO_FILE *f, void *ptr, size_t size):src/file.c:101
+al_fwrite: size_t al_fwrite(ALLEGRO_FILE *f, const void *ptr, size_t size):src/file.c:126
+al_fflush: bool al_fflush(ALLEGRO_FILE *f):src/file.c:138
+al_ftell: int64_t al_ftell(ALLEGRO_FILE *f):src/file.c:148
+al_fseek: bool al_fseek(ALLEGRO_FILE *f, int64_t offset, int whence):src/file.c:158
+al_feof: bool al_feof(ALLEGRO_FILE *f):src/file.c:181
+al_ferror: int al_ferror(ALLEGRO_FILE *f):src/file.c:191
+al_ferrmsg: const char *al_ferrmsg(ALLEGRO_FILE *f):src/file.c:201
+al_fclearerr: void al_fclearerr(ALLEGRO_FILE *f):src/file.c:214
+al_fgetc: int al_fgetc(ALLEGRO_FILE *f):src/file.c:224
+al_fputc: int al_fputc(ALLEGRO_FILE *f, int c):src/file.c:239
+al_fread16le: int16_t al_fread16le(ALLEGRO_FILE *f):src/file.c:254
+al_fread32le: int32_t al_fread32le(ALLEGRO_FILE *f):src/file.c:269
+al_fwrite16le: size_t al_fwrite16le(ALLEGRO_FILE *f, int16_t w):src/file.c:285
+al_fwrite32le: size_t al_fwrite32le(ALLEGRO_FILE *f, int32_t l):src/file.c:305
+al_fread16be: int16_t al_fread16be(ALLEGRO_FILE *f):src/file.c:333
+al_fread32be: int32_t al_fread32be(ALLEGRO_FILE *f):src/file.c:348
+al_fwrite16be: size_t al_fwrite16be(ALLEGRO_FILE *f, int16_t w):src/file.c:364
+al_fwrite32be: size_t al_fwrite32be(ALLEGRO_FILE *f, int32_t l):src/file.c:384
+al_fgets: char *al_fgets(ALLEGRO_FILE *f, char * const buf, size_t max):src/file.c:412
+al_fget_ustr: ALLEGRO_USTR *al_fget_ustr(ALLEGRO_FILE *f):src/file.c:457
+al_fputs: int al_fputs(ALLEGRO_FILE *f, char const *p):src/file.c:480
+al_fungetc: int al_fungetc(ALLEGRO_FILE *f, int c):src/file.c:497
+al_fsize: int64_t al_fsize(ALLEGRO_FILE *f):src/file.c:523
+al_get_file_userdata: void *al_get_file_userdata(ALLEGRO_FILE *f):src/file.c:533
+al_vfprintf: int al_vfprintf(ALLEGRO_FILE *pfile, const char *format, va_list args):src/file.c:543
+al_fprintf: int al_fprintf(ALLEGRO_FILE *pfile, const char *format, ...):src/file.c:576
+al_fopen_slice: ALLEGRO_FILE *al_fopen_slice(ALLEGRO_FILE *fp, size_t initial_size, const char *mode):src/file_slice.c:205
+al_fopen_fd: ALLEGRO_FILE *al_fopen_fd(int fd, const char *mode):src/file_stdio.c:71
+al_set_standard_file_interface: void al_set_standard_file_interface(void):src/file_stdio.c:385
+al_make_temp_file: ALLEGRO_FILE *al_make_temp_file(const char *template, ALLEGRO_PATH **ret_path):src/file_stdio.c:463
+al_create_fs_entry: ALLEGRO_FS_ENTRY *al_create_fs_entry(const char *path):src/fshook.c:28
+al_destroy_fs_entry: void al_destroy_fs_entry(ALLEGRO_FS_ENTRY *fh):src/fshook.c:38
+al_get_fs_entry_name: const char *al_get_fs_entry_name(ALLEGRO_FS_ENTRY *e):src/fshook.c:48
+al_update_fs_entry: bool al_update_fs_entry(ALLEGRO_FS_ENTRY *e):src/fshook.c:58
+al_get_fs_entry_mode: uint32_t al_get_fs_entry_mode(ALLEGRO_FS_ENTRY *e):src/fshook.c:68
+al_get_fs_entry_atime: time_t al_get_fs_entry_atime(ALLEGRO_FS_ENTRY *e):src/fshook.c:78
+al_get_fs_entry_mtime: time_t al_get_fs_entry_mtime(ALLEGRO_FS_ENTRY *e):src/fshook.c:88
+al_get_fs_entry_ctime: time_t al_get_fs_entry_ctime(ALLEGRO_FS_ENTRY *e):src/fshook.c:98
+al_get_fs_entry_size: off_t al_get_fs_entry_size(ALLEGRO_FS_ENTRY *e):src/fshook.c:108
+al_remove_fs_entry: bool al_remove_fs_entry(ALLEGRO_FS_ENTRY *e):src/fshook.c:118
+al_fs_entry_exists: bool al_fs_entry_exists(ALLEGRO_FS_ENTRY *e):src/fshook.c:128
+al_open_directory: bool al_open_directory(ALLEGRO_FS_ENTRY *e):src/fshook.c:138
+al_close_directory: bool al_close_directory(ALLEGRO_FS_ENTRY *e):src/fshook.c:148
+al_read_directory: ALLEGRO_FS_ENTRY *al_read_directory(ALLEGRO_FS_ENTRY *e):src/fshook.c:158
+al_get_current_directory: char *al_get_current_directory(void):src/fshook.c:168
+al_change_directory: bool al_change_directory(const char *path):src/fshook.c:178
+al_make_directory: bool al_make_directory(const char *path):src/fshook.c:190
+al_filename_exists: bool al_filename_exists(const char *path):src/fshook.c:202
+al_remove_filename: bool al_remove_filename(const char *path):src/fshook.c:214
+al_open_fs_entry: ALLEGRO_FILE *al_open_fs_entry(ALLEGRO_FS_ENTRY *e, const char *mode):src/fshook.c:226
+al_for_each_fs_entry: int al_for_each_fs_entry(ALLEGRO_FS_ENTRY *dir,:src/fshook.c:242
+al_for_each_fs_entry:                          int (*callback)(ALLEGRO_FS_ENTRY *dir, void *extra),:src/fshook.c:243
+al_for_each_fs_entry:                          void *extra):src/fshook.c:244
+al_get_num_display_modes: int al_get_num_display_modes(void):src/fullscreen_mode.c:23
+al_get_display_mode: ALLEGRO_DISPLAY_MODE *al_get_display_mode(int index, ALLEGRO_DISPLAY_MODE *mode):src/fullscreen_mode.c:32
+al_install_haptic: bool al_install_haptic(void):src/haptic.c:34
+al_uninstall_haptic: void al_uninstall_haptic(void):src/haptic.c:64
+al_is_haptic_installed: bool al_is_haptic_installed(void):src/haptic.c:76
+al_is_joystick_haptic: bool al_is_joystick_haptic(ALLEGRO_JOYSTICK *dev):src/haptic.c:84
+al_is_mouse_haptic: bool al_is_mouse_haptic(ALLEGRO_MOUSE *dev):src/haptic.c:95
+al_is_keyboard_haptic: bool al_is_keyboard_haptic(ALLEGRO_KEYBOARD *dev):src/haptic.c:106
+al_is_display_haptic: bool al_is_display_haptic(ALLEGRO_DISPLAY *dev):src/haptic.c:117
+al_is_touch_input_haptic: bool al_is_touch_input_haptic(ALLEGRO_TOUCH_INPUT *dev):src/haptic.c:127
+al_get_haptic_from_joystick: ALLEGRO_HAPTIC *al_get_haptic_from_joystick(ALLEGRO_JOYSTICK *dev):src/haptic.c:137
+al_get_haptic_from_mouse: ALLEGRO_HAPTIC *al_get_haptic_from_mouse(ALLEGRO_MOUSE *dev):src/haptic.c:148
+al_get_haptic_from_keyboard: ALLEGRO_HAPTIC *al_get_haptic_from_keyboard(ALLEGRO_KEYBOARD *dev):src/haptic.c:159
+al_get_haptic_from_display: ALLEGRO_HAPTIC *al_get_haptic_from_display(ALLEGRO_DISPLAY *dev):src/haptic.c:170
+al_get_haptic_from_touch_input: ALLEGRO_HAPTIC *al_get_haptic_from_touch_input(ALLEGRO_TOUCH_INPUT *dev):src/haptic.c:181
+al_is_haptic_active: bool al_is_haptic_active(ALLEGRO_HAPTIC *hap):src/haptic.c:192
+al_get_haptic_capabilities: int al_get_haptic_capabilities(ALLEGRO_HAPTIC *hap):src/haptic.c:203
+al_is_haptic_capable: bool al_is_haptic_capable(ALLEGRO_HAPTIC * hap, int query) {:src/haptic.c:213
+al_get_haptic_gain: double al_get_haptic_gain(ALLEGRO_HAPTIC *hap):src/haptic.c:220
+al_set_haptic_gain: bool al_set_haptic_gain(ALLEGRO_HAPTIC *hap, double gain):src/haptic.c:231
+al_get_haptic_autocenter: double al_get_haptic_autocenter(ALLEGRO_HAPTIC *hap):src/haptic.c:241
+al_set_haptic_autocenter: bool al_set_haptic_autocenter(ALLEGRO_HAPTIC *hap, double intensity):src/haptic.c:252
+al_get_max_haptic_effects: int al_get_max_haptic_effects(ALLEGRO_HAPTIC *hap):src/haptic.c:264
+al_is_haptic_effect_ok: bool al_is_haptic_effect_ok(ALLEGRO_HAPTIC *hap, ALLEGRO_HAPTIC_EFFECT *effect):src/haptic.c:275
+al_upload_haptic_effect: bool al_upload_haptic_effect(ALLEGRO_HAPTIC *hap,:src/haptic.c:286
+al_upload_haptic_effect:    ALLEGRO_HAPTIC_EFFECT *effect, ALLEGRO_HAPTIC_EFFECT_ID *id):src/haptic.c:287
+al_play_haptic_effect: bool al_play_haptic_effect(ALLEGRO_HAPTIC_EFFECT_ID *id, int loop):src/haptic.c:298
+al_upload_and_play_haptic_effect: bool al_upload_and_play_haptic_effect(ALLEGRO_HAPTIC *hap,:src/haptic.c:309
+al_upload_and_play_haptic_effect:    ALLEGRO_HAPTIC_EFFECT *effect, ALLEGRO_HAPTIC_EFFECT_ID *id, int loop):src/haptic.c:310
+al_stop_haptic_effect: bool al_stop_haptic_effect(ALLEGRO_HAPTIC_EFFECT_ID *id):src/haptic.c:330
+al_is_haptic_effect_playing: bool al_is_haptic_effect_playing(ALLEGRO_HAPTIC_EFFECT_ID *id):src/haptic.c:340
+al_get_haptic_effect_duration: double al_get_haptic_effect_duration(ALLEGRO_HAPTIC_EFFECT * effect):src/haptic.c:349
+al_rumble_haptic: bool al_rumble_haptic(ALLEGRO_HAPTIC *hap,:src/haptic.c:356
+al_rumble_haptic:    double intensity, double duration, ALLEGRO_HAPTIC_EFFECT_ID *id):src/haptic.c:357
+al_release_haptic_effect: bool al_release_haptic_effect(ALLEGRO_HAPTIC_EFFECT_ID *id):src/haptic.c:374
+al_release_haptic: bool al_release_haptic(ALLEGRO_HAPTIC *haptic):src/haptic.c:385
+al_iphone_get_window: UIWindow *al_iphone_get_window(ALLEGRO_DISPLAY *display):src/iphone/allegroAppDelegate.m:144
+al_iphone_get_view: UIView *al_iphone_get_view(ALLEGRO_DISPLAY *display):src/iphone/allegroAppDelegate.m:158
+al_iphone_set_statusbar_orientation: void al_iphone_set_statusbar_orientation(int o):src/iphone/allegroAppDelegate.m:216
+al_install_joystick: bool al_install_joystick(void):src/joynu.c:40
+al_uninstall_joystick: void al_uninstall_joystick(void):src/joynu.c:73
+al_is_joystick_installed: bool al_is_joystick_installed(void):src/joynu.c:87
+al_reconfigure_joysticks: bool al_reconfigure_joysticks(void):src/joynu.c:96
+al_get_joystick_event_source: ALLEGRO_EVENT_SOURCE *al_get_joystick_event_source(void):src/joynu.c:114
+al_get_num_joysticks: int al_get_num_joysticks(void):src/joynu.c:138
+al_get_joystick: ALLEGRO_JOYSTICK * al_get_joystick(int num):src/joynu.c:150
+al_release_joystick: void al_release_joystick(ALLEGRO_JOYSTICK *joy):src/joynu.c:162
+al_get_joystick_active: bool al_get_joystick_active(ALLEGRO_JOYSTICK *joy):src/joynu.c:174
+al_get_joystick_name: const char *al_get_joystick_name(ALLEGRO_JOYSTICK *joy):src/joynu.c:185
+al_get_joystick_num_sticks: int al_get_joystick_num_sticks(ALLEGRO_JOYSTICK *joy):src/joynu.c:196
+al_get_joystick_stick_flags: int al_get_joystick_stick_flags(ALLEGRO_JOYSTICK *joy, int stick):src/joynu.c:207
+al_get_joystick_stick_name: const char *al_get_joystick_stick_name(ALLEGRO_JOYSTICK *joy, int stick):src/joynu.c:222
+al_get_joystick_num_axes: int al_get_joystick_num_axes(ALLEGRO_JOYSTICK *joy, int stick):src/joynu.c:237
+al_get_joystick_axis_name: const char *al_get_joystick_axis_name(ALLEGRO_JOYSTICK *joy, int stick, int axis):src/joynu.c:251
+al_get_joystick_num_buttons: int al_get_joystick_num_buttons(ALLEGRO_JOYSTICK *joy):src/joynu.c:268
+al_get_joystick_button_name: const char *al_get_joystick_button_name(ALLEGRO_JOYSTICK *joy, int button):src/joynu.c:279
+al_get_joystick_state: void al_get_joystick_state(ALLEGRO_JOYSTICK *joy, ALLEGRO_JOYSTICK_STATE *ret_state):src/joynu.c:294
+al_is_keyboard_installed: bool al_is_keyboard_installed(void):src/keybdnu.c:112
+al_install_keyboard: bool al_install_keyboard(void):src/keybdnu.c:121
+al_uninstall_keyboard: void al_uninstall_keyboard(void):src/keybdnu.c:172
+al_set_keyboard_leds: bool al_set_keyboard_leds(int leds):src/keybdnu.c:203
+al_keycode_to_name: const char *al_keycode_to_name(int keycode):src/keybdnu.c:217
+al_get_keyboard_state: void al_get_keyboard_state(ALLEGRO_KEYBOARD_STATE *ret_state):src/keybdnu.c:239
+al_clear_keyboard_state: void al_clear_keyboard_state(ALLEGRO_DISPLAY *display):src/keybdnu.c:251
+al_key_down: bool al_key_down(const ALLEGRO_KEYBOARD_STATE *state, int keycode):src/keybdnu.c:284
+al_get_keyboard_event_source: ALLEGRO_EVENT_SOURCE *al_get_keyboard_event_source(void):src/keybdnu.c:293
+al_osx_get_window: NSWindow* al_osx_get_window(ALLEGRO_DISPLAY *display):src/macosx/osxgl.m:2516
+al_fixatan: al_fixed al_fixatan(al_fixed x):src/math.c:215
+al_fixatan2: al_fixed al_fixatan2(al_fixed y, al_fixed x):src/math.c:252
+al_fixtorad_r: const al_fixed al_fixtorad_r = (al_fixed)1608;:src/math.c:290
+al_radtofix_r: const al_fixed al_radtofix_r = (al_fixed)2670177;:src/math.c:298
+al_fixsqrt: al_fixed al_fixsqrt(al_fixed x):src/math.c:305
+al_fixhypot: al_fixed al_fixhypot(al_fixed x, al_fixed y):src/math.c:321
+al_itofix: al_fixed al_itofix(int x);:src/math.c:332
+al_fixtoi: int al_fixtoi(al_fixed x);:src/math.c:336
+al_fixfloor: int al_fixfloor(al_fixed x);:src/math.c:340
+al_fixceil: int al_fixceil(al_fixed x);:src/math.c:344
+al_ftofix: al_fixed al_ftofix(double x);:src/math.c:348
+al_fixtof: double al_fixtof(al_fixed x);:src/math.c:352
+al_fixadd: al_fixed al_fixadd(al_fixed x, al_fixed y);:src/math.c:356
+al_fixsub: al_fixed al_fixsub(al_fixed x, al_fixed y);:src/math.c:360
+al_fixmul: al_fixed al_fixmul(al_fixed x, al_fixed y);:src/math.c:364
+al_fixdiv: al_fixed al_fixdiv(al_fixed x, al_fixed y);:src/math.c:368
+al_fixcos: al_fixed al_fixcos(al_fixed x);:src/math.c:372
+al_fixsin: al_fixed al_fixsin(al_fixed x);:src/math.c:376
+al_fixtan: al_fixed al_fixtan(al_fixed x);:src/math.c:380
+al_fixacos: al_fixed al_fixacos(al_fixed x);:src/math.c:384
+al_fixasin: al_fixed al_fixasin(al_fixed x);:src/math.c:388
+al_set_memory_interface: void al_set_memory_interface(ALLEGRO_MEMORY_INTERFACE *memory_interface):src/memory.c:29
+al_malloc_with_context: void *al_malloc_with_context(size_t n,:src/memory.c:38
+al_malloc_with_context:    int line, const char *file, const char *func):src/memory.c:39
+al_free_with_context: void al_free_with_context(void *ptr,:src/memory.c:51
+al_free_with_context:    int line, const char *file, const char *func):src/memory.c:52
+al_realloc_with_context: void *al_realloc_with_context(void *ptr, size_t n,:src/memory.c:64
+al_realloc_with_context:    int line, const char *file, const char *func):src/memory.c:65
+al_calloc_with_context: void *al_calloc_with_context(size_t count, size_t n,:src/memory.c:77
+al_calloc_with_context:    int line, const char *file, const char *func):src/memory.c:78
+al_get_num_video_adapters: int al_get_num_video_adapters(void):src/monitor.c:23
+al_get_monitor_refresh_rate: int al_get_monitor_refresh_rate(int adapter):src/monitor.c:36
+al_get_monitor_info: bool al_get_monitor_info(int adapter, ALLEGRO_MONITOR_INFO *info):src/monitor.c:52
+al_get_monitor_dpi: int al_get_monitor_dpi(int adapter):src/monitor.c:68
+al_create_mouse_cursor: ALLEGRO_MOUSE_CURSOR *al_create_mouse_cursor(ALLEGRO_BITMAP *bmp,:src/mouse_cursor.c:24
+al_create_mouse_cursor:    int x_focus, int y_focus):src/mouse_cursor.c:25
+al_destroy_mouse_cursor: void al_destroy_mouse_cursor(ALLEGRO_MOUSE_CURSOR *cursor):src/mouse_cursor.c:37
+al_set_mouse_cursor: bool al_set_mouse_cursor(ALLEGRO_DISPLAY *display, ALLEGRO_MOUSE_CURSOR *cursor):src/mouse_cursor.c:54
+al_set_system_mouse_cursor: bool al_set_system_mouse_cursor(ALLEGRO_DISPLAY *display,:src/mouse_cursor.c:71
+al_set_system_mouse_cursor:    ALLEGRO_SYSTEM_MOUSE_CURSOR cursor_id):src/mouse_cursor.c:72
+al_show_mouse_cursor: bool al_show_mouse_cursor(ALLEGRO_DISPLAY *display):src/mouse_cursor.c:96
+al_hide_mouse_cursor: bool al_hide_mouse_cursor(ALLEGRO_DISPLAY *display):src/mouse_cursor.c:109
+al_is_mouse_installed: bool al_is_mouse_installed(void):src/mousenu.c:40
+al_install_mouse: bool al_install_mouse(void):src/mousenu.c:49
+al_uninstall_mouse: void al_uninstall_mouse(void):src/mousenu.c:104
+al_get_mouse_num_buttons: unsigned int al_get_mouse_num_buttons(void):src/mousenu.c:134
+al_get_mouse_num_axes: unsigned int al_get_mouse_num_axes(void):src/mousenu.c:145
+al_set_mouse_xy: bool al_set_mouse_xy(ALLEGRO_DISPLAY *display, int x, int y):src/mousenu.c:156
+al_set_mouse_z: bool al_set_mouse_z(int z):src/mousenu.c:168
+al_set_mouse_w: bool al_set_mouse_w(int w):src/mousenu.c:180
+al_set_mouse_axis: bool al_set_mouse_axis(int which, int value):src/mousenu.c:192
+al_get_mouse_state: void al_get_mouse_state(ALLEGRO_MOUSE_STATE *ret_state):src/mousenu.c:209
+al_get_mouse_state_axis: int al_get_mouse_state_axis(const ALLEGRO_MOUSE_STATE *state, int axis):src/mousenu.c:221
+al_mouse_button_down: bool al_mouse_button_down(const ALLEGRO_MOUSE_STATE *state, int button):src/mousenu.c:245
+al_get_mouse_cursor_position: bool al_get_mouse_cursor_position(int *ret_x, int *ret_y):src/mousenu.c:257
+al_grab_mouse: bool al_grab_mouse(ALLEGRO_DISPLAY *display):src/mousenu.c:277
+al_ungrab_mouse: bool al_ungrab_mouse(void):src/mousenu.c:291
+al_get_mouse_event_source: ALLEGRO_EVENT_SOURCE *al_get_mouse_event_source(void):src/mousenu.c:305
+al_set_mouse_wheel_precision: void al_set_mouse_wheel_precision(int precision):src/mousenu.c:316
+al_get_mouse_wheel_precision: int al_get_mouse_wheel_precision(void):src/mousenu.c:329
+al_get_opengl_version: uint32_t al_get_opengl_version(void):src/opengl/extensions.c:216
+al_get_opengl_variant: int al_get_opengl_variant(void):src/opengl/extensions.c:234
+al_have_opengl_extension: bool al_have_opengl_extension(const char *extension):src/opengl/extensions.c:560
+al_get_opengl_proc_address: void *al_get_opengl_proc_address(const char *name):src/opengl/extensions.c:578
+al_get_opengl_extension_list: ALLEGRO_OGL_EXT_LIST *al_get_opengl_extension_list(void):src/opengl/extensions.c:917
+al_get_opengl_texture: GLuint al_get_opengl_texture(ALLEGRO_BITMAP *bitmap):src/opengl/ogl_bitmap.c:1142
+al_remove_opengl_fbo: void al_remove_opengl_fbo(ALLEGRO_BITMAP *bitmap):src/opengl/ogl_bitmap.c:1155
+al_get_opengl_fbo: GLuint al_get_opengl_fbo(ALLEGRO_BITMAP *bitmap):src/opengl/ogl_bitmap.c:1182
+al_get_opengl_texture_size: bool al_get_opengl_texture_size(ALLEGRO_BITMAP *bitmap, int *w, int *h):src/opengl/ogl_bitmap.c:1208
+al_get_opengl_texture_position: void al_get_opengl_texture_position(ALLEGRO_BITMAP *bitmap, int *u, int *v):src/opengl/ogl_bitmap.c:1232
+al_set_current_opengl_context: void al_set_current_opengl_context(ALLEGRO_DISPLAY *display):src/opengl/ogl_display.c:90
+al_get_opengl_program_object: GLuint al_get_opengl_program_object(ALLEGRO_SHADER *shader):src/opengl/ogl_shader.c:511
+al_create_path: ALLEGRO_PATH *al_create_path(const char *str):src/path.c:156
+al_create_path_for_directory: ALLEGRO_PATH *al_create_path_for_directory(const char *str):src/path.c:188
+al_clone_path: ALLEGRO_PATH *al_clone_path(const ALLEGRO_PATH *path):src/path.c:203
+al_get_path_num_components: int al_get_path_num_components(const ALLEGRO_PATH *path):src/path.c:229
+al_get_path_component: const char *al_get_path_component(const ALLEGRO_PATH *path, int i):src/path.c:239
+al_replace_path_component: void al_replace_path_component(ALLEGRO_PATH *path, int i, const char *s):src/path.c:255
+al_remove_path_component: void al_remove_path_component(ALLEGRO_PATH *path, int i):src/path.c:272
+al_insert_path_component: void al_insert_path_component(ALLEGRO_PATH *path, int i, const char *s):src/path.c:289
+al_get_path_tail: const char *al_get_path_tail(const ALLEGRO_PATH *path):src/path.c:307
+al_drop_path_tail: void al_drop_path_tail(ALLEGRO_PATH *path):src/path.c:320
+al_append_path_component: void al_append_path_component(ALLEGRO_PATH *path, const char *s):src/path.c:330
+al_join_paths: bool al_join_paths(ALLEGRO_PATH *path, const ALLEGRO_PATH *tail):src/path.c:347
+al_rebase_path: bool al_rebase_path(const ALLEGRO_PATH *head, ALLEGRO_PATH *tail):src/path.c:374
+al_path_cstr: const char *al_path_cstr(const ALLEGRO_PATH *path, char delim):src/path.c:413
+al_path_ustr: const ALLEGRO_USTR *al_path_ustr(const ALLEGRO_PATH *path, char delim):src/path.c:420
+al_destroy_path: void al_destroy_path(ALLEGRO_PATH *path):src/path.c:429
+al_set_path_drive: void al_set_path_drive(ALLEGRO_PATH *path, const char *drive):src/path.c:468
+al_get_path_drive: const char *al_get_path_drive(const ALLEGRO_PATH *path):src/path.c:481
+al_set_path_filename: void al_set_path_filename(ALLEGRO_PATH *path, const char *filename):src/path.c:491
+al_get_path_filename: const char *al_get_path_filename(const ALLEGRO_PATH *path):src/path.c:504
+al_get_path_extension: const char *al_get_path_extension(const ALLEGRO_PATH *path):src/path.c:514
+al_set_path_extension: bool al_set_path_extension(ALLEGRO_PATH *path, char const *extension):src/path.c:529
+al_get_path_basename: const char *al_get_path_basename(const ALLEGRO_PATH *path):src/path.c:549
+al_make_path_canonical: bool al_make_path_canonical(ALLEGRO_PATH *path):src/path.c:566
+al_get_pixel_block_size: int al_get_pixel_block_size(int format):src/pixels.c:374
+al_get_pixel_block_width: int al_get_pixel_block_width(int format):src/pixels.c:382
+al_get_pixel_block_height: int al_get_pixel_block_height(int format):src/pixels.c:390
+al_get_pixel_size: int al_get_pixel_size(int format):src/pixels.c:398
+al_get_pixel_format_bits: int al_get_pixel_format_bits(int format):src/pixels.c:406
+al_map_rgba: ALLEGRO_COLOR al_map_rgba(:src/pixels.c:553
+al_map_rgba:    unsigned char r, unsigned char g, unsigned char b, unsigned char a):src/pixels.c:554
+al_premul_rgba: ALLEGRO_COLOR al_premul_rgba(:src/pixels.c:564
+al_premul_rgba:    unsigned char r, unsigned char g, unsigned char b, unsigned char a):src/pixels.c:565
+al_map_rgb: ALLEGRO_COLOR al_map_rgb(:src/pixels.c:575
+al_map_rgb:    unsigned char r, unsigned char g, unsigned char b):src/pixels.c:576
+al_map_rgba_f: ALLEGRO_COLOR al_map_rgba_f(float r, float g, float b, float a):src/pixels.c:584
+al_premul_rgba_f: ALLEGRO_COLOR al_premul_rgba_f(float r, float g, float b, float a):src/pixels.c:597
+al_map_rgb_f: ALLEGRO_COLOR al_map_rgb_f(float r, float g, float b):src/pixels.c:610
+al_unmap_rgba: void al_unmap_rgba(ALLEGRO_COLOR color,:src/pixels.c:621
+al_unmap_rgba:    unsigned char *r, unsigned char *g, unsigned char *b, unsigned char *a):src/pixels.c:622
+al_unmap_rgb: void al_unmap_rgb(ALLEGRO_COLOR color,:src/pixels.c:633
+al_unmap_rgb:    unsigned char *r, unsigned char *g, unsigned char *b):src/pixels.c:634
+al_unmap_rgba_f: void al_unmap_rgba_f(ALLEGRO_COLOR color,:src/pixels.c:644
+al_unmap_rgba_f:    float *r, float *g, float *b, float *a):src/pixels.c:645
+al_unmap_rgb_f: void al_unmap_rgb_f(ALLEGRO_COLOR color, float *r, float *g, float *b):src/pixels.c:656
+al_create_shader: ALLEGRO_SHADER *al_create_shader(ALLEGRO_SHADER_PLATFORM platform):src/shader.c:50
+al_attach_shader_source: bool al_attach_shader_source(ALLEGRO_SHADER *shader, ALLEGRO_SHADER_TYPE type,:src/shader.c:83
+al_attach_shader_source:     const char *source):src/shader.c:84
+al_attach_shader_source_file: bool al_attach_shader_source_file(ALLEGRO_SHADER *shader,:src/shader.c:92
+al_attach_shader_source_file:    ALLEGRO_SHADER_TYPE type, const char *filename):src/shader.c:93
+al_build_shader: bool al_build_shader(ALLEGRO_SHADER *shader):src/shader.c:125
+al_get_shader_log: const char *al_get_shader_log(ALLEGRO_SHADER *shader):src/shader.c:133
+al_get_shader_platform: ALLEGRO_SHADER_PLATFORM al_get_shader_platform(ALLEGRO_SHADER *shader):src/shader.c:142
+al_use_shader: bool al_use_shader(ALLEGRO_SHADER *shader):src/shader.c:150
+al_destroy_shader: void al_destroy_shader(ALLEGRO_SHADER *shader):src/shader.c:197
+al_set_shader_sampler: bool al_set_shader_sampler(const char *name,:src/shader.c:237
+al_set_shader_sampler:    ALLEGRO_BITMAP *bitmap, int unit):src/shader.c:238
+al_set_shader_matrix: bool al_set_shader_matrix(const char *name,:src/shader.c:258
+al_set_shader_matrix:    const ALLEGRO_TRANSFORM *matrix):src/shader.c:259
+al_set_shader_int: bool al_set_shader_int(const char *name, int i):src/shader.c:279
+al_set_shader_float: bool al_set_shader_float(const char *name, float f):src/shader.c:299
+al_set_shader_int_vector: bool al_set_shader_int_vector(const char *name,:src/shader.c:319
+al_set_shader_int_vector:    int num_components, const int *i, int num_elems):src/shader.c:320
+al_set_shader_float_vector: bool al_set_shader_float_vector(const char *name,:src/shader.c:340
+al_set_shader_float_vector:    int num_components, const float *f, int num_elems):src/shader.c:341
+al_set_shader_bool: bool al_set_shader_bool(const char *name, bool b):src/shader.c:361
+al_get_default_shader_source: char const *al_get_default_shader_source(ALLEGRO_SHADER_PLATFORM platform,:src/shader.c:381
+al_get_default_shader_source:    ALLEGRO_SHADER_TYPE type):src/shader.c:382
+al_install_system: bool al_install_system(int version, int (*atexit_ptr)(void (*)(void))):src/system.c:216
+al_uninstall_system: void al_uninstall_system(void):src/system.c:315
+al_is_system_installed: bool al_is_system_installed(void):src/system.c:345
+al_get_system_id: ALLEGRO_SYSTEM_ID al_get_system_id(void):src/system.c:362
+al_get_system_config: ALLEGRO_CONFIG *al_get_system_config(void):src/system.c:370
+al_get_standard_path: ALLEGRO_PATH *al_get_standard_path(int id):src/system.c:380
+al_set_exe_name: void al_set_exe_name(char const *path):src/system.c:404
+al_set_org_name: void al_set_org_name(const char *org_name):src/system.c:416
+al_set_app_name: void al_set_app_name(const char *app_name):src/system.c:427
+al_get_org_name: const char *al_get_org_name(void):src/system.c:443
+al_get_app_name: const char *al_get_app_name(void):src/system.c:451
+al_inhibit_screensaver: bool al_inhibit_screensaver(bool inhibit):src/system.c:459
+al_get_time: double al_get_time(void):src/system.c:503
+al_rest: void al_rest(double seconds):src/system.c:515
+al_init_timeout: void al_init_timeout(ALLEGRO_TIMEOUT *timeout, double seconds):src/system.c:526
+al_create_thread: ALLEGRO_THREAD *al_create_thread(:src/threads.c:115
+al_create_thread:    void *(*proc)(ALLEGRO_THREAD *thread, void *arg), void *arg):src/threads.c:116
+al_create_thread_with_stacksize: ALLEGRO_THREAD *al_create_thread_with_stacksize(:src/threads.c:131
+al_create_thread_with_stacksize:    void *(*proc)(ALLEGRO_THREAD *thread, void *arg), void *arg, size_t stacksize):src/threads.c:132
+al_run_detached_thread: void al_run_detached_thread(void *(*proc)(void *arg), void *arg):src/threads.c:147
+al_start_thread: void al_start_thread(ALLEGRO_THREAD *thread):src/threads.c:160
+al_join_thread: void al_join_thread(ALLEGRO_THREAD *thread, void **ret_value):src/threads.c:194
+al_set_thread_should_stop: void al_set_thread_should_stop(ALLEGRO_THREAD *thread):src/threads.c:244
+al_get_thread_should_stop: bool al_get_thread_should_stop(ALLEGRO_THREAD *thread):src/threads.c:253
+al_destroy_thread: void al_destroy_thread(ALLEGRO_THREAD *thread):src/threads.c:262
+al_create_mutex: ALLEGRO_MUTEX *al_create_mutex(void):src/threads.c:296
+al_create_mutex_recursive: ALLEGRO_MUTEX *al_create_mutex_recursive(void):src/threads.c:309
+al_lock_mutex: void al_lock_mutex(ALLEGRO_MUTEX *mutex):src/threads.c:322
+al_unlock_mutex: void al_unlock_mutex(ALLEGRO_MUTEX *mutex):src/threads.c:332
+al_destroy_mutex: void al_destroy_mutex(ALLEGRO_MUTEX *mutex):src/threads.c:341
+al_create_cond: ALLEGRO_COND *al_create_cond(void):src/threads.c:352
+al_destroy_cond: void al_destroy_cond(ALLEGRO_COND *cond):src/threads.c:364
+al_wait_cond: void al_wait_cond(ALLEGRO_COND *cond, ALLEGRO_MUTEX *mutex):src/threads.c:375
+al_wait_cond_until: int al_wait_cond_until(ALLEGRO_COND *cond, ALLEGRO_MUTEX *mutex,:src/threads.c:386
+al_wait_cond_until:    const ALLEGRO_TIMEOUT *timeout):src/threads.c:387
+al_broadcast_cond: void al_broadcast_cond(ALLEGRO_COND *cond):src/threads.c:399
+al_signal_cond: void al_signal_cond(ALLEGRO_COND *cond):src/threads.c:409
+al_create_timer: ALLEGRO_TIMER *al_create_timer(double speed_secs):src/timernu.c:243
+al_destroy_timer: void al_destroy_timer(ALLEGRO_TIMER *timer):src/timernu.c:270
+al_start_timer: void al_start_timer(ALLEGRO_TIMER *timer):src/timernu.c:286
+al_resume_timer: void al_resume_timer(ALLEGRO_TIMER *timer):src/timernu.c:295
+al_stop_timer: void al_stop_timer(ALLEGRO_TIMER *timer):src/timernu.c:304
+al_get_timer_started: bool al_get_timer_started(const ALLEGRO_TIMER *timer):src/timernu.c:324
+al_get_timer_speed: double al_get_timer_speed(const ALLEGRO_TIMER *timer):src/timernu.c:335
+al_set_timer_speed: void al_set_timer_speed(ALLEGRO_TIMER *timer, double new_speed_secs):src/timernu.c:346
+al_get_timer_count: int64_t al_get_timer_count(const ALLEGRO_TIMER *timer):src/timernu.c:367
+al_set_timer_count: void al_set_timer_count(ALLEGRO_TIMER *timer, int64_t new_count):src/timernu.c:378
+al_add_timer_count: void al_add_timer_count(ALLEGRO_TIMER *timer, int64_t diff):src/timernu.c:393
+al_get_timer_event_source: ALLEGRO_EVENT_SOURCE *al_get_timer_event_source(ALLEGRO_TIMER *timer):src/timernu.c:435
+al_set_new_window_title: void al_set_new_window_title(const char *title):src/tls.c:203
+al_get_new_window_title: const char *al_get_new_window_title(void):src/tls.c:224
+al_set_new_display_flags: void al_set_new_display_flags(int flags):src/tls.c:244
+al_get_new_display_flags: int al_get_new_display_flags(void):src/tls.c:257
+al_set_new_display_refresh_rate: void al_set_new_display_refresh_rate(int refresh_rate):src/tls.c:270
+al_get_new_display_refresh_rate: int al_get_new_display_refresh_rate(void):src/tls.c:283
+al_set_new_display_adapter: void al_set_new_display_adapter(int adapter):src/tls.c:296
+al_get_new_display_adapter: int al_get_new_display_adapter(void):src/tls.c:313
+al_set_new_window_position: void al_set_new_window_position(int x, int y):src/tls.c:326
+al_get_new_window_position: void al_get_new_window_position(int *x, int *y):src/tls.c:339
+al_get_current_display: ALLEGRO_DISPLAY *al_get_current_display(void):src/tls.c:390
+al_set_target_bitmap: void al_set_target_bitmap(ALLEGRO_BITMAP *bitmap):src/tls.c:403
+al_set_target_backbuffer: void al_set_target_backbuffer(ALLEGRO_DISPLAY *display):src/tls.c:500
+al_get_target_bitmap: ALLEGRO_BITMAP *al_get_target_bitmap(void):src/tls.c:509
+al_set_blender: void al_set_blender(int op, int src, int dst):src/tls.c:522
+al_set_blend_color: void al_set_blend_color(ALLEGRO_COLOR color):src/tls.c:531
+al_set_separate_blender: void al_set_separate_blender(int op, int src, int dst,:src/tls.c:544
+al_set_separate_blender:    int alpha_op, int alpha_src, int alpha_dst):src/tls.c:545
+al_get_blender: void al_get_blender(int *op, int *src, int *dst):src/tls.c:574
+al_get_blend_color: ALLEGRO_COLOR al_get_blend_color(void):src/tls.c:583
+al_get_separate_blender: void al_get_separate_blender(int *op, int *src, int *dst,:src/tls.c:596
+al_get_separate_blender:    int *alpha_op, int *alpha_src, int *alpha_dst):src/tls.c:597
+al_set_new_bitmap_format: void al_set_new_bitmap_format(int format):src/tls.c:630
+al_set_new_bitmap_flags: void al_set_new_bitmap_flags(int flags):src/tls.c:643
+al_add_new_bitmap_flag: void al_add_new_bitmap_flag(int flag):src/tls.c:657
+al_get_new_bitmap_format: int al_get_new_bitmap_format(void):src/tls.c:670
+al_get_new_bitmap_flags: int al_get_new_bitmap_flags(void):src/tls.c:683
+al_store_state: void al_store_state(ALLEGRO_STATE *state, int flags):src/tls.c:696
+al_restore_state: void al_restore_state(ALLEGRO_STATE const *state):src/tls.c:764
+al_get_new_file_interface: const ALLEGRO_FILE_INTERFACE *al_get_new_file_interface(void):src/tls.c:840
+al_set_new_file_interface: void al_set_new_file_interface(const ALLEGRO_FILE_INTERFACE *file_interface):src/tls.c:861
+al_get_fs_interface: const ALLEGRO_FS_INTERFACE *al_get_fs_interface(void):src/tls.c:874
+al_set_fs_interface: void al_set_fs_interface(const ALLEGRO_FS_INTERFACE *fs_interface):src/tls.c:891
+al_set_standard_fs_interface: void al_set_standard_fs_interface(void):src/tls.c:904
+al_get_errno: int al_get_errno(void):src/tls.c:928
+al_get_errno: GETTER(allegro_errno, 0):src/tls.c:929
+al_set_errno: void al_set_errno(int errnum):src/tls.c:933
+al_set_errno: SETTER(allegro_errno, errnum):src/tls.c:934
+al_get_new_bitmap_depth: int al_get_new_bitmap_depth(void):src/tls.c:938
+al_get_new_bitmap_depth: GETTER(new_bitmap_depth, 0):src/tls.c:939
+al_set_new_bitmap_depth: void al_set_new_bitmap_depth(int depth):src/tls.c:943
+al_set_new_bitmap_depth: SETTER(new_bitmap_depth, depth):src/tls.c:944
+al_get_new_bitmap_samples: int al_get_new_bitmap_samples(void):src/tls.c:948
+al_get_new_bitmap_samples: GETTER(new_bitmap_samples, 0):src/tls.c:949
+al_set_new_bitmap_samples: void al_set_new_bitmap_samples(int samples):src/tls.c:953
+al_set_new_bitmap_samples: SETTER(new_bitmap_samples, samples):src/tls.c:954
+al_is_touch_input_installed: bool al_is_touch_input_installed(void):src/touch_input.c:35
+al_install_touch_input: bool al_install_touch_input(void):src/touch_input.c:43
+al_uninstall_touch_input: void al_uninstall_touch_input(void):src/touch_input.c:68
+al_get_touch_input_state: void al_get_touch_input_state(ALLEGRO_TOUCH_INPUT_STATE *ret_state):src/touch_input.c:93
+al_set_mouse_emulation_mode: void al_set_mouse_emulation_mode(int mode):src/touch_input.c:104
+al_get_mouse_emulation_mode: int al_get_mouse_emulation_mode(void):src/touch_input.c:117
+al_get_touch_input_event_source: ALLEGRO_EVENT_SOURCE *al_get_touch_input_event_source(void):src/touch_input.c:130
+al_get_touch_input_mouse_emulation_event_source: ALLEGRO_EVENT_SOURCE *al_get_touch_input_mouse_emulation_event_source(void):src/touch_input.c:140
+al_copy_transform: void al_copy_transform(ALLEGRO_TRANSFORM *dest, const ALLEGRO_TRANSFORM *src):src/transformations.c:30
+al_use_transform: void al_use_transform(const ALLEGRO_TRANSFORM *trans):src/transformations.c:40
+al_use_projection_transform: void al_use_projection_transform(const ALLEGRO_TRANSFORM *trans):src/transformations.c:74
+al_get_current_transform: const ALLEGRO_TRANSFORM *al_get_current_transform(void):src/transformations.c:104
+al_get_current_projection_transform: const ALLEGRO_TRANSFORM *al_get_current_projection_transform(void):src/transformations.c:116
+al_get_current_inverse_transform: const ALLEGRO_TRANSFORM *al_get_current_inverse_transform(void):src/transformations.c:128
+al_identity_transform: void al_identity_transform(ALLEGRO_TRANSFORM *trans):src/transformations.c:145
+al_build_transform: void al_build_transform(ALLEGRO_TRANSFORM *trans, float x, float y,:src/transformations.c:172
+al_build_transform:    float sx, float sy, float theta):src/transformations.c:173
+al_build_camera_transform: void al_build_camera_transform(ALLEGRO_TRANSFORM *trans,:src/transformations.c:204
+al_build_camera_transform:    float position_x, float position_y, float position_z,:src/transformations.c:205
+al_build_camera_transform:    float look_x, float look_y, float look_z,:src/transformations.c:206
+al_build_camera_transform:    float up_x, float up_y, float up_z):src/transformations.c:207
+al_invert_transform: void al_invert_transform(ALLEGRO_TRANSFORM *trans):src/transformations.c:272
+al_transpose_transform: void al_transpose_transform(ALLEGRO_TRANSFORM *trans):src/transformations.c:293
+al_check_inverse: int al_check_inverse(const ALLEGRO_TRANSFORM *trans, float tol):src/transformations.c:308
+al_translate_transform: void al_translate_transform(ALLEGRO_TRANSFORM *trans, float x, float y):src/transformations.c:327
+al_translate_transform_3d: void al_translate_transform_3d(ALLEGRO_TRANSFORM *trans, float x, float y,:src/transformations.c:338
+al_translate_transform_3d:     float z):src/transformations.c:339
+al_rotate_transform: void al_rotate_transform(ALLEGRO_TRANSFORM *trans, float theta):src/transformations.c:351
+al_scale_transform: void al_scale_transform(ALLEGRO_TRANSFORM *trans, float sx, float sy):src/transformations.c:375
+al_scale_transform_3d: void al_scale_transform_3d(ALLEGRO_TRANSFORM *trans, float sx, float sy,:src/transformations.c:392
+al_scale_transform_3d:     float sz):src/transformations.c:393
+al_transform_coordinates: void al_transform_coordinates(const ALLEGRO_TRANSFORM *trans, float *x, float *y):src/transformations.c:416
+al_transform_coordinates_3d: void al_transform_coordinates_3d(const ALLEGRO_TRANSFORM *trans,:src/transformations.c:431
+al_transform_coordinates_3d:    float *x, float *y, float *z):src/transformations.c:432
+al_transform_coordinates_4d: void al_transform_coordinates_4d(const ALLEGRO_TRANSFORM *trans,:src/transformations.c:455
+al_transform_coordinates_4d:    float *x, float *y, float *z, float *w):src/transformations.c:456
+al_transform_coordinates_3d_projective: void al_transform_coordinates_3d_projective(const ALLEGRO_TRANSFORM *trans,:src/transformations.c:482
+al_transform_coordinates_3d_projective:    float *x, float *y, float *z):src/transformations.c:483
+al_compose_transform: void al_compose_transform(ALLEGRO_TRANSFORM *trans, const ALLEGRO_TRANSFORM *other):src/transformations.c:494
+al_orthographic_transform: void al_orthographic_transform(ALLEGRO_TRANSFORM *trans,:src/transformations.c:540
+al_orthographic_transform:    float left, float top, float n,:src/transformations.c:541
+al_orthographic_transform:    float right, float bottom, float f):src/transformations.c:542
+al_rotate_transform_3d: void al_rotate_transform_3d(ALLEGRO_TRANSFORM *trans,:src/transformations.c:565
+al_rotate_transform_3d:    float x, float y, float z, float angle):src/transformations.c:566
+al_perspective_transform: void al_perspective_transform(ALLEGRO_TRANSFORM *trans,:src/transformations.c:601
+al_perspective_transform:    float left, float top, float n,:src/transformations.c:602
+al_perspective_transform:    float right, float bottom, float f):src/transformations.c:603
+al_horizontal_shear_transform: void al_horizontal_shear_transform(ALLEGRO_TRANSFORM* trans, float theta):src/transformations.c:626
+al_vertical_shear_transform: void al_vertical_shear_transform(ALLEGRO_TRANSFORM* trans, float theta):src/transformations.c:640
+al_ustr_new: ALLEGRO_USTR *al_ustr_new(const char *s):src/utf8.c:62
+al_ustr_new_from_buffer: ALLEGRO_USTR *al_ustr_new_from_buffer(const char *s, size_t size):src/utf8.c:70
+al_ustr_newf: ALLEGRO_USTR *al_ustr_newf(const char *fmt, ...):src/utf8.c:78
+al_ustr_free: void al_ustr_free(ALLEGRO_USTR *us):src/utf8.c:93
+al_cstr: const char *al_cstr(const ALLEGRO_USTR *us):src/utf8.c:101
+al_ustr_to_buffer: void al_ustr_to_buffer(const ALLEGRO_USTR *us, char *buffer, int size):src/utf8.c:110
+al_cstr_dup: char *al_cstr_dup(const ALLEGRO_USTR *us):src/utf8.c:126
+al_ustr_dup: ALLEGRO_USTR *al_ustr_dup(const ALLEGRO_USTR *us):src/utf8.c:134
+al_ustr_dup_substr: ALLEGRO_USTR *al_ustr_dup_substr(const ALLEGRO_USTR *us, int start_pos,:src/utf8.c:142
+al_ustr_dup_substr:    int end_pos):src/utf8.c:143
+al_ustr_empty_string: const ALLEGRO_USTR *al_ustr_empty_string(void):src/utf8.c:151
+al_ref_cstr: const ALLEGRO_USTR *al_ref_cstr(ALLEGRO_USTR_INFO *info, const char *s):src/utf8.c:160
+al_ref_buffer: const ALLEGRO_USTR *al_ref_buffer(ALLEGRO_USTR_INFO *info, const char *s, size_t size):src/utf8.c:173
+al_ref_ustr: const ALLEGRO_USTR *al_ref_ustr(ALLEGRO_USTR_INFO *info, const ALLEGRO_USTR *us,:src/utf8.c:185
+al_ref_ustr:    int start_pos, int end_pos):src/utf8.c:186
+al_ustr_size: size_t al_ustr_size(const ALLEGRO_USTR *us):src/utf8.c:197
+al_ustr_length: size_t al_ustr_length(const ALLEGRO_USTR *us):src/utf8.c:205
+al_ustr_offset: int al_ustr_offset(const ALLEGRO_USTR *us, int index):src/utf8.c:219
+al_ustr_next: bool al_ustr_next(const ALLEGRO_USTR *us, int *pos):src/utf8.c:237
+al_ustr_prev: bool al_ustr_prev(const ALLEGRO_USTR *us, int *pos):src/utf8.c:259
+al_ustr_get: int32_t al_ustr_get(const ALLEGRO_USTR *ub, int pos):src/utf8.c:283
+al_ustr_get_next: int32_t al_ustr_get_next(const ALLEGRO_USTR *us, int *pos):src/utf8.c:368
+al_ustr_prev_get: int32_t al_ustr_prev_get(const ALLEGRO_USTR *us, int *pos):src/utf8.c:390
+al_ustr_insert: bool al_ustr_insert(ALLEGRO_USTR *us1, int pos, const ALLEGRO_USTR *us2):src/utf8.c:403
+al_ustr_insert_cstr: bool al_ustr_insert_cstr(ALLEGRO_USTR *us, int pos, const char *s):src/utf8.c:411
+al_ustr_insert_chr: size_t al_ustr_insert_chr(ALLEGRO_USTR *us, int pos, int32_t c):src/utf8.c:421
+al_ustr_append: bool al_ustr_append(ALLEGRO_USTR *us1, const ALLEGRO_USTR *us2):src/utf8.c:445
+al_ustr_append_cstr: bool al_ustr_append_cstr(ALLEGRO_USTR *us, const char *s):src/utf8.c:453
+al_ustr_append_chr: size_t al_ustr_append_chr(ALLEGRO_USTR *us, int32_t c):src/utf8.c:461
+al_ustr_appendf: bool al_ustr_appendf(ALLEGRO_USTR *us, const char *fmt, ...):src/utf8.c:475
+al_ustr_vappendf: bool al_ustr_vappendf(ALLEGRO_USTR *us, const char *fmt, va_list ap):src/utf8.c:489
+al_ustr_remove_chr: bool al_ustr_remove_chr(ALLEGRO_USTR *us, int pos):src/utf8.c:525
+al_ustr_remove_range: bool al_ustr_remove_range(ALLEGRO_USTR *us, int start_pos, int end_pos):src/utf8.c:541
+al_ustr_truncate: bool al_ustr_truncate(ALLEGRO_USTR *us, int start_pos):src/utf8.c:549
+al_ustr_ltrim_ws: bool al_ustr_ltrim_ws(ALLEGRO_USTR *us):src/utf8.c:557
+al_ustr_rtrim_ws: bool al_ustr_rtrim_ws(ALLEGRO_USTR *us):src/utf8.c:565
+al_ustr_trim_ws: bool al_ustr_trim_ws(ALLEGRO_USTR *us):src/utf8.c:573
+al_ustr_assign: bool al_ustr_assign(ALLEGRO_USTR *us1, const ALLEGRO_USTR *us2):src/utf8.c:581
+al_ustr_assign_substr: bool al_ustr_assign_substr(ALLEGRO_USTR *us1, const ALLEGRO_USTR *us2,:src/utf8.c:589
+al_ustr_assign_substr:    int start_pos, int end_pos):src/utf8.c:590
+al_ustr_assign_cstr: bool al_ustr_assign_cstr(ALLEGRO_USTR *us1, const char *s):src/utf8.c:599
+al_ustr_set_chr: size_t al_ustr_set_chr(ALLEGRO_USTR *us, int start_pos, int32_t c):src/utf8.c:607
+al_ustr_replace_range: bool al_ustr_replace_range(ALLEGRO_USTR *us1, int start_pos1, int end_pos1,:src/utf8.c:647
+al_ustr_replace_range:    const ALLEGRO_USTR *us2):src/utf8.c:648
+al_ustr_find_chr: int al_ustr_find_chr(const ALLEGRO_USTR *us, int start_pos, int32_t c):src/utf8.c:657
+al_ustr_rfind_chr: int al_ustr_rfind_chr(const ALLEGRO_USTR *us, int end_pos, int32_t c):src/utf8.c:688
+al_ustr_find_set: int al_ustr_find_set(const ALLEGRO_USTR *us, int start_pos,:src/utf8.c:719
+al_ustr_find_set:    const ALLEGRO_USTR *accept):src/utf8.c:720
+al_ustr_find_set_cstr: int al_ustr_find_set_cstr(const ALLEGRO_USTR *us, int start_pos,:src/utf8.c:757
+al_ustr_find_set_cstr:    const char *accept):src/utf8.c:758
+al_ustr_find_cset: int al_ustr_find_cset(const ALLEGRO_USTR *us, int start_pos,:src/utf8.c:769
+al_ustr_find_cset:    const ALLEGRO_USTR *reject):src/utf8.c:770
+al_ustr_find_cset_cstr: int al_ustr_find_cset_cstr(const ALLEGRO_USTR *us, int start_pos,:src/utf8.c:811
+al_ustr_find_cset_cstr:    const char *reject):src/utf8.c:812
+al_ustr_find_str: int al_ustr_find_str(const ALLEGRO_USTR *haystack, int start_pos,:src/utf8.c:823
+al_ustr_find_str:    const ALLEGRO_USTR *needle):src/utf8.c:824
+al_ustr_find_cstr: int al_ustr_find_cstr(const ALLEGRO_USTR *haystack, int start_pos,:src/utf8.c:833
+al_ustr_find_cstr:    const char *needle):src/utf8.c:834
+al_ustr_rfind_str: int al_ustr_rfind_str(const ALLEGRO_USTR *haystack, int end_pos,:src/utf8.c:845
+al_ustr_rfind_str:    const ALLEGRO_USTR *needle):src/utf8.c:846
+al_ustr_rfind_cstr: int al_ustr_rfind_cstr(const ALLEGRO_USTR *haystack, int end_pos,:src/utf8.c:855
+al_ustr_rfind_cstr:    const char *needle):src/utf8.c:856
+al_ustr_find_replace: bool al_ustr_find_replace(ALLEGRO_USTR *us, int start_pos,:src/utf8.c:867
+al_ustr_find_replace:    const ALLEGRO_USTR *find, const ALLEGRO_USTR *replace):src/utf8.c:868
+al_ustr_find_replace_cstr: bool al_ustr_find_replace_cstr(ALLEGRO_USTR *us, int start_pos,:src/utf8.c:876
+al_ustr_find_replace_cstr:    const char *find, const char *replace):src/utf8.c:877
+al_ustr_equal: bool al_ustr_equal(const ALLEGRO_USTR *us1, const ALLEGRO_USTR *us2):src/utf8.c:890
+al_ustr_compare: int al_ustr_compare(const ALLEGRO_USTR *us1, const ALLEGRO_USTR *us2):src/utf8.c:898
+al_ustr_ncompare: int al_ustr_ncompare(const ALLEGRO_USTR *us1, const ALLEGRO_USTR *us2, int n):src/utf8.c:920
+al_ustr_has_prefix: bool al_ustr_has_prefix(const ALLEGRO_USTR *us1, const ALLEGRO_USTR *us2):src/utf8.c:945
+al_ustr_has_prefix_cstr: bool al_ustr_has_prefix_cstr(const ALLEGRO_USTR *us1, const char *s2):src/utf8.c:953
+al_ustr_has_suffix: bool al_ustr_has_suffix(const ALLEGRO_USTR *us1, const ALLEGRO_USTR *us2):src/utf8.c:964
+al_ustr_has_suffix_cstr: bool al_ustr_has_suffix_cstr(const ALLEGRO_USTR *us1, const char *s2):src/utf8.c:977
+al_utf8_width: size_t al_utf8_width(int32_t c):src/utf8.c:988
+al_utf8_encode: size_t al_utf8_encode(char s[], int32_t c):src/utf8.c:1010
+al_utf16_width: size_t al_utf16_width(int c):src/utf8.c:1047
+al_utf16_encode: size_t al_utf16_encode(uint16_t s[], int32_t c):src/utf8.c:1067
+al_ustr_new_from_utf16: ALLEGRO_USTR *al_ustr_new_from_utf16(uint16_t const *s):src/utf8.c:1105
+al_ustr_size_utf16: size_t al_ustr_size_utf16(const ALLEGRO_USTR *us):src/utf8.c:1127
+al_ustr_encode_utf16: size_t al_ustr_encode_utf16(const ALLEGRO_USTR *us, uint16_t *s,:src/utf8.c:1147
+al_ustr_encode_utf16:    size_t n):src/utf8.c:1148
+al_get_d3d_texture_size: bool al_get_d3d_texture_size(ALLEGRO_BITMAP *bitmap, int *width, int *height):src/win/d3d_bmp.cpp:105
+al_set_d3d_device_release_callback: void al_set_d3d_device_release_callback(:src/win/d3d_disp.cpp:219
+al_set_d3d_device_release_callback:    void (*callback)(ALLEGRO_DISPLAY *display)):src/win/d3d_disp.cpp:220
+al_set_d3d_device_restore_callback: void al_set_d3d_device_restore_callback(:src/win/d3d_disp.cpp:227
+al_set_d3d_device_restore_callback:    void (*callback)(ALLEGRO_DISPLAY *display)):src/win/d3d_disp.cpp:228
+al_have_d3d_non_pow2_texture_support: bool al_have_d3d_non_pow2_texture_support(void):src/win/d3d_disp.cpp:241
+al_have_d3d_non_square_texture_support: bool al_have_d3d_non_square_texture_support(void):src/win/d3d_disp.cpp:283
+al_get_d3d_device: LPDIRECT3DDEVICE9 al_get_d3d_device(ALLEGRO_DISPLAY *display):src/win/d3d_disp.cpp:2575
+al_get_d3d_system_texture: LPDIRECT3DTEXTURE9 al_get_d3d_system_texture(ALLEGRO_BITMAP *bitmap):src/win/d3d_disp.cpp:2583
+al_get_d3d_video_texture: LPDIRECT3DTEXTURE9 al_get_d3d_video_texture(ALLEGRO_BITMAP *bitmap):src/win/d3d_disp.cpp:2591
+al_get_d3d_texture_position: void al_get_d3d_texture_position(ALLEGRO_BITMAP *bitmap, int *u, int *v):src/win/d3d_disp.cpp:2599
+al_is_d3d_device_lost: bool al_is_d3d_device_lost(ALLEGRO_DISPLAY *display):src/win/d3d_disp.cpp:2611
+al_get_win_window_handle: HWND al_get_win_window_handle(ALLEGRO_DISPLAY *display):src/win/wwindow.c:1388
+al_win_add_window_callback: bool al_win_add_window_callback(ALLEGRO_DISPLAY *display,:src/win/wwindow.c:1416
+al_win_add_window_callback:    bool (*callback)(ALLEGRO_DISPLAY *display, UINT message, WPARAM wparam,:src/win/wwindow.c:1417
+al_win_add_window_callback:    LPARAM lparam, LRESULT *result, void *userdata), void *userdata):src/win/wwindow.c:1418
+al_win_remove_window_callback: bool al_win_remove_window_callback(ALLEGRO_DISPLAY *display,:src/win/wwindow.c:1445
+al_win_remove_window_callback:    bool (*callback)(ALLEGRO_DISPLAY *display, UINT message, WPARAM wparam,:src/win/wwindow.c:1446
+al_win_remove_window_callback:    LPARAM lparam, LRESULT *result, void *userdata), void *userdata):src/win/wwindow.c:1447
+al_x_set_initial_icon: bool al_x_set_initial_icon(ALLEGRO_BITMAP *bitmap):src/x/xsystem.c:148
+al_get_x_window_id: XID al_get_x_window_id(ALLEGRO_DISPLAY *display):src/x/xwindow.c:397
+ALLEGRO_TIMEOUT: typedef struct ALLEGRO_TIMEOUT ALLEGRO_TIMEOUT;:include/allegro5/altime.h:12
+ALLEGRO_PI: #define ALLEGRO_PI        3.14159265358979323846:include/allegro5/base.h:96
+ALLEGRO_BITMAP: typedef struct ALLEGRO_BITMAP ALLEGRO_BITMAP;:include/allegro5/bitmap.h:12
+ALLEGRO_LOCKED_REGION: typedef struct ALLEGRO_LOCKED_REGION ALLEGRO_LOCKED_REGION;:include/allegro5/bitmap_lock.h:23
+ALLEGRO_COLOR: typedef struct ALLEGRO_COLOR ALLEGRO_COLOR;:include/allegro5/color.h:13
+ALLEGRO_PIXEL_FORMAT: typedef enum ALLEGRO_PIXEL_FORMAT:include/allegro5/color.h:23
+ALLEGRO_CONFIG: typedef struct ALLEGRO_CONFIG ALLEGRO_CONFIG;:include/allegro5/config.h:12
+ALLEGRO_CONFIG_SECTION: typedef struct ALLEGRO_CONFIG_SECTION ALLEGRO_CONFIG_SECTION;:include/allegro5/config.h:16
+ALLEGRO_CONFIG_ENTRY: typedef struct ALLEGRO_CONFIG_ENTRY ALLEGRO_CONFIG_ENTRY;:include/allegro5/config.h:20
+ALLEGRO_DISPLAY: typedef struct ALLEGRO_DISPLAY ALLEGRO_DISPLAY;:include/allegro5/display.h:111
+ALLEGRO_NEW_WINDOW_TITLE_MAX_SIZE: #define ALLEGRO_NEW_WINDOW_TITLE_MAX_SIZE 255:include/allegro5/display.h:116
+ALLEGRO_EVENT_TYPE: typedef unsigned int ALLEGRO_EVENT_TYPE;:include/allegro5/events.h:13
+ALLEGRO_EVENT_TYPE_IS_USER: #define ALLEGRO_EVENT_TYPE_IS_USER(t)        ((t) >= 512):include/allegro5/events.h:62
+ALLEGRO_GET_EVENT_TYPE: #define ALLEGRO_GET_EVENT_TYPE(a, b, c, d)   AL_ID(a, b, c, d):include/allegro5/events.h:67
+ALLEGRO_EVENT_SOURCE: typedef struct ALLEGRO_EVENT_SOURCE ALLEGRO_EVENT_SOURCE;:include/allegro5/events.h:72
+ALLEGRO_USER_EVENT: typedef struct ALLEGRO_USER_EVENT ALLEGRO_USER_EVENT;:include/allegro5/events.h:186
+ALLEGRO_EVENT: typedef union ALLEGRO_EVENT ALLEGRO_EVENT;:include/allegro5/events.h:202
+ALLEGRO_EVENT_QUEUE: typedef struct ALLEGRO_EVENT_QUEUE ALLEGRO_EVENT_QUEUE;:include/allegro5/events.h:243
+ALLEGRO_FILE: typedef struct ALLEGRO_FILE ALLEGRO_FILE;:include/allegro5/file.h:15
+ALLEGRO_FILE_INTERFACE: typedef struct ALLEGRO_FILE_INTERFACE:include/allegro5/file.h:20
+ALLEGRO_SEEK: typedef enum ALLEGRO_SEEK:include/allegro5/file.h:40
+al_fixed: typedef int32_t al_fixed;:include/allegro5/fixed.h:30
+ALLEGRO_FS_ENTRY: typedef struct ALLEGRO_FS_ENTRY ALLEGRO_FS_ENTRY;:include/allegro5/fshook.h:37
+ALLEGRO_FILE_MODE: typedef enum ALLEGRO_FILE_MODE:include/allegro5/fshook.h:46
+ALLEGRO_FS_INTERFACE: typedef struct ALLEGRO_FS_INTERFACE ALLEGRO_FS_INTERFACE;:include/allegro5/fshook.h:64
+ALLEGRO_FOR_EACH_FS_ENTRY_RESULT: typedef enum ALLEGRO_FOR_EACH_FS_ENTRY_RESULT {:include/allegro5/fshook.h:124
+ALLEGRO_DISPLAY_MODE: typedef struct ALLEGRO_DISPLAY_MODE:include/allegro5/fullscreen_mode.h:13
+ALLEGRO_HAPTIC_CONSTANTS: enum ALLEGRO_HAPTIC_CONSTANTS:include/allegro5/haptic.h:37
+ALLEGRO_HAPTIC: typedef struct ALLEGRO_HAPTIC ALLEGRO_HAPTIC;:include/allegro5/haptic.h:64
+ALLEGRO_HAPTIC_EFFECT: struct ALLEGRO_HAPTIC_EFFECT:include/allegro5/haptic.h:169
+ALLEGRO_HAPTIC_EFFECT_ID: typedef struct ALLEGRO_HAPTIC_EFFECT_ID ALLEGRO_HAPTIC_EFFECT_ID;:include/allegro5/haptic.h:183
+ALLEGRO_JOYSTICK: typedef struct ALLEGRO_JOYSTICK ALLEGRO_JOYSTICK;:include/allegro5/joystick.h:35
+ALLEGRO_JOYSTICK_STATE: typedef struct ALLEGRO_JOYSTICK_STATE ALLEGRO_JOYSTICK_STATE;:include/allegro5/joystick.h:41
+ALLEGRO_JOYFLAGS: enum ALLEGRO_JOYFLAGS:include/allegro5/joystick.h:54
+ALLEGRO_KEYBOARD_STATE: typedef struct ALLEGRO_KEYBOARD_STATE ALLEGRO_KEYBOARD_STATE;:include/allegro5/keyboard.h:33
+ALLEGRO_MEMORY_INTERFACE: typedef struct ALLEGRO_MEMORY_INTERFACE ALLEGRO_MEMORY_INTERFACE;:include/allegro5/memory.h:28
+al_malloc: #define al_malloc(n) \:include/allegro5/memory.h:42
+al_malloc:    (al_malloc_with_context((n), __LINE__, __FILE__, __func__)):include/allegro5/memory.h:43
+al_free: #define al_free(p) \:include/allegro5/memory.h:47
+al_free:    (al_free_with_context((p), __LINE__, __FILE__, __func__)):include/allegro5/memory.h:48
+al_realloc: #define al_realloc(p, n) \:include/allegro5/memory.h:52
+al_realloc:    (al_realloc_with_context((p), (n), __LINE__, __FILE__, __func__)):include/allegro5/memory.h:53
+al_calloc: #define al_calloc(c, n) \:include/allegro5/memory.h:57
+al_calloc:    (al_calloc_with_context((c), (n), __LINE__, __FILE__, __func__)):include/allegro5/memory.h:58
+ALLEGRO_MONITOR_INFO: typedef struct ALLEGRO_MONITOR_INFO:include/allegro5/monitor.h:13
+ALLEGRO_MOUSE_STATE: typedef struct ALLEGRO_MOUSE_STATE ALLEGRO_MOUSE_STATE;:include/allegro5/mouse.h:35
+ALLEGRO_RENDER_STATE: typedef enum ALLEGRO_RENDER_STATE {:include/allegro5/render_state.h:12
+ALLEGRO_RENDER_FUNCTION: typedef enum ALLEGRO_RENDER_FUNCTION {:include/allegro5/render_state.h:26
+ALLEGRO_WRITE_MASK_FLAGS: typedef enum ALLEGRO_WRITE_MASK_FLAGS {:include/allegro5/render_state.h:39
+ALLEGRO_SHADER: typedef struct ALLEGRO_SHADER ALLEGRO_SHADER;:include/allegro5/shader.h:14
+ALLEGRO_SHADER_TYPE: typedef enum ALLEGRO_SHADER_TYPE ALLEGRO_SHADER_TYPE;:include/allegro5/shader.h:23
+ALLEGRO_SHADER_PLATFORM: typedef enum ALLEGRO_SHADER_PLATFORM ALLEGRO_SHADER_PLATFORM;:include/allegro5/shader.h:33
+ALLEGRO_SYSTEM_ID: enum ALLEGRO_SYSTEM_ID {:include/allegro5/system.h:15
+al_init: #define al_init()    (al_install_system(ALLEGRO_VERSION_INT, atexit)):include/allegro5/system.h:30
+ALLEGRO_THREAD: typedef struct ALLEGRO_THREAD ALLEGRO_THREAD;:include/allegro5/threads.h:27
+ALLEGRO_MUTEX: typedef struct ALLEGRO_MUTEX ALLEGRO_MUTEX;:include/allegro5/threads.h:31
+ALLEGRO_COND: typedef struct ALLEGRO_COND ALLEGRO_COND;:include/allegro5/threads.h:35
+ALLEGRO_USECS_TO_SECS: #define ALLEGRO_USECS_TO_SECS(x)      ((x) / 1000000.0):include/allegro5/timer.h:29
+ALLEGRO_MSECS_TO_SECS: #define ALLEGRO_MSECS_TO_SECS(x)      ((x) / 1000.0):include/allegro5/timer.h:33
+ALLEGRO_BPS_TO_SECS: #define ALLEGRO_BPS_TO_SECS(x)        (1.0 / (x)):include/allegro5/timer.h:37
+ALLEGRO_BPM_TO_SECS: #define ALLEGRO_BPM_TO_SECS(x)        (60.0 / (x)):include/allegro5/timer.h:41
+ALLEGRO_TIMER: typedef struct ALLEGRO_TIMER ALLEGRO_TIMER;:include/allegro5/timer.h:46
+ALLEGRO_STATE_FLAGS: typedef enum ALLEGRO_STATE_FLAGS:include/allegro5/tls.h:28
+ALLEGRO_STATE: typedef struct ALLEGRO_STATE ALLEGRO_STATE;:include/allegro5/tls.h:49
+ALLEGRO_TOUCH_INPUT_MAX_TOUCH_COUNT: #define ALLEGRO_TOUCH_INPUT_MAX_TOUCH_COUNT        16:include/allegro5/touch_input.h:29
+ALLEGRO_TOUCH_INPUT: typedef struct ALLEGRO_TOUCH_INPUT ALLEGRO_TOUCH_INPUT;:include/allegro5/touch_input.h:34
+ALLEGRO_TOUCH_INPUT_STATE: typedef struct ALLEGRO_TOUCH_INPUT_STATE ALLEGRO_TOUCH_INPUT_STATE;:include/allegro5/touch_input.h:39
+ALLEGRO_TOUCH_STATE: typedef struct ALLEGRO_TOUCH_STATE ALLEGRO_TOUCH_STATE;:include/allegro5/touch_input.h:44
+ALLEGRO_MOUSE_EMULATION_MODE: typedef enum ALLEGRO_MOUSE_EMULATION_MODE:include/allegro5/touch_input.h:71
+ALLEGRO_TRANSFORM: typedef struct ALLEGRO_TRANSFORM ALLEGRO_TRANSFORM;:include/allegro5/transformations.h:12
+ALLEGRO_USTR: typedef struct _al_tagbstring ALLEGRO_USTR;:include/allegro5/utf8.h:12
+ALLEGRO_USTR_INFO: typedef struct _al_tagbstring ALLEGRO_USTR_INFO;:include/allegro5/utf8.h:16
+al_get_allegro_acodec_version: uint32_t al_get_allegro_acodec_version(void):addons/acodec/acodec.c:13
+al_init_acodec_addon: bool al_init_acodec_addon(void):addons/acodec/acodec.c:21
+al_is_acodec_addon_initialized: bool al_is_acodec_addon_initialized(void):addons/acodec/acodec.c:77
+ALLEGRO_AUDIO_EVENT_TYPE: enum ALLEGRO_AUDIO_EVENT_TYPE:addons/audio/allegro5/allegro_audio.h:43
+ALLEGRO_AUDIO_RECORDER_EVENT: typedef struct ALLEGRO_AUDIO_RECORDER_EVENT ALLEGRO_AUDIO_RECORDER_EVENT;:addons/audio/allegro5/allegro_audio.h:58
+ALLEGRO_AUDIO_DEPTH: enum ALLEGRO_AUDIO_DEPTH:addons/audio/allegro5/allegro_audio.h:71
+ALLEGRO_CHANNEL_CONF: enum ALLEGRO_CHANNEL_CONF:addons/audio/allegro5/allegro_audio.h:96
+ALLEGRO_PLAYMODE: enum ALLEGRO_PLAYMODE:addons/audio/allegro5/allegro_audio.h:118
+ALLEGRO_MIXER_QUALITY: enum ALLEGRO_MIXER_QUALITY:addons/audio/allegro5/allegro_audio.h:130
+ALLEGRO_AUDIO_PAN_NONE: #define ALLEGRO_AUDIO_PAN_NONE      (-1000.0f):addons/audio/allegro5/allegro_audio.h:140
+ALLEGRO_SAMPLE: typedef struct ALLEGRO_SAMPLE ALLEGRO_SAMPLE;:addons/audio/allegro5/allegro_audio.h:144
+ALLEGRO_SAMPLE_ID: typedef struct ALLEGRO_SAMPLE_ID ALLEGRO_SAMPLE_ID;:addons/audio/allegro5/allegro_audio.h:149
+ALLEGRO_SAMPLE_INSTANCE: typedef struct ALLEGRO_SAMPLE_INSTANCE ALLEGRO_SAMPLE_INSTANCE;:addons/audio/allegro5/allegro_audio.h:159
+ALLEGRO_AUDIO_STREAM: typedef struct ALLEGRO_AUDIO_STREAM ALLEGRO_AUDIO_STREAM;:addons/audio/allegro5/allegro_audio.h:164
+ALLEGRO_MIXER: typedef struct ALLEGRO_MIXER ALLEGRO_MIXER;:addons/audio/allegro5/allegro_audio.h:169
+ALLEGRO_VOICE: typedef struct ALLEGRO_VOICE ALLEGRO_VOICE;:addons/audio/allegro5/allegro_audio.h:174
+ALLEGRO_AUDIO_RECORDER: typedef struct ALLEGRO_AUDIO_RECORDER ALLEGRO_AUDIO_RECORDER;:addons/audio/allegro5/allegro_audio.h:180
+al_get_channel_count: size_t al_get_channel_count(ALLEGRO_CHANNEL_CONF conf):addons/audio/audio.c:57
+al_get_audio_depth_size: size_t al_get_audio_depth_size(ALLEGRO_AUDIO_DEPTH depth):addons/audio/audio.c:65
+al_fill_silence: void al_fill_silence(void *buf, unsigned int samples,:addons/audio/audio.c:127
+al_fill_silence:    ALLEGRO_AUDIO_DEPTH depth, ALLEGRO_CHANNEL_CONF chan_conf):addons/audio/audio.c:128
+al_install_audio: bool al_install_audio(void):addons/audio/audio.c:378
+al_uninstall_audio: void al_uninstall_audio(void):addons/audio/audio.c:397
+al_is_audio_installed: bool al_is_audio_installed(void):addons/audio/audio.c:412
+al_get_allegro_audio_version: uint32_t al_get_allegro_audio_version(void):addons/audio/audio.c:419
+al_register_sample_loader: bool al_register_sample_loader(const char *ext,:addons/audio/audio_io.c:88
+al_register_sample_loader:    ALLEGRO_SAMPLE *(*loader)(const char *filename)):addons/audio/audio_io.c:89
+al_register_sample_loader_f: bool al_register_sample_loader_f(const char *ext,:addons/audio/audio_io.c:115
+al_register_sample_loader_f:    ALLEGRO_SAMPLE *(*loader)(ALLEGRO_FILE* fp)):addons/audio/audio_io.c:116
+al_register_sample_saver: bool al_register_sample_saver(const char *ext,:addons/audio/audio_io.c:142
+al_register_sample_saver:    bool (*saver)(const char *filename, ALLEGRO_SAMPLE *spl)):addons/audio/audio_io.c:143
+al_register_sample_saver_f: bool al_register_sample_saver_f(const char *ext,:addons/audio/audio_io.c:169
+al_register_sample_saver_f:    bool (*saver)(ALLEGRO_FILE* fp, ALLEGRO_SAMPLE *spl)):addons/audio/audio_io.c:170
+al_register_audio_stream_loader: bool al_register_audio_stream_loader(const char *ext,:addons/audio/audio_io.c:196
+al_register_audio_stream_loader:    ALLEGRO_AUDIO_STREAM *(*stream_loader)(const char *filename,:addons/audio/audio_io.c:197
+al_register_audio_stream_loader:       size_t buffer_count, unsigned int samples)):addons/audio/audio_io.c:198
+al_register_audio_stream_loader_f: bool al_register_audio_stream_loader_f(const char *ext,:addons/audio/audio_io.c:224
+al_register_audio_stream_loader_f:    ALLEGRO_AUDIO_STREAM *(*stream_loader)(ALLEGRO_FILE* fp,:addons/audio/audio_io.c:225
+al_register_audio_stream_loader_f:       size_t buffer_count, unsigned int samples)):addons/audio/audio_io.c:226
+al_load_sample: ALLEGRO_SAMPLE *al_load_sample(const char *filename):addons/audio/audio_io.c:252
+al_load_sample_f: ALLEGRO_SAMPLE *al_load_sample_f(ALLEGRO_FILE* fp, const char *ident):addons/audio/audio_io.c:279
+al_load_audio_stream: ALLEGRO_AUDIO_STREAM *al_load_audio_stream(const char *filename,:addons/audio/audio_io.c:300
+al_load_audio_stream:    size_t buffer_count, unsigned int samples):addons/audio/audio_io.c:301
+al_load_audio_stream_f: ALLEGRO_AUDIO_STREAM *al_load_audio_stream_f(ALLEGRO_FILE* fp, const char *ident,:addons/audio/audio_io.c:328
+al_load_audio_stream_f:    size_t buffer_count, unsigned int samples):addons/audio/audio_io.c:329
+al_save_sample: bool al_save_sample(const char *filename, ALLEGRO_SAMPLE *spl):addons/audio/audio_io.c:350
+al_save_sample_f: bool al_save_sample_f(ALLEGRO_FILE *fp, const char *ident, ALLEGRO_SAMPLE *spl):addons/audio/audio_io.c:377
+al_create_sample_instance: ALLEGRO_SAMPLE_INSTANCE *al_create_sample_instance(ALLEGRO_SAMPLE *sample_data):addons/audio/kcm_instance.c:152
+al_destroy_sample_instance: void al_destroy_sample_instance(ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:195
+al_play_sample_instance: bool al_play_sample_instance(ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:218
+al_stop_sample_instance: bool al_stop_sample_instance(ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:228
+al_get_sample_instance_frequency: unsigned int al_get_sample_instance_frequency(const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:238
+al_get_sample_instance_length: unsigned int al_get_sample_instance_length(const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:248
+al_get_sample_instance_position: unsigned int al_get_sample_instance_position(const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:258
+al_get_sample_instance_speed: float al_get_sample_instance_speed(const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:273
+al_get_sample_instance_gain: float al_get_sample_instance_gain(const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:283
+al_get_sample_instance_pan: float al_get_sample_instance_pan(const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:293
+al_get_sample_instance_time: float al_get_sample_instance_time(const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:303
+al_get_sample_instance_depth: ALLEGRO_AUDIO_DEPTH al_get_sample_instance_depth(const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:314
+al_get_sample_instance_channels: ALLEGRO_CHANNEL_CONF al_get_sample_instance_channels(:addons/audio/kcm_instance.c:324
+al_get_sample_instance_channels:    const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:325
+al_get_sample_instance_playmode: ALLEGRO_PLAYMODE al_get_sample_instance_playmode(const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:335
+al_get_sample_instance_playing: bool al_get_sample_instance_playing(const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:345
+al_get_sample_instance_attached: bool al_get_sample_instance_attached(const ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:360
+al_set_sample_instance_position: bool al_set_sample_instance_position(ALLEGRO_SAMPLE_INSTANCE *spl,:addons/audio/kcm_instance.c:370
+al_set_sample_instance_position:    unsigned int val):addons/audio/kcm_instance.c:371
+al_set_sample_instance_length: bool al_set_sample_instance_length(ALLEGRO_SAMPLE_INSTANCE *spl,:addons/audio/kcm_instance.c:392
+al_set_sample_instance_length:    unsigned int val):addons/audio/kcm_instance.c:393
+al_set_sample_instance_speed: bool al_set_sample_instance_speed(ALLEGRO_SAMPLE_INSTANCE *spl, float val):addons/audio/kcm_instance.c:411
+al_set_sample_instance_gain: bool al_set_sample_instance_gain(ALLEGRO_SAMPLE_INSTANCE *spl, float val):addons/audio/kcm_instance.c:452
+al_set_sample_instance_pan: bool al_set_sample_instance_pan(ALLEGRO_SAMPLE_INSTANCE *spl, float val):addons/audio/kcm_instance.c:483
+al_set_sample_instance_playmode: bool al_set_sample_instance_playmode(ALLEGRO_SAMPLE_INSTANCE *spl,:addons/audio/kcm_instance.c:518
+al_set_sample_instance_playmode:    ALLEGRO_PLAYMODE val):addons/audio/kcm_instance.c:519
+al_set_sample_instance_playing: bool al_set_sample_instance_playing(ALLEGRO_SAMPLE_INSTANCE *spl, bool val):addons/audio/kcm_instance.c:547
+al_detach_sample_instance: bool al_detach_sample_instance(ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:575
+al_set_sample: bool al_set_sample(ALLEGRO_SAMPLE_INSTANCE *spl, ALLEGRO_SAMPLE *data):addons/audio/kcm_instance.c:587
+al_get_sample: ALLEGRO_SAMPLE *al_get_sample(ALLEGRO_SAMPLE_INSTANCE *spl):addons/audio/kcm_instance.c:652
+al_set_sample_instance_channel_matrix: bool al_set_sample_instance_channel_matrix(ALLEGRO_SAMPLE_INSTANCE *spl, const float *matrix):addons/audio/kcm_instance.c:662
+al_create_mixer: ALLEGRO_MIXER *al_create_mixer(unsigned int freq,:addons/audio/kcm_mixer.c:618
+al_create_mixer:    ALLEGRO_AUDIO_DEPTH depth, ALLEGRO_CHANNEL_CONF chan_conf):addons/audio/kcm_mixer.c:619
+al_destroy_mixer: void al_destroy_mixer(ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:687
+al_attach_sample_instance_to_mixer: bool al_attach_sample_instance_to_mixer(ALLEGRO_SAMPLE_INSTANCE *spl,:addons/audio/kcm_mixer.c:699
+al_attach_sample_instance_to_mixer:    ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:700
+al_attach_audio_stream_to_mixer: bool al_attach_audio_stream_to_mixer(ALLEGRO_AUDIO_STREAM *stream, ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:798
+al_attach_mixer_to_mixer: bool al_attach_mixer_to_mixer(ALLEGRO_MIXER *stream, ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:809
+al_set_mixer_postprocess_callback: bool al_set_mixer_postprocess_callback(ALLEGRO_MIXER *mixer,:addons/audio/kcm_mixer.c:839
+al_set_mixer_postprocess_callback:    void (*pp_callback)(void *buf, unsigned int samples, void *data),:addons/audio/kcm_mixer.c:840
+al_set_mixer_postprocess_callback:    void *pp_callback_userdata):addons/audio/kcm_mixer.c:841
+al_get_mixer_frequency: unsigned int al_get_mixer_frequency(const ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:858
+al_get_mixer_channels: ALLEGRO_CHANNEL_CONF al_get_mixer_channels(const ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:868
+al_get_mixer_depth: ALLEGRO_AUDIO_DEPTH al_get_mixer_depth(const ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:878
+al_get_mixer_quality: ALLEGRO_MIXER_QUALITY al_get_mixer_quality(const ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:888
+al_get_mixer_gain: float al_get_mixer_gain(const ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:898
+al_get_mixer_playing: bool al_get_mixer_playing(const ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:908
+al_get_mixer_attached: bool al_get_mixer_attached(const ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:918
+al_set_mixer_frequency: bool al_set_mixer_frequency(ALLEGRO_MIXER *mixer, unsigned int val):addons/audio/kcm_mixer.c:928
+al_set_mixer_quality: bool al_set_mixer_quality(ALLEGRO_MIXER *mixer, ALLEGRO_MIXER_QUALITY new_quality):addons/audio/kcm_mixer.c:948
+al_set_mixer_gain: bool al_set_mixer_gain(ALLEGRO_MIXER *mixer, float new_gain):addons/audio/kcm_mixer.c:976
+al_set_mixer_playing: bool al_set_mixer_playing(ALLEGRO_MIXER *mixer, bool val):addons/audio/kcm_mixer.c:1000
+al_detach_mixer: bool al_detach_mixer(ALLEGRO_MIXER *mixer):addons/audio/kcm_mixer.c:1011
+al_create_sample: ALLEGRO_SAMPLE *al_create_sample(void *buf, unsigned int samples,:addons/audio/kcm_sample.c:135
+al_create_sample:    unsigned int freq, ALLEGRO_AUDIO_DEPTH depth,:addons/audio/kcm_sample.c:136
+al_create_sample:    ALLEGRO_CHANNEL_CONF chan_conf, bool free_buf):addons/audio/kcm_sample.c:137
+al_destroy_sample: void al_destroy_sample(ALLEGRO_SAMPLE *spl):addons/audio/kcm_sample.c:188
+al_reserve_samples: bool al_reserve_samples(int reserve_samples):addons/audio/kcm_sample.c:207
+al_get_default_mixer: ALLEGRO_MIXER *al_get_default_mixer(void):addons/audio/kcm_sample.c:260
+al_set_default_mixer: bool al_set_default_mixer(ALLEGRO_MIXER *mixer):addons/audio/kcm_sample.c:268
+al_restore_default_mixer: bool al_restore_default_mixer(void):addons/audio/kcm_sample.c:309
+al_get_default_voice: ALLEGRO_VOICE *al_get_default_voice(void):addons/audio/kcm_sample.c:323
+al_set_default_voice: void al_set_default_voice(ALLEGRO_VOICE *voice):addons/audio/kcm_sample.c:331
+al_play_sample: bool al_play_sample(ALLEGRO_SAMPLE *spl, float gain, float pan, float speed,:addons/audio/kcm_sample.c:342
+al_play_sample:    ALLEGRO_PLAYMODE loop, ALLEGRO_SAMPLE_ID *ret_id):addons/audio/kcm_sample.c:343
+al_stop_sample: void al_stop_sample(ALLEGRO_SAMPLE_ID *spl_id):addons/audio/kcm_sample.c:401
+al_lock_sample_id: ALLEGRO_SAMPLE_INSTANCE* al_lock_sample_id(ALLEGRO_SAMPLE_ID *spl_id):addons/audio/kcm_sample.c:417
+al_unlock_sample_id: void al_unlock_sample_id(ALLEGRO_SAMPLE_ID *spl_id):addons/audio/kcm_sample.c:435
+al_stop_samples: void al_stop_samples(void):addons/audio/kcm_sample.c:451
+al_get_sample_frequency: unsigned int al_get_sample_frequency(const ALLEGRO_SAMPLE *spl):addons/audio/kcm_sample.c:464
+al_get_sample_length: unsigned int al_get_sample_length(const ALLEGRO_SAMPLE *spl):addons/audio/kcm_sample.c:474
+al_get_sample_depth: ALLEGRO_AUDIO_DEPTH al_get_sample_depth(const ALLEGRO_SAMPLE *spl):addons/audio/kcm_sample.c:484
+al_get_sample_channels: ALLEGRO_CHANNEL_CONF al_get_sample_channels(const ALLEGRO_SAMPLE *spl):addons/audio/kcm_sample.c:494
+al_get_sample_data: void *al_get_sample_data(const ALLEGRO_SAMPLE *spl):addons/audio/kcm_sample.c:504
+al_create_audio_stream: ALLEGRO_AUDIO_STREAM *al_create_audio_stream(size_t fragment_count,:addons/audio/kcm_stream.c:49
+al_create_audio_stream:    unsigned int frag_samples, unsigned int freq, ALLEGRO_AUDIO_DEPTH depth,:addons/audio/kcm_stream.c:50
+al_create_audio_stream:    ALLEGRO_CHANNEL_CONF chan_conf):addons/audio/kcm_stream.c:51
+al_destroy_audio_stream: void al_destroy_audio_stream(ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:145
+al_drain_audio_stream: void al_drain_audio_stream(ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:165
+al_get_audio_stream_frequency: unsigned int al_get_audio_stream_frequency(const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:185
+al_get_audio_stream_length: unsigned int al_get_audio_stream_length(const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:195
+al_get_audio_stream_fragments: unsigned int al_get_audio_stream_fragments(const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:205
+al_get_available_audio_stream_fragments: unsigned int al_get_available_audio_stream_fragments(:addons/audio/kcm_stream.c:215
+al_get_available_audio_stream_fragments:    const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:216
+al_get_audio_stream_speed: float al_get_audio_stream_speed(const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:229
+al_get_audio_stream_gain: float al_get_audio_stream_gain(const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:239
+al_get_audio_stream_pan: float al_get_audio_stream_pan(const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:249
+al_get_audio_stream_channels: ALLEGRO_CHANNEL_CONF al_get_audio_stream_channels(:addons/audio/kcm_stream.c:259
+al_get_audio_stream_channels:    const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:260
+al_get_audio_stream_depth: ALLEGRO_AUDIO_DEPTH al_get_audio_stream_depth(:addons/audio/kcm_stream.c:270
+al_get_audio_stream_depth:    const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:271
+al_get_audio_stream_playmode: ALLEGRO_PLAYMODE al_get_audio_stream_playmode(:addons/audio/kcm_stream.c:281
+al_get_audio_stream_playmode:    const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:282
+al_get_audio_stream_playing: bool al_get_audio_stream_playing(const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:292
+al_get_audio_stream_attached: bool al_get_audio_stream_attached(const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:302
+al_get_audio_stream_played_samples: uint64_t al_get_audio_stream_played_samples(const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:311
+al_get_audio_stream_fragment: void *al_get_audio_stream_fragment(const ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:332
+al_set_audio_stream_speed: bool al_set_audio_stream_speed(ALLEGRO_AUDIO_STREAM *stream, float val):addons/audio/kcm_stream.c:361
+al_set_audio_stream_gain: bool al_set_audio_stream_gain(ALLEGRO_AUDIO_STREAM *stream, float val):addons/audio/kcm_stream.c:398
+al_set_audio_stream_pan: bool al_set_audio_stream_pan(ALLEGRO_AUDIO_STREAM *stream, float val):addons/audio/kcm_stream.c:428
+al_set_audio_stream_playmode: bool al_set_audio_stream_playmode(ALLEGRO_AUDIO_STREAM *stream,:addons/audio/kcm_stream.c:462
+al_set_audio_stream_playmode:    ALLEGRO_PLAYMODE val):addons/audio/kcm_stream.c:463
+al_set_audio_stream_playing: bool al_set_audio_stream_playing(ALLEGRO_AUDIO_STREAM *stream, bool val):addons/audio/kcm_stream.c:533
+al_detach_audio_stream: bool al_detach_audio_stream(ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:569
+al_set_audio_stream_fragment: bool al_set_audio_stream_fragment(ALLEGRO_AUDIO_STREAM *stream, void *val):addons/audio/kcm_stream.c:581
+al_rewind_audio_stream: bool al_rewind_audio_stream(ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:808
+al_seek_audio_stream_secs: bool al_seek_audio_stream_secs(ALLEGRO_AUDIO_STREAM *stream, double time):addons/audio/kcm_stream.c:825
+al_get_audio_stream_position_secs: double al_get_audio_stream_position_secs(ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:842
+al_get_audio_stream_length_secs: double al_get_audio_stream_length_secs(ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:859
+al_set_audio_stream_loop_secs: bool al_set_audio_stream_loop_secs(ALLEGRO_AUDIO_STREAM *stream,:addons/audio/kcm_stream.c:876
+al_set_audio_stream_loop_secs:    double start, double end):addons/audio/kcm_stream.c:877
+al_get_audio_stream_event_source: ALLEGRO_EVENT_SOURCE *al_get_audio_stream_event_source(:addons/audio/kcm_stream.c:897
+al_get_audio_stream_event_source:    ALLEGRO_AUDIO_STREAM *stream):addons/audio/kcm_stream.c:898
+al_create_voice: ALLEGRO_VOICE *al_create_voice(unsigned int freq,:addons/audio/kcm_voice.c:65
+al_create_voice:    ALLEGRO_AUDIO_DEPTH depth, ALLEGRO_CHANNEL_CONF chan_conf):addons/audio/kcm_voice.c:66
+al_destroy_voice: void al_destroy_voice(ALLEGRO_VOICE *voice):addons/audio/kcm_voice.c:106
+al_attach_sample_instance_to_voice: bool al_attach_sample_instance_to_voice(ALLEGRO_SAMPLE_INSTANCE *spl,:addons/audio/kcm_voice.c:126
+al_attach_sample_instance_to_voice:    ALLEGRO_VOICE *voice):addons/audio/kcm_voice.c:127
+al_attach_audio_stream_to_voice: bool al_attach_audio_stream_to_voice(ALLEGRO_AUDIO_STREAM *stream,:addons/audio/kcm_voice.c:251
+al_attach_audio_stream_to_voice:    ALLEGRO_VOICE *voice):addons/audio/kcm_voice.c:252
+al_attach_mixer_to_voice: bool al_attach_mixer_to_voice(ALLEGRO_MIXER *mixer, ALLEGRO_VOICE *voice):addons/audio/kcm_voice.c:319
+al_detach_voice: void al_detach_voice(ALLEGRO_VOICE *voice):addons/audio/kcm_voice.c:370
+al_get_voice_frequency: unsigned int al_get_voice_frequency(const ALLEGRO_VOICE *voice):addons/audio/kcm_voice.c:404
+al_get_voice_position: unsigned int al_get_voice_position(const ALLEGRO_VOICE *voice):addons/audio/kcm_voice.c:414
+al_get_voice_channels: ALLEGRO_CHANNEL_CONF al_get_voice_channels(const ALLEGRO_VOICE *voice):addons/audio/kcm_voice.c:432
+al_get_voice_depth: ALLEGRO_AUDIO_DEPTH al_get_voice_depth(const ALLEGRO_VOICE *voice):addons/audio/kcm_voice.c:442
+al_get_voice_playing: bool al_get_voice_playing(const ALLEGRO_VOICE *voice):addons/audio/kcm_voice.c:452
+al_set_voice_position: bool al_set_voice_position(ALLEGRO_VOICE *voice, unsigned int val):addons/audio/kcm_voice.c:470
+al_set_voice_playing: bool al_set_voice_playing(ALLEGRO_VOICE *voice, bool val):addons/audio/kcm_voice.c:489
+al_create_audio_recorder: ALLEGRO_AUDIO_RECORDER *al_create_audio_recorder(size_t fragment_count,:addons/audio/recorder.c:18
+al_create_audio_recorder:    unsigned int samples, unsigned int frequency,:addons/audio/recorder.c:19
+al_create_audio_recorder:    ALLEGRO_AUDIO_DEPTH depth, ALLEGRO_CHANNEL_CONF chan_conf):addons/audio/recorder.c:20
+al_start_audio_recorder: bool al_start_audio_recorder(ALLEGRO_AUDIO_RECORDER *r):addons/audio/recorder.c:89
+al_stop_audio_recorder: void al_stop_audio_recorder(ALLEGRO_AUDIO_RECORDER *r):addons/audio/recorder.c:103
+al_is_audio_recorder_recording: bool al_is_audio_recorder_recording(ALLEGRO_AUDIO_RECORDER *r):addons/audio/recorder.c:115
+al_get_audio_recorder_event: ALLEGRO_AUDIO_RECORDER_EVENT *al_get_audio_recorder_event(ALLEGRO_EVENT *event):addons/audio/recorder.c:128
+al_get_audio_recorder_event_source: ALLEGRO_EVENT_SOURCE *al_get_audio_recorder_event_source(ALLEGRO_AUDIO_RECORDER *r):addons/audio/recorder.c:136
+al_destroy_audio_recorder: void al_destroy_audio_recorder(ALLEGRO_AUDIO_RECORDER *r):addons/audio/recorder.c:143
+al_color_name_to_rgb: bool al_color_name_to_rgb(char const *name, float *r, float *g, float *b):addons/color/color.c:210
+al_color_rgb_to_name: char const *al_color_rgb_to_name(float r, float g, float b):addons/color/color.c:229
+al_color_name: ALLEGRO_COLOR al_color_name(char const *name):addons/color/color.c:254
+al_color_hsv_to_rgb: void al_color_hsv_to_rgb(float hue, float saturation, float value,:addons/color/color.c:266
+al_color_hsv_to_rgb:    float *red, float *green, float *blue):addons/color/color.c:267
+al_color_rgb_to_hsv: void al_color_rgb_to_hsv(float red, float green, float blue,:addons/color/color.c:294
+al_color_rgb_to_hsv:    float *hue, float *saturation, float *value):addons/color/color.c:295
+al_color_hsv: ALLEGRO_COLOR al_color_hsv(float h, float s, float v):addons/color/color.c:339
+al_color_hsl_to_rgb: void al_color_hsl_to_rgb(float hue, float saturation, float lightness,:addons/color/color.c:367
+al_color_hsl_to_rgb:    float *red, float *green, float *blue):addons/color/color.c:368
+al_color_rgb_to_hsl: void al_color_rgb_to_hsl(float red, float green, float blue,:addons/color/color.c:389
+al_color_rgb_to_hsl:    float *hue, float *saturation, float *lightness):addons/color/color.c:390
+al_color_hsl: ALLEGRO_COLOR al_color_hsl(float h, float s, float l):addons/color/color.c:436
+al_color_cmyk_to_rgb: void al_color_cmyk_to_rgb(float cyan, float magenta, float yellow,:addons/color/color.c:446
+al_color_cmyk_to_rgb:     float key, float *red, float *green, float *blue):addons/color/color.c:447
+al_color_rgb_to_cmyk: void al_color_rgb_to_cmyk(float red, float green, float blue,:addons/color/color.c:458
+al_color_rgb_to_cmyk:    float *cyan, float *magenta, float *yellow, float *key):addons/color/color.c:459
+al_color_cmyk: ALLEGRO_COLOR al_color_cmyk(float c, float m, float y, float k):addons/color/color.c:480
+al_color_yuv_to_rgb: void al_color_yuv_to_rgb(float y, float u, float v,:addons/color/color.c:490
+al_color_yuv_to_rgb:     float *red, float *green, float *blue):addons/color/color.c:491
+al_color_rgb_to_yuv: void al_color_rgb_to_yuv(float red, float green, float blue,:addons/color/color.c:504
+al_color_rgb_to_yuv:    float *y, float *u, float *v):addons/color/color.c:505
+al_color_yuv: ALLEGRO_COLOR al_color_yuv(float y, float u, float v):addons/color/color.c:518
+al_color_rgb_to_html: void al_color_rgb_to_html(float red, float green, float blue,:addons/color/color.c:528
+al_color_rgb_to_html:     char *string):addons/color/color.c:529
+al_color_html_to_rgb: bool al_color_html_to_rgb(char const *string,:addons/color/color.c:538
+al_color_html_to_rgb:    float *red, float *green, float *blue):addons/color/color.c:539
+al_color_html: ALLEGRO_COLOR al_color_html(char const *string):addons/color/color.c:568
+al_get_allegro_color_version: uint32_t al_get_allegro_color_version(void):addons/color/color.c:581
+al_color_xyz_to_rgb: void al_color_xyz_to_rgb(float x, float y, float z,:addons/color/color.c:607
+al_color_xyz_to_rgb:     float *red, float *green, float *blue):addons/color/color.c:608
+al_color_rgb_to_xyz: void al_color_rgb_to_xyz(float red, float green, float blue,:addons/color/color.c:621
+al_color_rgb_to_xyz:    float *x, float *y, float *z):addons/color/color.c:622
+al_color_xyz: ALLEGRO_COLOR al_color_xyz(float x, float y, float z):addons/color/color.c:635
+al_color_lab_to_rgb: void al_color_lab_to_rgb(float l, float a, float b,:addons/color/color.c:657
+al_color_lab_to_rgb:     float *red, float *green, float *blue):addons/color/color.c:658
+al_color_rgb_to_lab: void al_color_rgb_to_lab(float red, float green, float blue,:addons/color/color.c:669
+al_color_rgb_to_lab:    float *l, float *a, float *b):addons/color/color.c:670
+al_color_lab: ALLEGRO_COLOR al_color_lab(float l, float a, float b):addons/color/color.c:685
+al_color_lch_to_rgb: void al_color_lch_to_rgb(float l, float c, float h,:addons/color/color.c:695
+al_color_lch_to_rgb:     float *red, float *green, float *blue):addons/color/color.c:696
+al_color_rgb_to_lch: void al_color_rgb_to_lch(float red, float green, float blue,:addons/color/color.c:706
+al_color_rgb_to_lch:    float *l, float *c, float *h):addons/color/color.c:707
+al_color_lch: ALLEGRO_COLOR al_color_lch(float l, float c, float h):addons/color/color.c:718
+al_color_xyy_to_rgb: void al_color_xyy_to_rgb(float x, float y, float y2,:addons/color/color.c:728
+al_color_xyy_to_rgb:     float *red, float *green, float *blue):addons/color/color.c:729
+al_color_rgb_to_xyy: void al_color_rgb_to_xyy(float red, float green, float blue,:addons/color/color.c:739
+al_color_rgb_to_xyy:    float *x, float *y, float *y2):addons/color/color.c:740
+al_color_xyy: ALLEGRO_COLOR al_color_xyy(float x, float y, float y2):addons/color/color.c:751
+al_color_distance_ciede2000: double al_color_distance_ciede2000(ALLEGRO_COLOR color1,:addons/color/color.c:761
+al_color_distance_ciede2000:       ALLEGRO_COLOR color2) {:addons/color/color.c:762
+ALLEGRO_FONT: typedef struct ALLEGRO_FONT ALLEGRO_FONT;:addons/font/allegro5/allegro_font.h:48
+ALLEGRO_GLYPH: typedef struct ALLEGRO_GLYPH ALLEGRO_GLYPH;:addons/font/allegro5/allegro_font.h:53
+al_init_font_addon: bool al_init_font_addon(void):addons/font/font.c:365
+al_is_font_addon_initialized: bool al_is_font_addon_initialized(void):addons/font/font.c:391
+al_shutdown_font_addon: void al_shutdown_font_addon(void):addons/font/font.c:400
+al_register_font_loader: bool al_register_font_loader(char const *extension,:addons/font/font.c:424
+al_register_font_loader:    ALLEGRO_FONT *(*load_font)(char const *filename, int size, int flags)):addons/font/font.c:425
+al_load_font: ALLEGRO_FONT *al_load_font(char const *filename, int size, int flags):addons/font/font.c:448
+al_get_allegro_font_version: uint32_t al_get_allegro_font_version(void):addons/font/font.c:495
+al_load_bitmap_font: ALLEGRO_FONT *al_load_bitmap_font(const char *fname):addons/font/fontbmp.c:181
+al_load_bitmap_font_flags: ALLEGRO_FONT *al_load_bitmap_font_flags(const char *fname, int flags):addons/font/fontbmp.c:197
+al_grab_font_from_bitmap: ALLEGRO_FONT *al_grab_font_from_bitmap(ALLEGRO_BITMAP *bmp,:addons/font/fontbmp.c:206
+al_grab_font_from_bitmap:    int ranges_n, const int ranges[]):addons/font/fontbmp.c:207
+al_create_builtin_font: ALLEGRO_FONT *al_create_builtin_font(void):addons/font/stdfont.c:447
+al_draw_ustr: void al_draw_ustr(const ALLEGRO_FONT *font,:addons/font/text.c:75
+al_draw_ustr:    ALLEGRO_COLOR color, float x, float y, int flags,:addons/font/text.c:76
+al_draw_ustr:    const ALLEGRO_USTR *ustr) :addons/font/text.c:77
+al_draw_text: void al_draw_text(const ALLEGRO_FONT *font,:addons/font/text.c:102
+al_draw_text:    ALLEGRO_COLOR color, float x, float y, int flags,:addons/font/text.c:103
+al_draw_text:    char const *text) :addons/font/text.c:104
+al_draw_justified_ustr: void al_draw_justified_ustr(const ALLEGRO_FONT *font,:addons/font/text.c:115
+al_draw_justified_ustr:    ALLEGRO_COLOR color, float x1, float x2,:addons/font/text.c:116
+al_draw_justified_ustr:    float y, float diff, int flags, const ALLEGRO_USTR *ustr):addons/font/text.c:117
+al_draw_justified_text: void al_draw_justified_text(const ALLEGRO_FONT *font,:addons/font/text.c:200
+al_draw_justified_text:    ALLEGRO_COLOR color, float x1, float x2,:addons/font/text.c:201
+al_draw_justified_text:    float y, float diff, int flags, const char *text):addons/font/text.c:202
+al_draw_textf: void al_draw_textf(const ALLEGRO_FONT *font, ALLEGRO_COLOR color,:addons/font/text.c:213
+al_draw_textf:    float x, float y, int flags,:addons/font/text.c:214
+al_draw_textf:    const char *format, ...):addons/font/text.c:215
+al_draw_justified_textf: void al_draw_justified_textf(const ALLEGRO_FONT *f,:addons/font/text.c:246
+al_draw_justified_textf:    ALLEGRO_COLOR color, float x1, float x2, float y,:addons/font/text.c:247
+al_draw_justified_textf:    float diff, int flags, const char *format, ...):addons/font/text.c:248
+al_get_ustr_width: int al_get_ustr_width(const ALLEGRO_FONT *f, ALLEGRO_USTR const *ustr):addons/font/text.c:270
+al_get_text_width: int al_get_text_width(const ALLEGRO_FONT *f, const char *str):addons/font/text.c:282
+al_get_font_line_height: int al_get_font_line_height(const ALLEGRO_FONT *f):addons/font/text.c:298
+al_get_font_ascent: int al_get_font_ascent(const ALLEGRO_FONT *f):addons/font/text.c:308
+al_get_font_descent: int al_get_font_descent(const ALLEGRO_FONT *f):addons/font/text.c:318
+al_get_ustr_dimensions: void al_get_ustr_dimensions(const ALLEGRO_FONT *f,:addons/font/text.c:328
+al_get_ustr_dimensions:    ALLEGRO_USTR const *ustr,:addons/font/text.c:329
+al_get_ustr_dimensions:    int *bbx, int *bby, int *bbw, int *bbh):addons/font/text.c:330
+al_get_text_dimensions: void al_get_text_dimensions(const ALLEGRO_FONT *f,:addons/font/text.c:342
+al_get_text_dimensions:    char const *text,:addons/font/text.c:343
+al_get_text_dimensions:    int *bbx, int *bby, int *bbw, int *bbh):addons/font/text.c:344
+al_destroy_font: void al_destroy_font(ALLEGRO_FONT *f):addons/font/text.c:358
+al_get_font_ranges: int al_get_font_ranges(ALLEGRO_FONT *f, int ranges_count, int *ranges):addons/font/text.c:371
+al_draw_glyph: void al_draw_glyph(const ALLEGRO_FONT *f, ALLEGRO_COLOR color, float x, float y,:addons/font/text.c:378
+al_draw_glyph:    int codepoint):addons/font/text.c:379
+al_get_glyph_width: int al_get_glyph_width(const ALLEGRO_FONT *f, int codepoint):addons/font/text.c:386
+al_get_glyph_dimensions: bool al_get_glyph_dimensions(const ALLEGRO_FONT *f,:addons/font/text.c:393
+al_get_glyph_dimensions:    int codepoint, int *bbx, int *bby, int *bbw, int *bbh):addons/font/text.c:394
+al_get_glyph_advance: int al_get_glyph_advance(const ALLEGRO_FONT *f, int codepoint1, int codepoint2):addons/font/text.c:401
+al_get_glyph: bool al_get_glyph(const ALLEGRO_FONT *f, int prev_codepoint, int codepoint, ALLEGRO_GLYPH *glyph):addons/font/text.c:408
+al_do_multiline_ustr: void al_do_multiline_ustr(const ALLEGRO_FONT *font, float max_width,:addons/font/text.c:517
+al_do_multiline_ustr:    const ALLEGRO_USTR *ustr,:addons/font/text.c:518
+al_do_multiline_ustr:    bool (*cb)(int line_num, const ALLEGRO_USTR * line, void *extra),:addons/font/text.c:519
+al_do_multiline_ustr:    void *extra):addons/font/text.c:520
+al_do_multiline_text: void al_do_multiline_text(const ALLEGRO_FONT *font,:addons/font/text.c:583
+al_do_multiline_text:    float max_width, const char *text,:addons/font/text.c:584
+al_do_multiline_text:    bool (*cb)(int line_num, const char *line, int size, void *extra),:addons/font/text.c:585
+al_do_multiline_text:    void *extra):addons/font/text.c:586
+al_draw_multiline_ustr: void al_draw_multiline_ustr(const ALLEGRO_FONT *font,:addons/font/text.c:630
+al_draw_multiline_ustr:      ALLEGRO_COLOR color, float x, float y, float max_width, float line_height,:addons/font/text.c:631
+al_draw_multiline_ustr:      int flags, const ALLEGRO_USTR *ustr):addons/font/text.c:632
+al_draw_multiline_text: void al_draw_multiline_text(const ALLEGRO_FONT *font,:addons/font/text.c:657
+al_draw_multiline_text:      ALLEGRO_COLOR color, float x, float y, float max_width, float line_height,:addons/font/text.c:658
+al_draw_multiline_text:      int flags, const char *text):addons/font/text.c:659
+al_draw_multiline_textf: void al_draw_multiline_textf(const ALLEGRO_FONT *font,:addons/font/text.c:673
+al_draw_multiline_textf:      ALLEGRO_COLOR color, float x, float y, float max_width, float line_height,:addons/font/text.c:674
+al_draw_multiline_textf:      int flags, const char *format, ...):addons/font/text.c:675
+al_set_fallback_font: void al_set_fallback_font(ALLEGRO_FONT *font, ALLEGRO_FONT *fallback):addons/font/text.c:696
+al_get_fallback_font: ALLEGRO_FONT *al_get_fallback_font(ALLEGRO_FONT *font):addons/font/text.c:703
+al_init_image_addon: bool al_init_image_addon(void):addons/image/iio.c:14
+al_is_image_addon_initialized: bool al_is_image_addon_initialized(void):addons/image/iio.c:169
+al_shutdown_image_addon: void al_shutdown_image_addon(void):addons/image/iio.c:177
+al_get_allegro_image_version: uint32_t al_get_allegro_image_version(void):addons/image/iio.c:185
+al_open_memfile: ALLEGRO_FILE *al_open_memfile(void *mem, int64_t size, const char *mode):addons/memfile/memfile.c:169
+al_get_allegro_memfile_version: uint32_t al_get_allegro_memfile_version(void):addons/memfile/memfile.c:201
+ALLEGRO_FILECHOOSER: typedef struct ALLEGRO_FILECHOOSER ALLEGRO_FILECHOOSER;:addons/native_dialog/allegro5/allegro_native_dialog.h:38
+ALLEGRO_TEXTLOG: typedef struct ALLEGRO_TEXTLOG ALLEGRO_TEXTLOG;:addons/native_dialog/allegro5/allegro_native_dialog.h:42
+ALLEGRO_MENU: typedef struct ALLEGRO_MENU ALLEGRO_MENU;:addons/native_dialog/allegro5/allegro_native_dialog.h:46
+ALLEGRO_MENU_INFO: typedef struct ALLEGRO_MENU_INFO {:addons/native_dialog/allegro5/allegro_native_dialog.h:50
+al_init_native_dialog_addon: bool al_init_native_dialog_addon(void):addons/native_dialog/dialog.c:15
+al_is_native_dialog_addon_initialized: bool al_is_native_dialog_addon_initialized(void):addons/native_dialog/dialog.c:32
+al_shutdown_native_dialog_addon: void al_shutdown_native_dialog_addon(void):addons/native_dialog/dialog.c:39
+al_create_native_file_dialog: ALLEGRO_FILECHOOSER *al_create_native_file_dialog(:addons/native_dialog/dialog.c:50
+al_create_native_file_dialog:    char const *initial_path,:addons/native_dialog/dialog.c:51
+al_create_native_file_dialog:    char const *title,:addons/native_dialog/dialog.c:52
+al_create_native_file_dialog:    char const *patterns,:addons/native_dialog/dialog.c:53
+al_create_native_file_dialog:    int mode):addons/native_dialog/dialog.c:54
+al_show_native_file_dialog: bool al_show_native_file_dialog(ALLEGRO_DISPLAY *display,:addons/native_dialog/dialog.c:74
+al_show_native_file_dialog:    ALLEGRO_FILECHOOSER *dialog):addons/native_dialog/dialog.c:75
+al_get_native_file_dialog_count: int al_get_native_file_dialog_count(const ALLEGRO_FILECHOOSER *dialog):addons/native_dialog/dialog.c:83
+al_get_native_file_dialog_path: const char *al_get_native_file_dialog_path(:addons/native_dialog/dialog.c:91
+al_get_native_file_dialog_path:    const ALLEGRO_FILECHOOSER *dialog, size_t i):addons/native_dialog/dialog.c:92
+al_destroy_native_file_dialog: void al_destroy_native_file_dialog(ALLEGRO_FILECHOOSER *dialog):addons/native_dialog/dialog.c:102
+al_show_native_message_box: int al_show_native_message_box(ALLEGRO_DISPLAY *display,:addons/native_dialog/dialog.c:124
+al_show_native_message_box:    char const *title, char const *heading, char const *text,:addons/native_dialog/dialog.c:125
+al_show_native_message_box:    char const *buttons, int flags):addons/native_dialog/dialog.c:126
+al_get_allegro_native_dialog_version: uint32_t al_get_allegro_native_dialog_version(void):addons/native_dialog/dialog.c:162
+al_create_menu: ALLEGRO_MENU *al_create_menu(void):addons/native_dialog/menu.c:314
+al_create_popup_menu: ALLEGRO_MENU *al_create_popup_menu(void):addons/native_dialog/menu.c:333
+al_clone_menu: ALLEGRO_MENU *al_clone_menu(ALLEGRO_MENU *menu):addons/native_dialog/menu.c:357
+al_clone_menu_for_popup: ALLEGRO_MENU *al_clone_menu_for_popup(ALLEGRO_MENU *menu):addons/native_dialog/menu.c:364
+al_build_menu: ALLEGRO_MENU *al_build_menu(ALLEGRO_MENU_INFO *info):addons/native_dialog/menu.c:371
+al_append_menu_item: int al_append_menu_item(ALLEGRO_MENU *parent, char const *title, uint16_t id,:addons/native_dialog/menu.c:383
+al_append_menu_item:    int flags, ALLEGRO_BITMAP *icon, ALLEGRO_MENU *submenu):addons/native_dialog/menu.c:384
+al_insert_menu_item: int al_insert_menu_item(ALLEGRO_MENU *parent, int pos, char const *title,:addons/native_dialog/menu.c:395
+al_insert_menu_item:    uint16_t id, int flags, ALLEGRO_BITMAP *icon, ALLEGRO_MENU *submenu):addons/native_dialog/menu.c:396
+al_remove_menu_item: bool al_remove_menu_item(ALLEGRO_MENU *menu, int pos):addons/native_dialog/menu.c:462
+al_find_menu: ALLEGRO_MENU *al_find_menu(ALLEGRO_MENU *haystack, uint16_t id):addons/native_dialog/menu.c:479
+al_find_menu_item: bool al_find_menu_item(ALLEGRO_MENU *haystack, uint16_t id, ALLEGRO_MENU **menu,:addons/native_dialog/menu.c:489
+al_find_menu_item:    int *index):addons/native_dialog/menu.c:490
+al_get_menu_item_caption: const char *al_get_menu_item_caption(ALLEGRO_MENU *menu, int pos):addons/native_dialog/menu.c:539
+al_set_menu_item_caption: void al_set_menu_item_caption(ALLEGRO_MENU *menu, int pos, const char *caption):addons/native_dialog/menu.c:552
+al_get_menu_item_flags: int al_get_menu_item_flags(ALLEGRO_MENU *menu, int pos):addons/native_dialog/menu.c:569
+al_set_menu_item_flags: void al_set_menu_item_flags(ALLEGRO_MENU *menu, int pos, int flags):addons/native_dialog/menu.c:581
+al_toggle_menu_item_flags: int al_toggle_menu_item_flags(ALLEGRO_MENU *menu, int pos, int flags):addons/native_dialog/menu.c:607
+al_get_menu_item_icon: ALLEGRO_BITMAP *al_get_menu_item_icon(ALLEGRO_MENU *menu, int pos):addons/native_dialog/menu.c:634
+al_set_menu_item_icon: void al_set_menu_item_icon(ALLEGRO_MENU *menu, int pos, ALLEGRO_BITMAP *icon):addons/native_dialog/menu.c:647
+al_destroy_menu: void al_destroy_menu(ALLEGRO_MENU *menu):addons/native_dialog/menu.c:666
+al_get_default_menu_event_source: ALLEGRO_EVENT_SOURCE *al_get_default_menu_event_source(void):addons/native_dialog/menu.c:709
+al_enable_menu_event_source: ALLEGRO_EVENT_SOURCE *al_enable_menu_event_source(ALLEGRO_MENU *menu):addons/native_dialog/menu.c:716
+al_disable_menu_event_source: void al_disable_menu_event_source(ALLEGRO_MENU *menu):addons/native_dialog/menu.c:730
+al_get_display_menu: ALLEGRO_MENU *al_get_display_menu(ALLEGRO_DISPLAY *display):addons/native_dialog/menu.c:742
+al_set_display_menu: bool al_set_display_menu(ALLEGRO_DISPLAY *display, ALLEGRO_MENU *menu):addons/native_dialog/menu.c:760
+al_popup_menu: bool al_popup_menu(ALLEGRO_MENU *popup, ALLEGRO_DISPLAY *display):addons/native_dialog/menu.c:843
+al_remove_display_menu: ALLEGRO_MENU *al_remove_display_menu(ALLEGRO_DISPLAY *display):addons/native_dialog/menu.c:867
+al_open_native_text_log: ALLEGRO_TEXTLOG *al_open_native_text_log(char const *title, int flags):addons/native_dialog/textlog.c:39
+al_close_native_text_log: void al_close_native_text_log(ALLEGRO_TEXTLOG *textlog):addons/native_dialog/textlog.c:92
+al_append_native_text_log: void al_append_native_text_log(ALLEGRO_TEXTLOG *textlog,:addons/native_dialog/textlog.c:135
+al_append_native_text_log:    char const *format, ...):addons/native_dialog/textlog.c:136
+al_get_native_text_log_event_source: ALLEGRO_EVENT_SOURCE *al_get_native_text_log_event_source(:addons/native_dialog/textlog.c:164
+al_get_native_text_log_event_source:    ALLEGRO_TEXTLOG *textlog):addons/native_dialog/textlog.c:165
+al_set_physfs_file_interface: void al_set_physfs_file_interface(void):addons/physfs/a5_physfs.c:296
+al_get_allegro_physfs_version: uint32_t al_get_allegro_physfs_version(void):addons/physfs/a5_physfs.c:305
+ALLEGRO_PRIM_TYPE: typedef enum ALLEGRO_PRIM_TYPE:addons/primitives/allegro5/allegro_primitives.h:36
+ALLEGRO_PRIM_ATTR: typedef enum ALLEGRO_PRIM_ATTR:addons/primitives/allegro5/allegro_primitives.h:55
+ALLEGRO_PRIM_STORAGE: typedef enum ALLEGRO_PRIM_STORAGE:addons/primitives/allegro5/allegro_primitives.h:67
+ALLEGRO_LINE_JOIN: typedef enum ALLEGRO_LINE_JOIN:addons/primitives/allegro5/allegro_primitives.h:87
+ALLEGRO_LINE_CAP: typedef enum ALLEGRO_LINE_CAP:addons/primitives/allegro5/allegro_primitives.h:98
+ALLEGRO_PRIM_BUFFER_FLAGS: typedef enum ALLEGRO_PRIM_BUFFER_FLAGS:addons/primitives/allegro5/allegro_primitives.h:109
+ALLEGRO_VERTEX_CACHE_SIZE: #define ALLEGRO_VERTEX_CACHE_SIZE 256:addons/primitives/allegro5/allegro_primitives.h:119
+ALLEGRO_PRIM_QUALITY: #define ALLEGRO_PRIM_QUALITY 10:addons/primitives/allegro5/allegro_primitives.h:123
+ALLEGRO_VERTEX_ELEMENT: typedef struct ALLEGRO_VERTEX_ELEMENT ALLEGRO_VERTEX_ELEMENT;:addons/primitives/allegro5/allegro_primitives.h:127
+ALLEGRO_VERTEX_DECL: typedef struct ALLEGRO_VERTEX_DECL ALLEGRO_VERTEX_DECL;:addons/primitives/allegro5/allegro_primitives.h:137
+ALLEGRO_VERTEX: typedef struct ALLEGRO_VERTEX ALLEGRO_VERTEX;:addons/primitives/allegro5/allegro_primitives.h:145
+ALLEGRO_VERTEX_BUFFER: typedef struct ALLEGRO_VERTEX_BUFFER ALLEGRO_VERTEX_BUFFER;:addons/primitives/allegro5/allegro_primitives.h:156
+ALLEGRO_INDEX_BUFFER: typedef struct ALLEGRO_INDEX_BUFFER ALLEGRO_INDEX_BUFFER;:addons/primitives/allegro5/allegro_primitives.h:160
+al_draw_line: void al_draw_line(float x1, float y1, float x2, float y2,:addons/primitives/high_primitives.c:80
+al_draw_line:    ALLEGRO_COLOR color, float thickness):addons/primitives/high_primitives.c:81
+al_draw_triangle: void al_draw_triangle(float x1, float y1, float x2, float y2,:addons/primitives/high_primitives.c:125
+al_draw_triangle:    float x3, float y3, ALLEGRO_COLOR color, float thickness):addons/primitives/high_primitives.c:126
+al_draw_filled_triangle: void al_draw_filled_triangle(float x1, float y1, float x2, float y2,:addons/primitives/high_primitives.c:338
+al_draw_filled_triangle:    float x3, float y3, ALLEGRO_COLOR color):addons/primitives/high_primitives.c:339
+al_draw_rectangle: void al_draw_rectangle(float x1, float y1, float x2, float y2,:addons/primitives/high_primitives.c:360
+al_draw_rectangle:    ALLEGRO_COLOR color, float thickness):addons/primitives/high_primitives.c:361
+al_draw_filled_rectangle: void al_draw_filled_rectangle(float x1, float y1, float x2, float y2,:addons/primitives/high_primitives.c:405
+al_draw_filled_rectangle:    ALLEGRO_COLOR color):addons/primitives/high_primitives.c:406
+al_calculate_arc: void al_calculate_arc(float* dest, int stride, float cx, float cy,:addons/primitives/high_primitives.c:426
+al_calculate_arc:    float rx, float ry, float start_theta, float delta_theta, float thickness,:addons/primitives/high_primitives.c:427
+al_calculate_arc:    int num_points):addons/primitives/high_primitives.c:428
+al_draw_pieslice: void al_draw_pieslice(float cx, float cy, float r, float start_theta,:addons/primitives/high_primitives.c:507
+al_draw_pieslice:    float delta_theta, ALLEGRO_COLOR color, float thickness):addons/primitives/high_primitives.c:508
+al_draw_filled_pieslice: void al_draw_filled_pieslice(float cx, float cy, float r, float start_theta,:addons/primitives/high_primitives.c:663
+al_draw_filled_pieslice:    float delta_theta, ALLEGRO_COLOR color):addons/primitives/high_primitives.c:664
+al_draw_ellipse: void al_draw_ellipse(float cx, float cy, float rx, float ry,:addons/primitives/high_primitives.c:694
+al_draw_ellipse:    ALLEGRO_COLOR color, float thickness):addons/primitives/high_primitives.c:695
+al_draw_filled_ellipse: void al_draw_filled_ellipse(float cx, float cy, float rx, float ry,:addons/primitives/high_primitives.c:746
+al_draw_filled_ellipse:    ALLEGRO_COLOR color):addons/primitives/high_primitives.c:747
+al_draw_circle: void al_draw_circle(float cx, float cy, float r, ALLEGRO_COLOR color,:addons/primitives/high_primitives.c:781
+al_draw_circle:    float thickness):addons/primitives/high_primitives.c:782
+al_draw_filled_circle: void al_draw_filled_circle(float cx, float cy, float r, ALLEGRO_COLOR color):addons/primitives/high_primitives.c:789
+al_draw_elliptical_arc: void al_draw_elliptical_arc(float cx, float cy, float rx, float ry, float start_theta,:addons/primitives/high_primitives.c:796
+al_draw_elliptical_arc:    float delta_theta, ALLEGRO_COLOR color, float thickness):addons/primitives/high_primitives.c:797
+al_draw_arc: void al_draw_arc(float cx, float cy, float r, float start_theta,:addons/primitives/high_primitives.c:846
+al_draw_arc:    float delta_theta, ALLEGRO_COLOR color, float thickness):addons/primitives/high_primitives.c:847
+al_draw_rounded_rectangle: void al_draw_rounded_rectangle(float x1, float y1, float x2, float y2,:addons/primitives/high_primitives.c:854
+al_draw_rounded_rectangle:    float rx, float ry, ALLEGRO_COLOR color, float thickness):addons/primitives/high_primitives.c:855
+al_draw_filled_rounded_rectangle: void al_draw_filled_rounded_rectangle(float x1, float y1, float x2, float y2,:addons/primitives/high_primitives.c:952
+al_draw_filled_rounded_rectangle:    float rx, float ry, ALLEGRO_COLOR color):addons/primitives/high_primitives.c:953
+al_calculate_spline: void al_calculate_spline(float* dest, int stride, float points[8],:addons/primitives/high_primitives.c:1003
+al_calculate_spline:    float thickness, int num_segments):addons/primitives/high_primitives.c:1004
+al_draw_spline: void al_draw_spline(float points[8], ALLEGRO_COLOR color, float thickness):addons/primitives/high_primitives.c:1082
+al_calculate_ribbon: void al_calculate_ribbon(float* dest, int dest_stride, const float *points,:addons/primitives/high_primitives.c:1126
+al_calculate_ribbon:    int points_stride, float thickness, int num_segments):addons/primitives/high_primitives.c:1127
+al_draw_ribbon: void al_draw_ribbon(const float *points, int points_stride, ALLEGRO_COLOR color,:addons/primitives/high_primitives.c:1248
+al_draw_ribbon:    float thickness, int num_segments):addons/primitives/high_primitives.c:1249
+al_draw_soft_line: void al_draw_soft_line(ALLEGRO_VERTEX* v1, ALLEGRO_VERTEX* v2, uintptr_t state,:addons/primitives/line_soft.c:572
+al_draw_soft_line:    void (*first)(uintptr_t, int, int, ALLEGRO_VERTEX*, ALLEGRO_VERTEX*),:addons/primitives/line_soft.c:573
+al_draw_soft_line:    void (*step)(uintptr_t, int),:addons/primitives/line_soft.c:574
+al_draw_soft_line:    void (*draw)(uintptr_t, int, int)):addons/primitives/line_soft.c:575
+al_draw_polygon: void al_draw_polygon(const float *vertices, int vertex_count,:addons/primitives/polygon.c:44
+al_draw_polygon:    int join_style, ALLEGRO_COLOR color, float thickness, float miter_limit):addons/primitives/polygon.c:45
+al_draw_filled_polygon: void al_draw_filled_polygon(const float *vertices, int vertex_count,:addons/primitives/polygon.c:53
+al_draw_filled_polygon:    ALLEGRO_COLOR color):addons/primitives/polygon.c:54
+al_draw_filled_polygon_with_holes: void al_draw_filled_polygon_with_holes(const float *vertices,:addons/primitives/polygon.c:71
+al_draw_filled_polygon_with_holes:    const int *vertex_counts, ALLEGRO_COLOR color):addons/primitives/polygon.c:72
+al_draw_polyline: void al_draw_polyline(const float* vertices, int vertex_stride,:addons/primitives/polyline.c:534
+al_draw_polyline:    int vertex_count, int join_style, int cap_style,:addons/primitives/polyline.c:535
+al_draw_polyline:    ALLEGRO_COLOR color, float thickness, float miter_limit):addons/primitives/polyline.c:536
+al_draw_soft_triangle: void al_draw_soft_triangle(:addons/primitives/prim_soft.c:522
+al_draw_soft_triangle:    ALLEGRO_VERTEX* v1, ALLEGRO_VERTEX* v2, ALLEGRO_VERTEX* v3, uintptr_t state,:addons/primitives/prim_soft.c:523
+al_draw_soft_triangle:    void (*init)(uintptr_t, ALLEGRO_VERTEX*, ALLEGRO_VERTEX*, ALLEGRO_VERTEX*),:addons/primitives/prim_soft.c:524
+al_draw_soft_triangle:    void (*first)(uintptr_t, int, int, int, int),:addons/primitives/prim_soft.c:525
+al_draw_soft_triangle:    void (*step)(uintptr_t, int),:addons/primitives/prim_soft.c:526
+al_draw_soft_triangle:    void (*draw)(uintptr_t, int, int, int)):addons/primitives/prim_soft.c:527
+al_init_primitives_addon: bool al_init_primitives_addon(void):addons/primitives/primitives.c:46
+al_is_primitives_addon_initialized: bool al_is_primitives_addon_initialized(void):addons/primitives/primitives.c:60
+al_shutdown_primitives_addon: void al_shutdown_primitives_addon(void):addons/primitives/primitives.c:67
+al_draw_prim: int al_draw_prim(const void* vtxs, const ALLEGRO_VERTEX_DECL* decl,:addons/primitives/primitives.c:75
+al_draw_prim:    ALLEGRO_BITMAP* texture, int start, int end, int type):addons/primitives/primitives.c:76
+al_draw_indexed_prim: int al_draw_indexed_prim(const void* vtxs, const ALLEGRO_VERTEX_DECL* decl,:addons/primitives/primitives.c:111
+al_draw_indexed_prim:    ALLEGRO_BITMAP* texture, const int* indices, int num_vtx, int type):addons/primitives/primitives.c:112
+al_get_allegro_primitives_version: uint32_t al_get_allegro_primitives_version(void):addons/primitives/primitives.c:158
+al_create_vertex_decl: ALLEGRO_VERTEX_DECL* al_create_vertex_decl(const ALLEGRO_VERTEX_ELEMENT* elements, int stride):addons/primitives/primitives.c:165
+al_destroy_vertex_decl: void al_destroy_vertex_decl(ALLEGRO_VERTEX_DECL* decl):addons/primitives/primitives.c:225
+al_create_vertex_buffer: ALLEGRO_VERTEX_BUFFER* al_create_vertex_buffer(ALLEGRO_VERTEX_DECL* decl,:addons/primitives/primitives.c:238
+al_create_vertex_buffer:    const void* initial_data, int num_vertices, int flags):addons/primitives/primitives.c:239
+al_create_index_buffer: ALLEGRO_INDEX_BUFFER* al_create_index_buffer(int index_size,:addons/primitives/primitives.c:272
+al_create_index_buffer:     const void* initial_data, int num_indices, int flags):addons/primitives/primitives.c:273
+al_destroy_vertex_buffer: void al_destroy_vertex_buffer(ALLEGRO_VERTEX_BUFFER* buffer):addons/primitives/primitives.c:312
+al_destroy_index_buffer: void al_destroy_index_buffer(ALLEGRO_INDEX_BUFFER* buffer):addons/primitives/primitives.c:334
+al_lock_vertex_buffer: void* al_lock_vertex_buffer(ALLEGRO_VERTEX_BUFFER* buffer, int offset,:addons/primitives/primitives.c:369
+al_lock_vertex_buffer:    int length, int flags):addons/primitives/primitives.c:370
+al_lock_index_buffer: void* al_lock_index_buffer(ALLEGRO_INDEX_BUFFER* buffer, int offset,:addons/primitives/primitives.c:398
+al_lock_index_buffer:     int length, int flags):addons/primitives/primitives.c:399
+al_unlock_vertex_buffer: void al_unlock_vertex_buffer(ALLEGRO_VERTEX_BUFFER* buffer):addons/primitives/primitives.c:424
+al_unlock_index_buffer: void al_unlock_index_buffer(ALLEGRO_INDEX_BUFFER* buffer):addons/primitives/primitives.c:445
+al_draw_vertex_buffer: int al_draw_vertex_buffer(ALLEGRO_VERTEX_BUFFER* vertex_buffer,:addons/primitives/primitives.c:510
+al_draw_vertex_buffer:    ALLEGRO_BITMAP* texture, int start, int end, int type):addons/primitives/primitives.c:511
+al_draw_indexed_buffer: int al_draw_indexed_buffer(ALLEGRO_VERTEX_BUFFER* vertex_buffer,:addons/primitives/primitives.c:545
+al_draw_indexed_buffer:    ALLEGRO_BITMAP* texture, ALLEGRO_INDEX_BUFFER* index_buffer,:addons/primitives/primitives.c:546
+al_draw_indexed_buffer:    int start, int end, int type):addons/primitives/primitives.c:547
+al_get_vertex_buffer_size: int al_get_vertex_buffer_size(ALLEGRO_VERTEX_BUFFER* buffer):addons/primitives/primitives.c:583
+al_get_index_buffer_size: int al_get_index_buffer_size(ALLEGRO_INDEX_BUFFER* buffer):addons/primitives/primitives.c:591
+al_triangulate_polygon: bool al_triangulate_polygon(:addons/primitives/triangulator.c:814
+al_triangulate_polygon:    const float* vertices, size_t vertex_stride, const int* vertex_counts,:addons/primitives/triangulator.c:815
+al_triangulate_polygon:    void (*emit_triangle)(int, int, int, void*), void* userdata):addons/primitives/triangulator.c:816
+al_load_ttf_font_f: ALLEGRO_FONT *al_load_ttf_font_f(ALLEGRO_FILE *file,:addons/ttf/ttf.c:829
+al_load_ttf_font_f:     char const *filename, int size, int flags):addons/ttf/ttf.c:830
+al_load_ttf_font_stretch_f: ALLEGRO_FONT *al_load_ttf_font_stretch_f(ALLEGRO_FILE *file,:addons/ttf/ttf.c:838
+al_load_ttf_font_stretch_f:     char const *filename, int w, int h, int flags):addons/ttf/ttf.c:839
+al_load_ttf_font: ALLEGRO_FONT *al_load_ttf_font(char const *filename, int size, int flags):addons/ttf/ttf.c:978
+al_load_ttf_font_stretch: ALLEGRO_FONT *al_load_ttf_font_stretch(char const *filename, int w, int h,:addons/ttf/ttf.c:986
+al_load_ttf_font_stretch:    int flags):addons/ttf/ttf.c:987
+al_init_ttf_addon: bool al_init_ttf_addon(void):addons/ttf/ttf.c:1105
+al_is_ttf_addon_initialized: bool al_is_ttf_addon_initialized(void):addons/ttf/ttf.c:1142
+al_shutdown_ttf_addon: void al_shutdown_ttf_addon(void):addons/ttf/ttf.c:1150
+al_get_allegro_ttf_version: uint32_t al_get_allegro_ttf_version(void):addons/ttf/ttf.c:1167
+ALLEGRO_VIDEO_EVENT_TYPE: enum ALLEGRO_VIDEO_EVENT_TYPE:addons/video/allegro5/allegro_video.h:35
+ALLEGRO_VIDEO_POSITION_TYPE: typedef enum ALLEGRO_VIDEO_POSITION_TYPE ALLEGRO_VIDEO_POSITION_TYPE;:addons/video/allegro5/allegro_video.h:51
+al_open_video: ALLEGRO_VIDEO *al_open_video(char const *filename):addons/video/video.c:94
+al_close_video: void al_close_video(ALLEGRO_VIDEO *video):addons/video/video.c:130
+al_get_video_event_source: ALLEGRO_EVENT_SOURCE *al_get_video_event_source(ALLEGRO_VIDEO *video):addons/video/video.c:144
+al_start_video: void al_start_video(ALLEGRO_VIDEO *video, ALLEGRO_MIXER *mixer):addons/video/video.c:152
+al_start_video_with_voice: void al_start_video_with_voice(ALLEGRO_VIDEO *video, ALLEGRO_VOICE *voice):addons/video/video.c:163
+al_set_video_playing: void al_set_video_playing(ALLEGRO_VIDEO *video, bool play):addons/video/video.c:174
+al_is_video_playing: bool al_is_video_playing(ALLEGRO_VIDEO *video):addons/video/video.c:186
+al_get_video_frame: ALLEGRO_BITMAP *al_get_video_frame(ALLEGRO_VIDEO *video):addons/video/video.c:195
+al_get_video_position: double al_get_video_position(ALLEGRO_VIDEO *video, ALLEGRO_VIDEO_POSITION_TYPE which):addons/video/video.c:205
+al_seek_video: bool al_seek_video(ALLEGRO_VIDEO *video, double pos_in_seconds):addons/video/video.c:218
+al_get_video_audio_rate: double al_get_video_audio_rate(ALLEGRO_VIDEO *video):addons/video/video.c:227
+al_get_video_fps: double al_get_video_fps(ALLEGRO_VIDEO *video):addons/video/video.c:235
+al_get_video_scaled_width: float al_get_video_scaled_width(ALLEGRO_VIDEO *video):addons/video/video.c:243
+al_get_video_scaled_height: float al_get_video_scaled_height(ALLEGRO_VIDEO *video):addons/video/video.c:251
+al_init_video_addon: bool al_init_video_addon(void):addons/video/video.c:259
+al_is_video_addon_initialized: bool al_is_video_addon_initialized(void):addons/video/video.c:281
+al_shutdown_video_addon: void al_shutdown_video_addon(void):addons/video/video.c:289
+al_get_allegro_video_version: uint32_t al_get_allegro_video_version(void):addons/video/video.c:307
