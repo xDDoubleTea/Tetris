@@ -13,11 +13,11 @@ typedef enum EleType {
     Projectile_L,
     Ball_L,
     Start_btn_L,
-
+    Tetris_board_L,
+    Tetrimino_L,
 } EleType;
 typedef struct _GameScene {
     ALLEGRO_BITMAP* background;
-
 } GameScene;
 Scene* New_GameScene(int label);
 void game_scene_update(Scene* self);

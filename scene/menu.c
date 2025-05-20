@@ -63,10 +63,10 @@ void menu_update(Scene* self) {
         self->scene_end = true;
         window = 1;
     }
-    if (key_state[ALLEGRO_KEY_ESCAPE]) {
-        self->scene_end = true;
-        window = -1;
-    }
+    /* if (key_state[ALLEGRO_KEY_ESCAPE]) { */
+    /*     self->scene_end = true; */
+    /*     window = -1; */
+    /* } */
     return;
 }
 void menu_draw(Scene* self) {

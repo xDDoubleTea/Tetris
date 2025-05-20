@@ -1,5 +1,5 @@
-#ifndef BALL_H_INCLUDED
-#define BALL_H_INCLUDED
+#ifndef START_BTN_H_INCLUDED
+#define START_BTN_H_INCLUDED
 #include <allegro5/allegro_font.h>
 
 #include "../scene/gamescene.h"  // for element label
