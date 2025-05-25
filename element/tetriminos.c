@@ -44,27 +44,33 @@ void Tetrimino_draw(Elements* self) {
     Tetrimino* tetrimino = ((Tetrimino*)(self->pDerivedObj));
     Tetris_board* board = ((Tetris_board*)(labelelem.arr[0]->pDerivedObj));
     int side_len = board->side_len;
-    if (tetrimino->block_type == 'O') {
-        al_draw_filled_rectangle(
-            board->x1 + tetrimino->coord_x * side_len,
-            board->y1 + tetrimino->coord_y * side_len,
-            board->x1 + (tetrimino->coord_x + 1) * side_len,
-            board->y1 + (tetrimino->coord_y + 1) * side_len, tetrimino->color);
-        al_draw_filled_rectangle(
-            board->x1 + (tetrimino->coord_x + 1) * side_len,
-            board->y1 + tetrimino->coord_y * side_len,
-            board->x1 + (tetrimino->coord_x + 2) * side_len,
-            board->y1 + (tetrimino->coord_y + 1) * side_len, tetrimino->color);
-        al_draw_filled_rectangle(
-            board->x1 + tetrimino->coord_x * side_len,
-            board->y1 + (tetrimino->coord_y + 1) * side_len,
-            board->x1 + (tetrimino->coord_x + 1) * side_len,
-            board->y1 + (tetrimino->coord_y + 2) * side_len, tetrimino->color);
-        al_draw_filled_rectangle(
-            board->x1 + (tetrimino->coord_x + 1) * side_len,
-            board->y1 + (tetrimino->coord_y + 1) * side_len,
-            board->x1 + (tetrimino->coord_x + 2) * side_len,
-            board->y1 + (tetrimino->coord_y + 2) * side_len, tetrimino->color);
+    switch (tetrimino->block_type) {
+        case 'O': {
+            al_draw_filled_rectangle(
+                board->x1 + tetrimino->coord_x * side_len,
+                board->y1 + tetrimino->coord_y * side_len,
+                board->x1 + (tetrimino->coord_x + 1) * side_len,
+                board->y1 + (tetrimino->coord_y + 1) * side_len,
+                tetrimino->color);
+            al_draw_filled_rectangle(
+                board->x1 + (tetrimino->coord_x + 1) * side_len,
+                board->y1 + tetrimino->coord_y * side_len,
+                board->x1 + (tetrimino->coord_x + 2) * side_len,
+                board->y1 + (tetrimino->coord_y + 1) * side_len,
+                tetrimino->color);
+            al_draw_filled_rectangle(
+                board->x1 + tetrimino->coord_x * side_len,
+                board->y1 + (tetrimino->coord_y + 1) * side_len,
+                board->x1 + (tetrimino->coord_x + 1) * side_len,
+                board->y1 + (tetrimino->coord_y + 2) * side_len,
+                tetrimino->color);
+            al_draw_filled_rectangle(
+                board->x1 + (tetrimino->coord_x + 1) * side_len,
+                board->y1 + (tetrimino->coord_y + 1) * side_len,
+                board->x1 + (tetrimino->coord_x + 2) * side_len,
+                board->y1 + (tetrimino->coord_y + 2) * side_len,
+                tetrimino->color);
+        }
     }
 }
 void Tetrimino_destory(Elements* self) {
