@@ -1,7 +1,9 @@
 #include "tetriminos.h"
 
 #include <allegro5/allegro5.h>
+#include <allegro5/keycodes.h>
 #include <stdlib.h>
+#include <time.h>
 
 #include "tetrimino_shape.h"
 
@@ -31,11 +33,13 @@ Elements* New_Tetrimino(int label) {
     pDerivedObj->rotation = 0;
     pDerivedObj->coord_x = 4;
     pDerivedObj->coord_y = -3;
+    pDerivedObj->timer = 0;
     pDerivedObj->color =
         al_map_rgb(tetrimino_colors[type][0], tetrimino_colors[type][1],
                    tetrimino_colors[type][2]);
     pDerivedObj->hitbox = New_Rectangle(0, 0, 0, 0);
     // setting derived object function
+    pDerivedObj->move_lock = false;
     pObj->pDerivedObj = pDerivedObj;
     pObj->Update = Tetrimino_update;
     pObj->Interact = Tetrimino_interact;
@@ -43,13 +47,30 @@ Elements* New_Tetrimino(int label) {
     pObj->Destroy = Tetrimino_destory;
     return pObj;
 }
-void Tetrimino_update(Elements* self) {}
+void Tetrimino_update(Elements* self) {
+    Tetrimino* tetrimino = ((Tetrimino*)(self->pDerivedObj));
+    if (key_state[ALLEGRO_KEY_LEFT] && !tetrimino->move_lock) {
+        tetrimino->coord_x -= 1;
+        tetrimino->move_lock = true;
+    } else if (key_state[ALLEGRO_KEY_RIGHT] && !tetrimino->move_lock) {
+        tetrimino->coord_x += 1;
+        tetrimino->move_lock = true;
+    } else if (!key_state[ALLEGRO_KEY_LEFT] && !key_state[ALLEGRO_KEY_RIGHT]) {
+        tetrimino->move_lock = false;
+    }
+    tetrimino->timer += 1;
+    if (!(tetrimino->timer % 90)) {
+        tetrimino->coord_y += 1;
+        tetrimino->timer = 0;
+    }
+}
 void Tetrimino_interact(Elements* self) {}
 void Tetrimino_draw(Elements* self) {
     ElementVec labelelem = _Get_label_elements(scene, Tetris_board_L);
     Tetrimino* tetrimino = ((Tetrimino*)(self->pDerivedObj));
     Tetris_board* board = ((Tetris_board*)(labelelem.arr[0]->pDerivedObj));
     int side_len = board->side_len;
+    // TODO: Tackle the problem where the block spawns out of the screen.
     const TetriminoShape* cur_block_shape =
         tetrimino_shapes[tetrimino->block_type][tetrimino->rotation];
     for (int i = 0; i < 4; i++) {

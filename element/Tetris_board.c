@@ -16,7 +16,11 @@ Elements* New_Tetris_board(int label) {
     pDerivedObj->x2 = (double)WIDTH / 2 - 300;
     pDerivedObj->y2 = (double)HEIGHT / 2 + 400;
     pDerivedObj->side_len = 40;
-
+    pDerivedObj->gravity = 1;
+    pDerivedObj->gravity_increase_factor = 0.1;
+    pDerivedObj->timer = 0;
+    pDerivedObj->pieces = 0;
+    pDerivedObj->attack = 0;
     pDerivedObj->hitbox = New_Rectangle(pDerivedObj->x1, pDerivedObj->y1,
                                         pDerivedObj->x2, pDerivedObj->y2);
     for (int i = 0; i < 10; i++) {
@@ -33,7 +37,10 @@ Elements* New_Tetris_board(int label) {
     pObj->Destroy = Tetris_board_destory;
     return pObj;
 }
-void Tetris_board_update(Elements* self) {}
+void Tetris_board_update(Elements* self) {
+    Tetris_board* board = ((Tetris_board*)(self->pDerivedObj));
+    board->timer = (board->timer + 1) % 1500;
+}
 void Tetris_board_interact(Elements* self) {
     /* Tetris_board* board = ((Tetris_board*)(self->pDerivedObj)); */
     /* ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L); */

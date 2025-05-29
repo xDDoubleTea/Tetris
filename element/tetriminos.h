@@ -34,6 +34,8 @@ typedef struct _Tetrimino {
     int rotation;
     int coord_x, coord_y;
     ALLEGRO_COLOR color;
+    bool move_lock;
+    long long timer;
     Shape* hitbox;
 } Tetrimino;
 Elements* New_Tetrimino(int label);
