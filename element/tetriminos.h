@@ -30,7 +30,7 @@ typedef struct _T_PIECE T_PIECE;
 typedef struct _Z_PIECE Z_PIECE;
 typedef struct _S_PIECE S_PIECE;
 typedef struct _Tetrimino {
-    char block_type;
+    int block_type;
     int rotation;
     int coord_x, coord_y;
     ALLEGRO_COLOR color;

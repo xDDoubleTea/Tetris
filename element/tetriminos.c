@@ -1,6 +1,9 @@
 #include "tetriminos.h"
 
 #include <allegro5/allegro5.h>
+#include <stdlib.h>
+
+#include "tetrimino_shape.h"
 
 const unsigned char gray[3] = {100, 100, 100};
 const unsigned char o_color[3] = {255, 255, 0};
@@ -23,11 +26,14 @@ Elements* New_Tetrimino(int label) {
     Tetrimino* pDerivedObj = (Tetrimino*)malloc(sizeof(Tetrimino));
     Elements* pObj = New_Elements(label);
     // setting derived object member
-    pDerivedObj->block_type = 'O';
+    int type = rand() % 7;
+    pDerivedObj->block_type = type;
     pDerivedObj->rotation = 0;
     pDerivedObj->coord_x = 4;
     pDerivedObj->coord_y = -3;
-    pDerivedObj->color = al_map_rgb(o_color[0], o_color[1], o_color[2]);
+    pDerivedObj->color =
+        al_map_rgb(tetrimino_colors[type][0], tetrimino_colors[type][1],
+                   tetrimino_colors[type][2]);
     pDerivedObj->hitbox = New_Rectangle(0, 0, 0, 0);
     // setting derived object function
     pObj->pDerivedObj = pDerivedObj;
@@ -44,35 +50,22 @@ void Tetrimino_draw(Elements* self) {
     Tetrimino* tetrimino = ((Tetrimino*)(self->pDerivedObj));
     Tetris_board* board = ((Tetris_board*)(labelelem.arr[0]->pDerivedObj));
     int side_len = board->side_len;
-    switch (tetrimino->block_type) {
-        case 'O': {
-            al_draw_filled_rectangle(
-                board->x1 + tetrimino->coord_x * side_len,
-                board->y1 + tetrimino->coord_y * side_len,
-                board->x1 + (tetrimino->coord_x + 1) * side_len,
-                board->y1 + (tetrimino->coord_y + 1) * side_len,
-                tetrimino->color);
-            al_draw_filled_rectangle(
-                board->x1 + (tetrimino->coord_x + 1) * side_len,
-                board->y1 + tetrimino->coord_y * side_len,
-                board->x1 + (tetrimino->coord_x + 2) * side_len,
-                board->y1 + (tetrimino->coord_y + 1) * side_len,
-                tetrimino->color);
-            al_draw_filled_rectangle(
-                board->x1 + tetrimino->coord_x * side_len,
-                board->y1 + (tetrimino->coord_y + 1) * side_len,
-                board->x1 + (tetrimino->coord_x + 1) * side_len,
-                board->y1 + (tetrimino->coord_y + 2) * side_len,
-                tetrimino->color);
-            al_draw_filled_rectangle(
-                board->x1 + (tetrimino->coord_x + 1) * side_len,
-                board->y1 + (tetrimino->coord_y + 1) * side_len,
-                board->x1 + (tetrimino->coord_x + 2) * side_len,
-                board->y1 + (tetrimino->coord_y + 2) * side_len,
-                tetrimino->color);
-        }
+    const TetriminoShape* cur_block_shape =
+        tetrimino_shapes[tetrimino->block_type][tetrimino->rotation];
+    for (int i = 0; i < 4; i++) {
+        int block_x = tetrimino->coord_x + cur_block_shape[i].x;
+        int block_y = tetrimino->coord_y + cur_block_shape[i].y;
+
+        float screen_x1 = board->x1 + block_x * side_len;
+        float screen_y1 = board->y1 + block_y * side_len;
+        float screen_x2 = screen_x1 + side_len;
+        float screen_y2 = screen_y1 + side_len;
+
+        al_draw_filled_rectangle(screen_x1, screen_y1, screen_x2, screen_y2,
+                                 tetrimino->color);
     }
 }
+
 void Tetrimino_destory(Elements* self) {
     Tetrimino* Obj = ((Tetrimino*)(self->pDerivedObj));
     free(Obj->hitbox);
