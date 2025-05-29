@@ -31,7 +31,7 @@
 ## 遊戲音效
 
 Dr Ocelot for the soundtrack zenith-tower-ost.
-[](https://merch.tetr.io/zenith-tower-ost/)
+[zenith-tower-ost](https://merch.tetr.io/zenith-tower-ost/)
 
 Sound effects are from Tetr.io.
 
