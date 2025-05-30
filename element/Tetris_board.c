@@ -4,6 +4,7 @@
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_ttf.h>
+#include <allegro5/keycodes.h>
 
 #include "../scene/sceneManager.h"  // for scene variable
 #include "../shapes/Rectangle.h"
@@ -15,12 +16,20 @@ Elements* New_Tetris_board(int label) {
     pDerivedObj->y1 = (double)HEIGHT / 2 - 400;
     pDerivedObj->x2 = (double)WIDTH / 2 - 300;
     pDerivedObj->y2 = (double)HEIGHT / 2 + 400;
+    pDerivedObj->pps_x = pDerivedObj->x1 - 100;
+    pDerivedObj->pps_y = (pDerivedObj->y2 + pDerivedObj->y1) / 2 + 100;
+    pDerivedObj->apm_x = pDerivedObj->pps_x;
+    pDerivedObj->apm_y = pDerivedObj->pps_y + 150;
+    pDerivedObj->font = al_load_ttf_font("assests/font/pirulen.ttf", 24, 0);
     pDerivedObj->side_len = 40;
     pDerivedObj->gravity = 1;
     pDerivedObj->gravity_increase_factor = 0.1;
     pDerivedObj->timer = 0;
+    pDerivedObj->font_color = al_map_rgb(255, 255, 255);
     pDerivedObj->pieces = 0;
+    pDerivedObj->hard_drop_lock = false;
     pDerivedObj->attack = 0;
+    pDerivedObj->pieces_in_queue = 7;
     pDerivedObj->hitbox = New_Rectangle(pDerivedObj->x1, pDerivedObj->y1,
                                         pDerivedObj->x2, pDerivedObj->y2);
     for (int i = 0; i < 10; i++) {
@@ -39,18 +48,41 @@ Elements* New_Tetris_board(int label) {
 }
 void Tetris_board_update(Elements* self) {
     Tetris_board* board = ((Tetris_board*)(self->pDerivedObj));
-    board->timer = (board->timer + 1) % 1500;
+    board->timer++;
+    ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
+    if (!board->hard_drop_lock && key_state[ALLEGRO_KEY_SPACE]) {
+        board->hard_drop_lock = true;
+
+        for (int i = 0; i < labelelem.len; i++) {
+            Tetrimino* tetrimino = (Tetrimino*)labelelem.arr[i]->pDerivedObj;
+            if (!i) {
+                labelelem.arr[i]->dele = true;
+                continue;
+            }
+            tetrimino->pos_in_queue--;
+        }
+        board->pieces_in_queue--;
+        board->pieces++;
+    } else if (board->hard_drop_lock && !key_state[ALLEGRO_KEY_SPACE]) {
+        board->hard_drop_lock = false;
+    }
 }
 void Tetris_board_interact(Elements* self) {
-    /* Tetris_board* board = ((Tetris_board*)(self->pDerivedObj)); */
-    /* ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L); */
-    /* Tetrimino* tetrimino = ((Tetrimino*)(labelelem.arr[0]->pDerivedObj)); */
+    // Tetris_board* board = ((Tetris_board*)(self->pDerivedObj));
+    // ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
+    // Tetrimino* tetrimino = ((Tetrimino*)(labelelem.arr[0]->pDerivedObj));
 }
 void Tetris_board_draw(Elements* self) {
     Tetris_board* board = ((Tetris_board*)(self->pDerivedObj));
     al_clear_to_color(al_map_rgb(0, 0, 0));
     al_draw_rectangle(board->x1, board->y1, board->x2, board->y2,
                       al_map_rgb(255, 255, 255), 2);
+    al_draw_textf(board->font, board->font_color, board->pps_x, board->pps_y,
+                  ALLEGRO_ALIGN_CENTER, "PPS:%.2lf",
+                  board->pieces / ((double)board->timer / FPS));
+    // al_draw_textf(board->font, board->font_color, board->apm_x, board->apm_y,
+    //               ALLEGRO_ALIGN_CENTER, "APM:%lf",
+    //               (double)board->attack / (double)board->timer);
     int side_len = board->side_len;
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 20; j++) {

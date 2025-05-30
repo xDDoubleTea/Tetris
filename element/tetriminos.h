@@ -37,8 +37,9 @@ typedef struct _Tetrimino {
     bool move_lock;
     long long timer;
     Shape* hitbox;
+    int pos_in_queue;
 } Tetrimino;
-Elements* New_Tetrimino(int label);
+Elements* New_Tetrimino(int label, int type, int pos_in_queue);
 void Tetrimino_update(Elements* self);
 void Tetrimino_interact(Elements* self);
 void Tetrimino_draw(Elements* self);

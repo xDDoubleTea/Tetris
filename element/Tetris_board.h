@@ -12,11 +12,19 @@ typedef struct _Tetris_board {
     bool occupied[10][20];
     ALLEGRO_COLOR color_map[10][20];
     ALLEGRO_FONT* font;
+    ALLEGRO_COLOR font_color;
     int gravity;
     double gravity_increase_factor;
     int pieces;
     int attack;
+    int pieces_in_queue;
+    bool hard_drop_lock;
     int timer;
+
+    // pps display coord
+    double pps_x, pps_y;
+    // apm display coord
+    double apm_x, apm_y;
     Shape* hitbox;
 } Tetris_board;
 Elements* New_Tetris_board(int label);

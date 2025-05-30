@@ -3,7 +3,6 @@
 #include <allegro5/allegro5.h>
 #include <allegro5/keycodes.h>
 #include <stdlib.h>
-#include <time.h>
 
 #include "tetrimino_shape.h"
 
@@ -24,12 +23,12 @@ const unsigned char l_color[3] = {199, 177, 67};
 #include "../shapes/Rectangle.h"
 #include "Tetris_board.h"
 
-Elements* New_Tetrimino(int label) {
+Elements* New_Tetrimino(int label, int type, int pos_in_queue) {
     Tetrimino* pDerivedObj = (Tetrimino*)malloc(sizeof(Tetrimino));
     Elements* pObj = New_Elements(label);
     // setting derived object member
-    int type = rand() % 7;
     pDerivedObj->block_type = type;
+    pDerivedObj->pos_in_queue = pos_in_queue;
     pDerivedObj->rotation = 0;
     pDerivedObj->coord_x = 4;
     pDerivedObj->coord_y = -3;
@@ -49,6 +48,9 @@ Elements* New_Tetrimino(int label) {
 }
 void Tetrimino_update(Elements* self) {
     Tetrimino* tetrimino = ((Tetrimino*)(self->pDerivedObj));
+    if (tetrimino->pos_in_queue) {
+        return;
+    }
     if (key_state[ALLEGRO_KEY_LEFT] && !tetrimino->move_lock) {
         tetrimino->coord_x -= 1;
         tetrimino->move_lock = true;
@@ -68,6 +70,9 @@ void Tetrimino_interact(Elements* self) {}
 void Tetrimino_draw(Elements* self) {
     ElementVec labelelem = _Get_label_elements(scene, Tetris_board_L);
     Tetrimino* tetrimino = ((Tetrimino*)(self->pDerivedObj));
+    if (tetrimino->pos_in_queue) {
+        return;
+    }
     Tetris_board* board = ((Tetris_board*)(labelelem.arr[0]->pDerivedObj));
     int side_len = board->side_len;
     // TODO: Tackle the problem where the block spawns out of the screen.
