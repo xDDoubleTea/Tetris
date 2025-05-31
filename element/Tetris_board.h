@@ -6,6 +6,7 @@
 #include "../shapes/Shape.h"
 #include "element.h"
 #include "tetriminos.h"
+void drop_tetrimino();
 typedef struct _Tetris_board {
     double x1, y1, x2, y2;
     int side_len;
@@ -13,7 +14,7 @@ typedef struct _Tetris_board {
     ALLEGRO_COLOR color_map[10][20];
     ALLEGRO_FONT* font;
     ALLEGRO_COLOR font_color;
-    int gravity;
+    double gravity;
     double gravity_increase_factor;
     int pieces;
     int attack;

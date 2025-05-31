@@ -26,7 +26,7 @@ Elements* New_Tetris_board(int label) {
     pDerivedObj->time_y = pDerivedObj->pieces_y + 50;
     pDerivedObj->font = al_load_ttf_font("assests/font/pirulen.ttf", 24, 0);
     pDerivedObj->side_len = 40;
-    pDerivedObj->gravity = 1;
+    pDerivedObj->gravity = 0.5;
     pDerivedObj->gravity_increase_factor = 0.1;
     pDerivedObj->timer = 0;
     pDerivedObj->font_color = al_map_rgb(255, 255, 255);
@@ -56,17 +56,7 @@ void Tetris_board_update(Elements* self) {
     ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
     if (!board->hard_drop_lock && key_state[ALLEGRO_KEY_SPACE]) {
         board->hard_drop_lock = true;
-
-        for (int i = 0; i < labelelem.len; i++) {
-            Tetrimino* tetrimino = (Tetrimino*)labelelem.arr[i]->pDerivedObj;
-            if (!i) {
-                labelelem.arr[i]->dele = true;
-                continue;
-            }
-            tetrimino->pos_in_queue--;
-        }
-        board->pieces_in_queue--;
-        board->pieces++;
+        drop_tetrimino();
     } else if (board->hard_drop_lock && !key_state[ALLEGRO_KEY_SPACE]) {
         board->hard_drop_lock = false;
     }
@@ -103,6 +93,13 @@ void Tetris_board_draw(Elements* self) {
                 board->x1 + i * side_len, board->y1 + j * side_len,
                 board->x1 + (i + 1) * side_len, board->y1 + (j + 1) * side_len,
                 al_map_rgb(100, 100, 100), 2);
+
+            if (board->occupied[i][j]) {
+            }
+            al_draw_filled_rectangle(
+                board->x1 + i * side_len, board->y1 + j * side_len,
+                board->x1 + (i + 1) * side_len, board->y1 + (j + 1) * side_len,
+                board->color_map[i][j]);
         }
     }
 }

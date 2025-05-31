@@ -24,6 +24,31 @@ const unsigned char l_color[3] = {199, 177, 67};
 #include "../shapes/Rectangle.h"
 #include "Tetris_board.h"
 
+void drop_tetrimino() {
+    ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
+    ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
+    Tetris_board* board = board_elem.arr[0]->pDerivedObj;
+    for (int i = 0; i < labelelem.len; ++i) {
+        if (!i) {
+            labelelem.arr[i]->dele = true;
+            Tetrimino* t = (Tetrimino*)labelelem.arr[i]->pDerivedObj;
+            const TetriminoShape* cur_block_shape =
+                tetrimino_shapes[t->block_type][t->rotation];
+            for (int i = 0; i < 4; i++) {
+                int block_x = t->coord_x + cur_block_shape[i].x;
+                int block_y = t->coord_y + cur_block_shape[i].y;
+                board->occupied[block_x][block_y] = true;
+                board->color_map[block_x][block_y] = t->color;
+            }
+            board->pieces_in_queue--;
+            board->pieces++;
+            continue;
+        }
+        Tetrimino* t = (Tetrimino*)labelelem.arr[i]->pDerivedObj;
+        t->pos_in_queue--;
+    }
+}
+
 Elements* New_Tetrimino(int label, int type, int pos_in_queue) {
     Tetrimino* pDerivedObj = (Tetrimino*)malloc(sizeof(Tetrimino));
     Elements* pObj = New_Elements(label);
@@ -40,6 +65,7 @@ Elements* New_Tetrimino(int label, int type, int pos_in_queue) {
     pDerivedObj->hitbox = New_Rectangle(0, 0, 0, 0);
     // setting derived object function
     pDerivedObj->move_lock = false;
+    pDerivedObj->rotate_lock = false;
     pObj->pDerivedObj = pDerivedObj;
     pObj->Update = Tetrimino_update;
     pObj->Interact = Tetrimino_interact;
@@ -81,8 +107,18 @@ void Tetrimino_update(Elements* self) {
     } else if (!key_state[ALLEGRO_KEY_LEFT] && !key_state[ALLEGRO_KEY_RIGHT]) {
         tetrimino->move_lock = false;
     }
+    if (key_state[ALLEGRO_KEY_UP] && !tetrimino->rotate_lock) {
+        tetrimino->rotation = (tetrimino->rotation + 1) % 4;
+        tetrimino->rotate_lock = true;
+    } else if (!key_state[ALLEGRO_KEY_UP]) {
+        tetrimino->rotate_lock = false;
+    }
     tetrimino->timer++;
-    if (!(tetrimino->timer % (int)(FPS * 0.1))) {
+    ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
+    Tetris_board* board = board_elem.arr[0]->pDerivedObj;
+    int actual_gravity = (int)(FPS * board->gravity);
+
+    if (!(tetrimino->timer % actual_gravity)) {
         int temp_check_coord_y = tetrimino->coord_y + 1;
         int lowest_y = 0;
         for (int i = 0; i < 4; ++i) {
@@ -95,24 +131,10 @@ void Tetrimino_update(Elements* self) {
                     : lowest_y;
         }
         if (lowest_y + temp_check_coord_y >= 20) {
-            ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
-
-            for (int i = 0; i < labelelem.len; ++i) {
-                if (!i) {
-                    labelelem.arr[i]->dele = true;
-                }
-                Tetrimino* tetrimino =
-                    (Tetrimino*)labelelem.arr[i]->pDerivedObj;
-                tetrimino->pos_in_queue--;
-            }
-            labelelem = _Get_label_elements(scene, Tetris_board_L);
-            Tetris_board* board = labelelem.arr[0]->pDerivedObj;
-            board->pieces_in_queue--;
-            board->pieces++;
+            drop_tetrimino();
             return;
         }
         tetrimino->coord_y++;
-        tetrimino->timer = 0;
     }
 }
 void Tetrimino_interact(Elements* self) {}

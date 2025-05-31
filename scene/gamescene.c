@@ -14,15 +14,17 @@ void gen_tetr_7_bag(Scene* pObj, int now_pieces) {
     int arr[7] = {TETR_O, TETR_S, TETR_Z, TETR_T, TETR_I, TETR_J, TETR_L};
     // Randomly shuffle the array
     for (int i = 6; i > 0; i--) {
-        int j = rand() % 7;
-        arr[i] = arr[i] ^ arr[j];
-        arr[j] = arr[i] ^ arr[j];
-        arr[i] = arr[i] ^ arr[j];
+        int j = rand() % (i + 1);
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
     for (int i = 0; i < 7; i++) {
+        fprintf(stderr, "%d", arr[i]);
         _Register_elements(pObj,
                            New_Tetrimino(Tetrimino_L, arr[i], i + now_pieces));
     }
+    fprintf(stderr, "\n");
 }
 
 Scene* New_GameScene(int label) {

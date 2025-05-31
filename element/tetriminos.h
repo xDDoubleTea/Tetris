@@ -35,6 +35,7 @@ typedef struct _Tetrimino {
     int coord_x, coord_y;
     ALLEGRO_COLOR color;
     bool move_lock;
+    bool rotate_lock;
     long long timer;
     Shape* hitbox;
     int pos_in_queue;
