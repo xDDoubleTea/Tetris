@@ -1,0 +1,9 @@
+PWD /home/susamogus/programming/Final_project/drawboard
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT proposal.tex
+OUTPUT proposal.log
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texmf-dist/tex/xelatex/xecjk/xeCJK.sty

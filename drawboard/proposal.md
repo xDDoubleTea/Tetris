@@ -1,3 +1,11 @@
+---
+title: Final Project Proposal
+date: "2025-06-01"
+author: "陳偉濬112021116"
+CJKmainfont: "Noto Sans CJK TC"
+geometry: margin=1in
+colorlinks: true
+---
 # Final project proposal
 
 ## 遊戲名稱：方塊遊戲
@@ -12,10 +20,10 @@
 
 - 傷害計算
 
-  - [參考Tetris Guideline](https://harddrop.com/wiki/Tetris_Guideline)
+  - [參考Tetris Guideline](https://harddrop.com/wiki/Tetris_Guideline) (<https://harddrop.com/wiki/Tetris_Guideline>) (Can't find a way to make pandoc parse the hyperlink correctly so I pasted it raw)
 
   - Combo table  
-    此表B2B部份不會加入
+    (此表B2B部份不會加入)  
     ![Combo table](./TETR.IO_Combo-Table.png)
   - Spins  
     T spin有加成攻擊  
@@ -27,7 +35,7 @@
     (Back-to-Back 的意思是連續兩次消行都是用Tspin或是Tetris消排)
 
     | b2b | extra damage|
-    | -------------- | --------------- |
+    | :--------------: | :---------------: |
     | 0-1 | 0 |
     | 2-3 | 1 |
     | 3+ | 2 |
@@ -56,7 +64,7 @@
 ## 遊戲音效
 
 Dr Ocelot for the soundtrack zenith-tower-ost.  
-[zenith-tower-ost](https://merch.tetr.io/zenith-tower-ost/)
+[zenith-tower-ost](https://merch.tetr.io/zenith-tower-ost/) (<https://merch.tetr.io/zenith-tower-ost/>)
 
 Sound effects are from TETR.IO.
 
@@ -64,10 +72,10 @@ Sound effects are from TETR.IO.
 
 攻擊概念（旁邊的對打的人改為敵人的動圖）
 
-![Attack example](./frame_33.png)
+![Attack example (T spin)](./frame_33.png)
 
-![Attack example 2](./frame_36.png)
+![Attack example sends attack](./frame_36.png)
 
 垃圾排是底下灰色的方塊
 
-（當然美術不會這麼有料，頂多像[jstris](https://jstris.jezevec10.com/)而已）
+（當然美術不會這麼有料，頂多像[jstris](https://jstris.jezevec10.com/)( <https://jstris.jezevec10.com/> )而已）
