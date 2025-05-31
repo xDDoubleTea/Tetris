@@ -25,6 +25,10 @@ typedef struct _Tetris_board {
     double pps_x, pps_y;
     // apm display coord
     double apm_x, apm_y;
+    // pieces display coord
+    double pieces_x, pieces_y;
+    // time display coord
+    double time_x, time_y;
     Shape* hitbox;
 } Tetris_board;
 Elements* New_Tetris_board(int label);

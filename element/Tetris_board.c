@@ -19,7 +19,11 @@ Elements* New_Tetris_board(int label) {
     pDerivedObj->pps_x = pDerivedObj->x1 - 100;
     pDerivedObj->pps_y = (pDerivedObj->y2 + pDerivedObj->y1) / 2 + 100;
     pDerivedObj->apm_x = pDerivedObj->pps_x;
-    pDerivedObj->apm_y = pDerivedObj->pps_y + 150;
+    pDerivedObj->apm_y = pDerivedObj->pps_y + 50;
+    pDerivedObj->pieces_x = pDerivedObj->apm_x;
+    pDerivedObj->pieces_y = pDerivedObj->apm_y + 50;
+    pDerivedObj->time_x = pDerivedObj->apm_x;
+    pDerivedObj->time_y = pDerivedObj->pieces_y + 50;
     pDerivedObj->font = al_load_ttf_font("assests/font/pirulen.ttf", 24, 0);
     pDerivedObj->side_len = 40;
     pDerivedObj->gravity = 1;
@@ -77,12 +81,21 @@ void Tetris_board_draw(Elements* self) {
     al_clear_to_color(al_map_rgb(0, 0, 0));
     al_draw_rectangle(board->x1, board->y1, board->x2, board->y2,
                       al_map_rgb(255, 255, 255), 2);
+
+    double actual_time = (double)board->timer / FPS;
     al_draw_textf(board->font, board->font_color, board->pps_x, board->pps_y,
-                  ALLEGRO_ALIGN_CENTER, "PPS:%.2lf",
-                  board->pieces / ((double)board->timer / FPS));
-    // al_draw_textf(board->font, board->font_color, board->apm_x, board->apm_y,
-    //               ALLEGRO_ALIGN_CENTER, "APM:%lf",
-    //               (double)board->attack / (double)board->timer);
+                  ALLEGRO_ALIGN_CENTER, "PPS:\n%.1lf",
+                  board->pieces / actual_time);
+    al_draw_textf(board->font, board->font_color, board->apm_x, board->apm_y,
+                  ALLEGRO_ALIGN_CENTER, "APM:%.2lf",
+                  board->attack / actual_time);
+    al_draw_textf(board->font, board->font_color, board->pieces_x,
+                  board->pieces_y, ALLEGRO_ALIGN_CENTER, "PIECES:%d",
+                  board->pieces);
+    al_draw_textf(board->font, board->font_color, board->time_x, board->time_y,
+                  ALLEGRO_ALIGN_CENTER, "TIME:%02d:%02d", (int)actual_time / 60,
+                  (int)actual_time % 60);
+
     int side_len = board->side_len;
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 20; j++) {
@@ -96,6 +109,8 @@ void Tetris_board_draw(Elements* self) {
 void Tetris_board_destory(Elements* self) {
     Tetris_board* Obj = ((Tetris_board*)(self->pDerivedObj));
     free(Obj->hitbox);
+    al_destroy_font(Obj->font);
+
     free(Obj);
     free(self);
 }

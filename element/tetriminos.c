@@ -4,6 +4,7 @@
 #include <allegro5/keycodes.h>
 #include <stdlib.h>
 
+#include "element.h"
 #include "tetrimino_shape.h"
 
 const unsigned char gray[3] = {100, 100, 100};
@@ -52,17 +53,65 @@ void Tetrimino_update(Elements* self) {
         return;
     }
     if (key_state[ALLEGRO_KEY_LEFT] && !tetrimino->move_lock) {
-        tetrimino->coord_x -= 1;
+        int temp_check_coord_x = tetrimino->coord_x - 1;
+        for (int i = 0; i < 4; ++i) {
+            if (tetrimino_shapes[tetrimino->block_type][tetrimino->rotation][i]
+                        .x +
+                    temp_check_coord_x <
+                0) {
+                tetrimino->move_lock = true;
+                return;
+            }
+        }
+        tetrimino->coord_x--;
         tetrimino->move_lock = true;
     } else if (key_state[ALLEGRO_KEY_RIGHT] && !tetrimino->move_lock) {
-        tetrimino->coord_x += 1;
+        int temp_check_coord_x = tetrimino->coord_x + 1;
+        for (int i = 0; i < 4; ++i) {
+            if (tetrimino_shapes[tetrimino->block_type][tetrimino->rotation][i]
+                        .x +
+                    temp_check_coord_x >=
+                10) {
+                tetrimino->move_lock = true;
+                return;
+            }
+        }
+        tetrimino->coord_x++;
         tetrimino->move_lock = true;
     } else if (!key_state[ALLEGRO_KEY_LEFT] && !key_state[ALLEGRO_KEY_RIGHT]) {
         tetrimino->move_lock = false;
     }
-    tetrimino->timer += 1;
-    if (!(tetrimino->timer % 90)) {
-        tetrimino->coord_y += 1;
+    tetrimino->timer++;
+    if (!(tetrimino->timer % (int)(FPS * 0.1))) {
+        int temp_check_coord_y = tetrimino->coord_y + 1;
+        int lowest_y = 0;
+        for (int i = 0; i < 4; ++i) {
+            lowest_y =
+                tetrimino_shapes[tetrimino->block_type][tetrimino->rotation][i]
+                            .y > lowest_y
+                    ? tetrimino_shapes[tetrimino->block_type]
+                                      [tetrimino->rotation][i]
+                                          .y
+                    : lowest_y;
+        }
+        if (lowest_y + temp_check_coord_y >= 20) {
+            ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
+
+            for (int i = 0; i < labelelem.len; ++i) {
+                if (!i) {
+                    labelelem.arr[i]->dele = true;
+                }
+                Tetrimino* tetrimino =
+                    (Tetrimino*)labelelem.arr[i]->pDerivedObj;
+                tetrimino->pos_in_queue--;
+            }
+            labelelem = _Get_label_elements(scene, Tetris_board_L);
+            Tetris_board* board = labelelem.arr[0]->pDerivedObj;
+            board->pieces_in_queue--;
+            board->pieces++;
+            return;
+        }
+        tetrimino->coord_y++;
         tetrimino->timer = 0;
     }
 }

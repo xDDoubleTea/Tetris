@@ -1,0 +1,12 @@
+# Fdb version 4
+["xdvipdfmx"] 0 "proposal.xdv" "proposal.pdf" "proposal" 0 -1
+  "proposal.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "proposal.pdf"
+  (rewritten before read)
+["xelatex"] 1748709679.80631 "proposal.tex" "proposal.xdv" "proposal" 1748709679.89587 2
+  (generated)
+  "proposal.aux"
+  "proposal.log"
+  "proposal.xdv"
+  (rewritten before read)
