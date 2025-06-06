@@ -1,14 +1,13 @@
 #ifndef GLOBAL_H_INCLUDED
 #define GLOBAL_H_INCLUDED
-#include <stdio.h>
 #include <allegro5/allegro.h>
+#include <stdio.h>
 #define GAME_TERMINATE -1
 #include "shapes/Point.h"
-#define debug(x)                                                            \
-    if (x)                                                                  \
-    {                                                                       \
-        printf("check at line number %d in file %s\n", __LINE__, __FILE__); \
-    }
+#define debug(x)                                                               \
+  if (x) {                                                                     \
+    printf("check at line number %d in file %s\n", __LINE__, __FILE__);        \
+  }
 #define MAX_ELEMENT 100
 #define min(x, y) ((x) > (y) ? (y) : (x))
 #define max(x, y) ((x) < (y) ? (y) : (x))

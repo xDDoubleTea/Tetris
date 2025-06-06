@@ -4,18 +4,18 @@
 #include <allegro5/allegro_color.h>
 
 typedef struct {
-    int x, y;
+  int x, y;
 } TetriminoShape;
 
 enum TetriminoType {
-    TETR_O,
-    TETR_S,
-    TETR_Z,
-    TETR_T,
-    TETR_I,
-    TETR_J,
-    TETR_L,
-    NUM_TETRIMINO_TYPES
+  TETR_O,
+  TETR_S,
+  TETR_Z,
+  TETR_T,
+  TETR_I,
+  TETR_J,
+  TETR_L,
+  NUM_TETRIMINO_TYPES
 };
 
 extern const TetriminoShape tetrimino_shapes[NUM_TETRIMINO_TYPES][4][4];
