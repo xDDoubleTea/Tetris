@@ -57,9 +57,12 @@ void clear_line(Tetris_board *board) {
           for (int k = i; k > 0; --k) {
             board->occupied[j][k] = board->occupied[j][k - 1];
             board->color_map[j][k] = board->color_map[j][k - 1];
-            rows_cleared[k] = rows_cleared[k - 1];
           }
         }
+        for (int k = i; k > 0; --k)
+          rows_cleared[k] = rows_cleared[k - 1];
+        ++i;
+        rows_cleared[0] = 0;
       }
     }
   }
