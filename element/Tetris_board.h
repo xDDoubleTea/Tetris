@@ -20,6 +20,8 @@ typedef struct _Tetris_board {
   int pieces;
   int attack;
   int pieces_in_queue;
+  bool hold_piece;
+  bool hold_lock;
   bool hard_drop_lock;
   bool game_over;
   int timer;
@@ -34,7 +36,10 @@ typedef struct _Tetris_board {
   double time_x, time_y;
   // tetriminos next queue display
   double next_x[5], next_y[5];
+  // tetrimino hold display
+  double hold_x, hold_y;
   Shape *hitbox;
+
 } Tetris_board;
 Elements *New_Tetris_board(int label);
 void update_highest_occupied(Tetris_board *board);

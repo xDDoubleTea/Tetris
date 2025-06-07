@@ -72,13 +72,40 @@ void clear_line(Tetris_board *board) {
     }
   }
 }
+
+int find_pos_0_tet() {
+  ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
+  ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
+  Tetrimino *t;
+  for (int i = 0; i < labelelem.len; ++i) {
+    t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
+    if (t->pos_in_queue == 0) {
+      return i;
+    }
+  }
+  return -1;
+}
+int find_pos_1_tet() {
+  ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
+  ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
+  Tetrimino *t;
+  for (int i = 0; i < labelelem.len; ++i) {
+    t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
+    if (t->pos_in_queue == 1) {
+      return i;
+    }
+  }
+  return -1;
+}
+
 void drop_tetrimino() {
   ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
   ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
   Tetris_board *board = board_elem.arr[0]->pDerivedObj;
-  labelelem.arr[0]->dele = true;
+  int pos_0_tet = find_pos_0_tet();
+  labelelem.arr[pos_0_tet]->dele = true;
 
-  Tetrimino *t = (Tetrimino *)labelelem.arr[0]->pDerivedObj;
+  Tetrimino *t = (Tetrimino *)labelelem.arr[pos_0_tet]->pDerivedObj;
   t->dropped = true;
   const TetriminoShape *cur_block_shape =
       tetrimino_shapes[t->block_type][t->rotation];
@@ -114,7 +141,8 @@ void drop_tetrimino() {
   update_highest_occupied(board);
   board->pieces_in_queue--;
   board->pieces++;
-  t = (Tetrimino *)labelelem.arr[1]->pDerivedObj;
+  int pos_1_tet = find_pos_1_tet();
+  t = (Tetrimino *)labelelem.arr[pos_1_tet]->pDerivedObj;
   const TetriminoShape *nextblock_shape =
       tetrimino_shapes[t->block_type][t->rotation];
   for (int i = 0; i < 4; ++i) {
@@ -126,7 +154,10 @@ void drop_tetrimino() {
   }
   clear_line(board);
   if (!board->game_over) {
-    for (int i = 1; i < labelelem.len; ++i) {
+    for (int i = 0; i < labelelem.len; ++i) {
+      if (i == pos_0_tet) {
+        continue;
+      }
       Tetrimino *t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
       t->pos_in_queue--;
     }
@@ -276,9 +307,22 @@ void Tetrimino_draw(Elements *self) {
   if (tetrimino->dropped) {
     return;
   }
+  if (tetrimino->held) {
+    int side_len = board->side_len;
+    const TetriminoShape *cur_block_shape =
+        tetrimino_shapes[tetrimino->block_type][tetrimino->rotation];
+    for (int i = 0; i < 4; ++i) {
+      float screen_x1 = board->hold_x - 50 + cur_block_shape[i].x * side_len;
+      float screen_y1 = board->hold_y + 100 + cur_block_shape[i].y * side_len;
+      float screen_x2 = screen_x1 + side_len;
+      float screen_y2 = screen_y1 + side_len;
+      al_draw_filled_rectangle(screen_x1, screen_y1, screen_x2, screen_y2,
+                               tetrimino->color);
+    }
+    return;
+  }
   if (tetrimino->pos_in_queue) {
     if (tetrimino->pos_in_queue <= 5) {
-      Tetris_board *board = ((Tetris_board *)(labelelem.arr[0]->pDerivedObj));
       int side_len = board->side_len;
       const TetriminoShape *cur_block_shape =
           tetrimino_shapes[tetrimino->block_type][tetrimino->rotation];
@@ -296,7 +340,6 @@ void Tetrimino_draw(Elements *self) {
     return;
   }
   int side_len = board->side_len;
-  // TODO: Tackle the problem where the block spawns out of the screen.
   const TetriminoShape *cur_block_shape =
       tetrimino_shapes[tetrimino->block_type][tetrimino->rotation];
   for (int i = 0; i < 4; i++) {
