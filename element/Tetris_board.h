@@ -21,6 +21,7 @@ typedef struct _Tetris_board {
   int attack;
   int pieces_in_queue;
   bool hard_drop_lock;
+  bool game_over;
   int timer;
 
   // pps display coord
@@ -36,6 +37,7 @@ typedef struct _Tetris_board {
   Shape *hitbox;
 } Tetris_board;
 Elements *New_Tetris_board(int label);
+void update_highest_occupied(Tetris_board *board);
 void Tetris_board_update(Elements *self);
 void Tetris_board_interact(Elements *self);
 void Tetris_board_draw(Elements *self);

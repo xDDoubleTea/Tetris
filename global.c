@@ -3,7 +3,7 @@
 #include <stdbool.h>
 
 // variables for global usage
-const double FPS = 60.0;
+const double FPS = 120.0;
 const int WIDTH = 1920;
 const int HEIGHT = 1380;
 int window = 0;

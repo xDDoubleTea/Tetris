@@ -1,6 +1,7 @@
 #include "gamescene.h"
 
 #include <allegro5/allegro_audio.h>
+#include <allegro5/allegro_font.h>
 
 #include "../element/Tetris_board.h"
 #include "../element/element.h"
@@ -43,6 +44,8 @@ Scene *New_GameScene(int label) {
 }
 void game_scene_update(Scene *self) {
   // update every element
+  ElementVec boardele = _Get_label_elements(self, Tetris_board_L);
+  Tetris_board *board = (Tetris_board *)boardele.arr[0]->pDerivedObj;
   ElementVec allEle = _Get_all_elements(self);
   for (int i = 0; i < allEle.len; i++) {
     Elements *ele = allEle.arr[i];
@@ -63,8 +66,6 @@ void game_scene_update(Scene *self) {
     self->scene_end = true;
     window = 0;
   }
-  ElementVec boardele = _Get_label_elements(self, Tetris_board_L);
-  Tetris_board *board = (Tetris_board *)boardele.arr[0]->pDerivedObj;
   if (board->pieces_in_queue <= 6) {
     gen_tetr_7_bag(self, board->pieces_in_queue);
     board->pieces_in_queue += 7;

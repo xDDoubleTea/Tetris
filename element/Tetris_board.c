@@ -4,11 +4,23 @@
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_ttf.h>
+#include <allegro5/color.h>
 #include <allegro5/keycodes.h>
 
 #include "../scene/sceneManager.h" // for scene variable
 #include "../shapes/Rectangle.h"
 
+void update_highest_occupied(Tetris_board *board) {
+  for (int i = 0; i < 10; ++i) {
+    int highest = board->highest_occupied[i];
+    for (int j = 0; j < 20; ++j) {
+      if (board->occupied[i][j] && j < highest) {
+        highest = j;
+      }
+    }
+    board->highest_occupied[i] = highest;
+  }
+}
 Elements *New_Tetris_board(int label) {
   Tetris_board *pDerivedObj = (Tetris_board *)malloc(sizeof(Tetris_board));
   Elements *pObj = New_Elements(label);
@@ -32,6 +44,7 @@ Elements *New_Tetris_board(int label) {
   pDerivedObj->timer = 0;
   pDerivedObj->font_color = al_map_rgb(255, 255, 255);
   pDerivedObj->pieces = 0;
+  pDerivedObj->game_over = false;
   pDerivedObj->hard_drop_lock = false;
   pDerivedObj->attack = 0;
   pDerivedObj->pieces_in_queue = 7;
@@ -60,11 +73,13 @@ Elements *New_Tetris_board(int label) {
 }
 void Tetris_board_update(Elements *self) {
   Tetris_board *board = ((Tetris_board *)(self->pDerivedObj));
+  if (board->game_over) {
+    return;
+  }
   board->timer++;
-  ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
+  // ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
   if (!board->hard_drop_lock && key_state[ALLEGRO_KEY_SPACE]) {
     board->hard_drop_lock = true;
-
     drop_tetrimino();
   } else if (board->hard_drop_lock && !key_state[ALLEGRO_KEY_SPACE]) {
     board->hard_drop_lock = false;
@@ -82,17 +97,20 @@ void Tetris_board_draw(Elements *self) {
                     al_map_rgb(255, 255, 255), 2);
 
   double actual_time = (double)board->timer / FPS;
-  al_draw_textf(board->font, board->font_color, board->pps_x, board->pps_y,
-                ALLEGRO_ALIGN_CENTER, "PPS:\n%.1lf",
-                board->pieces / actual_time);
-  al_draw_textf(board->font, board->font_color, board->apm_x, board->apm_y,
-                ALLEGRO_ALIGN_CENTER, "APM:%.2lf", board->attack / actual_time);
-  al_draw_textf(board->font, board->font_color, board->pieces_x,
-                board->pieces_y, ALLEGRO_ALIGN_CENTER, "PIECES:%d",
-                board->pieces);
-  al_draw_textf(board->font, board->font_color, board->time_x, board->time_y,
-                ALLEGRO_ALIGN_CENTER, "TIME:%02d:%02d", (int)actual_time / 60,
-                (int)actual_time % 60);
+  if (!board->game_over) {
+    al_draw_textf(board->font, board->font_color, board->pps_x, board->pps_y,
+                  ALLEGRO_ALIGN_CENTER, "PPS:\n%.1lf",
+                  board->pieces / actual_time);
+    al_draw_textf(board->font, board->font_color, board->apm_x, board->apm_y,
+                  ALLEGRO_ALIGN_CENTER, "APM:%.2lf",
+                  board->attack / actual_time);
+    al_draw_textf(board->font, board->font_color, board->pieces_x,
+                  board->pieces_y, ALLEGRO_ALIGN_CENTER, "PIECES:%d",
+                  board->pieces);
+    al_draw_textf(board->font, board->font_color, board->time_x, board->time_y,
+                  ALLEGRO_ALIGN_CENTER, "TIME:%02d:%02d", (int)actual_time / 60,
+                  (int)actual_time % 60);
+  }
   al_draw_textf(board->font, board->font_color, board->next_x[0],
                 board->next_y[0] - 150, ALLEGRO_ALIGN_CENTER, "NEXT");
 
@@ -104,13 +122,16 @@ void Tetris_board_draw(Elements *self) {
                         board->y1 + (j + 1) * side_len,
                         al_map_rgb(100, 100, 100), 2);
 
-      if (board->occupied[i][j]) {
-      }
       al_draw_filled_rectangle(
           board->x1 + i * side_len, board->y1 + j * side_len,
           board->x1 + (i + 1) * side_len, board->y1 + (j + 1) * side_len,
           board->color_map[i][j]);
     }
+  }
+  if (board->game_over) {
+    al_draw_textf(board->font, board->font_color, (board->x2 + board->x1) / 2,
+                  (board->y1 + board->y2) / 2, ALLEGRO_ALIGN_CENTER,
+                  "GAME OVER");
   }
 }
 void Tetris_board_destory(Elements *self) {
