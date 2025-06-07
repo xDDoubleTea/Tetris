@@ -34,6 +34,11 @@ int highest_from_y_at_x(Tetris_board *board, int x, int y) {
   }
   return highest;
 }
+
+void rotate(Tetrimino *t) {}
+
+void soft_drop(Tetrimino *t) {}
+
 void clear_line(Tetris_board *board) {
   int line_clear = 0;
   int rows_cleared[20] = {0};
@@ -234,6 +239,7 @@ void Tetrimino_update(Elements *self) {
   }
   if (key_state[ALLEGRO_KEY_Z] && !tetrimino->rotate_lock) {
     tetrimino->rotation = (tetrimino->rotation + 3) % 4;
+    // 3 \equiv -1 mod 4
     tetrimino->rotate_lock = true;
   }
   if (key_state[ALLEGRO_KEY_A] && !tetrimino->rotate_lock) {
