@@ -99,14 +99,6 @@ void drop_tetrimino() {
   Tetris_board *board = board_elem.arr[0]->pDerivedObj;
   Tetrimino *t;
   int pos_0_tet = find_pos_0_tet();
-  // fprintf(stdout, "pos_0_tet = %d\n", pos_0_tet);
-  // for (int i = 0; i < labelelem.len; ++i) {
-  //   t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
-  //   fprintf(stdout,
-  //           "t->type = %d, t->held = %d, t->pos_in_queue = %d, t->dele =
-  //           %d\n", t->block_type, t->held, t->pos_in_queue,
-  //           labelelem.arr[i]->dele);
-  // }
   t = (Tetrimino *)labelelem.arr[pos_0_tet]->pDerivedObj;
   fprintf(stdout, "t->held = %d\n", t->held);
   fprintf(stdout, "\n");
@@ -142,7 +134,7 @@ void drop_tetrimino() {
     board->color_map[block_x][block_y] = t->color;
   }
   int pos_1_tet = find_pos_1_tet();
-  // fprintf(stderr, "pos_1_tet = %d\n\n", pos_1_tet);
+  fprintf(stderr, "pos_1_tet = %d\n\n", pos_1_tet);
   t = (Tetrimino *)labelelem.arr[pos_1_tet]->pDerivedObj;
   const TetriminoShape *nextblock_shape =
       tetrimino_shapes[t->block_type][t->rotation];
@@ -155,7 +147,7 @@ void drop_tetrimino() {
   }
   clear_line(board);
   if (!board->game_over) {
-    labelelem.arr[pos_0_tet]->dele = true;
+    labelelem.arr[find_pos_0_tet()]->dele = true;
     board->pieces++;
     board->pieces_in_queue--;
     for (int i = 0; i < labelelem.len; ++i) {
@@ -288,7 +280,7 @@ void Tetrimino_update(Elements *self) {
 
   if (key_state[ALLEGRO_KEY_DOWN]) {
     tetrimino->soft_dropping = true;
-    soft_drop(tetrimino, board, 4);
+    soft_drop(tetrimino, board, 8);
   }
   if (!key_state[ALLEGRO_KEY_DOWN]) {
     tetrimino->soft_dropping = false;

@@ -6,22 +6,23 @@
    [game scene object]
 */
 typedef enum EleType {
-    Floor_L,
-    Teleport_L,
-    Tree_L,
-    Character_L,
-    Projectile_L,
-    Ball_L,
-    Start_btn_L,
-    Tetris_board_L,
-    Tetrimino_L,
+  Floor_L,
+  Teleport_L,
+  Tree_L,
+  Character_L,
+  Projectile_L,
+  Ball_L,
+  Start_btn_L,
+  Tetris_board_L,
+  Tetrimino_L,
 } EleType;
 typedef struct _GameScene {
-    ALLEGRO_BITMAP* background;
+  ALLEGRO_BITMAP *background;
 } GameScene;
-Scene* New_GameScene(int label);
-void game_scene_update(Scene* self);
-void game_scene_draw(Scene* self);
-void game_scene_destroy(Scene* self);
+Scene *New_GameScene(int label);
+void gen_tetr_7_bag(Scene *self, int now_pieces);
+void game_scene_update(Scene *self);
+void game_scene_draw(Scene *self);
+void game_scene_destroy(Scene *self);
 
 #endif

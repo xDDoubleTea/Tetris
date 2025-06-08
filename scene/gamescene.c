@@ -44,31 +44,26 @@ Scene *New_GameScene(int label) {
 }
 void game_scene_update(Scene *self) {
   // update every element
-  ElementVec boardele = _Get_label_elements(self, Tetris_board_L);
-  Tetris_board *board = (Tetris_board *)boardele.arr[0]->pDerivedObj;
   ElementVec allEle = _Get_all_elements(self);
-  for (int i = 0; i < allEle.len; i++) {
+  for (int i = allEle.len - 1; i >= 0; --i) {
     Elements *ele = allEle.arr[i];
     ele->Update(ele);
   }
   // run interact for every element
-  for (int i = 0; i < allEle.len; i++) {
+  for (int i = allEle.len - 1; i >= 0; --i) {
     Elements *ele = allEle.arr[i];
     ele->Interact(ele);
   }
   // remove element
-  for (int i = 0; i < allEle.len; i++) {
+  for (int i = allEle.len - 1; i >= 0; --i) {
     Elements *ele = allEle.arr[i];
-    if (ele->dele)
+    if (ele->dele) {
       _Remove_elements(self, ele);
+    }
   }
   if (key_state[ALLEGRO_KEY_ESCAPE]) {
     self->scene_end = true;
     window = 0;
-  }
-  if (board->pieces_in_queue <= 6) {
-    gen_tetr_7_bag(self, board->pieces_in_queue);
-    board->pieces_in_queue += 7;
   }
 }
 void game_scene_draw(Scene *self) {

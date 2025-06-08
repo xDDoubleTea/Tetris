@@ -7,6 +7,7 @@
 #include <allegro5/color.h>
 #include <allegro5/keycodes.h>
 
+#include "../scene/gamescene.h"
 #include "../scene/sceneManager.h" // for scene variable
 #include "../shapes/Rectangle.h"
 #include "tetriminos.h"
@@ -166,6 +167,10 @@ void Tetris_board_update(Elements *self) {
     drop_tetrimino();
   } else if (board->hard_drop_lock && !key_state[ALLEGRO_KEY_SPACE]) {
     board->hard_drop_lock = false;
+  }
+  if (board->pieces_in_queue <= 6) {
+    gen_tetr_7_bag(scene, board->pieces_in_queue);
+    board->pieces_in_queue += 7;
   }
 }
 void Tetris_board_interact(Elements *self) {
