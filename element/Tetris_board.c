@@ -53,6 +53,7 @@ void recieve_damage(Tetris_board *board) {
     garbage = 8;
   } else {
     board->garbage_queue = 0;
+    board->garbage_timer = 0;
   }
   int garbage_col = rand() % 10;
   for (int k = 0; k < garbage; ++k) {
@@ -120,6 +121,8 @@ Elements *New_Tetris_board(int label) {
   pDerivedObj->hold_y = pDerivedObj->y1;
   pDerivedObj->hold_piece = false;
   pDerivedObj->hold_lock = false;
+  pDerivedObj->gb_q_x = pDerivedObj->y2;
+  pDerivedObj->gb_q_y = pDerivedObj->x1;
   pDerivedObj->gravity_increase_factor = 0.1;
   pDerivedObj->timer = 0;
   pDerivedObj->font_color = al_map_rgb(255, 255, 255);
@@ -222,10 +225,16 @@ void Tetris_board_update(Elements *self) {
     gen_tetr_7_bag(scene, board->pieces_in_queue);
     board->pieces_in_queue += 7;
   }
-  if (!(board->timer % (int)(FPS * 3)) && board->timer > 0) {
-    recieve_garbage(board, 2);
-    recieve_damage(board);
-  }
+  // if (!(board->timer % (int)(FPS * 10)) && board->timer > 0) {
+  //   recieve_garbage(board, 2);
+  // }
+  // if (board->garbage_queue) {
+  //   board->garbage_timer++;
+  // }
+  // if (!(board->garbage_timer % (int)(FPS * 0.5)) && board->timer > 0) {
+  //   // Garbage entry delays 0.5 seconds.
+  //   recieve_damage(board);
+  // }
 }
 void Tetris_board_interact(Elements *self) {
   // Tetris_board* board = ((Tetris_board*)(self->pDerivedObj));

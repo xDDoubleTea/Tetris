@@ -30,6 +30,7 @@ typedef struct _Tetris_board {
   int timer;
 
   int garbage_queue;
+  int garbage_timer;
   // pps display coord
   double pps_x, pps_y;
   // apm display coord
@@ -42,6 +43,8 @@ typedef struct _Tetris_board {
   double next_x[5], next_y[5];
   // tetrimino hold display
   double hold_x, hold_y;
+  // Garbage queue display
+  double gb_q_x, gb_q_y;
   Shape *hitbox;
 
 } Tetris_board;

@@ -35,7 +35,101 @@ int highest_from_y_at_x(Tetris_board *board, int x, int y) {
   return highest;
 }
 
-void rotate(Tetrimino *t) {}
+int srs_kick(Tetrimino *tetrimino, Tetris_board *board, int origin_rotation,
+             int next_rotation) {
+  int temp_check_coord_x = 0;
+  int temp_check_coord_y = 0;
+  int amog = (tetrimino->block_type == TETR_I) ? 1 : 0;
+  const TetriminoShape *cur_block_shape =
+      tetrimino_shapes[tetrimino->block_type][next_rotation];
+  for (int i = 0; i < 5; ++i) {
+    temp_check_coord_x = tetrimino->coord_x;
+    temp_check_coord_y = tetrimino->coord_y;
+    temp_check_coord_x += srsoffset[amog][origin_rotation][i].x -
+                          srsoffset[amog][next_rotation][i].x;
+    temp_check_coord_y -= srsoffset[amog][origin_rotation][i].y -
+                          srsoffset[amog][next_rotation][i].y;
+    fprintf(stderr, "temp_x = %d, temp_y = %d, kick_offset = %d\n",
+            temp_check_coord_x, temp_check_coord_y, i);
+    int valid = 1;
+    for (int j = 0; j < 4; ++j) {
+      if ((temp_check_coord_x + cur_block_shape[j].x < 0 ||
+           temp_check_coord_x + cur_block_shape[j].x >= 10) ||
+          (temp_check_coord_y + cur_block_shape[j].y >= 20 ||
+           temp_check_coord_y + cur_block_shape[j].y < 0) ||
+          board->occupied[temp_check_coord_x + cur_block_shape[j].x]
+                         [temp_check_coord_y + cur_block_shape[j].y]) {
+        valid = 0;
+        break;
+      }
+    }
+    if (valid) {
+      fprintf(stderr, "kick offset = %d\n", i);
+      return i;
+    }
+  }
+  return -1;
+}
+
+void rotate(Tetrimino *tetrimino, Tetris_board *board) {
+  if (tetrimino->block_type == TETR_O) {
+    // no O spin for you lol
+    return;
+  }
+  int amog = (tetrimino->block_type == TETR_I) ? 1 : 0;
+  if (key_state[ALLEGRO_KEY_UP] && !tetrimino->rotate_lock) {
+    int origin_rotation = tetrimino->rotation;
+    int next_rotation = (tetrimino->rotation + 1) % 4;
+    int kick_offset =
+        srs_kick(tetrimino, board, origin_rotation, next_rotation);
+    if (kick_offset != -1) {
+      tetrimino->coord_x += srsoffset[amog][origin_rotation][kick_offset].x -
+                            srsoffset[amog][next_rotation][kick_offset].x;
+      tetrimino->coord_y -= srsoffset[amog][origin_rotation][kick_offset].y -
+                            srsoffset[amog][next_rotation][kick_offset].y;
+      tetrimino->rotation = next_rotation;
+    }
+    tetrimino->rotate_lock = true;
+  }
+  if (key_state[ALLEGRO_KEY_Z] && !tetrimino->rotate_lock) {
+    int origin_rotation = tetrimino->rotation;
+    int next_rotation = (tetrimino->rotation + 3) % 4;
+    int kick_offset =
+        srs_kick(tetrimino, board, origin_rotation, next_rotation);
+    if (kick_offset != -1) {
+      tetrimino->coord_x += srsoffset[amog][origin_rotation][kick_offset].x -
+                            srsoffset[amog][next_rotation][kick_offset].x;
+      tetrimino->coord_y -= srsoffset[amog][origin_rotation][kick_offset].y -
+                            srsoffset[amog][next_rotation][kick_offset].y;
+      tetrimino->rotation = next_rotation;
+    }
+    tetrimino->rotate_lock = true;
+  }
+  if (key_state[ALLEGRO_KEY_A] && !tetrimino->rotate_lock) {
+    tetrimino->rotation = (tetrimino->rotation + 2) % 4;
+    tetrimino->rotate_lock = true;
+  }
+  if (!key_state[ALLEGRO_KEY_A] && !key_state[ALLEGRO_KEY_Z] &&
+      !key_state[ALLEGRO_KEY_UP]) {
+    tetrimino->rotate_lock = false;
+  }
+}
+
+bool on_ground(Tetrimino *tetrimino, Tetris_board *board) {
+  int temp_check_coord_y = tetrimino->coord_y + 1;
+  const TetriminoShape *cur_block_shape =
+      tetrimino_shapes[tetrimino->block_type][tetrimino->rotation];
+  for (int i = 0; i < 4; ++i) {
+    if (cur_block_shape[i].y + temp_check_coord_y >= 0 &&
+        cur_block_shape[i].y + temp_check_coord_y >=
+            highest_from_y_at_x(
+                board, tetrimino->coord_x + cur_block_shape[i].x,
+                cur_block_shape[i].y + temp_check_coord_y - 1)) {
+      return true;
+    }
+  }
+  return false;
+}
 
 void soft_drop(Tetrimino *tetrimino, Tetris_board *board, int factor) {
   tetrimino->timer++;
@@ -51,7 +145,7 @@ void soft_drop(Tetrimino *tetrimino, Tetris_board *board, int factor) {
               highest_from_y_at_x(
                   board, tetrimino->coord_x + cur_block_shape[i].x,
                   cur_block_shape[i].y + temp_check_coord_y - 1)) {
-        drop_tetrimino();
+        // drop_tetrimino();
         return;
       }
     }
@@ -144,7 +238,6 @@ void drop_tetrimino() {
     board->color_map[block_x][block_y] = t->color;
   }
   int pos_1_tet = find_pos_1_tet();
-  fprintf(stderr, "pos_1_tet = %d\n\n", pos_1_tet);
   t = (Tetrimino *)labelelem.arr[pos_1_tet]->pDerivedObj;
   const TetriminoShape *nextblock_shape =
       tetrimino_shapes[t->block_type][t->rotation];
@@ -270,31 +363,15 @@ void Tetrimino_update(Elements *self) {
   } else if (!key_state[ALLEGRO_KEY_LEFT] && !key_state[ALLEGRO_KEY_RIGHT]) {
     tetrimino->move_lock = false;
   }
-  if (key_state[ALLEGRO_KEY_UP] && !tetrimino->rotate_lock) {
-    tetrimino->rotation = (tetrimino->rotation + 1) % 4;
-    tetrimino->rotate_lock = true;
-  }
-  if (key_state[ALLEGRO_KEY_Z] && !tetrimino->rotate_lock) {
-    tetrimino->rotation = (tetrimino->rotation + 3) % 4;
-    // 3 \equiv -1 mod 4
-    tetrimino->rotate_lock = true;
-  }
-  if (key_state[ALLEGRO_KEY_A] && !tetrimino->rotate_lock) {
-    tetrimino->rotation = (tetrimino->rotation + 2) % 4;
-    tetrimino->rotate_lock = true;
-  }
-  if (!key_state[ALLEGRO_KEY_A] && !key_state[ALLEGRO_KEY_Z] &&
-      !key_state[ALLEGRO_KEY_UP]) {
-    tetrimino->rotate_lock = false;
-  }
 
+  rotate(tetrimino, board);
   if (key_state[ALLEGRO_KEY_DOWN]) {
     tetrimino->soft_dropping = true;
     soft_drop(tetrimino, board, 8);
   }
   if (!key_state[ALLEGRO_KEY_DOWN]) {
     tetrimino->soft_dropping = false;
-    soft_drop(tetrimino, board, 1);
+    // soft_drop(tetrimino, board, 1);
   }
 }
 void Tetrimino_interact(Elements *self) {}
