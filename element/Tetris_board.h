@@ -24,9 +24,12 @@ typedef struct _Tetris_board {
   int hold_piece_type;
   bool hold_lock;
   bool hard_drop_lock;
+  int in_combo;
+  int in_b2b;
   bool game_over;
   int timer;
 
+  int garbage_queue;
   // pps display coord
   double pps_x, pps_y;
   // apm display coord

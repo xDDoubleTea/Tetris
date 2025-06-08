@@ -36,6 +36,53 @@ int find_pos_1_tet() {
   }
   return -1;
 }
+
+void swap(void *a, void *b) {
+  void *temp = a;
+  a = b;
+  b = temp;
+}
+
+void recieve_damage(Tetris_board *board) {
+  if (board->game_over || board->garbage_queue == 0) {
+    return;
+  }
+  int garbage = board->garbage_queue;
+  if (garbage >= 8) {
+    board->garbage_queue -= 8;
+    garbage = 8;
+  } else {
+    board->garbage_queue = 0;
+  }
+  int garbage_col = rand() % 10;
+  for (int k = 0; k < garbage; ++k) {
+    for (int i = 0; i < 19; ++i) {
+      for (int j = 0; j < 10; ++j) {
+        board->occupied[j][i] = board->occupied[j][i + 1];
+        board->color_map[j][i] = board->color_map[j][i + 1];
+      }
+    }
+  }
+  for (int i = 0; i < garbage; ++i) {
+    for (int j = 0; j < 10; ++j) {
+      if (j == garbage_col) {
+        board->occupied[j][19 - i] = false;
+        board->color_map[j][19 - i] = al_map_rgb(0, 0, 0);
+        continue;
+      }
+      board->occupied[j][19 - i] = true;
+      board->color_map[j][19 - i] = al_map_rgb(gray[0], gray[1], gray[2]);
+    }
+  }
+}
+
+void recieve_garbage(Tetris_board *board, int garbage) {
+  if (board->game_over) {
+    return;
+  }
+  board->garbage_queue += garbage;
+}
+
 void update_highest_occupied(Tetris_board *board) {
   for (int i = 0; i < 10; ++i) {
     int highest = board->highest_occupied[i];
@@ -66,6 +113,9 @@ Elements *New_Tetris_board(int label) {
   pDerivedObj->font = al_load_ttf_font("assests/font/pirulen.ttf", 24, 0);
   pDerivedObj->side_len = 40;
   pDerivedObj->gravity = 0.5;
+  pDerivedObj->garbage_queue = 0;
+  pDerivedObj->in_b2b = 0;
+  pDerivedObj->in_combo = 0;
   pDerivedObj->hold_x = pDerivedObj->x1 - 100;
   pDerivedObj->hold_y = pDerivedObj->y1;
   pDerivedObj->hold_piece = false;
@@ -172,6 +222,10 @@ void Tetris_board_update(Elements *self) {
     gen_tetr_7_bag(scene, board->pieces_in_queue);
     board->pieces_in_queue += 7;
   }
+  if (!(board->timer % (int)(FPS * 3)) && board->timer > 0) {
+    recieve_garbage(board, 2);
+    recieve_damage(board);
+  }
 }
 void Tetris_board_interact(Elements *self) {
   // Tetris_board* board = ((Tetris_board*)(self->pDerivedObj));
@@ -191,7 +245,7 @@ void Tetris_board_draw(Elements *self) {
                   board->pieces / actual_time);
     al_draw_textf(board->font, board->font_color, board->apm_x, board->apm_y,
                   ALLEGRO_ALIGN_CENTER, "APM:%.2lf",
-                  board->attack / actual_time);
+                  board->attack * 60 / actual_time);
     al_draw_textf(board->font, board->font_color, board->pieces_x,
                   board->pieces_y, ALLEGRO_ALIGN_CENTER, "PIECES:%d",
                   board->pieces);

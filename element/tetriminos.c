@@ -73,7 +73,17 @@ void clear_line(Tetris_board *board) {
     line_clear += clear;
     rows_cleared[i] += clear;
   }
-  if (line_clear) {
+  if (!line_clear) {
+    board->in_combo = 0;
+  } else {
+    board->in_combo++;
+    if (line_clear <= 3) {
+      board->attack += line_clear - 1;
+      board->in_b2b = 0;
+    } else if (line_clear == 4) {
+      board->in_b2b++;
+      board->attack += 4;
+    }
     for (int i = 19; i >= 0; --i) {
       if (rows_cleared[i]) {
         for (int j = 0; j < 10; ++j) {
