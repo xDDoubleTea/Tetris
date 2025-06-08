@@ -46,9 +46,11 @@ void soft_drop(Tetrimino *tetrimino, Tetris_board *board, int factor) {
     const TetriminoShape *cur_block_shape =
         tetrimino_shapes[tetrimino->block_type][tetrimino->rotation];
     for (int i = 0; i < 4; ++i) {
-      if (cur_block_shape[i].y + temp_check_coord_y >=
-          highest_from_y_at_x(board, tetrimino->coord_x + cur_block_shape[i].x,
-                              cur_block_shape[i].y + temp_check_coord_y - 1)) {
+      if (cur_block_shape[i].y + temp_check_coord_y >= 0 &&
+          cur_block_shape[i].y + temp_check_coord_y >=
+              highest_from_y_at_x(
+                  board, tetrimino->coord_x + cur_block_shape[i].x,
+                  cur_block_shape[i].y + temp_check_coord_y - 1)) {
         drop_tetrimino();
         return;
       }
@@ -91,40 +93,23 @@ void clear_line(Tetris_board *board) {
   }
 }
 
-int find_pos_0_tet() {
-  ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
-  ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
-  Tetrimino *t;
-  for (int i = 0; i < labelelem.len; ++i) {
-    t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
-    if (t->pos_in_queue == 0) {
-      return i;
-    }
-  }
-  return -1;
-}
-int find_pos_1_tet() {
-  ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
-  ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
-  Tetrimino *t;
-  for (int i = 0; i < labelelem.len; ++i) {
-    t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
-    if (t->pos_in_queue == 1) {
-      return i;
-    }
-  }
-  return -1;
-}
-
 void drop_tetrimino() {
   ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
   ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
   Tetris_board *board = board_elem.arr[0]->pDerivedObj;
+  Tetrimino *t;
   int pos_0_tet = find_pos_0_tet();
-  labelelem.arr[pos_0_tet]->dele = true;
-
-  Tetrimino *t = (Tetrimino *)labelelem.arr[pos_0_tet]->pDerivedObj;
-  t->dropped = true;
+  // fprintf(stdout, "pos_0_tet = %d\n", pos_0_tet);
+  // for (int i = 0; i < labelelem.len; ++i) {
+  //   t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
+  //   fprintf(stdout,
+  //           "t->type = %d, t->held = %d, t->pos_in_queue = %d, t->dele =
+  //           %d\n", t->block_type, t->held, t->pos_in_queue,
+  //           labelelem.arr[i]->dele);
+  // }
+  t = (Tetrimino *)labelelem.arr[pos_0_tet]->pDerivedObj;
+  fprintf(stdout, "t->held = %d\n", t->held);
+  fprintf(stdout, "\n");
   const TetriminoShape *cur_block_shape =
       tetrimino_shapes[t->block_type][t->rotation];
   int closest_x = 0;
@@ -143,8 +128,8 @@ void drop_tetrimino() {
                      (t->coord_y + cur_block_shape[i].y);
     }
   }
-  highest_from_y =
-      highest_from_y_at_x(board, closest_x, t->coord_y + cur_block_shape[0].y);
+  highest_from_y = highest_from_y_at_x(
+      board, closest_x, t->coord_y + cur_block_shape[closest_x_idx].y);
   int place_at_x = t->coord_x;
   int place_at_y = highest_from_y - 1 - cur_block_shape[closest_x_idx].y;
 
@@ -156,10 +141,8 @@ void drop_tetrimino() {
     board->occupied[block_x][block_y] = true;
     board->color_map[block_x][block_y] = t->color;
   }
-  update_highest_occupied(board);
-  board->pieces_in_queue--;
-  board->pieces++;
   int pos_1_tet = find_pos_1_tet();
+  // fprintf(stderr, "pos_1_tet = %d\n\n", pos_1_tet);
   t = (Tetrimino *)labelelem.arr[pos_1_tet]->pDerivedObj;
   const TetriminoShape *nextblock_shape =
       tetrimino_shapes[t->block_type][t->rotation];
@@ -172,12 +155,14 @@ void drop_tetrimino() {
   }
   clear_line(board);
   if (!board->game_over) {
+    labelelem.arr[pos_0_tet]->dele = true;
+    board->pieces++;
+    board->pieces_in_queue--;
     for (int i = 0; i < labelelem.len; ++i) {
-      if (i == pos_0_tet) {
-        continue;
+      t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
+      if (!t->held) {
+        t->pos_in_queue--;
       }
-      Tetrimino *t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
-      t->pos_in_queue--;
     }
   }
 }
@@ -333,7 +318,7 @@ void Tetrimino_draw(Elements *self) {
     return;
   }
   if (tetrimino->pos_in_queue) {
-    if (tetrimino->pos_in_queue <= 5) {
+    if (tetrimino->pos_in_queue <= 5 && tetrimino->pos_in_queue >= 0) {
       int side_len = board->side_len;
       const TetriminoShape *cur_block_shape =
           tetrimino_shapes[tetrimino->block_type][tetrimino->rotation];

@@ -21,11 +21,11 @@ void gen_tetr_7_bag(Scene *pObj, int now_pieces) {
     arr[j] = temp;
   }
   for (int i = 0; i < 7; i++) {
-    // fprintf(stderr, "%d", arr[i]);
+    fprintf(stderr, "%d", arr[i]);
     _Register_elements(pObj,
                        New_Tetrimino(Tetrimino_L, arr[i], i + now_pieces));
   }
-  // fprintf(stderr, "\n");
+  fprintf(stderr, "\n");
 }
 
 Scene *New_GameScene(int label) {

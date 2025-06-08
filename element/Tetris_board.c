@@ -11,6 +11,30 @@
 #include "../shapes/Rectangle.h"
 #include "tetriminos.h"
 
+int find_pos_0_tet() {
+  ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
+  ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
+  Tetrimino *t;
+  for (int i = 0; i < labelelem.len; ++i) {
+    t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
+    if (t->pos_in_queue == 0) {
+      return i;
+    }
+  }
+  return -1;
+}
+int find_pos_1_tet() {
+  ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
+  ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
+  Tetrimino *t;
+  for (int i = 0; i < labelelem.len; ++i) {
+    t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
+    if (t->pos_in_queue == 1) {
+      return i;
+    }
+  }
+  return -1;
+}
 void update_highest_occupied(Tetris_board *board) {
   for (int i = 0; i < 10; ++i) {
     int highest = board->highest_occupied[i];
@@ -85,35 +109,45 @@ void Tetris_board_update(Elements *self) {
   ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
   if (!board->hold_lock && !board->hold_piece && key_state[ALLEGRO_KEY_C]) {
     board->hold_lock = true;
-    board->pieces_in_queue--;
     board->hold_piece = true;
-    Tetrimino *t = (Tetrimino *)labelelem.arr[0]->pDerivedObj;
+    int pos_0_tet = find_pos_0_tet();
+    Tetrimino *t = (Tetrimino *)labelelem.arr[pos_0_tet]->pDerivedObj;
     t->rotation = 0;
     t->held = true;
-    t->pos_in_queue = -1;
-    for (int i = 1; i < labelelem.len; ++i) {
-      t = labelelem.arr[i]->pDerivedObj;
+    for (int i = 0; i < labelelem.len; ++i) {
+      t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
       t->pos_in_queue--;
     }
+    board->pieces_in_queue--;
   }
   if (!board->hold_lock && board->hold_piece && key_state[ALLEGRO_KEY_C]) {
     board->hold_lock = true;
     Tetrimino *hold;
     Tetrimino *change;
-    int hold_idx = 0, change_idx = 0;
+    Tetrimino *t;
+    int hold_idx = -1, change_idx = -1;
     for (int i = 0; i < labelelem.len; ++i) {
-      Tetrimino *t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
-      if (t->held) {
+      t = (Tetrimino *)labelelem.arr[i]->pDerivedObj;
+      if (t->held || t->pos_in_queue == -1) {
         hold_idx = i;
       }
       if (t->pos_in_queue == 0) {
         change_idx = i;
       }
     }
+    if (hold_idx == -1) {
+      board->game_over = true;
+      return;
+    }
     hold = (Tetrimino *)labelelem.arr[hold_idx]->pDerivedObj;
+    labelelem.arr[hold_idx]->dele = false;
     change = (Tetrimino *)labelelem.arr[change_idx]->pDerivedObj;
+    labelelem.arr[change_idx]->dele = false;
     hold->held = false;
+    hold->dropped = false;
     change->held = true;
+    change->dropped = false;
+    board->hold_piece_type = change->block_type;
     change->rotation = 0;
     hold->pos_in_queue = 0;
     change->pos_in_queue = -1;
@@ -121,7 +155,9 @@ void Tetris_board_update(Elements *self) {
     hold->coord_y = 0;
     change->coord_x = 4;
     change->coord_y = 0;
+    return;
   }
+
   if (board->hold_lock && !key_state[ALLEGRO_KEY_C]) {
     board->hold_lock = false;
   }

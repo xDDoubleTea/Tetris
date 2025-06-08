@@ -21,6 +21,7 @@ typedef struct _Tetris_board {
   int attack;
   int pieces_in_queue;
   bool hold_piece;
+  int hold_piece_type;
   bool hold_lock;
   bool hard_drop_lock;
   bool game_over;
@@ -47,5 +48,6 @@ void Tetris_board_update(Elements *self);
 void Tetris_board_interact(Elements *self);
 void Tetris_board_draw(Elements *self);
 void Tetris_board_destory(Elements *self);
-
+int find_pos_0_tet();
+int find_pos_1_tet();
 #endif
