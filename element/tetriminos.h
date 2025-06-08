@@ -36,6 +36,7 @@ typedef struct _Tetrimino {
   ALLEGRO_COLOR color;
   bool move_lock;
   bool rotate_lock;
+  bool soft_dropping;
   bool held;
   bool dropped;
   long long timer;

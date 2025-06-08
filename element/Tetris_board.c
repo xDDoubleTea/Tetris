@@ -88,6 +88,7 @@ void Tetris_board_update(Elements *self) {
     board->pieces_in_queue--;
     board->hold_piece = true;
     Tetrimino *t = (Tetrimino *)labelelem.arr[0]->pDerivedObj;
+    t->rotation = 0;
     t->held = true;
     t->pos_in_queue = -1;
     for (int i = 1; i < labelelem.len; ++i) {
@@ -113,6 +114,7 @@ void Tetris_board_update(Elements *self) {
     change = (Tetrimino *)labelelem.arr[change_idx]->pDerivedObj;
     hold->held = false;
     change->held = true;
+    change->rotation = 0;
     hold->pos_in_queue = 0;
     change->pos_in_queue = -1;
     hold->coord_x = 4;

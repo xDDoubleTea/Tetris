@@ -37,7 +37,25 @@ int highest_from_y_at_x(Tetris_board *board, int x, int y) {
 
 void rotate(Tetrimino *t) {}
 
-void soft_drop(Tetrimino *t) {}
+void soft_drop(Tetrimino *tetrimino, Tetris_board *board, int factor) {
+  tetrimino->timer++;
+  int actual_gravity = (int)(FPS * board->gravity) / factor;
+
+  if (!(tetrimino->timer % actual_gravity)) {
+    int temp_check_coord_y = tetrimino->coord_y + 1;
+    const TetriminoShape *cur_block_shape =
+        tetrimino_shapes[tetrimino->block_type][tetrimino->rotation];
+    for (int i = 0; i < 4; ++i) {
+      if (cur_block_shape[i].y + temp_check_coord_y >=
+          highest_from_y_at_x(board, tetrimino->coord_x + cur_block_shape[i].x,
+                              cur_block_shape[i].y + temp_check_coord_y - 1)) {
+        drop_tetrimino();
+        return;
+      }
+    }
+    tetrimino->coord_y++;
+  }
+}
 
 void clear_line(Tetris_board *board) {
   int line_clear = 0;
@@ -213,6 +231,7 @@ Elements *New_Tetrimino(int label, int type, int pos_in_queue) {
   pDerivedObj->coord_x = 4;
   pDerivedObj->held = false;
   pDerivedObj->dropped = false;
+  pDerivedObj->soft_dropping = false;
   pDerivedObj->coord_y = 0;
   pDerivedObj->timer = 0;
   pDerivedObj->color =
@@ -281,22 +300,14 @@ void Tetrimino_update(Elements *self) {
       !key_state[ALLEGRO_KEY_UP]) {
     tetrimino->rotate_lock = false;
   }
-  tetrimino->timer++;
-  int actual_gravity = (int)(FPS * board->gravity);
 
-  if (!(tetrimino->timer % actual_gravity)) {
-    int temp_check_coord_y = tetrimino->coord_y + 1;
-    const TetriminoShape *cur_block_shape =
-        tetrimino_shapes[tetrimino->block_type][tetrimino->rotation];
-    for (int i = 0; i < 4; ++i) {
-      if (cur_block_shape[i].y + temp_check_coord_y >=
-          highest_from_y_at_x(board, tetrimino->coord_x + cur_block_shape[i].x,
-                              cur_block_shape[i].y + temp_check_coord_y - 1)) {
-        drop_tetrimino();
-        return;
-      }
-    }
-    tetrimino->coord_y++;
+  if (key_state[ALLEGRO_KEY_DOWN]) {
+    tetrimino->soft_dropping = true;
+    soft_drop(tetrimino, board, 4);
+  }
+  if (!key_state[ALLEGRO_KEY_DOWN]) {
+    tetrimino->soft_dropping = false;
+    soft_drop(tetrimino, board, 1);
   }
 }
 void Tetrimino_interact(Elements *self) {}
