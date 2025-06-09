@@ -1,6 +1,4 @@
 #include "sdf_btn.h"
-#include "../scene/scene.h"
-#include "../scene/sceneManager.h"
 
 #include <allegro5/allegro5.h>
 #include <allegro5/allegro_font.h>
@@ -74,10 +72,10 @@ void sdf_btn_interact(Elements *self) {}
 void sdf_btn_draw(Elements *self) {
   sdf_btn *btn = ((sdf_btn *)(self->pDerivedObj));
   al_draw_text(btn->font, btn->color, (btn->x1 + btn->x2) / 2, btn->y1 + 25,
-               ALLEGRO_ALIGN_CENTRE, "Auto Repeat Rate (ARR)");
+               ALLEGRO_ALIGN_CENTRE, "Soft Drop Factor (SDF)");
   al_draw_textf(btn->font, btn->color, (btn->x1 + btn->x2) / 2, btn->y1 + 75,
                 ALLEGRO_ALIGN_CENTRE, "%s, %d",
-                btn->sdfstatetext[btn->now_state], arr);
+                btn->sdfstatetext[btn->now_state], sdf);
   al_draw_rounded_rectangle(btn->x1, btn->y1, btn->x2, btn->y2, 10, 10,
                             btn->color, 5);
 }

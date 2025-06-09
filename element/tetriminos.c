@@ -229,6 +229,9 @@ void drop_tetrimino() {
         board->occupied[(t->coord_x + nextblock_shape[i].x) % 10]
                        [(t->coord_y + nextblock_shape[i].y + 2)]) {
       board->game_over = true;
+      GameScene *gs = (GameScene *)scene->pDerivedObj;
+      al_play_sample_instance(gs->game_over_sfx_instance);
+      break;
     }
   }
   if (!board->game_over) {

@@ -1,14 +1,17 @@
 #include "gamescene.h"
 
+#include "../algif5/algif.h"
 #include <allegro5/allegro_audio.h>
 #include <allegro5/allegro_font.h>
 #include <allegro5/bitmap_draw.h>
+#include <allegro5/config.h>
 #include <stdarg.h>
 #include <stdio.h>
 
 #include "../element/Tetris_board.h"
 #include "../element/element.h"
 #include "../element/tetrimino_shape.h"
+#include "../element/zombie.h"
 #include "scene.h"
 /*
    [GameScene function]
@@ -30,16 +33,6 @@ void gen_tetr_7_bag(Scene *pObj, int now_pieces) {
   }
   // fprintf(stderr, "\n");
 }
-
-void load_and_set_sample(const char *filename, ALLEGRO_SAMPLE *sample_var,
-                         ALLEGRO_SAMPLE_INSTANCE *sample_instance_var,
-                         float gain, ALLEGRO_PLAYMODE playmode) {
-  sample_var = al_load_sample(filename);
-  sample_instance_var = al_create_sample_instance(sample_var);
-  al_set_sample_instance_gain(sample_instance_var, gain);
-  al_set_sample_instance_playmode(sample_instance_var, playmode);
-}
-
 Scene *New_GameScene(int label) {
   GameScene *pDerivedObj = (GameScene *)malloc(sizeof(GameScene));
   Scene *pObj = New_Scene(label);
@@ -47,11 +40,13 @@ Scene *New_GameScene(int label) {
   pObj->pDerivedObj = pDerivedObj;
   // register element
   _Register_elements(pObj, New_Tetris_board(Tetris_board_L));
+  _Register_elements(pObj, New_zombie(Zombie_L));
   gen_tetr_7_bag(pObj, 0);
   // setting derived object function
-  al_reserve_samples(128);
+  al_reserve_samples(64);
+
   pDerivedObj->background = al_load_bitmap("assests/bg.webp");
-  fprintf(stderr, "%p\n", pDerivedObj->background);
+  pDerivedObj->zombie_gif = algif_new_gif("assests/zombiewalking.gif", 1);
 
   pDerivedObj->o_mino = al_load_sample("assests/Tetrio_retro_pack/o.wav");
   pDerivedObj->i_mino = al_load_sample("assests/Tetrio_retro_pack/i.wav");
@@ -60,7 +55,7 @@ Scene *New_GameScene(int label) {
   pDerivedObj->z_mino = al_load_sample("assests/Tetrio_retro_pack/z.wav");
   pDerivedObj->s_mino = al_load_sample("assests/Tetrio_retro_pack/s.wav");
   pDerivedObj->t_mino = al_load_sample("assests/Tetrio_retro_pack/t.wav");
-  pDerivedObj->sfx_gain = 0.1;
+  pDerivedObj->sfx_gain = 0.2;
   pDerivedObj->bgm_gain = 0.05;
   pDerivedObj->bgm_piercing_wind =
       al_load_sample("assests/bgm/PiercingWind.wav");
@@ -84,6 +79,32 @@ Scene *New_GameScene(int label) {
                                     ALLEGRO_PLAYMODE_ONCE);
   }
 
+  // load_and_set_sample("assests/Tetrio_retro_pack/harddrop.wav",
+  //                     pDerivedObj->zombie_attack_sfx,
+  //                     pDerivedObj->zombie_attack_sfx_instance,
+  //                     pDerivedObj->sfx_gain, ALLEGRO_PLAYMODE_ONCE);
+  pDerivedObj->hard_drop_sfx =
+      al_load_sample("assests/Tetrio_retro_pack/harddrop.wav");
+  pDerivedObj->hard_drop_sfx_instance =
+      al_create_sample_instance(pDerivedObj->hard_drop_sfx);
+  al_set_sample_instance_gain(pDerivedObj->hard_drop_sfx_instance,
+                              pDerivedObj->sfx_gain);
+  al_set_sample_instance_playmode(pDerivedObj->hard_drop_sfx_instance,
+                                  ALLEGRO_PLAYMODE_ONCE);
+  al_attach_sample_instance_to_mixer(pDerivedObj->hard_drop_sfx_instance,
+                                     al_get_default_mixer());
+
+  pDerivedObj->game_over_sfx =
+      al_load_sample("assests/Tetrio_retro_pack/failure.wav");
+  pDerivedObj->game_over_sfx_instance =
+      al_create_sample_instance(pDerivedObj->game_over_sfx);
+  al_set_sample_instance_gain(pDerivedObj->game_over_sfx_instance,
+                              pDerivedObj->sfx_gain);
+  al_set_sample_instance_playmode(pDerivedObj->game_over_sfx_instance,
+                                  ALLEGRO_PLAYMODE_BIDIR);
+  al_attach_sample_instance_to_mixer(pDerivedObj->game_over_sfx_instance,
+                                     al_get_default_mixer());
+
   pDerivedObj->all_clear =
       al_load_sample("assests/Tetrio_retro_pack/allclear.wav");
   pDerivedObj->all_clear_instance =
@@ -92,6 +113,20 @@ Scene *New_GameScene(int label) {
                               pDerivedObj->sfx_gain);
   al_set_sample_instance_playmode(pDerivedObj->all_clear_instance,
                                   ALLEGRO_PLAYMODE_ONCE);
+  al_attach_sample_instance_to_mixer(pDerivedObj->all_clear_instance,
+                                     al_get_default_mixer());
+
+  pDerivedObj->all_clear =
+      al_load_sample("assests/Tetrio_retro_pack/allclear.wav");
+  pDerivedObj->all_clear_instance =
+      al_create_sample_instance(pDerivedObj->all_clear);
+  al_set_sample_instance_gain(pDerivedObj->all_clear_instance,
+                              pDerivedObj->sfx_gain);
+  al_set_sample_instance_playmode(pDerivedObj->all_clear_instance,
+                                  ALLEGRO_PLAYMODE_ONCE);
+  al_attach_sample_instance_to_mixer(pDerivedObj->all_clear_instance,
+                                     al_get_default_mixer());
+
   pDerivedObj->bgm_original_tetris =
       al_load_sample("assests/bgm/Original_tetris_theme_test.wav");
   pDerivedObj->bgm_original_tetris_instance =
@@ -102,18 +137,6 @@ Scene *New_GameScene(int label) {
                               pDerivedObj->bgm_gain);
   al_set_sample_instance_playmode(pDerivedObj->bgm_original_tetris_instance,
                                   ALLEGRO_PLAYMODE_LOOP);
-  // pDerivedObj->all_clear =
-  //     al_load_sample("assests/Tetrio_retro_pack/allclear.wav");
-  // fprintf(stderr, "%p\n", pDerivedObj->all_clear);
-  // pDerivedObj->all_clear_instance =
-  //     al_create_sample_instance(pDerivedObj->all_clear);
-  // al_attach_sample_instance_to_mixer(pDerivedObj->all_clear_instance,
-  //                                    al_get_default_mixer());
-  // al_set_sample_instance_gain(pDerivedObj->all_clear_instance,
-  //                             pDerivedObj->sfx_gain);
-  // al_set_sample_instance_playmode(pDerivedObj->all_clear_instance,
-  //                                 ALLEGRO_PLAYMODE_ONCE);
-
   pDerivedObj->b2b_1_instance = al_create_sample_instance(pDerivedObj->b2b_1);
   al_set_sample_instance_playmode(pDerivedObj->b2b_1_instance,
                                   ALLEGRO_PLAYMODE_ONCE);
@@ -230,21 +253,23 @@ Scene *New_GameScene(int label) {
   al_set_sample_instance_gain(pDerivedObj->s_sample_instance,
                               pDerivedObj->sfx_gain);
 
-  pDerivedObj->bgm_choice = rand() % 4;
-  fprintf(stderr, "bgm_choice = %d\n", pDerivedObj->bgm_choice);
-  if (pDerivedObj->bgm_choice == 0 || pDerivedObj->bgm_choice == 1) {
+  pDerivedObj->bgm_choice = rand() % 2;
+  if (pDerivedObj->bgm_choice == 0) {
     pDerivedObj->bgm_choice_sample = pDerivedObj->bgm_piercing_wind;
     pDerivedObj->bgm_choice_sample_instance =
         pDerivedObj->bgm_piercing_wind_instance;
   }
-  if (pDerivedObj->bgm_choice == 2 || pDerivedObj->bgm_choice == 3) {
+  if (pDerivedObj->bgm_choice == 1) {
     pDerivedObj->bgm_choice_sample = pDerivedObj->bgm_original_tetris;
     pDerivedObj->bgm_choice_sample_instance =
         pDerivedObj->bgm_original_tetris_instance;
   }
   al_play_sample_instance(pDerivedObj->bgm_choice_sample_instance);
-  pDerivedObj->start_music = 500;
+
+  pDerivedObj->start_music = 300;
   pDerivedObj->start_music_timer = 0;
+  pDerivedObj->zombie_spawn_time_interval = (int)FPS * 30;
+  pDerivedObj->zombie_spawn_timer = 0;
   pObj->Update = game_scene_update;
   pObj->Draw = game_scene_draw;
   pObj->Destroy = game_scene_destroy;
@@ -252,7 +277,21 @@ Scene *New_GameScene(int label) {
 }
 void game_scene_update(Scene *self) {
   GameScene *gamescene = (GameScene *)(self->pDerivedObj);
-
+  ElementVec labelelem = _Get_label_elements(self, Tetris_board_L);
+  Tetris_board *board = (Tetris_board *)labelelem.arr[0]->pDerivedObj;
+  gamescene->zombie_spawn_timer++;
+  if (!(gamescene->zombie_spawn_timer %
+        gamescene->zombie_spawn_time_interval) &&
+      !board->game_over) {
+    _Register_elements(self, New_zombie(Zombie_L));
+  }
+  labelelem = _Get_label_elements(self, Zombie_L);
+  if (board->game_over && labelelem.len) {
+    for (int i = 0; i < labelelem.len; ++i) {
+      Zombie *zombie = (Zombie *)labelelem.arr[i]->pDerivedObj;
+      zombie->stop_walk = true;
+    }
+  }
   if (gamescene->start_music_timer > 0 &&
       gamescene->start_music_timer <= gamescene->start_music &&
       !(gamescene->start_music_timer % 50)) {
@@ -340,7 +379,10 @@ void game_scene_destroy(Scene *self) {
   al_destroy_sample(Obj->bgm_original_tetris);
   al_destroy_sample_instance(Obj->bgm_original_tetris_instance);
 
+  al_destroy_sample(Obj->game_over_sfx);
+  al_destroy_sample_instance(Obj->game_over_sfx_instance);
   al_destroy_bitmap(Obj->background);
+  algif_destroy_animation(Obj->zombie_gif);
   free(Obj);
   free(self);
 }

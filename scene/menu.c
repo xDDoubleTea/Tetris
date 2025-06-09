@@ -32,7 +32,7 @@ Scene *New_Menu(int label) {
   _Register_elements(pObj, New_Settings_btn(Settings_btn_L));
   _Register_elements(pObj, New_Quit_btn(Quit_btn_L));
   // Loop the song until the display closes
-  al_reserve_samples(16);
+  al_reserve_samples(8);
   pDerivedObj->sample_instance = al_create_sample_instance(pDerivedObj->song);
   al_set_sample_instance_playmode(pDerivedObj->sample_instance,
                                   ALLEGRO_PLAYMODE_LOOP);
@@ -40,6 +40,7 @@ Scene *New_Menu(int label) {
                                      al_get_default_mixer());
   // set the volume of instance
   al_set_sample_instance_gain(pDerivedObj->sample_instance, 0.2);
+  al_play_sample_instance(pDerivedObj->sample_instance);
   pObj->pDerivedObj = pDerivedObj;
   // setting derived object function
   pObj->Update = menu_update;
@@ -83,9 +84,6 @@ void menu_draw(Scene *self) {
   for (int i = 0; i < allEle.len; i++) {
     Elements *ele = allEle.arr[i];
     ele->Draw(ele);
-  }
-  if (!al_get_sample_instance_playing(Obj->sample_instance)) {
-    al_play_sample_instance(Obj->sample_instance);
   }
 }
 void menu_destroy(Scene *self) {

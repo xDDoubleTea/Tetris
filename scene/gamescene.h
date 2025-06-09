@@ -3,6 +3,7 @@
 #include "scene.h"
 #include <allegro5/allegro_audio.h>
 
+#include "../algif5/algif.h"
 /*
    [game scene object]
 */
@@ -20,6 +21,7 @@ typedef enum EleType {
   Das_btn_L,
   Arr_btn_L,
   Sdf_Btn_L,
+  Zombie_L,
   Tetris_board_L,
   Tetrimino_L,
 } EleType;
@@ -40,6 +42,11 @@ typedef struct _GameScene {
   ALLEGRO_SAMPLE *b2b_break;
   ALLEGRO_SAMPLE *combo[16];
   ALLEGRO_SAMPLE *all_clear;
+  ALLEGRO_SAMPLE *game_over_sfx;
+  ALLEGRO_SAMPLE *hard_drop_sfx;
+  ALLEGRO_SAMPLE *damage_sfx;
+  ALLEGRO_SAMPLE *zombie_attack_sfx;
+  ALLEGRO_SAMPLE *zombie_moan_sfx[3];
 
   ALLEGRO_SAMPLE_INSTANCE *o_sample_instance;
   ALLEGRO_SAMPLE_INSTANCE *i_sample_instance;
@@ -52,6 +59,11 @@ typedef struct _GameScene {
   ALLEGRO_SAMPLE_INSTANCE *bgm_original_tetris_instance;
   ALLEGRO_SAMPLE_INSTANCE *combo_instance[16];
   ALLEGRO_SAMPLE_INSTANCE *all_clear_instance;
+  ALLEGRO_SAMPLE_INSTANCE *game_over_sfx_instance;
+  ALLEGRO_SAMPLE_INSTANCE *hard_drop_sfx_instance;
+  ALLEGRO_SAMPLE_INSTANCE *damage_sfx_instance;
+  ALLEGRO_SAMPLE_INSTANCE *zombie_attack_sfx_instance;
+  ALLEGRO_SAMPLE_INSTANCE *zombie_moan_sfx_instance[3];
 
   ALLEGRO_SAMPLE_INSTANCE *b2b_1_instance;
   ALLEGRO_SAMPLE_INSTANCE *b2b_2_instance;
@@ -61,9 +73,12 @@ typedef struct _GameScene {
   int bgm_choice;
   ALLEGRO_SAMPLE *bgm_choice_sample;
   ALLEGRO_SAMPLE_INSTANCE *bgm_choice_sample_instance;
+  ALGIF_ANIMATION *zombie_gif;
 
   int start_music;
   int start_music_timer;
+  int zombie_spawn_time_interval;
+  int zombie_spawn_timer;
   float sfx_gain;
   float bgm_gain;
 } GameScene;
