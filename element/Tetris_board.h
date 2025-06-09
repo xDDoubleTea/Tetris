@@ -10,9 +10,8 @@ void drop_tetrimino();
 typedef struct _Tetris_board {
   double x1, y1, x2, y2;
   int side_len;
-  bool occupied[10][20];
-  int highest_occupied[10];
-  ALLEGRO_COLOR color_map[10][20];
+  bool occupied[10][1000];
+  ALLEGRO_COLOR color_map[10][1000];
   ALLEGRO_FONT *font;
   ALLEGRO_COLOR font_color;
   double gravity;
@@ -28,6 +27,8 @@ typedef struct _Tetris_board {
   int in_b2b;
   bool game_over;
   int timer;
+
+  int board_height;
 
   int garbage_queue;
   int garbage_timer;
@@ -45,6 +46,8 @@ typedef struct _Tetris_board {
   double hold_x, hold_y;
   // Garbage queue display
   double gb_q_x, gb_q_y;
+  // Back to Back display
+  double b2b_x, b2b_y;
   Shape *hitbox;
 
 } Tetris_board;
@@ -56,4 +59,5 @@ void Tetris_board_draw(Elements *self);
 void Tetris_board_destory(Elements *self);
 int find_pos_0_tet();
 int find_pos_1_tet();
+void clear_line(Tetris_board *board, Tetrimino *tetrimino);
 #endif

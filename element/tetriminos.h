@@ -3,6 +3,7 @@
 
 #include <allegro5/allegro5.h>
 #include <allegro5/allegro_primitives.h>
+#include <allegro5/color.h>
 
 #include "../scene/gamescene.h" // for element label
 #include "../shapes/Shape.h"
@@ -34,15 +35,30 @@ typedef struct _Tetrimino {
   int rotation;
   int coord_x, coord_y;
   ALLEGRO_COLOR color;
+  ALLEGRO_COLOR ghost_block_color;
   bool move_lock;
+  int soft_drop_factor;
   bool rotate_lock;
   bool soft_dropping;
+  int tetrimino_last_oper;
   bool held;
+  bool did_t_spin;
+  int das;
+  int das_timer;
+  int arr;
+  int arr_timer;
   bool dropped;
   long long timer;
   Shape *hitbox;
   int pos_in_queue;
 } Tetrimino;
+
+enum Tetr_operation {
+  MOVE,
+  ROTATE,
+  GRAVITY,
+};
+
 Elements *New_Tetrimino(int label, int type, int pos_in_queue);
 void Tetrimino_update(Elements *self);
 void Tetrimino_interact(Elements *self);

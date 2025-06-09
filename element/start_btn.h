@@ -2,7 +2,6 @@
 #define START_BTN_H_INCLUDED
 #include <allegro5/allegro_font.h>
 
-#include "../scene/gamescene.h" // for element label
 #include "../shapes/Shape.h"
 #include "element.h"
 typedef struct _Start_btn {

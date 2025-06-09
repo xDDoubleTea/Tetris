@@ -2,8 +2,13 @@
 
 #include <allegro5/allegro_color.h>
 const unsigned char tetrimino_colors[NUM_TETRIMINO_TYPES][3] = {
-    {255, 255, 0},  {187, 235, 102}, {194, 62, 71}, {177, 77, 166},
-    {78, 207, 158}, {96, 78, 181},   {199, 177, 67}};
+    {255, 255, 0},  {187, 235, 102}, {194, 62, 71},  {177, 77, 166},
+    {78, 207, 158}, {96, 78, 181},   {199, 177, 67},
+};
+const unsigned char tetrimino_ghost_block_colors[NUM_TETRIMINO_TYPES][3] = {
+    {205, 205, 0},  {137, 185, 52}, {144, 12, 21},  {127, 27, 116},
+    {28, 157, 108}, {46, 28, 131},  {149, 127, 17},
+};
 
 const TetriminoShape tetrimino_shapes[NUM_TETRIMINO_TYPES][4][4] = {
     // type O

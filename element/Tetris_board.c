@@ -13,7 +13,6 @@
 #include "tetriminos.h"
 
 int find_pos_0_tet() {
-  ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
   ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
   Tetrimino *t;
   for (int i = 0; i < labelelem.len; ++i) {
@@ -25,7 +24,6 @@ int find_pos_0_tet() {
   return -1;
 }
 int find_pos_1_tet() {
-  ElementVec board_elem = _Get_label_elements(scene, Tetris_board_L);
   ElementVec labelelem = _Get_label_elements(scene, Tetrimino_L);
   Tetrimino *t;
   for (int i = 0; i < labelelem.len; ++i) {
@@ -43,6 +41,85 @@ void swap(void *a, void *b) {
   b = temp;
 }
 
+bool perfect_clear(Tetris_board *board) {
+  for (int i = 19; i >= 0; --i) {
+    for (int j = 0; j < 10; ++j) {
+      if (board->occupied[j][i]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+void clear_line(Tetris_board *board, Tetrimino *tetrimino) {
+  int line_clear = 0;
+  int rows_cleared[20] = {0};
+  for (int i = 0; i < 20; ++i) {
+    int clear = 1;
+    for (int j = 0; j < 10; ++j) {
+      if (!board->occupied[j][i]) {
+        clear = 0;
+        break;
+      }
+    }
+    line_clear += clear;
+    rows_cleared[i] += clear;
+  }
+  if (!line_clear) {
+    board->in_combo = 0;
+  } else {
+    GameScene *gamescene = (GameScene *)(scene->pDerivedObj);
+    board->in_combo++;
+    al_play_sample_instance(
+        gamescene->combo_instance[min(board->in_combo - 1, 15)]);
+    if (tetrimino->did_t_spin && (tetrimino->tetrimino_last_oper == ROTATE ||
+                                  tetrimino->tetrimino_last_oper == GRAVITY)) {
+      board->in_b2b++;
+      board->attack += line_clear * 2;
+    } else if (line_clear <= 3) {
+      board->attack += line_clear - 1;
+      if (board->in_b2b > 0) {
+        al_play_sample_instance(gamescene->b2b_break_instance);
+      }
+      board->in_b2b = -1;
+    } else if (line_clear == 4) {
+      board->in_b2b++;
+      board->attack += 4;
+    }
+    // Back to Back bonus
+    if (board->in_b2b == 1) {
+      al_play_sample_instance(gamescene->b2b_1_instance);
+    } else if (board->in_b2b == 2 && board->in_b2b == 3) {
+      al_play_sample_instance(gamescene->b2b_2_instance);
+      board->attack++;
+    } else if (board->in_b2b > 3) {
+      al_play_sample_instance(gamescene->b2b_3_instance);
+      board->attack += 2;
+    }
+    for (int i = 19; i >= 0; --i) {
+      if (rows_cleared[i]) {
+        // Check if it is garbage line
+
+        for (int j = 0; j < 10; ++j) {
+          board->occupied[j][i] = false;
+          board->color_map[j][i] = al_map_rgb(0, 0, 0);
+          for (int k = i; k > 0; --k) {
+            board->occupied[j][k] = board->occupied[j][k - 1];
+            board->color_map[j][k] = board->color_map[j][k - 1];
+          }
+        }
+        for (int k = i; k > 0; --k)
+          rows_cleared[k] = rows_cleared[k - 1];
+        ++i;
+        rows_cleared[0] = 0;
+      }
+    }
+    if (perfect_clear(board)) {
+      al_play_sample_instance(gamescene->all_clear_instance);
+      board->attack += 10;
+    }
+  }
+}
 void recieve_damage(Tetris_board *board) {
   if (board->game_over || board->garbage_queue == 0) {
     return;
@@ -84,17 +161,6 @@ void recieve_garbage(Tetris_board *board, int garbage) {
   board->garbage_queue += garbage;
 }
 
-void update_highest_occupied(Tetris_board *board) {
-  for (int i = 0; i < 10; ++i) {
-    int highest = board->highest_occupied[i];
-    for (int j = 0; j < 20; ++j) {
-      if (board->occupied[i][j] && j < highest) {
-        highest = j;
-      }
-    }
-    board->highest_occupied[i] = highest;
-  }
-}
 Elements *New_Tetris_board(int label) {
   Tetris_board *pDerivedObj = (Tetris_board *)malloc(sizeof(Tetris_board));
   Elements *pObj = New_Elements(label);
@@ -115,7 +181,8 @@ Elements *New_Tetris_board(int label) {
   pDerivedObj->side_len = 40;
   pDerivedObj->gravity = 0.5;
   pDerivedObj->garbage_queue = 0;
-  pDerivedObj->in_b2b = 0;
+  pDerivedObj->in_b2b = -1;
+  pDerivedObj->board_height = 20;
   pDerivedObj->in_combo = 0;
   pDerivedObj->hold_x = pDerivedObj->x1 - 100;
   pDerivedObj->hold_y = pDerivedObj->y1;
@@ -123,6 +190,8 @@ Elements *New_Tetris_board(int label) {
   pDerivedObj->hold_lock = false;
   pDerivedObj->gb_q_x = pDerivedObj->y2;
   pDerivedObj->gb_q_y = pDerivedObj->x1;
+  pDerivedObj->b2b_x = pDerivedObj->hold_x;
+  pDerivedObj->b2b_y = pDerivedObj->y1 - 200;
   pDerivedObj->gravity_increase_factor = 0.1;
   pDerivedObj->timer = 0;
   pDerivedObj->font_color = al_map_rgb(255, 255, 255);
@@ -134,7 +203,7 @@ Elements *New_Tetris_board(int label) {
   pDerivedObj->hitbox = New_Rectangle(pDerivedObj->x1, pDerivedObj->y1,
                                       pDerivedObj->x2, pDerivedObj->y2);
   for (int i = 0; i < 10; i++) {
-    for (int j = 0; j < 20; j++) {
+    for (int j = 0; j < 30; j++) {
       pDerivedObj->occupied[i][j] = false;
       pDerivedObj->color_map[i][j] = al_map_rgb(0, 0, 0);
     }
@@ -142,9 +211,6 @@ Elements *New_Tetris_board(int label) {
   for (int i = 0; i < 5; i++) {
     pDerivedObj->next_x[i] = pDerivedObj->x2 + 100;
     pDerivedObj->next_y[i] = pDerivedObj->y1 + 50 + i * 150;
-  }
-  for (int i = 0; i < 10; ++i) {
-    pDerivedObj->highest_occupied[i] = 20;
   }
   // setting derived object function
   pObj->pDerivedObj = pDerivedObj;
@@ -206,9 +272,9 @@ void Tetris_board_update(Elements *self) {
     hold->pos_in_queue = 0;
     change->pos_in_queue = -1;
     hold->coord_x = 4;
-    hold->coord_y = 0;
+    hold->coord_y = -1;
     change->coord_x = 4;
-    change->coord_y = 0;
+    change->coord_y = -1;
     return;
   }
 
@@ -243,29 +309,31 @@ void Tetris_board_interact(Elements *self) {
 }
 void Tetris_board_draw(Elements *self) {
   Tetris_board *board = ((Tetris_board *)(self->pDerivedObj));
-  al_clear_to_color(al_map_rgb(0, 0, 0));
+  // al_clear_to_color(al_map_rgb(0, 0, 0));
   al_draw_rectangle(board->x1, board->y1, board->x2, board->y2,
                     al_map_rgb(255, 255, 255), 2);
 
   double actual_time = (double)board->timer / FPS;
-  if (!board->game_over) {
-    al_draw_textf(board->font, board->font_color, board->pps_x, board->pps_y,
-                  ALLEGRO_ALIGN_CENTER, "PPS:\n%.1lf",
-                  board->pieces / actual_time);
-    al_draw_textf(board->font, board->font_color, board->apm_x, board->apm_y,
-                  ALLEGRO_ALIGN_CENTER, "APM:%.2lf",
-                  board->attack * 60 / actual_time);
-    al_draw_textf(board->font, board->font_color, board->pieces_x,
-                  board->pieces_y, ALLEGRO_ALIGN_CENTER, "PIECES:%d",
-                  board->pieces);
-    al_draw_textf(board->font, board->font_color, board->time_x, board->time_y,
-                  ALLEGRO_ALIGN_CENTER, "TIME:%02d:%02d", (int)actual_time / 60,
-                  (int)actual_time % 60);
-    al_draw_textf(board->font, board->font_color, board->hold_x, board->hold_y,
-                  ALLEGRO_ALIGN_CENTER, "HOLD");
-  }
+  al_draw_textf(board->font, board->font_color, board->pps_x, board->pps_y,
+                ALLEGRO_ALIGN_CENTER, "PPS:\n%.2lf",
+                board->pieces / actual_time);
+  al_draw_textf(board->font, board->font_color, board->apm_x, board->apm_y,
+                ALLEGRO_ALIGN_CENTER, "APM:%.2lf",
+                board->attack * 60 / actual_time);
+  al_draw_textf(board->font, board->font_color, board->pieces_x,
+                board->pieces_y, ALLEGRO_ALIGN_CENTER, "PIECES:%d",
+                board->pieces);
+  al_draw_textf(board->font, board->font_color, board->time_x, board->time_y,
+                ALLEGRO_ALIGN_CENTER, "TIME:%02d:%02d", (int)actual_time / 60,
+                (int)actual_time % 60);
+  al_draw_textf(board->font, board->font_color, board->hold_x, board->hold_y,
+                ALLEGRO_ALIGN_CENTER, "HOLD");
   al_draw_textf(board->font, board->font_color, board->next_x[0],
                 board->next_y[0] - 150, ALLEGRO_ALIGN_CENTER, "NEXT");
+  if (board->in_b2b >= 1) {
+    al_draw_textf(board->font, board->font_color, board->b2b_x, board->b2b_y,
+                  ALLEGRO_ALIGN_CENTER, "Back-to-Back x%d", board->in_b2b);
+  }
 
   int side_len = board->side_len;
   for (int i = 0; i < 10; i++) {
