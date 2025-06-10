@@ -3,13 +3,16 @@
 #include <stdbool.h>
 
 // variables for global usage
-const double FPS = 60.0;
+const double FPS = 120.0;
 const int WIDTH = 1920;
-const int HEIGHT = 1080;
+const int HEIGHT = 1380;
+int arr = 5;
+int das = 5;
+int sdf = 40;
 int window = 0;
-ALLEGRO_EVENT_QUEUE* event_queue = NULL;
+ALLEGRO_EVENT_QUEUE *event_queue = NULL;
 ALLEGRO_EVENT event;
-ALLEGRO_TIMER* fps = NULL;
+ALLEGRO_TIMER *fps = NULL;
 bool key_state[ALLEGRO_KEY_MAX] = {false};
 bool mouse_state[ALLEGRO_MOUSE_MAX_EXTRA_AXES] = {false};
 Point mouse;

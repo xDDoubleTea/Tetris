@@ -27,4 +27,5 @@ struct _GAME
 };
 Game *New_Game();
 
+
 #endif
