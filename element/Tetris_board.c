@@ -151,7 +151,6 @@ void clear_line(Tetris_board *board, Tetrimino *tetrimino) {
 }
 
 void deal_damage(Tetris_board *board, int damage) {
-  GameScene *gamescene = (GameScene *)(scene->pDerivedObj);
   ElementVec labelelem = _Get_label_elements(scene, Zombie_L);
   Zombie *zombie;
   for (int i = 0; i < labelelem.len; ++i) {
