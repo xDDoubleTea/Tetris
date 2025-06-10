@@ -8,7 +8,6 @@
 #include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_ttf.h>
 #include <allegro5/bitmap_draw.h>
-#include <endian.h>
 Elements *New_zombie(int label) {
   Zombie *pDerivedObj = (Zombie *)malloc(sizeof(Zombie));
   Elements *pObj = New_Elements(label);
