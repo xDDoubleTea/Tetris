@@ -111,7 +111,7 @@ void clear_line(Tetris_board *board, Tetrimino *tetrimino) {
     // Back to Back bonus
     if (board->in_b2b == 1) {
       al_play_sample_instance(gamescene->b2b_1_instance);
-    } else if (board->in_b2b == 2 && board->in_b2b == 3) {
+    } else if (board->in_b2b == 2 || board->in_b2b == 3) {
       al_play_sample_instance(gamescene->b2b_2_instance);
       attack_calc++;
     } else if (board->in_b2b > 3) {
