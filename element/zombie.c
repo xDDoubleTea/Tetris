@@ -22,7 +22,6 @@ Elements *New_zombie(int label) {
   pDerivedObj->x2 = WIDTH + pDerivedObj->w;
   pDerivedObj->y1 = 780;
   pDerivedObj->y2 = 1080;
-  pDerivedObj->zombiewalk = gs->zombie_gif;
   pDerivedObj->hitbox = New_Rectangle(pDerivedObj->x1, pDerivedObj->y1,
                                       pDerivedObj->x2, pDerivedObj->y2);
   pDerivedObj->walkspeed = 5;
