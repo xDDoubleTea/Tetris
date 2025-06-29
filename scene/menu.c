@@ -21,10 +21,10 @@ Scene *New_Menu(int label) {
   Menu *pDerivedObj = (Menu *)malloc(sizeof(Menu));
   Scene *pObj = New_Scene(label);
   // setting derived object member
-  pDerivedObj->font = al_load_ttf_font("assests/font/hun2.ttf", 24, 0);
-  pDerivedObj->background = al_load_bitmap("assests/menubg.webp");
+  pDerivedObj->font = al_load_ttf_font("assets/font/hun2.ttf", 24, 0);
+  pDerivedObj->background = al_load_bitmap("assets/menubg.webp");
   // Load sound
-  pDerivedObj->song = al_load_sample("assests/MainMenu.wav");
+  pDerivedObj->song = al_load_sample("assets/MainMenu.wav");
   pDerivedObj->title_x = WIDTH / 2;
   pDerivedObj->title_y = HEIGHT / 2;
   // register elements

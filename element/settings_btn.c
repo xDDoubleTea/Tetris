@@ -24,7 +24,7 @@ Elements *New_Settings_btn(int label) {
   pDerivedObj->hitbox = New_Rectangle(pDerivedObj->x1, pDerivedObj->y1,
                                       pDerivedObj->x2, pDerivedObj->y2);
   pDerivedObj->selected = false;
-  pDerivedObj->font = al_load_ttf_font("assests/font/hun2.ttf", 48, 0);
+  pDerivedObj->font = al_load_ttf_font("assets/font/hun2.ttf", 48, 0);
   // setting derived object function
   pObj->pDerivedObj = pDerivedObj;
   pObj->Update = Settings_btn_update;

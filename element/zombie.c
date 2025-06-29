@@ -27,7 +27,7 @@ Elements *New_zombie(int label) {
   pDerivedObj->walkspeed = 5;
   pDerivedObj->walktimer = 0;
   pDerivedObj->stop_walk = false;
-  pDerivedObj->font = al_load_ttf_font("assests/font/Consolas.ttf", 24, 0);
+  pDerivedObj->font = al_load_ttf_font("assets/font/Consolas.ttf", 24, 0);
   pDerivedObj->hp = 10;
   pObj->Update = zombie_update;
   pObj->Interact = zombie_interact;

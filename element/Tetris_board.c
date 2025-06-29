@@ -223,8 +223,8 @@ Elements *New_Tetris_board(int label) {
   pDerivedObj->pieces_y = pDerivedObj->apm_y + 50;
   pDerivedObj->time_x = pDerivedObj->apm_x;
   pDerivedObj->time_y = pDerivedObj->pieces_y + 50;
-  pDerivedObj->font = al_load_ttf_font("assests/font/hun2.ttf", 24, 0);
-  pDerivedObj->font_small = al_load_ttf_font("assests/font/hun2.ttf", 16, 0);
+  pDerivedObj->font = al_load_ttf_font("assets/font/hun2.ttf", 24, 0);
+  pDerivedObj->font_small = al_load_ttf_font("assets/font/hun2.ttf", 16, 0);
   pDerivedObj->side_len = 40;
   pDerivedObj->gravity = 0.5;
   snprintf(pDerivedObj->cancel_type, sizeof(pDerivedObj->cancel_type), "None");
