@@ -11,7 +11,6 @@
 Elements *New_zombie(int label) {
   Zombie *pDerivedObj = (Zombie *)malloc(sizeof(Zombie));
   Elements *pObj = New_Elements(label);
-  GameScene *gs = (GameScene *)(scene->pDerivedObj);
   // setting derived object member
   pDerivedObj->color = al_map_rgb(255, 0, 0);
   // setting derived object function
@@ -22,13 +21,12 @@ Elements *New_zombie(int label) {
   pDerivedObj->x2 = WIDTH + pDerivedObj->w;
   pDerivedObj->y1 = 780;
   pDerivedObj->y2 = 1080;
-  pDerivedObj->zombiewalk = gs->zombie_gif;
   pDerivedObj->hitbox = New_Rectangle(pDerivedObj->x1, pDerivedObj->y1,
                                       pDerivedObj->x2, pDerivedObj->y2);
   pDerivedObj->walkspeed = 5;
   pDerivedObj->walktimer = 0;
   pDerivedObj->stop_walk = false;
-  pDerivedObj->font = al_load_ttf_font("assests/font/Consolas.ttf", 24, 0);
+  pDerivedObj->font = al_load_ttf_font("assets/font/Consolas.ttf", 24, 0);
   pDerivedObj->hp = 10;
   pObj->Update = zombie_update;
   pObj->Interact = zombie_interact;

@@ -20,9 +20,9 @@ Scene *New_Settings(int label) {
   Settings *pDerivedObj = (Settings *)malloc(sizeof(Settings));
   Scene *pObj = New_Scene(label);
   // setting derived object member
-  pDerivedObj->font = al_load_ttf_font("assests/font/hun2.ttf", 24, 0);
+  pDerivedObj->font = al_load_ttf_font("assets/font/hun2.ttf", 24, 0);
   // Load sound
-  pDerivedObj->song = al_load_sample("assests/MainMenu.wav");
+  pDerivedObj->song = al_load_sample("assets/MainMenu.wav");
   al_reserve_samples(16);
   pDerivedObj->title_x = WIDTH / 2;
   pDerivedObj->title_y = HEIGHT / 2;

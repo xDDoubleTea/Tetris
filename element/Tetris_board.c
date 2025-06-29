@@ -111,7 +111,7 @@ void clear_line(Tetris_board *board, Tetrimino *tetrimino) {
     // Back to Back bonus
     if (board->in_b2b == 1) {
       al_play_sample_instance(gamescene->b2b_1_instance);
-    } else if (board->in_b2b == 2 && board->in_b2b == 3) {
+    } else if (board->in_b2b == 2 || board->in_b2b == 3) {
       al_play_sample_instance(gamescene->b2b_2_instance);
       attack_calc++;
     } else if (board->in_b2b > 3) {
@@ -151,7 +151,6 @@ void clear_line(Tetris_board *board, Tetrimino *tetrimino) {
 }
 
 void deal_damage(Tetris_board *board, int damage) {
-  GameScene *gamescene = (GameScene *)(scene->pDerivedObj);
   ElementVec labelelem = _Get_label_elements(scene, Zombie_L);
   Zombie *zombie;
   for (int i = 0; i < labelelem.len; ++i) {
@@ -224,8 +223,8 @@ Elements *New_Tetris_board(int label) {
   pDerivedObj->pieces_y = pDerivedObj->apm_y + 50;
   pDerivedObj->time_x = pDerivedObj->apm_x;
   pDerivedObj->time_y = pDerivedObj->pieces_y + 50;
-  pDerivedObj->font = al_load_ttf_font("assests/font/hun2.ttf", 24, 0);
-  pDerivedObj->font_small = al_load_ttf_font("assests/font/hun2.ttf", 16, 0);
+  pDerivedObj->font = al_load_ttf_font("assets/font/hun2.ttf", 24, 0);
+  pDerivedObj->font_small = al_load_ttf_font("assets/font/hun2.ttf", 16, 0);
   pDerivedObj->side_len = 40;
   pDerivedObj->gravity = 0.5;
   snprintf(pDerivedObj->cancel_type, sizeof(pDerivedObj->cancel_type), "None");

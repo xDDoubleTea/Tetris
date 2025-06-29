@@ -45,29 +45,29 @@ Scene *New_GameScene(int label) {
   // setting derived object function
   al_reserve_samples(64);
 
-  pDerivedObj->background = al_load_bitmap("assests/bg.webp");
-  pDerivedObj->zombie_gif = algif_new_gif("assests/zombiewalking.gif", 1);
+  pDerivedObj->background = al_load_bitmap("assets/bg.webp");
+  pDerivedObj->zombie_gif = algif_new_gif("assets/zombiewalking.gif", 1);
 
-  pDerivedObj->o_mino = al_load_sample("assests/Tetrio_retro_pack/o.wav");
-  pDerivedObj->i_mino = al_load_sample("assests/Tetrio_retro_pack/i.wav");
-  pDerivedObj->j_mino = al_load_sample("assests/Tetrio_retro_pack/j.wav");
-  pDerivedObj->l_mino = al_load_sample("assests/Tetrio_retro_pack/l.wav");
-  pDerivedObj->z_mino = al_load_sample("assests/Tetrio_retro_pack/z.wav");
-  pDerivedObj->s_mino = al_load_sample("assests/Tetrio_retro_pack/s.wav");
-  pDerivedObj->t_mino = al_load_sample("assests/Tetrio_retro_pack/t.wav");
+  pDerivedObj->o_mino = al_load_sample("assets/Tetrio_retro_pack/o.wav");
+  pDerivedObj->i_mino = al_load_sample("assets/Tetrio_retro_pack/i.wav");
+  pDerivedObj->j_mino = al_load_sample("assets/Tetrio_retro_pack/j.wav");
+  pDerivedObj->l_mino = al_load_sample("assets/Tetrio_retro_pack/l.wav");
+  pDerivedObj->z_mino = al_load_sample("assets/Tetrio_retro_pack/z.wav");
+  pDerivedObj->s_mino = al_load_sample("assets/Tetrio_retro_pack/s.wav");
+  pDerivedObj->t_mino = al_load_sample("assets/Tetrio_retro_pack/t.wav");
   pDerivedObj->sfx_gain = 0.2;
   pDerivedObj->bgm_gain = 0.05;
   pDerivedObj->bgm_piercing_wind =
-      al_load_sample("assests/bgm/PiercingWind.wav");
-  pDerivedObj->b2b_1 = al_load_sample("assests/Tetrio_retro_pack/btb_1.wav");
-  pDerivedObj->b2b_2 = al_load_sample("assests/Tetrio_retro_pack/btb_2.wav");
-  pDerivedObj->b2b_3 = al_load_sample("assests/Tetrio_retro_pack/btb_3.wav");
+      al_load_sample("assets/bgm/PiercingWind.wav");
+  pDerivedObj->b2b_1 = al_load_sample("assets/Tetrio_retro_pack/btb_1.wav");
+  pDerivedObj->b2b_2 = al_load_sample("assets/Tetrio_retro_pack/btb_2.wav");
+  pDerivedObj->b2b_3 = al_load_sample("assets/Tetrio_retro_pack/btb_3.wav");
   pDerivedObj->b2b_break =
-      al_load_sample("assests/Tetrio_retro_pack/btb_break.wav");
+      al_load_sample("assets/Tetrio_retro_pack/btb_break.wav");
   for (int i = 0; i < 16; ++i) {
     char filename[128];
     snprintf(filename, sizeof(filename),
-             "assests/Tetrio_retro_pack/combo_%d.wav", i + 1);
+             "assets/Tetrio_retro_pack/combo_%d.wav", i + 1);
     pDerivedObj->combo[i] = al_load_sample(filename);
     pDerivedObj->combo_instance[i] =
         al_create_sample_instance(pDerivedObj->combo[i]);
@@ -79,12 +79,12 @@ Scene *New_GameScene(int label) {
                                     ALLEGRO_PLAYMODE_ONCE);
   }
 
-  // load_and_set_sample("assests/Tetrio_retro_pack/harddrop.wav",
+  // load_and_set_sample("assets/Tetrio_retro_pack/harddrop.wav",
   //                     pDerivedObj->zombie_attack_sfx,
   //                     pDerivedObj->zombie_attack_sfx_instance,
   //                     pDerivedObj->sfx_gain, ALLEGRO_PLAYMODE_ONCE);
   pDerivedObj->hard_drop_sfx =
-      al_load_sample("assests/Tetrio_retro_pack/harddrop.wav");
+      al_load_sample("assets/Tetrio_retro_pack/harddrop.wav");
   pDerivedObj->hard_drop_sfx_instance =
       al_create_sample_instance(pDerivedObj->hard_drop_sfx);
   al_set_sample_instance_gain(pDerivedObj->hard_drop_sfx_instance,
@@ -95,7 +95,7 @@ Scene *New_GameScene(int label) {
                                      al_get_default_mixer());
 
   pDerivedObj->game_over_sfx =
-      al_load_sample("assests/Tetrio_retro_pack/failure.wav");
+      al_load_sample("assets/Tetrio_retro_pack/failure.wav");
   pDerivedObj->game_over_sfx_instance =
       al_create_sample_instance(pDerivedObj->game_over_sfx);
   al_set_sample_instance_gain(pDerivedObj->game_over_sfx_instance,
@@ -106,7 +106,7 @@ Scene *New_GameScene(int label) {
                                      al_get_default_mixer());
 
   pDerivedObj->all_clear =
-      al_load_sample("assests/Tetrio_retro_pack/allclear.wav");
+      al_load_sample("assets/Tetrio_retro_pack/allclear.wav");
   pDerivedObj->all_clear_instance =
       al_create_sample_instance(pDerivedObj->all_clear);
   al_set_sample_instance_gain(pDerivedObj->all_clear_instance,
@@ -117,7 +117,7 @@ Scene *New_GameScene(int label) {
                                      al_get_default_mixer());
 
   pDerivedObj->all_clear =
-      al_load_sample("assests/Tetrio_retro_pack/allclear.wav");
+      al_load_sample("assets/Tetrio_retro_pack/allclear.wav");
   pDerivedObj->all_clear_instance =
       al_create_sample_instance(pDerivedObj->all_clear);
   al_set_sample_instance_gain(pDerivedObj->all_clear_instance,
@@ -128,7 +128,7 @@ Scene *New_GameScene(int label) {
                                      al_get_default_mixer());
 
   pDerivedObj->bgm_original_tetris =
-      al_load_sample("assests/bgm/Original_tetris_theme_test.wav");
+      al_load_sample("assets/bgm/Original_tetris_theme_test.wav");
   pDerivedObj->bgm_original_tetris_instance =
       al_create_sample_instance(pDerivedObj->bgm_original_tetris);
   al_attach_sample_instance_to_mixer(pDerivedObj->bgm_original_tetris_instance,

@@ -36,8 +36,8 @@ Elements *New_arr_btn(int label) {
            "Fast");
   snprintf(pDerivedObj->arrstatetext[4], sizeof(pDerivedObj->arrstatetext[4]),
            "Super Fast");
-  pDerivedObj->font = al_load_ttf_font("assests/font/hun2.ttf", 48, 0);
-  pDerivedObj->font_small = al_load_ttf_font("assests/font/hun2.ttf", 12, 0);
+  pDerivedObj->font = al_load_ttf_font("assets/font/hun2.ttf", 48, 0);
+  pDerivedObj->font_small = al_load_ttf_font("assets/font/hun2.ttf", 12, 0);
   // setting derived object function
   pObj->pDerivedObj = pDerivedObj;
   pObj->Update = arr_btn_update;
