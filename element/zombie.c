@@ -11,7 +11,6 @@
 Elements *New_zombie(int label) {
   Zombie *pDerivedObj = (Zombie *)malloc(sizeof(Zombie));
   Elements *pObj = New_Elements(label);
-  GameScene *gs = (GameScene *)(scene->pDerivedObj);
   // setting derived object member
   pDerivedObj->color = al_map_rgb(255, 0, 0);
   // setting derived object function
